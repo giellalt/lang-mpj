@@ -2,14 +2,96 @@
 !  ---------------
 !! The Wangkajunga language nouns inflect in cases.
 
-LEXICON Cases
-+N+sg+nom:0     #   ;
-+N+pl+nom:i     #   ;
-+N+sg+loc:as    #   ;
-+N+pl+loc:ias   #   ;
-+N+sg+acc:at    #   ;
-+N+pl+acc:iat   #   ;
-#:0   Nouns   ;
+LEXICON NounReduplication	! not sure how to do this yet
+		n_agr ;
+
+!
+LEXICON n_agr
+
++N: x_agr ;
+
+!! !! Pronoun clitics (quite long)
+! Ergativity: Abs IV, Erg [ TV Abs ]
+
+LEXICON x_agr
++Abs: absolutive_ergative ;
++Erg:%>lu absolutive_ergative ;
++Dat:%>ku absolutive_ergative ;
+
+LEXICON absolutive_ergative
+ K ; ! no person-number suffix
+ person_number ;
+
+LEXICON person_number
+
+! Subject case 
++1Sg:%>rna K ; ! wakalurna 
++2Sg:%>n K ;
++3Sg:%>ø K ;
+1+Du+Incl%>li K ;
+1+Du+Excl:%>liju K ;
+2+Du:%>npula K ;
+3+Du:%>pula K ;
+
+1+Pl+Incl%>la K ;
+1+Pl+Excl:%>laju K ;
+2+Pl:%>nyurra K ;
+3+Pl:%>ya K ;
+
+! ! Object case
+! +rni+1sgO
+! +nta+2sgO
+! +ø+3sgO
+! +linya+1dlO
+! +linyaju+1dlexO
+! +ntapula+2dlO
+! +pulanya+3dlO
+! +lanya+1plO
+! +lanyaju+3plexO
+! +nyurranya+2plO
+! +jananya+3plO
+! 
+! ! Dative case 
+! +ju+1sgDAT
+! +ngku+2sgDAT
+! +ra+3sgDAT
+! +limpa+1dlDAT
+! +limpaju+1dlexDAT
+! +ngkupula+2dlDAT
+! +pulampa+3dlDAT
+! +lampa+1plDAT
+! +lampaju+1plexDAT
+! +nyurrampa+2plDAT
+! +janampa+3plDAT
+! 
+! ! Accessory case
+! +rni+1sgACS
+! +nta+2sgACS
+! +lu+3sgACS
+! +linya+1dlACS
+! +linyaju+1dlexACS
+! +ntapula+2dlACS
+! +pulanya+3dlACS
+! +lanya+1plACS
+! +lanyaju+1plexACS
+! +nyurranya+2plACS
+! +jananya+3plACS
+! 
+! ! Ablative case
+! +jura+1sgABL
+! +ngkura+2sgABL
+! +lura+3sgABL
+! +limpajura+1dlABL
+! +ngkurapula+2dlABL
+! +janampalura+3dlABL
+! +lampajura+1plABL
+! +ngkurapula+2plABL
+! +janampalura+3plABL
+! 
+! ! Reflexive pronoun clitics
+! +ju+REFL
+! +ngku+REFL
+! 
 
 ! vim: set ft=xfst-lexc:
 

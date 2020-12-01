@@ -2,7 +2,14 @@
 !  -----
 !! Nouns in the Wangkajunga language are things.
 
-LEXICON Nouns
-noun    Cases   ;
+LEXICON Nouns	! can reduplicate before cases are added. Includes both nouns and adjective (descriptive) words
+waka		NounReduplication; ! “stick”
+pilyurrpa:pilyurr		NounReduplication; ! “steep”
+kawanpa:kawan		NounReduplication; !	“deaf”
+juku		NounReduplication; ! “small”
+ngulu		NounReduplication; ! “frightened”
+ngunu		NounReduplication; ! “herb”
+karru		NounReduplication; ! “road”
+
 
 ! vim: set ft=xfst-lexc:

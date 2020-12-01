@@ -29,6 +29,86 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! The parts-of-speech are:
  +N +A +Adv +V                                 !!≈
  +Pron +CS +CC +Adp +Po +Pr +Interj +Pcle +Num !!≈
+ 
++Abs +Erg +Dat
++1Sg +2Sg +3Sg 
++1Du +2Du +3Du
++1Pl +2Pl +3Pl
++Incl +Excl
+ 
+ !! !! Verb affixes
+!! tense inflections 
++Imprt			! Imperative 
++PST			! Past Tense
++FUT			! Future Tense
++PRES			! Present Tense
+
+! +PSTIMP		! Past Imperfective asdf+V+PST+IMP // asdf+V+PSTIMP
++PSTHBT			! Past Habitual
++FUTIMP			! Future Imperfective
++IMPIMP			! Imperfective Imperative
+
+!! irrealis tense inflections
++ADMON		! Admonitive
++INT		! Intentive
++UNR			! Unrealised
++PURP		! Purposive
++OBLIG	! Obligative
++HYP		! Hypothetical
++CHAR		! Characteristic (*payi may behave differently - nominalisation?)
+
+!! affixes following from irrealis inflections
++CONTR			! Contradictive
++AVOID	! Avoidance
+
+!! serial and nominalised inflections
++SER			! Serial (Ø and LA conjugations)
++NOMZ		! Nominaliser (Ø and LA conjugations)
+
+
+!! verb derivation affixes
++Der/ti
++Der/ma
++Der/ju
+
+!! temporal relative affixes
++TREL
++TREL
+!! verb directional affixes
++ni		! *the other 2 are prefixes - not sure how to deal with yet
+!! verb post-inflection affixes
++GRP		! group (different to GROUP as derivational nominal suffix)
++COMPL		! completed action
++WARN		! warning
+
+!! !! Flag diacritics for verb conjugations
+@U.CONJ.Ø@
+@U.CONJ.WA@
+@U.CONJ.RRA@
+@U.CONJ.LA@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ !! integrate the things to come:
+ 
+ 
 
 !! The parts of speech are further split up into:
  +Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Indef
@@ -48,12 +128,14 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! Numerals are classified under:
  +Attr +Card
  +Ord 
+
 !! Verb moods are:
- +Ind +Prs +Prt +Pot +Cond +Imprt
+ +Ind +Prs +Prt +Cond +Imprt
+ 
 !! Verb personal forms are:
  +Sg1 +Sg2 +Sg3 +Du1 +Du2 +Du3 +Pl1 +Pl2 +Pl3
 !! Other verb forms are
- +Inf +Ger +ConNeg +ConNegII +Neg +ImprtII +PrsPrc +PrfPrc +Sup +VGen +VAbess
+ +Inf +Ger +ConNeg +Neg +PrsPrc +PrfPrc +Sup +VGen +VAbess
 
 ! Abbreviated words are classified with:
  +ABBR +ACR 
@@ -69,7 +151,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !! Question and Focus particles:
  +Qst +Foc
-
+ +Clt/nga
 
 !! Semantics are classified with
  +Mal +Fem +Sur 
@@ -96,15 +178,8 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  +V→N +V→V +V→A
  +Der/xxx
 
-
 !! Morphophonology
 !  ---------------
-!! To represent phonologic variations in word forms we use the following
-!! symbols in the lexicon files:
- {aä} {oö} {uü}
-
-!! And following triggers to control variation
- {front} {back}
 
 !! !!Flag diacritics
 !! We have manually optimised the structure of our lexicon using following
@@ -139,11 +214,11 @@ LEXICON Root
 !! word classes, or optionally from prefixes:
 0   Nouns       ;
 0   Verbs       ;
-0   Adjectives  ;
-0   Pronouns    ;
-0   Numerals    ;
-0   Prefixes    ;
-    Punctuation ;
-    Symbols     ;
+! 0   Adjectives  ;
+! 0   Pronouns    ;
+! 0   Numerals    ;
+! 0   Prefixes    ;
+!     Punctuation ;
+!     Symbols     ;
 
 ! vim: set ft=xfst-lexc:
