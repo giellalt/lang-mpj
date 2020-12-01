@@ -10,7 +10,7 @@ authors named in the AUTHORS file are available to grant other licencing
 choices.
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-mpj)](https://github.com/giellalt/lang-mpj/issues)
- [![Build Status](https://github.com/giellalt/lang-mpj/workflows/CI+CD/badge.svg)](https://github.com/giellalt/lang-mpj/actions)
+ [![Build Status](https://github.com/giellalt/lang-mpj/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-mpj/actions)
 
 Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-mpj)
 for the Wangkajunga language by using the [Divvun Installer](http://divvun.no)
