@@ -3,6 +3,10 @@
 !! Pronouns in the Wangkajunga language are references to things.
 
 LEXICON Pronouns
-pronoun    Cases   ;
+! interrogative
+ngana+Pron+Interr:ngana x_agr "what" ;
+
+! indefinite
+maarra+Pron+Indef:maarra x_agr "where" ;
 
 ! vim: set ft=xfst-lexc:

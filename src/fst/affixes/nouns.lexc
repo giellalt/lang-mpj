@@ -2,24 +2,36 @@
 !  ---------------
 !! The Wangkajunga language nouns inflect in cases.
 
-LEXICON NounReduplication	! not sure how to do this yet
+LEXICON NounReduplication	! not sure how to do this yet (there is a chapter in B&K on redupl)
 		n_agr ;
 
-!
-LEXICON n_agr
-
-+N: x_agr ;
+LEXICON n_agr  
++N: x_agr ; ! This is the "general noun stem" of the floatchart
 
 !! !! Pronoun clitics (quite long)
 ! Ergativity: Abs IV, Erg [ TV Abs ]
 
-LEXICON x_agr
+LEXICON x_agr ! This is the "general noun stem" of the floatchart
+!semantic_case ;
+!derivational_case ;
+!focus ;
+grammatical_case ;
+
+
+! LEXICON semantic_case 
+! # ;
+! LEXICON derivational_case 
+! # ;
+! LEXICON focus 
+! # ;
+
+LEXICON grammatical_case
 +Abs: absolutive_ergative ;
 +Erg:%>lu absolutive_ergative ;
 +Dat:%>ku absolutive_ergative ;
 
 LEXICON absolutive_ergative
- K ; ! no person-number suffix
+ K ; ! no person-number suffixed 
  person_number ;
 
 LEXICON person_number
@@ -37,6 +49,9 @@ LEXICON person_number
 1+Pl+Excl:%>laju K ;
 2+Pl:%>nyurra K ;
 3+Pl:%>ya K ;
+
+
+
 
 ! ! Object case
 ! +rni+1sgO

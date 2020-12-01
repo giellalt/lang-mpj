@@ -81,6 +81,10 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +COMPL		! completed action
 +WARN		! warning
 
+!! !Clitics
+ +Clt/nga
+
+
 !! !! Flag diacritics for verb conjugations
 @U.CONJ.Ø@
 @U.CONJ.WA@
@@ -88,6 +92,21 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 @U.CONJ.LA@
 
 
+!! !! Flag diacritics for pronoun clitics (to ensure the same case is not used twice within a cluster). CLCASE = pronoun clitic case
+@U.CLCASE.S@
+@U.CLCASE.O@
+@U.CLCASE.DAT@
+@U.CLCASE.ACS@
+@U.CLCASE.ABL@
+@U.CLCASE.REFL@
+
+! D-flags (to make sure that the same case is not repeated in two-length pronoun clitic clusters)
+@D.CLCASE.S@
+@D.CLCASE.O@
+@D.CLCASE.DAT@
+@D.CLCASE.ACS@
+@D.CLCASE.ABL@
+@D.CLCASE.REFL@
  
  
  
@@ -108,6 +127,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  
  !! integrate the things to come:
  
+ ! Here are the tags from the template. These and the ones above should be merged.
  
 
 !! The parts of speech are further split up into:
@@ -132,8 +152,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! Verb moods are:
  +Ind +Prs +Prt +Cond +Imprt
  
-!! Verb personal forms are:
- +Sg1 +Sg2 +Sg3 +Du1 +Du2 +Du3 +Pl1 +Pl2 +Pl3
 !! Other verb forms are
  +Inf +Ger +ConNeg +Neg +PrsPrc +PrfPrc +Sup +VGen +VAbess
 
@@ -151,7 +169,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !! Question and Focus particles:
  +Qst +Foc
- +Clt/nga
 
 !! Semantics are classified with
  +Mal +Fem +Sur 
