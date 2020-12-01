@@ -1,0 +1,11 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+datadir=@datarootdir@
+gtlang=mpj
+dir=${datadir}/giella/${gtlang}
+srcdir=${datadir}/giella/${gtlang}
+
+Name: giella-mpj
+Description: Finite-state language processing tools for Wangkajunga
+URL: https://giellalt.uit.no/index.html
+Version: @VERSION@
