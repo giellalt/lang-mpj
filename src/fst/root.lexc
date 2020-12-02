@@ -29,12 +29,18 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! The parts-of-speech are:
  +N +A +Adv +V                                 !!≈
  +Pron +CS +CC +Adp +Po +Pr +Interj +Pcle +Num !!≈
- 
+
+!!nominal cases
++ABL +GEN +LOC +PERL +ALL +AVOID
++HAV +THING +PRIV +INT +WANT +ASST +TEMP +DWELL +SIDE +TYPE +SIM +CONTR +MOD +BIG +ANOTH +VERY +NUM +DUAL +FEW +PL +GRP +PAIR +ONLY
++FOC 
 +Abs +Erg +Dat
-+1Sg +2Sg +3Sg 
-+1Du +2Du +3Du
-+1Pl +2Pl +3Pl
+
++1Sg +2Sg +3Sg ! 1+Sg 2+Sg 3+Sg (which version do we want?)
++1Du +2Du +3Du ! 1+Du 2+Du 3+Du
++1Pl +2Pl +3Pl ! 1+Pl 2+Pl 3+Pl
 +Incl +Excl
++Acs +REFL
  
  !! !! Verb affixes
 !! tense inflections 
