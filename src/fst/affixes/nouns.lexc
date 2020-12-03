@@ -6,147 +6,146 @@ LEXICON NounReduplication	! not sure how to do this yet (there is a chapter in B
 		n_agr ;
 
 LEXICON n_agr  
-+N: x_agr ; ! This is the "general noun stem" of the floatchart
++N: x_agr ; ! This is the "General noun stem" of the floatchart
 
 ! Ergativity: Abs IV, Erg [ TV Abs ]
 
-LEXICON x_agr ! This is the "general noun stem" of the floatchart
-!semantic_case ;
-!derivational_case ;
-!focus ;
+LEXICON x_agr ! This is the "General noun stem" of the floatchart
+semantic_case ;
+derivational_case ;
+focus ;
 grammatical_case ;
 !inchoative;	! NB from the book, inchoative is used as verbalisation
 !verb_derivation_ti;
 
 
-! LEXICON semantic_case 
+LEXICON semantic_case 
 +Abl:%>janu		temp;	! Ablative (motion away from a place)
 +Abl:%>nguru		temp;
-+GEN:%>kurnu		temp;	! genitive (referred to as POSS - possessive - in book)
-+GEN:%>kura		temp;
-+GEN:%>kurangu		temp;
-+LOC:%>ngka		temp;	! locative - following a vowel
-+LOC:%>ta		temp;	! following a consonant
-+LOC:%>ja		temp;	! following a consonant
-+PERL:%>wana		temp;	! perlative (motion along / across a place)
-+ALL:%>kutu		temp;	! allative (motion towards a place)
-+ALL:%>kutu		temp;
-+AVOID:%>ngkamarra	#;		! avoid (following a vowel)
-+AVOID:%>jamarra	#;		! avoid (following a consonant)
++Gen:%>kurnu		temp;	! Genitive (referred to as POSS - possessive - in book)
++Gen:%>kura		temp;
++Gen:%>kurangu		temp;
++Loc:%>ngka		temp;	! Locative - following a vowel
++Loc:%>ta		temp;	! following a consonant
++Loc:%>ja		temp;	! following a consonant
++Perl:%>wana		temp;	! Perlative (motion along / across a place)
++All:%>kutu		temp;	! Allative (motion towards a place)
++All:%>kutu		temp;
++Avoid:%>ngkamarra	#;	! Avoid (following a vowel)
++Avoid:%>jamarra	#;	! Avoid (following a consonant)
 
-! LEXICON derivational_case 
-+HAV:%>kurlu		temp;		!  having
-+THING:%>pinti		temp;		! associated thing
-+PRIV:%>parni		temp;		! privative
-+INT:%>kija		temp;		! intentive
-+WANT:%>jiraja		temp;		! want
-+ASST:%>jarra		temp;		! associated time or space
-+TEMP:%>puru		temp;		! temporal
-+DWELL:%>karraja	temp;		! dweller
-+SIDE:%>karti		temp;		! side
-+TYPE:%>partu		temp;		! type
-+SIM:%>yuru		temp;		! similar
-+CONTR:%>munu		temp;		! contradictive
-+MOD:%>marta		temp;		! moderative
-+BIG:%>paka		temp;		! very big
-+ANOTH:%>kujupa		temp;		! another
-+VERY:%>minyirri	temp;		! very
-+NUM:%>marlu		temp;		! numerative
-+DUAL:%>kujarra		temp;		! dual
-+FEW:%>paraku		temp;		! few
-+PL:%>n			temp;		! plural alternative 1
-+PL:%>rti		temp;		! plural alternative 2
-+GRP:%>ngurun		temp;		! group *afterwards comes PA
-+PAIR:%>rarra		temp;		! pair
-+ONLY:%>wiyaju		temp;		! only
+LEXICON derivational_case 
++Hav:%>kurlu		temp;		!  having
++Thing:%>pinti		temp;		! associated thing
++Priv:%>parni		temp;		! privative
++Int:%>kija		temp;		! intentive
++Want:%>jiraja		temp;		! want
++Asst:%>jarra		temp;		! associated time or space
++Temp:%>puru		temp;		! temporal
++Dwell:%>karraja	temp;		! dweller
++Side:%>karti		temp;		! side
++Type:%>partu		temp;		! type
++Sim:%>yuru		temp;		! similar
++Contr:%>munu		temp;		! contradictive
++Mod:%>marta		temp;		! moderative
++Big:%>paka		temp;		! very big
++Anoth:%>kujupa		temp;		! another
++Very:%>minyirri	temp;		! very
++Num:%>marlu		temp;		! numerative
++Dual:%>kujarra		temp;		! dual
++Few:%>paraku		temp;		! few
++Pl:%>n			temp;		! plural alternative 1
++Pl:%>rti		temp;		! plural alternative 2
++Grp:%>ngurun		temp;		! group *afterwards comes PA
++Pair:%>rarra		temp;		! pair
++Only:%>wiyaju		temp;		! only
 
-! LEXICON focus 
-+FOC:%>nguninji		temp;		! focus (sometimes annotated as SPEC)
+LEXICON focus 
++Foc:%>nguninji		temp;		! focus (sometimes annotated as SPEC)
 
 LEXICON grammatical_case
 +Abs: absolutive_ergative ;
 +Erg:%>lu absolutive_ergative ;
 +Erg:%>tu absolutive_ergative ;
 +Erg:%>ju absolutive_ergative ;
-+Dat:%>ku absolutive_ergative ;
+Dat:%>ku absolutive_ergative ;
 
 LEXICON absolutive_ergative
  K ; ! no person-number suffixed 
- person_number ;
+ person_number_case ;
 
 LEXICON temp  ! need to discuss case combinations and ordering
  K ; 
 
 !! !! Pronoun clitics (quite long)
-LEXICON person_number
+LEXICON person_number_case
 
 ! Subject case 
-1+Sg:%>rna K ; ! wakalurna 
-2+Sg:%>n K ;
-3+Sg:%>ø K ;
-1+Du+Incl%>li K ;
-1+Du+Excl:%>liju K ;
-2+Du:%>npula K ;
-3+Du:%>pula K ;
++1Sg:%>rna K ; ! wakalurna 
++2Sg:%>n K ;
++3Sg:%>ø K ;
++1DuIncl%>li K ;	! should Incl also be part of the one tag -> 1DuIncl ?
++1DuExcl:%>liju K ;
++2Du:%>npula K ;
++3Du:%>pula K ;
++1PlIncl%>la K ;
++1PlExcl:%>laju K ;
++2Pl:%>nyurra K ;
++3Pl:%>ya K ;
 
-1+Pl+Incl%>la K ;
-1+Pl+Excl:%>laju K ;
-2+Pl:%>nyurra K ;
-3+Pl:%>ya K ;
-
-! Object case - object can only be absolutive case
-1+Sg+Obj:%>rni K ;
-2+Sg+Obj:%>nta K ;
-3+Sg+Obj:%> K ;
-1+Du+Incl+Obj:%>linya K ;
-1+Du+Excl+Obj:%>linyaju K ;
-2+Du+Obj:%>ntapula K ;
-3+Du+Obj:%>pulanya K ;
-1+Pl+Incl+Obj:%>lanya K ;
-1+Pl+Excl+Obj:%>lanyaju K ;
-2+Pl+Obj:%>nyurranya K ;
-3+Pl+Obj:%>jananya K ;
+! Absolutive case (object of transitive verbs)
++1SgAbs:%>rni K ;
++2SgAbs:%>nta K ;
++3SgAbs:%> K ;
++1DuInclAbs:%>linya K ;
++1DuExclAbs:%>linyaju K ;
++2DuAbs:%>ntapula K ;
++3DuAbs:%>pulanya K ;
++1PlInclAbs:%>lanya K ;
++1PlExclAbs:%>lanyaju K ;
++2PlAbs:%>nyurranya K ;
++3PlAbs:%>jananya K ;
  
 ! Dative case 
-1+Sg+Dat:%>ju K ;
-2+Sg+Dat:%>ngku K ;
-3+Sg+Dat:%>ra K ;
-1+Du+Incl+Dat:%>limpa K ;
-1+Du+Excl+Dat:%>limpaju K ;
-2+Du+Dat:%>ngkupula K ;
-3+Du+Dat:%>pulampa K ;
-1+Pl+Incl+Dat:%>lampa K ;
-1+Pl+Excl+Dat:%>lampaju K ;
-2+Pl+Dat:%>nyurrampa K ;
-3+Pl+Dat:%>janampa K ;
++1SgDat:%>ju K ;
++2SgDat:%>ngku K ;
++3SgDat:%>ra K ;
++1DuInclDat:%>limpa K ;
++1DuExclDat:%>limpaju K ;
++2DuDat:%>ngkupula K ;
++3DuDat:%>pulampa K ;
++1PlInclDat:%>lampa K ;
++1PlExclDat:%>lampaju K ;
++2PlDat:%>nyurrampa K ;
++3PlDat:%>janampa K ;
 
-! Accessory case - accessory can be locative or allative
-1+Sg+Acs:%>rni K ;
-2+Sg+Acs:%>nta K ;
-3+Sg+Acs:%>lu K ;
-1+Du+Incl+Acs:%>linya K ;
-1+Du+Excl+Acs:%>linyaju K ;
-2+Du+Acs:%>ntapula K ;
-3+Du+Acs:%>pulanya K ;
-1+Pl+Acs:%>lanya K ;
-1+Pl+Excl+Acs:%>lanyaju K ;
-2+Pl+Acs:%>nyurranya K ;
-3+Pl+Acs:%>jananya K ;
+! Accessory case - accessory can be Locative or Allative
++1SgAcs:%>rni K ;
++2SgAcs:%>nta K ;
++3SgAcs:%>lu K ;
++1DuInclAcs:%>linya K ;
++1DuExclAcs:%>linyaju K ;
++2DuAcs:%>ntapula K ;
++3DuAcs:%>pulanya K ;
++1PlAcs:%>lanya K ;
++1PlExclAcs:%>lanyaju K ;
++2PlAcs:%>nyurranya K ;
++3PlAcs:%>jananya K ;
  
 ! Ablative case
-1+Sg+Abl:%>jura K ;
-2+Sg+Abl:%>ngkura K ;
-3+Sg+Abl:%>lura K ;
-1+Du+Incl+Abl:%>limpajura K ;
-2+Du+Excl+Abl:%>ngkurapula K ;
-3+Du+Abl:%>janampalura K ;
-1+Pl+Abl:%>lampajura K ;
-2+Pl+Abl:%>ngkurapula K ;
-3+Pl+Abl:%>janampalura K ;
++1SgAbl:%>jura K ;
++2SgAbl:%>ngkura K ;
++3SgAbl:%>lura K ;
++1DuInclAbl:%>limpajura K ;
++2DuExclAbl:%>ngkurapula K ;
++3DuAbl:%>janampalura K ;
++1PlAbl:%>lampajura K ;
++2PlAbl:%>ngkurapula K ;
++3PlAbl:%>janampalura K ;
  
 ! Reflexive pronoun clitics
-+REFL:%>ju K ;
-+REFL:%>ngku K ;
++Refl:%>ju K ;
++Refl:%>ngku K ;
 
-! vim: set ft=xfst-lexc:
+vim: set ft=xfst-lexc:
 
