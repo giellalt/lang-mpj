@@ -34,40 +34,40 @@ LEXICON semantic_case
 +Avoid:%>jamarra	#;	! Avoid (following a consonant)
 
 LEXICON derivational_case  ! consider +Der/Hav, +Der/Thing, +Der/Priv, ...
-+Hav:%>kurlu		temp;		!  having
-+Thing:%>pinti		temp;		! associated thing
-+Priv:%>parni		temp;		! privative
-+Int:%>kija		temp;		! intentive
-+Want:%>jiraja		temp;		! want
-+Asst:%>jarra		temp;		! associated time or space
-+Temp:%>puru		temp;		! temporal
-+Dwell:%>karraja	temp;		! dweller
-+Side:%>karti		temp;		! side
-+Type:%>partu		temp;		! type
-+Sim:%>yuru		temp;		! similar
-+Contr:%>munu		temp;		! contradictive
-+Mod:%>marta		temp;		! moderative
-+Big:%>paka		temp;		! very big
-+Anoth:%>kujupa		temp;		! another
-+Very:%>minyirri	temp;		! very
-+Num:%>marlu		temp;		! numerative
-+Dual:%>kujarra		temp;		! dual
-+Few:%>paraku		temp;		! few
-+Pl:%>n			temp;		! plural alternative 1
-+Pl:%>rti		temp;		! plural alternative 2
-+Grp:%>ngurun		temp;		! group *afterwards comes PA
-+Pair:%>rarra		temp;		! pair
-+Only:%>wiyaju		temp;		! only
++Der/Hav:%>kurlu		temp;		!  having
++Der/Thing:%>pinti		temp;		! associated thing
++Der/Priv:%>parni		temp;		! privative
++Der/Int:%>kija			temp;		! intentive
++Der/Want:%>jiraja		temp;		! want
++Der/Asst:%>jarra		temp;		! associated time or space
++Der/Temp:%>puru		temp;		! temporal
++Der/Dwell:%>karraja		temp;		! dweller
++Der/Side:%>karti		temp;		! side
++Der/Type:%>partu		temp;		! type
++Der/Sim:%>yuru			temp;		! similar
++Der/Contr:%>munu		temp;		! contradictive
++Der/Mod:%>marta		temp;		! moderative
++Der/Big:%>paka			temp;		! very big
++Der/Anoth:%>kujupa		temp;		! another
++Der/Very:%>minyirri		temp;		! very
++Der/Num:%>marlu		temp;		! numerative
++Der/Dual:%>kujarra		temp;		! dual
++Der/Few:%>paraku		temp;		! few
++Der/Pl:%>n			temp;		! plural alternative 1
++Der/Pl:%>rti			temp;		! plural alternative 2
++Der/Grp:%>ngurun		temp;		! group *afterwards comes PA
++Der/Pair:%>rarra		temp;		! pair
++Der/Only:%>wiyaju		temp;		! only
 
 LEXICON focus 
-+Foc:%>nguninji		temp;		! focus (sometimes annotated as SPEC)
++Der/Foc:%>nguninji		temp;		! focus (sometimes annotated as SPEC)
 
 LEXICON grammatical_case
 +Abs: absolutive_ergative ;
 +Erg:%>lu absolutive_ergative ;
 +Erg:%>tu absolutive_ergative ;
 +Erg:%>ju absolutive_ergative ;
-Dat:%>ku absolutive_ergative ;
++Dat:%>ku absolutive_ergative ;
 
 LEXICON absolutive_ergative
  K ; ! no person-number suffixed 
@@ -75,6 +75,27 @@ LEXICON absolutive_ergative
 
 LEXICON temp  ! need to discuss case combinations and ordering
  K ; 
+
+
+! temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun
+! clitics
+LEXICON n_temporal_agr
++N/temporal: temporal_case;
+
+LEXICON n_spatial_agr
++N/spatial: spatial_case;
+
+LEXICON temporal_case
+		#;
++Loc:%>ngka	#;
++Asst:%>jarra	#;
+
+LEXICON spatial_case
+			#;
++Anoth:%>kujupa		#;
++Side:%>karti		#;
++SpAbl:%>mpanguru	#;
++SpAll:%>warraku	#;
 
 !! !! Pronoun clitics (quite long)
 LEXICON person_number_case

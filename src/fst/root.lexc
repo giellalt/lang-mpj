@@ -28,19 +28,22 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !! The parts-of-speech are:
  +N +A +Adv +V                                 !!≈
+ +N/temporal +N/spatial
  +Pron +CS +CC +Adp +Po +Pr +Interj +Pcle +Num !!≈
 
 !!nominal cases
-+ABL +GEN +LOC +PERL +ALL +AVOID
-+HAV +THING +PRIV +INT +WANT +ASST +TEMP +DWELL +SIDE +TYPE +SIM +CONTR +MOD +BIG +ANOTH +VERY +NUM +DUAL +FEW +PL +GRP +PAIR +ONLY
-+FOC 
++Abl +Gen +Loc +Perl +All +Avoid
++Der/Hav +Der/Thing +Der/Priv +Der/Int +Der/Want +Der/Asst +Der/Temp +Der/Dwell +Der/Side +Der/Type +Der/Sim +Der/Contr +Der/Mod +Der/Big +Der/Anoth +Der/Very +Der/Num +Der/Dual +Der/Few +Der/Pl +Der/Pl +Der/Grp +Der/Pair +Der/Only
++Der/FOC
 +Abs +Erg +Dat
++SpAbl + SpAll
 
-+1Sg +2Sg +3Sg ! 1+Sg 2+Sg 3+Sg (which version do we want?)
-+1Du +2Du +3Du ! 1+Du 2+Du 3+Du
-+1Pl +2Pl +3Pl ! 1+Pl 2+Pl 3+Pl
+!!pronoun clitics
++1Sg +2Sg +3Sg 
++1Du +2Du +3Du
++1Pl +2Pl +3Pl
 +Incl +Excl
-+Acs +REFL
++Acs +Refl
  
  !! !! Verb affixes
 !! tense inflections 
