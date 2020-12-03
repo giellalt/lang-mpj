@@ -25,16 +25,15 @@ LEXICON semantic_case
 +Gen:%>kurnu		temp;	! Genitive (referred to as POSS - possessive - in book)
 +Gen:%>kura		temp;
 +Gen:%>kurangu		temp;
-+Loc:%>ngka		temp;	! Locative - following a vowel
-+Loc:%>ta		temp;	! following a consonant
++Loc:%>ngka		temp;	! Locative - following a vowel (better done in twolc)
++Loc:%>ta		temp;	! following a consonant (difference betw t and j?)
 +Loc:%>ja		temp;	! following a consonant
 +Perl:%>wana		temp;	! Perlative (motion along / across a place)
 +All:%>kutu		temp;	! Allative (motion towards a place)
-+All:%>kutu		temp;
-+Avoid:%>ngkamarra	#;	! Avoid (following a vowel)
++Avoid:%>ngkamarra	#;	! Avoid (following a vowel) (could be done in twolc)
 +Avoid:%>jamarra	#;	! Avoid (following a consonant)
 
-LEXICON derivational_case 
+LEXICON derivational_case  ! consider +Der/Hav, +Der/Thing, +Der/Priv, ...
 +Hav:%>kurlu		temp;		!  having
 +Thing:%>pinti		temp;		! associated thing
 +Priv:%>parni		temp;		! privative
@@ -84,68 +83,68 @@ LEXICON person_number_case
 +1Sg:%>rna K ; ! wakalurna 
 +2Sg:%>n K ;
 +3Sg:%>ø K ;
-+1DuIncl%>li K ;	! should Incl also be part of the one tag -> 1DuIncl ?
-+1DuExcl:%>liju K ;
++1Du+Incl%>li K ;	! should Incl also be part of the one tag -> 1DuIncl ?
++1Du+Excl:%>liju K ;
 +2Du:%>npula K ;
 +3Du:%>pula K ;
-+1PlIncl%>la K ;
-+1PlExcl:%>laju K ;
++1Pl+Incl%>la K ;
++1Pl+Excl:%>laju K ;
 +2Pl:%>nyurra K ;
 +3Pl:%>ya K ;
 
 ! Absolutive case (object of transitive verbs)
-+1SgAbs:%>rni K ;
-+2SgAbs:%>nta K ;
-+3SgAbs:%> K ;
-+1DuInclAbs:%>linya K ;
-+1DuExclAbs:%>linyaju K ;
-+2DuAbs:%>ntapula K ;
-+3DuAbs:%>pulanya K ;
-+1PlInclAbs:%>lanya K ;
-+1PlExclAbs:%>lanyaju K ;
-+2PlAbs:%>nyurranya K ;
-+3PlAbs:%>jananya K ;
++1Sg+Abs:%>rni K ;
++2Sg+Abs:%>nta K ;
++3Sg+Abs:%> K ;
++1Du+Incl+Abs:%>linya K ;
++1Du+Excl+Abs:%>linyaju K ;
++2Du+Abs:%>ntapula K ;
++3Du+Abs:%>pulanya K ;
++1Pl+Incl+Abs:%>lanya K ;
++1Pl+Excl+Abs:%>lanyaju K ;
++2Pl+Abs:%>nyurranya K ;
++3Pl+Abs:%>jananya K ;
  
 ! Dative case 
-+1SgDat:%>ju K ;
-+2SgDat:%>ngku K ;
-+3SgDat:%>ra K ;
-+1DuInclDat:%>limpa K ;
-+1DuExclDat:%>limpaju K ;
-+2DuDat:%>ngkupula K ;
-+3DuDat:%>pulampa K ;
-+1PlInclDat:%>lampa K ;
-+1PlExclDat:%>lampaju K ;
-+2PlDat:%>nyurrampa K ;
-+3PlDat:%>janampa K ;
++1Sg+Dat:%>ju K ;
++2Sg+Dat:%>ngku K ;
++3Sg+Dat:%>ra K ;
++1Du+Incl+Dat:%>limpa K ;
++1Du+Excl+Dat:%>limpaju K ;
++2Du+Dat:%>ngkupula K ;
++3Du+Dat:%>pulampa K ;
++1Pl+Incl+Dat:%>lampa K ;
++1Pl+Excl+Dat:%>lampaju K ;
++2Pl+Dat:%>nyurrampa K ;
++3Pl+Dat:%>janampa K ;
 
 ! Accessory case - accessory can be Locative or Allative
-+1SgAcs:%>rni K ;
-+2SgAcs:%>nta K ;
-+3SgAcs:%>lu K ;
-+1DuInclAcs:%>linya K ;
-+1DuExclAcs:%>linyaju K ;
-+2DuAcs:%>ntapula K ;
-+3DuAcs:%>pulanya K ;
-+1PlAcs:%>lanya K ;
-+1PlExclAcs:%>lanyaju K ;
-+2PlAcs:%>nyurranya K ;
-+3PlAcs:%>jananya K ;
++1Sg+Acs:%>rni K ;
++2Sg+Acs:%>nta K ;
++3Sg+Acs:%>lu K ;
++1Du+Incl+Acs:%>linya K ;
++1Du+Excl+Acs:%>linyaju K ;
++2Du+Acs:%>ntapula K ;
++3Du+Acs:%>pulanya K ;
++1Pl+Acs:%>lanya K ;
++1Pl+Excl+Acs:%>lanyaju K ;
++2Pl+Acs:%>nyurranya K ;
++3Pl+Acs:%>jananya K ;
  
 ! Ablative case
-+1SgAbl:%>jura K ;
-+2SgAbl:%>ngkura K ;
-+3SgAbl:%>lura K ;
-+1DuInclAbl:%>limpajura K ;
-+2DuExclAbl:%>ngkurapula K ;
-+3DuAbl:%>janampalura K ;
-+1PlAbl:%>lampajura K ;
-+2PlAbl:%>ngkurapula K ;
-+3PlAbl:%>janampalura K ;
++1Sg+Abl:%>jura K ;
++2Sg+Abl:%>ngkura K ;
++3Sg+Abl:%>lura K ;
++1Du+Incl+Abl:%>limpajura K ;
++2Du+Excl+Abl:%>ngkurapula K ;
++3Du+Abl:%>janampalura K ;
++1Pl+Abl:%>lampajura K ;
++2Pl+Abl:%>ngkurapula K ;
++3Pl+Abl:%>janampalura K ;
  
 ! Reflexive pronoun clitics
 +Refl:%>ju K ;
 +Refl:%>ngku K ;
 
-vim: set ft=xfst-lexc:
+
 
