@@ -11,74 +11,208 @@ LEXICON n_agr
 ! Ergativity: Abs IV, Erg [ TV Abs ]
 
 LEXICON x_agr ! This is the "General noun stem" of the floatchart
-semantic_case ;
-derivational_case ;
-focus ;
-grammatical_case ;
-!inchoative;	! NB from the book, inchoative is used as verbalisation
-!verb_derivation_ti;
+derivational_case_1 ;
+semantic_case_1 ;
+grammatical_case_1 ;
+derivational_avoid_case ;
+! focus ;
+! inchoative;	! NB from the book, inchoative is used as verbalisation
+! verb_derivation_ti;
 
+LEXICON derivational_case_1
+! leading to derivational_case_2
+				derivational_case_2 ;
++Der/Hav:%>kurlu		derivational_case_2 ;		! having
++Der/Thing:%>pinti		derivational_case_2 ;		! associated thing
++Der/Priv:%>parni		derivational_case_2 ;		! privative
++Der/Int:%>kija			derivational_case_2 ;		! intentive
++Der/Want:%>jiraja		derivational_case_2 ;		! want
++Der/Asst:%>jarra		derivational_case_2 ;		! associated time or space
++Der/Temp:%>puru		derivational_case_2 ;		! temporal
++Der/Dwell:%>karraja		derivational_case_2 ;		! dweller
++Der/Side:%>karti		derivational_case_2 ;		! side
++Der/Type:%>partu		derivational_case_2 ;		! type
++Der/Sim:%>yuru			derivational_case_2 ;		! similar
++Der/Contr:%>munu		derivational_case_2 ;		! contradictive
++Der/Mod:%>marta		derivational_case_2 ;		! moderative
++Der/Big:%>paka			derivational_case_2 ;		! very big
++Der/Anoth:%>kujupa		derivational_case_2 ;		! another
++Der/Very:%>minyirri		derivational_case_2 ;		! very
++Der/Num:%>marlu		derivational_case_2 ;		! numerative
++Der/Dual:%>kujarra		derivational_case_2 ;		! dual
++Der/Few:%>paraku		derivational_case_2 ;		! few
++Der/Pl:%>n			derivational_case_2 ;		! plural alternative 1
++Der/Pl:%>rti			derivational_case_2 ;		! plural alternative 2
++Der/Grp:%>ngurun		derivational_case_2 ;		! group *afterwards comes PA
++Der/Pair:%>rarra		derivational_case_2 ;		! pair
++Der/Only:%>wiyaju		derivational_case_2 ;		! only
++Der/Foc:%>nguninji		derivational_case_2 ;		! focus (sometimes annotated as SPEC)
+! leading to semantic_case_2
+				semantic_case_2 ;	
++Der/Hav:%>kurlu		semantic_case_2 ;
++Der/Thing:%>pinti		semantic_case_2 ;
++Der/Priv:%>parni		semantic_case_2 ;
++Der/Int:%>kija			semantic_case_2 ;
++Der/Want:%>jiraja		semantic_case_2 ;
++Der/Asst:%>jarra		semantic_case_2 ;
++Der/Temp:%>puru		semantic_case_2 ;
++Der/Dwell:%>karraja		semantic_case_2 ;
++Der/Side:%>karti		semantic_case_2 ;
++Der/Type:%>partu		semantic_case_2 ;
++Der/Sim:%>yuru			semantic_case_2 ;
++Der/Contr:%>munu		semantic_case_2 ;
++Der/Mod:%>marta		semantic_case_2 ;
++Der/Big:%>paka			semantic_case_2 ;
++Der/Anoth:%>kujupa		semantic_case_2 ;
++Der/Very:%>minyirri		semantic_case_2 ;
++Der/Num:%>marlu		semantic_case_2 ;
++Der/Dual:%>kujarra		semantic_case_2 ;
++Der/Few:%>paraku		semantic_case_2 ;
++Der/Pl:%>n			semantic_case_2 ;
++Der/Pl:%>rti			semantic_case_2 ;
++Der/Grp:%>ngurun		semantic_case_2 ;
++Der/Pair:%>rarra		semantic_case_2 ;
++Der/Only:%>wiyaju		semantic_case_2 ;
++Der/Foc:%>nguninji		semantic_case_2 ;
 
-LEXICON semantic_case 
-+Abl:%>janu		temp;	! Ablative (motion away from a place)
-+Abl:%>nguru		temp;
-+Gen:%>kurnu		temp;	! Genitive (referred to as POSS - possessive - in book)
-+Gen:%>kura		temp;
-+Gen:%>kurangu		temp;
-+Loc:%>ngka		temp;	! Locative - following a vowel (better done in twolc)
-+Loc:%>ta		temp;	! following a consonant (difference betw t and j?)
-+Loc:%>ja		temp;	! following a consonant
-+Perl:%>wana		temp;	! Perlative (motion along / across a place)
-+All:%>kutu		temp;	! Allative (motion towards a place)
-+Avoid:%>ngkamarra	#;	! Avoid (following a vowel) (could be done in twolc)
-+Avoid:%>jamarra	#;	! Avoid (following a consonant)
+LEXICON semantic_case_1
+			derivational_case_3 ;
++Abl:%>janu		derivational_case_3 ;	! Ablative (motion away from a place)
++Abl:%>nguru		derivational_case_3 ;
++Gen:%>kurnu		derivational_case_3 ;	! Genitive (referred to as POSS - possessive - in book)
++Gen:%>kura		derivational_case_3 ;
++Gen:%>kurangu		derivational_case_3 ;
++Loc:%>ngka		derivational_case_3 ;	! Locative - following a vowel (better done in twolc)
++Loc:%>ta		derivational_case_3 ;	! following a consonant (difference betw t and j?)
++Loc:%>ja		derivational_case_3 ;	! following a consonant
++Perl:%>wana		derivational_case_3 ;	! Perlative (motion along / across a place)
++All:%>kutu		derivational_case_3 ;	! Allative (motion towards a place)
 
-LEXICON derivational_case  ! consider +Der/Hav, +Der/Thing, +Der/Priv, ...
-+Der/Hav:%>kurlu		temp;		!  having
-+Der/Thing:%>pinti		temp;		! associated thing
-+Der/Priv:%>parni		temp;		! privative
-+Der/Int:%>kija			temp;		! intentive
-+Der/Want:%>jiraja		temp;		! want
-+Der/Asst:%>jarra		temp;		! associated time or space
-+Der/Temp:%>puru		temp;		! temporal
-+Der/Dwell:%>karraja		temp;		! dweller
-+Der/Side:%>karti		temp;		! side
-+Der/Type:%>partu		temp;		! type
-+Der/Sim:%>yuru			temp;		! similar
-+Der/Contr:%>munu		temp;		! contradictive
-+Der/Mod:%>marta		temp;		! moderative
-+Der/Big:%>paka			temp;		! very big
-+Der/Anoth:%>kujupa		temp;		! another
-+Der/Very:%>minyirri		temp;		! very
-+Der/Num:%>marlu		temp;		! numerative
-+Der/Dual:%>kujarra		temp;		! dual
-+Der/Few:%>paraku		temp;		! few
-+Der/Pl:%>n			temp;		! plural alternative 1
-+Der/Pl:%>rti			temp;		! plural alternative 2
-+Der/Grp:%>ngurun		temp;		! group *afterwards comes PA
-+Der/Pair:%>rarra		temp;		! pair
-+Der/Only:%>wiyaju		temp;		! only
+LEXICON grammatical_case_1
+	derivational_focus_case;
++Abs: 	derivational_focus_case;
++Erg:%>lu derivational_focus_case; ! will do different ergative forms in twolc
++Erg:%>tu derivational_focus_case;
++Erg:%>ju derivational_focus_case;
++Dat:%>ku derivational_focus_case;
 
-LEXICON focus 
+LEXICON derivational_avoid_case
++Avoid:%>ngkamarra	# ;	! Avoid (following a vowel) (will do in twolc)
++Avoid:%>jamarra	# ;	! Avoid (following a consonant)
+
+LEXICON derivational_case_2
+				grammatical_case_3 ;
++Der/Hav:%>kurlu		grammatical_case_3 ;
++Der/Thing:%>pinti		grammatical_case_3 ;
++Der/Priv:%>parni		grammatical_case_3 ;
++Der/Int:%>kija			grammatical_case_3 ;
++Der/Want:%>jiraja		grammatical_case_3 ;
++Der/Asst:%>jarra		grammatical_case_3 ;
++Der/Temp:%>puru		grammatical_case_3 ;
++Der/Dwell:%>karraja		grammatical_case_3 ;
++Der/Side:%>karti		grammatical_case_3 ;
++Der/Type:%>partu		grammatical_case_3 ;
++Der/Sim:%>yuru			grammatical_case_3 ;
++Der/Contr:%>munu		grammatical_case_3 ;
++Der/Mod:%>marta		grammatical_case_3 ;
++Der/Big:%>paka			grammatical_case_3 ;
++Der/Anoth:%>kujupa		grammatical_case_3 ;
++Der/Very:%>minyirri		grammatical_case_3 ;
++Der/Num:%>marlu		grammatical_case_3 ;
++Der/Dual:%>kujarra		grammatical_case_3 ;
++Der/Few:%>paraku		grammatical_case_3 ;
++Der/Pl:%>n			grammatical_case_3 ;
++Der/Pl:%>rti			grammatical_case_3 ;
++Der/Grp:%>ngurun		grammatical_case_3 ;
++Der/Pair:%>rarra		grammatical_case_3 ;
++Der/Only:%>wiyaju		grammatical_case_3 ;
++Der/Foc:%>nguninji		grammatical_case_3 ;
+
+LEXICON semantic_case_2
+! leading to grammatical_case_3
+			grammatical_case_3 ;
++Abl:%>janu		grammatical_case_3 ;
++Abl:%>nguru		grammatical_case_3 ;
++Gen:%>kurnu		grammatical_case_3 ;
++Gen:%>kura		grammatical_case_3 ;
++Gen:%>kurangu		grammatical_case_3 ;
++Loc:%>ngka		grammatical_case_3 ;
++Loc:%>ta		grammatical_case_3 ;
++Loc:%>ja		grammatical_case_3 ;
++Perl:%>wana		grammatical_case_3 ;
++All:%>kutu		grammatical_case_3 ;
+! leading to semantic_case_3
+			semantic_case_3 ;
++Abl:%>janu		semantic_case_3 ;
++Abl:%>nguru		semantic_case_3 ;
++Gen:%>kurnu		semantic_case_3 ;
++Gen:%>kura		semantic_case_3 ;
++Gen:%>kurangu		semantic_case_3 ;
++Loc:%>ngka		semantic_case_3 ;
++Loc:%>ta		semantic_case_3 ;
++Loc:%>ja		semantic_case_3 ;
++Perl:%>wana		semantic_case_3 ;
++All:%>kutu		semantic_case_3 ;
+
+LEXICON derivational_focus_case 
 +Der/Foc:%>nguninji		temp;		! focus (sometimes annotated as SPEC)
 
-LEXICON grammatical_case
-+Abs: absolutive_ergative ;
-+Erg:%>lu absolutive_ergative ;
-+Erg:%>tu absolutive_ergative ;
-+Erg:%>ju absolutive_ergative ;
-+Dat:%>ku absolutive_ergative ;
+LEXICON derivational_case_3
+				end_noun_cases ;
++Der/Hav:%>kurlu		end_noun_cases ;
++Der/Thing:%>pinti		end_noun_cases ;
++Der/Priv:%>parni		end_noun_cases ;
++Der/Int:%>kija			end_noun_cases ;
++Der/Want:%>jiraja		end_noun_cases ;
++Der/Asst:%>jarra		end_noun_cases ;
++Der/Temp:%>puru		end_noun_cases ;
++Der/Dwell:%>karraja		end_noun_cases ;
++Der/Side:%>karti		end_noun_cases ;
++Der/Type:%>partu		end_noun_cases ;
++Der/Sim:%>yuru			end_noun_cases ;
++Der/Contr:%>munu		end_noun_cases ;
++Der/Mod:%>marta		end_noun_cases ;
++Der/Big:%>paka			end_noun_cases ;
++Der/Anoth:%>kujupa		end_noun_cases ;
++Der/Very:%>minyirri		end_noun_cases ;
++Der/Num:%>marlu		end_noun_cases ;
++Der/Dual:%>kujarra		end_noun_cases ;
++Der/Few:%>paraku		end_noun_cases ;
++Der/Pl:%>n			end_noun_cases ;
++Der/Pl:%>rti			end_noun_cases ;
++Der/Grp:%>ngurun		end_noun_cases ;
++Der/Pair:%>rarra		end_noun_cases ;
++Der/Only:%>wiyaju		end_noun_cases ;
++Der/Foc:%>nguninji		end_noun_cases ;
 
-LEXICON absolutive_ergative
+LEXICON semantic_case_3
+			end_noun_cases ;
++Abl:%>janu		end_noun_cases ;
++Abl:%>nguru		end_noun_cases ;
++Gen:%>kurnu		end_noun_cases ;
++Gen:%>kura		end_noun_cases ;
++Gen:%>kurangu		end_noun_cases ;
++Loc:%>ngka		end_noun_cases ;
++Loc:%>ta		end_noun_cases ;
++Loc:%>ja		end_noun_cases ;
++Perl:%>wana		end_noun_cases ;
++All:%>kutu		end_noun_cases ;
+
+LEXICON grammatical_case_3
+	end_noun_cases ;
++Abs: 	end_noun_cases ;
++Erg:%>lu end_noun_cases ; ! will do different ergative forms in twolc
++Erg:%>tu end_noun_cases ;
++Erg:%>ju end_noun_cases ;
++Dat:%>ku end_noun_cases ;
+
+LEXICON end_noun_cases
  K ; ! no person-number suffixed 
  person_number_case ;
 
-LEXICON temp  ! need to discuss case combinations and ordering
- K ; 
 
-
-! temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun
-! clitics
+!! temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun
+!! clitics
 LEXICON n_temporal_agr
 +N/temporal: temporal_case;
 
