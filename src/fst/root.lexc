@@ -90,8 +90,10 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +COMPL		! completed action
 +WARN		! warning
 
-!! !Clitics
- +Clt/nga
+!! Clitics
++Clt/Foc +Clt/kirli +Clt/lka +Clt/yilta +Clt/Rep +Clt/Dub +Clt/Emph 
++Clt/kaji +Clt/la +Clt/lta +Clt/yila
++Voc
 
 
 !! !! Flag diacritics for verb conjugations
