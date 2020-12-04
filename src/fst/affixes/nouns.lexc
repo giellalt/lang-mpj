@@ -207,12 +207,12 @@ LEXICON grammatical_case_3
 +Dat:%>ku end_noun_cases ;
 
 LEXICON end_noun_cases
- K ; ! no person-number suffixed 
+ K_1 ; ! no person-number suffixed 
  person_number_case ;
 
 
-!! temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun
-!! clitics
+!! !! temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun
+!! !! clitics
 LEXICON n_temporal_agr
 +N/temporal: temporal_case;
 
@@ -230,76 +230,4 @@ LEXICON spatial_case
 +Side:%>karti		#;
 +SpAbl:%>mpanguru	#;
 +SpAll:%>warraku	#;
-
-!! !! Pronoun clitics (quite long)
-LEXICON person_number_case
-
-! Subject case 
-+1Sg:%>rna K ; ! wakalurna 
-+2Sg:%>n K ;
-+3Sg:%>ø K ;
-+1Du+Incl%>li K ;	! should Incl also be part of the one tag -> 1DuIncl ?
-+1Du+Excl:%>liju K ;
-+2Du:%>npula K ;
-+3Du:%>pula K ;
-+1Pl+Incl%>la K ;
-+1Pl+Excl:%>laju K ;
-+2Pl:%>nyurra K ;
-+3Pl:%>ya K ;
-
-! Absolutive case (object of transitive verbs)
-+1Sg+Abs:%>rni K ;
-+2Sg+Abs:%>nta K ;
-+3Sg+Abs:%> K ;
-+1Du+Incl+Abs:%>linya K ;
-+1Du+Excl+Abs:%>linyaju K ;
-+2Du+Abs:%>ntapula K ;
-+3Du+Abs:%>pulanya K ;
-+1Pl+Incl+Abs:%>lanya K ;
-+1Pl+Excl+Abs:%>lanyaju K ;
-+2Pl+Abs:%>nyurranya K ;
-+3Pl+Abs:%>jananya K ;
- 
-! Dative case 
-+1Sg+Dat:%>ju K ;
-+2Sg+Dat:%>ngku K ;
-+3Sg+Dat:%>ra K ;
-+1Du+Incl+Dat:%>limpa K ;
-+1Du+Excl+Dat:%>limpaju K ;
-+2Du+Dat:%>ngkupula K ;
-+3Du+Dat:%>pulampa K ;
-+1Pl+Incl+Dat:%>lampa K ;
-+1Pl+Excl+Dat:%>lampaju K ;
-+2Pl+Dat:%>nyurrampa K ;
-+3Pl+Dat:%>janampa K ;
-
-! Accessory case - accessory can be Locative or Allative
-+1Sg+Acs:%>rni K ;
-+2Sg+Acs:%>nta K ;
-+3Sg+Acs:%>lu K ;
-+1Du+Incl+Acs:%>linya K ;
-+1Du+Excl+Acs:%>linyaju K ;
-+2Du+Acs:%>ntapula K ;
-+3Du+Acs:%>pulanya K ;
-+1Pl+Acs:%>lanya K ;
-+1Pl+Excl+Acs:%>lanyaju K ;
-+2Pl+Acs:%>nyurranya K ;
-+3Pl+Acs:%>jananya K ;
- 
-! Ablative case
-+1Sg+Abl:%>jura K ;
-+2Sg+Abl:%>ngkura K ;
-+3Sg+Abl:%>lura K ;
-+1Du+Incl+Abl:%>limpajura K ;
-+2Du+Excl+Abl:%>ngkurapula K ;
-+3Du+Abl:%>janampalura K ;
-+1Pl+Abl:%>lampajura K ;
-+2Pl+Abl:%>ngkurapula K ;
-+3Pl+Abl:%>janampalura K ;
- 
-! Reflexive pronoun clitics
-+Refl:%>ju K ;
-+Refl:%>ngku K ;
-
-
 

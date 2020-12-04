@@ -1,22 +1,188 @@
+! +pa+PA		! will hopefully do in twolc
+! TODO: add flag diacritics so the same clitic cannot be repeated. likewise for pronoun clitic cases
 
-LEXICON K
-# ;
-+Clt/nga:%>nga # ;
+LEXICON K_1
+	K_2 ;
++Clt/Foc:%>nga 		K_2 ;	! (different to +Der/Foc "nguninji")
+! modifiers
++Clt/kirli:%>kirli	K_2 ;	! 'probably'
++Clt/lka:%>lka		K_2 ;	! 'contrary to expectation'
++Clt/yilta:%>yilta	K_2 ;	! 'really'
++Clt/Cert:%>ngulyu	K_2 ;	! 'certainly'
++Clt/Rep:%>nyu		K_2 ;	! 'reportedly'
++Clt/Dub:%>pa		K_2 ;	! 'questionably' (dubitative, NB same symbol as epenthetic pa)
++Clt/Emph:%>kaja	K_2 ;	! 'emphatic'
++Clt/Emph:%>rtuka	K_2 ;	! 'emphatic'
++Clt/Emph:%>rtu		K_2 ;	! 'emphatic'
+! connective clitics
++Clt/kaji:%>kaji 	K_2 ;	!'when, while'
++Clt/la:%>la 		K_2 ;	! 'when' 
++Clt/lta:%>lta		K_2 ;	! 'then' 
++Clt/yila:%>yila	K_2 ;	! 'then' 
 
-! +pa+PA		! epenthetic pa (so that every word can end in a vowel - not including !other final forms)
-! +nga+FOC		! Focus (different to the derivational nominal case +nguninji - focus)
-! ! modifiers
-! +kirli 			! ‘probably’
-! +lka 			! ‘contrary to expectation’
-! +yilta			! ‘really’
-! +ngulyu+CERT	! ‘certainly’
-! +nyu+REP		! ‘reportedly’
-! +pa+DUB		! ‘questionably’ (dubitative, NB same form as epenthetic pa)
-! +kaja+EMPH		! ‘emphatic’
-! +rtuka+EMPH		! ‘emphatic’
-! +rtu+EMPH		! ‘emphatic’
-! ! connective clitics
-! +kaji 			!‘when, while’
-! +la 			! ‘when’ 
-! +lta 			! ‘then’ 
-! +yila 			! ‘then’ 
+LEXICON K_2
+			person_number_case_1
++Clt/Foc:%>nga 		person_number_case_1	! (different to +Der/Foc "nguninji")
+! modifiers
++Clt/kirli:%>kirli	person_number_case_1
++Clt/lka:%>lka		person_number_case_1
++Clt/yilta:%>yilta	person_number_case_1
++Clt/Cert:%>ngulyu	person_number_case_1
++Clt/Rep:%>nyu		person_number_case_1
++Clt/Dub:%>pa		person_number_case_1
++Clt/Emph:%>kaja	person_number_case_1
++Clt/Emph:%>rtuka	person_number_case_1
++Clt/Emph:%>rtu		person_number_case_1
+! connective clitics
++Clt/kaji:%>kaji 	person_number_case_1
++Clt/la:%>la 		person_number_case_1
++Clt/lta:%>lta		person_number_case_1
++Clt/yila:%>yila	person_number_case_1
+
+
+!! !! Pronoun clitics (quite long)
+LEXICON person_number_case_1
+			vocative ; ;
+! Subject case 
++1Sg:%>rna 		person_number_case_2 ; 	! wakalurna 
++2Sg:%>n 		person_number_case_2 ;
++3Sg:%>ø 		person_number_case_2 ;
++1Du+Incl%>li 		person_number_case_2 ;	! should Incl also be part of the one tag -> 1DuIncl ?
++1Du+Excl:%>liju 	person_number_case_2 ;
++2Du:%>npula 		person_number_case_2 ;
++3Du:%>pula 		person_number_case_2 ;
++1Pl+Incl%>la 		person_number_case_2 ;
++1Pl+Excl:%>laju 	person_number_case_2 ;
++2Pl:%>nyurra 		person_number_case_2 ;
++3Pl:%>ya 		person_number_case_2 ;
+
+! Absolutive case (object of transitive verbs)
++1Sg+Abs:%>rni 		person_number_case_2 ;
++2Sg+Abs:%>nta 		person_number_case_2 ;
++3Sg+Abs:%> 		person_number_case_2 ;
++1Du+Incl+Abs:%>linya 	person_number_case_2 ;
++1Du+Excl+Abs:%>linyaju person_number_case_2 ;
++2Du+Abs:%>ntapula 	person_number_case_2 ;
++3Du+Abs:%>pulanya 	person_number_case_2 ;
++1Pl+Incl+Abs:%>lanya 	person_number_case_2 ;
++1Pl+Excl+Abs:%>lanyaju person_number_case_2 ;
++2Pl+Abs:%>nyurranya 	person_number_case_2 ;
++3Pl+Abs:%>jananya 	person_number_case_2 ;
+ 
+! Dative case 
++1Sg+Dat:%>ju 		person_number_case_2 ;
++2Sg+Dat:%>ngku 	person_number_case_2 ;
++3Sg+Dat:%>ra 		person_number_case_2 ;
++1Du+Incl+Dat:%>limpa 	person_number_case_2 ;
++1Du+Excl+Dat:%>limpaju person_number_case_2 ;
++2Du+Dat:%>ngkupula 	person_number_case_2 ;
++3Du+Dat:%>pulampa 	person_number_case_2 ;
++1Pl+Incl+Dat:%>lampa 	person_number_case_2 ;
++1Pl+Excl+Dat:%>lampaju person_number_case_2 ;
++2Pl+Dat:%>nyurrampa 	person_number_case_2 ;
++3Pl+Dat:%>janampa 	person_number_case_2 ;
+
+! Accessory case - accessory can be Locative or Allative
++1Sg+Acs:%>rni 		person_number_case_2 ;
++2Sg+Acs:%>nta 		person_number_case_2 ;
++3Sg+Acs:%>lu 		person_number_case_2 ;
++1Du+Incl+Acs:%>linya 	person_number_case_2 ;
++1Du+Excl+Acs:%>linyaju person_number_case_2 ;
++2Du+Acs:%>ntapula 	person_number_case_2 ;
++3Du+Acs:%>pulanya 	person_number_case_2 ;
++1Pl+Acs:%>lanya 	person_number_case_2 ;
++1Pl+Excl+Acs:%>lanyaju person_number_case_2 ;
++2Pl+Acs:%>nyurranya 	person_number_case_2 ;
++3Pl+Acs:%>jananya 	person_number_case_2 ;
+ 
+! Ablative case
++1Sg+Abl:%>jura 	person_number_case_2 ;
++2Sg+Abl:%>ngkura 	person_number_case_2 ;
++3Sg+Abl:%>lura 	person_number_case_2 ;
++1Du+Incl+Abl:%>limpajura person_number_case_2 ;
++2Du+Excl+Abl:%>ngkurapula person_number_case_2 ;
++3Du+Abl:%>janampalura 	person_number_case_2 ;
++1Pl+Abl:%>lampajura 	person_number_case_2 ;
++2Pl+Abl:%>ngkurapula 	person_number_case_2 ;
++3Pl+Abl:%>janampalura 	person_number_case_2 ;
+ 
+! Reflexive pronoun clitics
++Refl:%>ju 		person_number_case_2 ;
++Refl:%>ngku 		person_number_case_2 ;
+
+LEXICON person_number_case_2
+! Subject case 
++1Sg:%>rna 		vocative ; 	! wakalurna 
++2Sg:%>n 		vocative ;
++3Sg:%>ø 		vocative ;
++1Du+Incl%>li 		vocative ;	! should Incl also be part of the one tag -> 1DuIncl ?
++1Du+Excl:%>liju 	vocative ;
++2Du:%>npula 		vocative ;
++3Du:%>pula 		vocative ;
++1Pl+Incl%>la 		vocative ;
++1Pl+Excl:%>laju 	vocative ;
++2Pl:%>nyurra 		vocative ;
++3Pl:%>ya 		vocative ;
+
+! Absolutive case (object of transitive verbs)
++1Sg+Abs:%>rni 		vocative ;
++2Sg+Abs:%>nta 		vocative ;
++3Sg+Abs:%> 		vocative ;
++1Du+Incl+Abs:%>linya 	vocative ;
++1Du+Excl+Abs:%>linyaju vocative ;
++2Du+Abs:%>ntapula 	vocative ;
++3Du+Abs:%>pulanya 	vocative ;
++1Pl+Incl+Abs:%>lanya 	vocative ;
++1Pl+Excl+Abs:%>lanyaju vocative ;
++2Pl+Abs:%>nyurranya 	vocative ;
++3Pl+Abs:%>jananya 	vocative ;
+ 
+! Dative case 
++1Sg+Dat:%>ju 		vocative ;
++2Sg+Dat:%>ngku 	vocative ;
++3Sg+Dat:%>ra 		vocative ;
++1Du+Incl+Dat:%>limpa 	vocative ;
++1Du+Excl+Dat:%>limpaju vocative ;
++2Du+Dat:%>ngkupula 	vocative ;
++3Du+Dat:%>pulampa 	vocative ;
++1Pl+Incl+Dat:%>lampa 	vocative ;
++1Pl+Excl+Dat:%>lampaju vocative ;
++2Pl+Dat:%>nyurrampa 	vocative ;
++3Pl+Dat:%>janampa 	vocative ;
+
+! Accessory case - accessory can be Locative or Allative
++1Sg+Acs:%>rni 		vocative ;
++2Sg+Acs:%>nta 		vocative ;
++3Sg+Acs:%>lu 		vocative ;
++1Du+Incl+Acs:%>linya 	vocative ;
++1Du+Excl+Acs:%>linyaju vocative ;
++2Du+Acs:%>ntapula 	vocative ;
++3Du+Acs:%>pulanya 	vocative ;
++1Pl+Acs:%>lanya 	vocative ;
++1Pl+Excl+Acs:%>lanyaju vocative ;
++2Pl+Acs:%>nyurranya 	vocative ;
++3Pl+Acs:%>jananya 	vocative ;
+ 
+! Ablative case
++1Sg+Abl:%>jura 	vocative ;
++2Sg+Abl:%>ngkura 	vocative ;
++3Sg+Abl:%>lura 	vocative ;
++1Du+Incl+Abl:%>limpajura vocative ;
++2Du+Excl+Abl:%>ngkurapula vocative ;
++3Du+Abl:%>janampalura 	vocative ;
++1Pl+Abl:%>lampajura 	vocative ;
++2Pl+Abl:%>ngkurapula 	vocative ;
++3Pl+Abl:%>janampalura 	vocative ;
+ 
+! Reflexive pronoun clitics
++Refl:%>ju 		vocative ;
++Refl:%>ngku 		vocative ;
+
+LEXICON vocative ! (TODO: move to another file)
++Voc:%>wu # ;
+
+
+
+
+
+
