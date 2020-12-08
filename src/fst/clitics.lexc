@@ -21,28 +21,28 @@ LEXICON K_1
 +Clt/yila:%>yila	K_2 ;	! 'then' 
 
 LEXICON K_2
-			person_number_case_1
-+Clt/Foc:%>nga 		person_number_case_1	! (different to +Der/Foc "nguninji")
+			person_number_case_1;
++Clt/Foc:%>nga 		person_number_case_1;	! (different to +Der/Foc "nguninji")
 ! modifiers
-+Clt/kirli:%>kirli	person_number_case_1
-+Clt/lka:%>lka		person_number_case_1
-+Clt/yilta:%>yilta	person_number_case_1
-+Clt/Cert:%>ngulyu	person_number_case_1
-+Clt/Rep:%>nyu		person_number_case_1
-+Clt/Dub:%>pa		person_number_case_1
-+Clt/Emph:%>kaja	person_number_case_1
-+Clt/Emph:%>rtuka	person_number_case_1
-+Clt/Emph:%>rtu		person_number_case_1
++Clt/kirli:%>kirli	person_number_case_1;
++Clt/lka:%>lka		person_number_case_1;
++Clt/yilta:%>yilta	person_number_case_1;
++Clt/Cert:%>ngulyu	person_number_case_1;
++Clt/Rep:%>nyu		person_number_case_1;
++Clt/Dub:%>pa		person_number_case_1;
++Clt/Emph:%>kaja	person_number_case_1;
++Clt/Emph:%>rtuka	person_number_case_1;
++Clt/Emph:%>rtu		person_number_case_1;
 ! connective clitics
-+Clt/kaji:%>kaji 	person_number_case_1
-+Clt/la:%>la 		person_number_case_1
-+Clt/lta:%>lta		person_number_case_1
-+Clt/yila:%>yila	person_number_case_1
++Clt/kaji:%>kaji 	person_number_case_1;
++Clt/la:%>la 		person_number_case_1;
++Clt/lta:%>lta		person_number_case_1;
++Clt/yila:%>yila	person_number_case_1;
 
 
 !! !! Pronoun clitics (quite long)
 LEXICON person_number_case_1
-			vocative ; ;
+			vocative ;
 ! Subject case 
 +1Sg:%>rna 		person_number_case_2 ; 	! wakalurna 
 +2Sg:%>n 		person_number_case_2 ;
