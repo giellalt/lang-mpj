@@ -1,0 +1,16 @@
++N+Abs
++N+Erg
++N+Dat
++N+Der/Hav+Abs
++N+Der/Hav+Erg
++N+Der/Hav+Dat
++N+Abl
++N+Gen
++N+Loc
++N+Perl
++N+All
++N+Abl+Abl
++N+Gen+Abl
++N+Loc+Abl
++N+Perl+Abl
++N+All+Abl
