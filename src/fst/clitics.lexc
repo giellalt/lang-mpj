@@ -42,7 +42,8 @@ LEXICON K_2
 
 !! !! Pronoun clitics (quite long)
 LEXICON person_number_case_1
-			vocative ;
+# ; ! absolutive declension, if this exists
+vocative ;
 ! Subject case 
 +1Sg:%>rna 		person_number_case_2 ; 	! wakalurna 
 +2Sg:%>n 		person_number_case_2 ;

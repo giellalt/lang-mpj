@@ -89,8 +89,8 @@ LEXICON semantic_case_1
 +All:%>kutu		derivational_case_3 ;	! Allative (motion towards a place)
 
 LEXICON grammatical_case_1
-	derivational_focus_case;
-+Abs: 	derivational_focus_case;
+	derivational_focus_case ;
++Abs: 	derivational_focus_case ;
 +Erg:%>lu derivational_focus_case; ! will do different ergative forms in twolc
 +Erg:%>tu derivational_focus_case;
 +Erg:%>ju derivational_focus_case;
@@ -154,7 +154,8 @@ LEXICON semantic_case_2
 +Perl:%>wana		semantic_case_3 ;
 +All:%>kutu		semantic_case_3 ;
 
-LEXICON derivational_focus_case 
+LEXICON derivational_focus_case
+end_noun_cases ;
 +Der/Foc:%>nguninji		end_noun_cases;		! focus (sometimes annotated as SPEC)
 
 LEXICON derivational_case_3
@@ -208,7 +209,7 @@ LEXICON grammatical_case_3
 
 LEXICON end_noun_cases
  K_1 ; ! no person-number suffixed 
-! person_number_case ; ! TODO: Point to person_number_case lexicon
+ person_number_case_1 ; ! XXX is _1 the intendend lexicon?
 
 
 !! !! temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun

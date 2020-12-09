@@ -4,7 +4,7 @@
 
 LEXICON Nouns	! can reduplicate before cases are added. Includes both nouns and adjective (descriptive)
 ! words
-waka x_agr "stick" ;
+waka n_agr "stick" ;
 pilyurrpa:pilyurr n_spatial_agr "steep" ;
 kawanpa:kawan n_spatial_agr "deaf" ;
 juku n_spatial_agr "small" ;
