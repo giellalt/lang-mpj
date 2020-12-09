@@ -155,7 +155,7 @@ LEXICON semantic_case_2
 +All:%>kutu		semantic_case_3 ;
 
 LEXICON derivational_focus_case 
-+Der/Foc:%>nguninji		temp;		! focus (sometimes annotated as SPEC)
++Der/Foc:%>nguninji		end_noun_cases;		! focus (sometimes annotated as SPEC)
 
 LEXICON derivational_case_3
 				end_noun_cases ;
