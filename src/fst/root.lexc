@@ -182,6 +182,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  +Qst +Foc
 
 !! Semantics are classified with
++Sem/Spat +Sem/Temp
  +Mal +Fem +Sur 
  +Plc 
  +Org

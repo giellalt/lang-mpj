@@ -215,20 +215,20 @@ LEXICON end_noun_cases
 !! !! temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun
 !! !! clitics
 LEXICON n_temporal_agr
-+N/temporal: temporal_case;
++N+Sem/Temp: temporal_case ;
 
 LEXICON n_spatial_agr
-+N/spatial: spatial_case;
++N+Sem/Spat: spatial_case ;
 
 LEXICON temporal_case
-		#;
-+Loc:%>ngka	#;
-+Asst:%>jarra	#;
+		# ;
++Loc:%>ngka	# ;
++Asst:%>jarra	# ;
 
 LEXICON spatial_case
-			#;
-+Anoth:%>kujupa		#;
-+Side:%>karti		#;
-+SpAbl:%>mpanguru	#;
-+SpAll:%>warraku	#;
+			# ;
++Anoth:%>kujupa		# ;
++Side:%>karti		# ;
++SpAbl:%>mpanguru	# ;
++SpAll:%>warraku	# ;
 

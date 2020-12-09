@@ -5,12 +5,12 @@
 LEXICON Nouns	! can reduplicate before cases are added. Includes both nouns and adjective (descriptive)
 ! words
 waka n_agr "stick" ;
-pilyurrpa:pilyurr n_spatial_agr "steep" ;
-kawanpa:kawan n_spatial_agr "deaf" ;
-juku n_spatial_agr "small" ;
-ngulu n_spatial_agr "frightened" ;
-ngunu n_spatial_agr "herb" ;
-karru n_spatial_agr "road" ;
+pilyurrpa:pilyurr n_agr "steep" ;
+kawanpa:kawan n_agr "deaf" ;
+juku n_agr "small" ;
+ngulu n_agr "frightened" ;
+ngunu n_agr "herb" ;
+karru n_agr "road" ;
 
 ! temporal nouns
 munga n_temporal_agr "night" ;

@@ -14,3 +14,4 @@
 +N+Loc+Abl
 +N+Perl+Abl
 +N+All+Abl
++N+Sem/Spat+Loc
