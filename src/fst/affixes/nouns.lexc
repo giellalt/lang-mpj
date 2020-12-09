@@ -208,7 +208,7 @@ LEXICON grammatical_case_3
 
 LEXICON end_noun_cases
  K_1 ; ! no person-number suffixed 
- person_number_case ;
+! person_number_case ; ! TODO: Point to person_number_case lexicon
 
 
 !! !! temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun
