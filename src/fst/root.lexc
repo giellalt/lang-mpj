@@ -28,7 +28,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !! The parts-of-speech are:
  +N +A +Adv +V                                 !!≈
- +N/temporal +N/spatial
  +Pron +CS +CC +Adp +Po +Pr +Interj +Pcle +Num !!≈
 
 !!nominal cases
@@ -36,7 +35,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Der/Hav +Der/Thing +Der/Priv +Der/Int +Der/Want +Der/Asst +Der/Temp +Der/Dwell +Der/Side +Der/Type +Der/Sim +Der/Contr +Der/Mod +Der/Big +Der/Anoth +Der/Very +Der/Num +Der/Dual +Der/Few +Der/Pl +Der/Pl +Der/Grp +Der/Pair +Der/Only
 +Der/FOC
 +Abs +Erg +Dat
-+SpAbl + SpAll
++Der/SpatAbl +Der/SpatAll +TempLoc
 
 !!pronoun clitics
 +1Sg +2Sg +3Sg 
@@ -91,6 +90,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +WARN		! warning
 
 !! Clitics
+^P^A +Pa
 +Clt/Foc +Clt/kirli +Clt/lka +Clt/yilta +Clt/Rep +Clt/Dub +Clt/Emph 
 +Clt/kaji +Clt/la +Clt/lta +Clt/yila
 +Voc

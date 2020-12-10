@@ -1,11 +1,11 @@
-! +pa+PA		! will hopefully do in twolc
 ! TODO: add flag diacritics so the same clitic cannot be repeated. likewise for pronoun clitic cases
 
 LEXICON PA
-	# ;
+!+Pa:%>pa # ;
++Pa:%>^P^A # ; ! TODO: connect the lexicon. First = test in twolc that it works.
 
 LEXICON K_1
-			K_2 ;
+ K_2 ;
 +Clt/Foc:%>nga 		K_2 ;	! (different to +Der/Foc "nguninji")
 ! modifiers
 +Clt/kirli:%>kirli	K_2 ;	! 'probably'
@@ -24,7 +24,7 @@ LEXICON K_1
 +Clt/yila:%>yila	K_2 ;	! 'then' 
 
 LEXICON K_2
-			person_number_case_1;
+ person_number_case_1;
 +Clt/Foc:%>nga 		person_number_case_1;	! (different to +Der/Foc "nguninji")
 ! modifiers
 +Clt/kirli:%>kirli	person_number_case_1;
@@ -45,13 +45,14 @@ LEXICON K_2
 
 !! !! Pronoun clitics (quite long)
 LEXICON person_number_case_1
- # ; ! absolutive declension, if this exists
- vocative ;
+! # ; ! absolutive declension, if this exists.
+! vocative ;
+ person_number_case_2 ;
 ! Subject case 
 +1Sg:%>rna 		person_number_case_2 ; 	! wakalurna 
 +2Sg:%>n 		person_number_case_2 ;
 +3Sg:%>ø 		person_number_case_2 ;
-+1Du+Incl%>li 		person_number_case_2 ;	! should Incl also be part of the one tag -> 1DuIncl ?
++1Du+Incl%>li 		person_number_case_2 ;
 +1Du+Excl:%>liju 	person_number_case_2 ;
 +2Du:%>npula 		person_number_case_2 ;
 +3Du:%>pula 		person_number_case_2 ;
@@ -111,15 +112,17 @@ LEXICON person_number_case_1
 +3Pl+Abl:%>janampalura 	person_number_case_2 ;
  
 ! Reflexive pronoun clitics
-+Refl:%>ju 		person_number_case_2 ;
-+Refl:%>ngku 		person_number_case_2 ;
+@U.CLCASE.REFL@+Refl:%>@U.CLCASE.REFL@ju 		person_number_case_2 ;
+@U.CLCASE.REFL@+Refl:%>@U.CLCASE.REFL@ngku 		person_number_case_2 ;
 
 LEXICON person_number_case_2
+! # ;
+ vocative ;
 ! Subject case 
 +1Sg:%>rna 		vocative ; 	! wakalurna 
 +2Sg:%>n 		vocative ;
 +3Sg:%>ø 		vocative ;
-+1Du+Incl%>li 		vocative ;	! should Incl also be part of the one tag -> 1DuIncl ?
++1Du+Incl%>li 		vocative ;
 +1Du+Excl:%>liju 	vocative ;
 +2Du:%>npula 		vocative ;
 +3Du:%>pula 		vocative ;
@@ -179,11 +182,15 @@ LEXICON person_number_case_2
 +3Pl+Abl:%>janampalura 	vocative ;
  
 ! Reflexive pronoun clitics
-+Refl:%>ju 		vocative ;
-+Refl:%>ngku 		vocative ;
+@D.CLCASE.REFL@+Refl:%>@D.CLCASE.REFL@ju 		vocative ;
+@D.CLCASE.REFL@+Refl:%>@D.CLCASE.REFL@ngku 		vocative ;
+! temporarily applying to two lines before all the others. TODO: apply to other lines.
+! point to # and vocative (not enough that LEXICON vocative also contains blank -> # ?
+! @D.CLCASE.REFL@+Refl:%>@D.CLCASE.REFL@ju 		# ;
+! @D.CLCASE.REFL@+Refl:%>@D.CLCASE.REFL@ngku 		# ;
 
 LEXICON vocative ! (TODO: move to another file)
-	# ;
+ # ;
 +Voc:%>wu # ;
 
 

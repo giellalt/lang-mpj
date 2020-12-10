@@ -82,9 +82,10 @@ LEXICON semantic_case_1
 +Gen:%>kurnu		derivational_case_3 ;	! Genitive (referred to as POSS - possessive - in book)
 +Gen:%>kura		derivational_case_3 ;
 +Gen:%>kurangu		derivational_case_3 ;
-+Loc:%>ngka		derivational_case_3 ;	! Locative - following a vowel (better done in twolc)
-+Loc:%>ta		derivational_case_3 ;	! following a consonant (difference betw t and j?)
-+Loc:%>ja		derivational_case_3 ;	! following a consonant
+! +Loc:%>ngka		derivational_case_3 ;	! Locative - following a vowel (better done in twolc)
+! +Loc:%>ta		derivational_case_3 ;	! following a consonant (difference betw t and j?)
+! +Loc:%>ja		derivational_case_3 ;	! following a consonant
++Loc:%>		derivational_case_3 ;
 +Perl:%>wana		derivational_case_3 ;	! Perlative (motion along / across a place)
 +All:%>kutu		derivational_case_3 ;	! Allative (motion towards a place)
 
@@ -136,9 +137,10 @@ LEXICON semantic_case_2
 +Gen:%>kurnu		grammatical_case_3 ;
 +Gen:%>kura		grammatical_case_3 ;
 +Gen:%>kurangu		grammatical_case_3 ;
-+Loc:%>ngka		grammatical_case_3 ;
-+Loc:%>ta		grammatical_case_3 ;
-+Loc:%>ja		grammatical_case_3 ;
+! +Loc:%>ngka		grammatical_case_3 ;
+! +Loc:%>ta		grammatical_case_3 ;
+! +Loc:%>ja		grammatical_case_3 ;
++Loc:%>		grammatical_case_3 ;
 +Perl:%>wana		grammatical_case_3 ;
 +All:%>kutu		grammatical_case_3 ;
 ! leading to semantic_case_3
@@ -148,9 +150,10 @@ LEXICON semantic_case_2
 +Gen:%>kurnu		semantic_case_3 ;
 +Gen:%>kura		semantic_case_3 ;
 +Gen:%>kurangu		semantic_case_3 ;
-+Loc:%>ngka		semantic_case_3 ;
-+Loc:%>ta		semantic_case_3 ;
-+Loc:%>ja		semantic_case_3 ;
+! +Loc:%>ngka		semantic_case_3 ;
+! +Loc:%>ta		semantic_case_3 ;
+! +Loc:%>ja		semantic_case_3 ;
++Loc:%>		semantic_case_3 ;
 +Perl:%>wana		semantic_case_3 ;
 +All:%>kutu		semantic_case_3 ;
 
@@ -193,9 +196,10 @@ LEXICON semantic_case_3
 +Gen:%>kurnu		end_noun_cases ;
 +Gen:%>kura		end_noun_cases ;
 +Gen:%>kurangu		end_noun_cases ;
-+Loc:%>ngka		end_noun_cases ;
-+Loc:%>ta		end_noun_cases ;
-+Loc:%>ja		end_noun_cases ;
+! +Loc:%>ngka		end_noun_cases ;
+! +Loc:%>ta		end_noun_cases ;
+! +Loc:%>ja		end_noun_cases ;
++Loc:%>			end_noun_cases ;
 +Perl:%>wana		end_noun_cases ;
 +All:%>kutu		end_noun_cases ;
 
@@ -208,9 +212,9 @@ LEXICON grammatical_case_3
 +Dat:%>ku end_noun_cases ;
 
 LEXICON end_noun_cases
- ! PA ;
+ PA ;
  K_1 ; ! no person-number suffixed 
- person_number_case_1 ; ! XXX is _1 the intendend lexicon?
+! person_number_case_1 ; ! XXX is _1 the intendend lexicon?
 
 
 !! !! temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun
@@ -219,17 +223,18 @@ LEXICON n_temporal_agr
 +N+Sem/Temp:%> temporal_case ;
 
 LEXICON n_spatial_agr
-+N+Sem/Spat:%> spatial_case ;
+! +N+Sem/Spat:%> # ;
++N+Sem/Spat: spatial_case ;
 
 LEXICON temporal_case
 		# ;
-+Loc:%>ngka	# ;
-+Asst:%>jarra	# ;
++SpatLoc:%>ngka	# ;
++Der/Asst:%>jarra	# ;
 
 LEXICON spatial_case
 			# ;
-+Anoth:%>kujupa		# ;
-+Side:%>karti		# ;
-+SpAbl:%>mpanguru	# ;
-+SpAll:%>warraku	# ;
++Der/Anoth:%>kujupa	# ;
++Der/Side:%>karti	# ;
++Der/SpatAbl:%>mpanguru	# ;
++Der/SpatAll:%>warraku	# ;
 
