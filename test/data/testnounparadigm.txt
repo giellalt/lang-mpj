@@ -14,4 +14,13 @@
 +N+Loc+Abl
 +N+Perl+Abl
 +N+All+Abl
++N+Sem/Spat
 +N+Sem/Spat+Loc
++N+Erg+1Sg
++N+1Sg+Acs
++N+1Sg+Acs+Voc
++N+1Sg+Acs+Refl
++N+1Sg+Acs+Refl+Voc
++N+Perl+Abl+1Sg+Acs+Refl
++N+Perl+Abl+1Sg+Acs+Refl+Voc
++N+Perl+Abl+Clt/Foc+1Sg+Acs+Refl+Voc

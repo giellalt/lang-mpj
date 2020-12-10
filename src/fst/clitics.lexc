@@ -1,8 +1,11 @@
 ! +pa+PA		! will hopefully do in twolc
 ! TODO: add flag diacritics so the same clitic cannot be repeated. likewise for pronoun clitic cases
 
+LEXICON PA
+	# ;
+
 LEXICON K_1
-	K_2 ;
+			K_2 ;
 +Clt/Foc:%>nga 		K_2 ;	! (different to +Der/Foc "nguninji")
 ! modifiers
 +Clt/kirli:%>kirli	K_2 ;	! 'probably'
@@ -42,8 +45,8 @@ LEXICON K_2
 
 !! !! Pronoun clitics (quite long)
 LEXICON person_number_case_1
-# ; ! absolutive declension, if this exists
-vocative ;
+ # ; ! absolutive declension, if this exists
+ vocative ;
 ! Subject case 
 +1Sg:%>rna 		person_number_case_2 ; 	! wakalurna 
 +2Sg:%>n 		person_number_case_2 ;
@@ -180,6 +183,7 @@ LEXICON person_number_case_2
 +Refl:%>ngku 		vocative ;
 
 LEXICON vocative ! (TODO: move to another file)
+	# ;
 +Voc:%>wu # ;
 
 

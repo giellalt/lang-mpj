@@ -208,6 +208,7 @@ LEXICON grammatical_case_3
 +Dat:%>ku end_noun_cases ;
 
 LEXICON end_noun_cases
+ ! PA ;
  K_1 ; ! no person-number suffixed 
  person_number_case_1 ; ! XXX is _1 the intendend lexicon?
 
@@ -215,10 +216,10 @@ LEXICON end_noun_cases
 !! !! temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun
 !! !! clitics
 LEXICON n_temporal_agr
-+N+Sem/Temp: temporal_case ;
++N+Sem/Temp:%> temporal_case ;
 
 LEXICON n_spatial_agr
-+N+Sem/Spat: spatial_case ;
++N+Sem/Spat:%> spatial_case ;
 
 LEXICON temporal_case
 		# ;
