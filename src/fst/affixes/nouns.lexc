@@ -213,7 +213,7 @@ LEXICON grammatical_case_3
 
 LEXICON end_noun_cases
  PA ;
-:%> K_1 ; ! no person-number suffixed 
+ K_1 ; ! no person-number suffixed 
 ! person_number_case_1 ; ! XXX is _1 the intendend lexicon?
 
 
