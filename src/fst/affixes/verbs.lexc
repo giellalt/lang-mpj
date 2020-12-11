@@ -2,8 +2,85 @@
 !  ---------------
 !! The Wangkajunga language verbs inflect in persons.
 
-LEXICON Persons
-# ;
+LEXICON directional_prefixes ! TODO: finalise prefix codes. Preliminarily: +Prefix/maa
+			simple_verbs ;
++Prefix/maa:%>maa	simple_verbs ;
++Prefix/parra:%>parra	simple_verbs ;
+			compound_verb_preverbs ;
++Prefix/maa:%>maa	compound_verb_preverbs ;
++Prefix/parra:%>parra	compound_verb_preverbs ;
++Prefix/parra:%>parra	parra_reduplication ;
+
+LEXICON parra_reduplication
++Redpl:%>parra		simple_verbs ;
++Redpl:%>parra		compound_verb_preverbs ;
+
+!! is positioning of +V here okay? or better with separate lexicon / before prefixes?
+LEXICON simple_verbs
++V:	simple_verb_reduplication ;
++V:	verb_derivational_suffix ;
+	
+LEXICON simple_verb_reduplication
++Redpl:%>__	verb_derivational_suffix;
+
+LEXICON compound_verb_preverbs
++V:	preverb_reduplication ;
++V:	compound_verb_compounds ;
+
+LEXICON preverb_reduplication
++Redpl:%>__	compound_verb_compounds ;
+
+LEXICON compound_verb_compounds 
+! another option is to have compound (preverb + compound) in verb stems (won't account for extra preverb
+! reduplication)
++Compound/jurra@U.CONJ.RRA@:ju@U.CONJ.RRA@	verb_derivational_suffix ;
++Compound/puwa@U.CONJ.WA@:pu@U.CONJ.WA@		verb_derivational_suffix ;
++Compound/kanyila@U.CONJ.LA@:kanyi@U.CONJ.LA@	verb_derivational_suffix ;
++Compound/kati@U.CONJ.Ø@:kati@U.CONJ.Ø@		verb_derivational_suffix ;
++Compound/yarra@U.CONJ.RRA@:ya@U.CONJ.RRA@	verb_derivational_suffix ;
++Compound/ngarrin@U.CONJ.Ø@:ngarri@U.CONJ.Ø@	verb_derivational_suffix ;
++Compound/pakala@U.CONJ.LA@:paka@U.CONJ.LA@	verb_derivational_suffix ;
++Compound/jarra@U.CONJ.RRA@:ja@U.CONJ.RRA@	verb_derivational_suffix ;
+
+
+LEXICON verb_derivational_suffix
+		verb_tense_inflections;
++Der/ti:%>ti	verb_tense_inflections;
++Der/ma:%>ma	verb_tense_inflections;
++Der/ju:%>ju	verb_tense_inflections;
+
+LEXICON verb_tense_inflections
+ # ;
+! nominaliser form going to temp_rel
++Nomz@U.CONJ.Ø@:%>nja@U.CONJ.Ø@			temporal_relative ;
++Nomz@U.CONJ.WA@:%>ngkunja@U.CONJ.WA@		temporal_relative ;
++Nomz@U.CONJ.RRA:%>nkunja@U.CONJ.RRA@		temporal_relative ;
++Nomz@U.CONJ.LA:%>nja@U.CONJ.LA@		temporal_relative ;
+! nominaliser form going to noun stem
++Nomz@U.CONJ.Ø@:%>nja@U.CONJ.Ø@			n_agr ; ! TODO: remove +V? +N will be added in n_agr
++Nomz@U.CONJ.WA@:%>ngkunja@U.CONJ.WA@		n_agr ; ! TODO: remove flag diacritics as no longer verbs?
++Nomz@U.CONJ.RRA:%>nkunja@U.CONJ.RRA@		n_agr ;
++Nomz@U.CONJ.LA:%>nja@U.CONJ.LA@		n_agr ;
+! serial forms TODO: replace # with PA
++ra+Ser@U.CONJ.Ø@:ra@U.CONJ.Ø@			# ; ! PA
++ngkura+Ser@U.CONJ.WA@:ngkura@U.CONJ.WA@	# ; ! PA
++nkura+Ser@U.CONJ.RRA@:nkura@U.CONJ.RRA@	# ; ! PA
++ra+Ser@U.CONJ.LA@:ra@U.CONJ.LA@		# ; ! PA
+!	 
+
+LEXICON temporal_relative
++Trel:%>janu	#;
++Trel:%>nu	#;
+
+
+
+
+
+
+
+
+
+
 
 ! vim: set ft=xfst-lexc:
 

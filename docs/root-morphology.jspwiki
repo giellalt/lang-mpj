@@ -16,27 +16,40 @@ The parts-of-speech are:
 Verb affixes
 tense inflections 
 
-
-irrealis tense inflections
+irrealis tense inflections ! TODO: work on tags. Irrealis/Admon? But two separate morphophonemes
 
 affixes following from irrealis inflections
 
 serial and nominalised inflections
 
-
 verb derivation affixes
 
-temporal relative affixes
+temporal relative affix
+
 verb directional affixes
+
 verb post-inflection affixes
+
+verb compounds
+
+Reduplication
 
 Clitics
 
-
 Flag diacritics for verb conjugations
 
+Flag diacritics for noun cases
+DCASE = derivational case
 
-Flag diacritics for pronoun clitics (to ensure the same case is not used twice within a cluster). CLCASE = pronoun clitic case
+
+SCASE = semantic case
+
+Flag diacritics for clitics (to ensure the same clitic does not appear twice on a single word)
+CLT = clitic
+
+
+Flag diacritics for pronoun clitics (to ensure the same case is not used twice within a cluster).
+CLCASE = pronoun clitic case TODO: consider changing name to PCCASE
 
 
 

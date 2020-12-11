@@ -22,31 +22,31 @@ derivational_avoid_case ;
 LEXICON derivational_case_1
 ! leading to derivational_case_2
 				derivational_case_2 ;
-+Der/Hav:%>kurlu		derivational_case_2 ;		! having
-+Der/Thing:%>pinti		derivational_case_2 ;		! associated thing
-+Der/Priv:%>parni		derivational_case_2 ;		! privative
-+Der/Int:%>kija			derivational_case_2 ;		! intentive
-+Der/Want:%>jiraja		derivational_case_2 ;		! want
-+Der/Asst:%>jarra		derivational_case_2 ;		! associated time or space
-+Der/Temp:%>puru		derivational_case_2 ;		! temporal
-+Der/Dwell:%>karraja		derivational_case_2 ;		! dweller
-+Der/Side:%>karti		derivational_case_2 ;		! side
-+Der/Type:%>partu		derivational_case_2 ;		! type
-+Der/Sim:%>yuru			derivational_case_2 ;		! similar
-+Der/Contr:%>munu		derivational_case_2 ;		! contradictive
-+Der/Mod:%>marta		derivational_case_2 ;		! moderative
-+Der/Big:%>paka			derivational_case_2 ;		! very big
-+Der/Anoth:%>kujupa		derivational_case_2 ;		! another
-+Der/Very:%>minyirri		derivational_case_2 ;		! very
-+Der/Num:%>marlu		derivational_case_2 ;		! numerative
-+Der/Dual:%>kujarra		derivational_case_2 ;		! dual
-+Der/Few:%>paraku		derivational_case_2 ;		! few
-+Der/Pl:%>n			derivational_case_2 ;		! plural alternative 1
-+Der/Pl:%>rti			derivational_case_2 ;		! plural alternative 2
-+Der/Grp:%>ngurun		derivational_case_2 ;		! group *afterwards comes PA
-+Der/Pair:%>rarra		derivational_case_2 ;		! pair
-+Der/Only:%>wiyaju		derivational_case_2 ;		! only
-+Der/Foc:%>nguninji		derivational_case_2 ;		! focus (sometimes annotated as SPEC)
+@U.DCASE.HAV@+Der/Hav:@U.DCASE.HAV@%>kurlu		derivational_case_2 ;		! having
+@U.DCASE.THING@+Der/Thing:@U.DCASE.THING@%>pinti	derivational_case_2 ;		! associated thing
+@U.DCASE.PRIV@+Der/Priv:@U.DCASE.PRIV@%>parni		derivational_case_2 ;		! privative
+@U.DCASE.INT@+Der/Int:@U.DCASE.INT@%>kija		derivational_case_2 ;		! intentive
+@U.DCASE.WANT@+Der/Want:@U.DCASE.WANT@%>jiraja		derivational_case_2 ;		! want
+@U.DCASE.ASST@+Der/Asst:@U.DCASE.ASST@%>jarra	derivational_case_2 ;		! associated time or space
+@U.DCASE.TEMP@+Der/Temp:@U.DCASE.TEMP@%>puru		derivational_case_2 ;		! temporal
+@U.DCASE.DWELL@+Der/Dwell:@U.DCASE.DWELL@%>karraja		derivational_case_2 ;		! dweller
+@U.DCASE.SIDE@+Der/Side:@U.DCASE.SIDE@%>karti		derivational_case_2 ;		! side
+@U.DCASE.TYPE@+Der/Type:@U.DCASE.TYPE@%>partu		derivational_case_2 ;		! type
+@U.DCASE.SIM@+Der/Sim:@U.DCASE.SIM@%>yuru			derivational_case_2 ;		! similar
+@U.DCASE.CONTR@+Der/Contr:@U.DCASE.CONTR@%>munu		derivational_case_2 ;		! contradictive
+@U.DCASE.MOD@+Der/Mod:@U.DCASE.MOD@%>marta		derivational_case_2 ;		! moderative
+@U.DCASE.BIG@+Der/Big:@U.DCASE.BIG@%>paka			derivational_case_2 ;		! very big
+@U.DCASE.ANOTH@+Der/Anoth:@U.DCASE.ANOTH@%>kujupa		derivational_case_2 ;		! another
+@U.DCASE.VERY@+Der/Very:@U.DCASE.VERY@%>minyirri		derivational_case_2 ;		! very
+@U.DCASE.NUM@+Der/Num:@U.DCASE.NUM@%>marlu		derivational_case_2 ;		! numerative
+@U.DCASE.DUAL@+Der/Dual:@U.DCASE.DUAL@%>kujarra		derivational_case_2 ;		! dual
+@U.DCASE.FEW@+Der/Few:@U.DCASE.FEW@%>paraku		derivational_case_2 ;		! few
+@U.DCASE.PL@+Der/Pl:@U.DCASE.PL@%>n		derivational_case_2 ;		! plural alternative 1
+@U.DCASE.PL@+Der/Pl:@U.DCASE.PL@%>rti		derivational_case_2 ;		! plural alternative 2
+@U.DCASE.GRP@+Der/Grp:@U.DCASE.GRP@%>ngurun	derivational_case_2 ;	! group *afterwards comes PA
+@U.DCASE.PAIR@+Der/Pair:@U.DCASE.PAIR@%>rarra		derivational_case_2 ;		! pair
+@U.DCASE.ONLY@+Der/Only:@U.DCASE.ONLY@%>wiyaju		derivational_case_2 ;		! only
+@U.DCASE.FOC@+Der/Foc:@U.DCASE.FOC@%>nguninji derivational_case_2 ;! focus (sometimes annotated as SPEC)
 ! leading to semantic_case_2
 				semantic_case_2 ;	
 +Der/Hav:%>kurlu		semantic_case_2 ;
@@ -80,8 +80,8 @@ LEXICON semantic_case_1
 +Abl:%>janu		derivational_case_3 ;	! Ablative (motion away from a place)
 +Abl:%>nguru		derivational_case_3 ;
 +Gen:%>kurnu		derivational_case_3 ;	! Genitive (referred to as POSS - possessive - in book)
-+Gen:%>kura		derivational_case_3 ;
-+Gen:%>kurangu		derivational_case_3 ;
+! +Gen:%>kura		derivational_case_3 ;	! kurnu is by far the most common GEN form
+! +Gen:%>kurangu	derivational_case_3 ;
 ! +Loc:%>ngka		derivational_case_3 ;	! Locative - following a vowel (better done in twolc)
 ! +Loc:%>ta		derivational_case_3 ;	! following a consonant (difference betw t and j?)
 ! +Loc:%>ja		derivational_case_3 ;	! following a consonant
@@ -103,31 +103,31 @@ LEXICON derivational_avoid_case
 
 LEXICON derivational_case_2
 				grammatical_case_3 ;
-+Der/Hav:%>kurlu		grammatical_case_3 ;
-+Der/Thing:%>pinti		grammatical_case_3 ;
-+Der/Priv:%>parni		grammatical_case_3 ;
-+Der/Int:%>kija			grammatical_case_3 ;
-+Der/Want:%>jiraja		grammatical_case_3 ;
-+Der/Asst:%>jarra		grammatical_case_3 ;
-+Der/Temp:%>puru		grammatical_case_3 ;
-+Der/Dwell:%>karraja		grammatical_case_3 ;
-+Der/Side:%>karti		grammatical_case_3 ;
-+Der/Type:%>partu		grammatical_case_3 ;
-+Der/Sim:%>yuru			grammatical_case_3 ;
-+Der/Contr:%>munu		grammatical_case_3 ;
-+Der/Mod:%>marta		grammatical_case_3 ;
-+Der/Big:%>paka			grammatical_case_3 ;
-+Der/Anoth:%>kujupa		grammatical_case_3 ;
-+Der/Very:%>minyirri		grammatical_case_3 ;
-+Der/Num:%>marlu		grammatical_case_3 ;
-+Der/Dual:%>kujarra		grammatical_case_3 ;
-+Der/Few:%>paraku		grammatical_case_3 ;
-+Der/Pl:%>n			grammatical_case_3 ;
-+Der/Pl:%>rti			grammatical_case_3 ;
-+Der/Grp:%>ngurun		grammatical_case_3 ;
-+Der/Pair:%>rarra		grammatical_case_3 ;
-+Der/Only:%>wiyaju		grammatical_case_3 ;
-+Der/Foc:%>nguninji		grammatical_case_3 ;
+@D.DCASE.HAV@+Der/Hav:@D.DCASE.HAV@%>kurlu		grammatical_case_3 ;
+@D.DCASE.THING@+Der/Thing:@D.DCASE.THING@%>pinti	grammatical_case_3 ;
+@D.DCASE.PRIV@+Der/Priv:@D.DCASE.PRIV@%>parni		grammatical_case_3 ;
+@D.DCASE.INT@+Der/Int:@D.DCASE.INT@%>kija		grammatical_case_3 ;
+@D.DCASE.WANT@+Der/Want:@D.DCASE.WANT@%>jiraja		grammatical_case_3 ;
+@D.DCASE.ASST@+Der/Asst:@D.DCASE.ASST@%>jarra		grammatical_case_3 ;
+@D.DCASE.TEMP@+Der/Temp:@D.DCASE.TEMP@%>puru		grammatical_case_3 ;
+@D.DCASE.DWELL@+Der/Dwell:@D.DCASE.DWELL@%>karraja	grammatical_case_3 ;
+@D.DCASE.SIDE@+Der/Side:@D.DCASE.SIDE@%>karti		grammatical_case_3 ;
+@D.DCASE.TYPE@+Der/Type:@D.DCASE.TYPE@%>partu		grammatical_case_3 ;
+@D.DCASE.SIM@+Der/Sim:@D.DCASE.SIM@%>yuru		grammatical_case_3 ;
+@D.DCASE.CONTR@+Der/Contr:@D.DCASE.CONTR@%>munu		grammatical_case_3 ;
+@D.DCASE.MOD@+Der/Mod:@D.DCASE.MOD@%>marta		grammatical_case_3 ;
+@D.DCASE.BIG@+Der/Big:@D.DCASE.BIG@%>paka		grammatical_case_3 ;
+@D.DCASE.ANOTH@+Der/Anoth:@D.DCASE.ANOTH@%>kujupa	grammatical_case_3 ;
+@D.DCASE.VERY@+Der/Very:@D.DCASE.VERY@%>minyirri	grammatical_case_3 ;
+@D.DCASE.NUM@+Der/Num:@D.DCASE.NUM@%>marlu		grammatical_case_3 ;
+@D.DCASE.DUAL@+Der/Dual:@D.DCASE.DUAL@%>kujarra		grammatical_case_3 ;
+@D.DCASE.FEW@+Der/Few:@D.DCASE.FEW@%>paraku		grammatical_case_3 ;
+@D.DCASE.PL@+Der/Pl:@D.DCASE.PL@%>n			grammatical_case_3 ;
+@D.DCASE.PL@+Der/Pl:@D.DCASE.PL@%>rti			grammatical_case_3 ;
+@D.DCASE.GRP@+Der/Grp:@D.DCASE.GRP@%>ngurun		grammatical_case_3 ;
+@D.DCASE.PAIR@+Der/Pair:@D.DCASE.PAIR@%>rarra		grammatical_case_3 ;
+@D.DCASE.ONLY@+Der/Only:@D.DCASE.ONLY@%>wiyaju		grammatical_case_3 ;
+@D.DCASE.FOC@+Der/Foc:@D.DCASE.FOC@%>nguninji		grammatical_case_3 ;
 
 LEXICON semantic_case_2
 ! leading to grammatical_case_3
@@ -135,8 +135,8 @@ LEXICON semantic_case_2
 +Abl:%>janu		grammatical_case_3 ;
 +Abl:%>nguru		grammatical_case_3 ;
 +Gen:%>kurnu		grammatical_case_3 ;
-+Gen:%>kura		grammatical_case_3 ;
-+Gen:%>kurangu		grammatical_case_3 ;
+! +Gen:%>kura		grammatical_case_3 ;
+! +Gen:%>kurangu	grammatical_case_3 ;
 ! +Loc:%>ngka		grammatical_case_3 ;
 ! +Loc:%>ta		grammatical_case_3 ;
 ! +Loc:%>ja		grammatical_case_3 ;
@@ -145,17 +145,17 @@ LEXICON semantic_case_2
 +All:%>kutu		grammatical_case_3 ;
 ! leading to semantic_case_3
 			semantic_case_3 ;
-+Abl:%>janu		semantic_case_3 ;
-+Abl:%>nguru		semantic_case_3 ;
-+Gen:%>kurnu		semantic_case_3 ;
-+Gen:%>kura		semantic_case_3 ;
-+Gen:%>kurangu		semantic_case_3 ;
-! +Loc:%>ngka		semantic_case_3 ;
-! +Loc:%>ta		semantic_case_3 ;
-! +Loc:%>ja		semantic_case_3 ;
-+Loc:%>		semantic_case_3 ;
-+Perl:%>wana		semantic_case_3 ;
-+All:%>kutu		semantic_case_3 ;
+@U.SCASE.ABL@+Abl:@U.SCASE.ABL@%>janu		semantic_case_3 ;
+@U.SCASE.ABL@+Abl:@U.SCASE.ABL@%>nguru		semantic_case_3 ;
+@U.SCASE.GEN@+Gen:@U.SCASE.GEN@%>kurnu		semantic_case_3 ; ! kurnu is by far the most common form
+! @U.SCASE.GEN@+Gen:@U.SCASE.GEN@%>kura		semantic_case_3 ;
+! @U.SCASE.GEN@+Gen:@U.SCASE.GEN@%>kurangu	semantic_case_3 ;
+! @U.SCASE.LOC@+Loc:@U.SCASE.LOC@%>ngka		semantic_case_3 ;
+! @U.SCASE.LOC@+Loc:@U.SCASE.LOC@%>ta		semantic_case_3 ;
+! @U.SCASE.LOC@+Loc:@U.SCASE.LOC@%>ja		semantic_case_3 ;
+@U.SCASE.LOC@+Loc:@U.SCASE.LOC@%>		semantic_case_3 ;
+@U.SCASE.PERL@+Perl:@U.SCASE.PERL@%>wana	semantic_case_3 ;
+@U.SCASE.ALL@+All:@U.SCASE.ALL@%>kutu		semantic_case_3 ;
 
 LEXICON derivational_focus_case
 end_noun_cases ;
@@ -191,17 +191,17 @@ LEXICON derivational_case_3
 
 LEXICON semantic_case_3
 			end_noun_cases ;
-+Abl:%>janu		end_noun_cases ;
-+Abl:%>nguru		end_noun_cases ;
-+Gen:%>kurnu		end_noun_cases ;
-+Gen:%>kura		end_noun_cases ;
-+Gen:%>kurangu		end_noun_cases ;
-! +Loc:%>ngka		end_noun_cases ;
-! +Loc:%>ta		end_noun_cases ;
-! +Loc:%>ja		end_noun_cases ;
-+Loc:%>			end_noun_cases ;
-+Perl:%>wana		end_noun_cases ;
-+All:%>kutu		end_noun_cases ;
+@D.SCASE.ABL@+Abl:@D.SCASE.ABL@%>janu		end_noun_cases ;
+@D.SCASE.ABL@+Abl:@D.SCASE.ABL@%>nguru		end_noun_cases ;
+@D.SCASE.GEN@+Gen:@D.SCASE.GEN@%>kurnu		end_noun_cases ;
+! @D.SCASE.GEN@+Gen:@D.SCASE.GEN@%>kura		end_noun_cases ;
+! @D.SCASE.GEN@+Gen:@D.SCASE.GEN@%>kurangu	end_noun_cases ;
+! @D.SCASE.LOC@+Loc:@D.SCASE.LOC@%>ngka		end_noun_cases ;
+! @D.SCASE.LOC@+Loc:@D.SCASE.LOC@%>ta		end_noun_cases ;
+! @D.SCASE.LOC@+Loc:@D.SCASE.LOC@%>ja		end_noun_cases ;
+@D.SCASE.LOC@+Loc:@D.SCASE.LOC@%>		end_noun_cases ;
+@D.SCASE.PERL@+Perl:@D.SCASE.PERL@%>wana	end_noun_cases ;
+@D.SCASE.ALL@+All:@D.SCASE.ALL@%>kutu		end_noun_cases ;
 
 LEXICON grammatical_case_3
 	end_noun_cases ;
@@ -213,7 +213,7 @@ LEXICON grammatical_case_3
 
 LEXICON end_noun_cases
  PA ;
- K_1 ; ! no person-number suffixed 
+:%> K_1 ; ! no person-number suffixed 
 ! person_number_case_1 ; ! XXX is _1 the intendend lexicon?
 
 

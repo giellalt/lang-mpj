@@ -6,188 +6,182 @@ LEXICON PA
 
 LEXICON K_1
  K_2 ;
-+Clt/Foc:%>nga 		K_2 ;	! (different to +Der/Foc "nguninji")
+@U.CLT.FOC@+Clt/Foc:@U.CLT.FOC@%>nga 	# ;	! (different to +Der/Foc "nguninji")
 ! modifiers
-+Clt/kirli:%>kirli	K_2 ;	! 'probably'
-+Clt/lka:%>lka		K_2 ;	! 'contrary to expectation'
-+Clt/yilta:%>yilta	K_2 ;	! 'really'
-+Clt/Cert:%>ngulyu	K_2 ;	! 'certainly'
-+Clt/Rep:%>nyu		K_2 ;	! 'reportedly'
-+Clt/Dub:%>pa		K_2 ;	! 'questionably' (dubitative, NB same symbol as epenthetic pa)
-+Clt/Emph:%>kaja	K_2 ;	! 'emphatic'
-+Clt/Emph:%>rtuka	K_2 ;	! 'emphatic'
-+Clt/Emph:%>rtu		K_2 ;	! 'emphatic'
+@U.CLT.KIRLI@+Clt/kirli:@U.CLT.KIRLI@%>kirli	K_2 ;	! 'probably'
+@U.CLT.LKA@+Clt/lka:@U.CLT.LKA@%>lka		K_2 ;	! 'contrary to expectation'
+@U.CLT.YILTA@+Clt/yilta:@U.CLT.YILTA@%>yilta	K_2 ;	! 'really'
+@U.CLT.CERT@+Clt/Cert:@U.CLT.CERT@%>ngulyu	K_2 ;	! 'certainly'
+@U.CLT.REP@+Clt/Rep:@U.CLT.REP@%>nyu		K_2 ;	! 'reportedly'
+@U.CLT.DUB@+Clt/Dub:@U.CLT.DUB@%>pa		K_2 ;	! 'questionably' (dubitative, NB same symbol 
+! as epenthetic pa)
+@U.CLT.EMPH@+Clt/Emph:@U.CLT.EMPH@%>kaja	K_2 ;	! 'emphatic'
+@U.CLT.EMPH@+Clt/Emph:@U.CLT.EMPH@%>rtuka	K_2 ;	! 'emphatic'
+@U.CLT.EMPH@+Clt/Emph:@U.CLT.EMPH@%>rtu		K_2 ;	! 'emphatic'
 ! connective clitics
-+Clt/kaji:%>kaji 	K_2 ;	!'when, while'
-+Clt/la:%>la 		K_2 ;	! 'when' 
-+Clt/lta:%>lta		K_2 ;	! 'then' 
-+Clt/yila:%>yila	K_2 ;	! 'then' 
+@U.CLT.KAJI@+Clt/kaji:@U.CLT.KAJI@%>kaji 	K_2 ;	! 'when, while'
+@U.CLT.LA@+Clt/la:@U.CLT.LA@%>la 		K_2 ;	! 'when' 
+@U.CLT.LTA@+Clt/lta:@U.CLT.LTA@%>lta		K_2 ;	! 'then' 
+@U.CLT.YILA@+Clt/yila:@U.CLT.YILA@%>yila	K_2 ;	! 'then' 
 
 LEXICON K_2
- person_number_case_1;
-+Clt/Foc:%>nga 		person_number_case_1;	! (different to +Der/Foc "nguninji")
+ person_number_case_1 ;
+@D.CLT.FOC@+Clt/Foc:@D.CLT.FOC@%>nga 		person_number_case_1 ;
 ! modifiers
-+Clt/kirli:%>kirli	person_number_case_1;
-+Clt/lka:%>lka		person_number_case_1;
-+Clt/yilta:%>yilta	person_number_case_1;
-+Clt/Cert:%>ngulyu	person_number_case_1;
-+Clt/Rep:%>nyu		person_number_case_1;
-+Clt/Dub:%>pa		person_number_case_1;
-+Clt/Emph:%>kaja	person_number_case_1;
-+Clt/Emph:%>rtuka	person_number_case_1;
-+Clt/Emph:%>rtu		person_number_case_1;
+@D.CLT.KIRLI@+Clt/kirli:@D.CLT.KIRLI@%>kirli	person_number_case_1 ;
+@D.CLT.LKA@+Clt/lka:@D.CLT.LKA@%>lka		person_number_case_1 ;
+@D.CLT.YILTA@+Clt/yilta:@D.CLT.YILTA@%>yilta	person_number_case_1 ;
+@D.CLT.CERT@+Clt/Cert:@D.CLT.CERT@%>ngulyu	person_number_case_1 ;
+@D.CLT.REP@+Clt/Rep:@D.CLT.REP@%>nyu		person_number_case_1 ;
+@D.CLT.DUB@+Clt/Dub:@D.CLT.DUB@%>pa		person_number_case_1 ;
+@D.CLT.EMPH@+Clt/Emph:@D.CLT.EMPH@%>kaja	person_number_case_1 ;
+@D.CLT.EMPH@+Clt/Emph:@D.CLT.EMPH@%>rtuka	person_number_case_1 ;
+@D.CLT.EMPH@+Clt/Emph:@D.CLT.EMPH@%>rtu		person_number_case_1 ;
 ! connective clitics
-+Clt/kaji:%>kaji 	person_number_case_1;
-+Clt/la:%>la 		person_number_case_1;
-+Clt/lta:%>lta		person_number_case_1;
-+Clt/yila:%>yila	person_number_case_1;
-
+@D.CLT.KAJI@+Clt/kaji:@D.CLT.KAJI@%>kaji 	person_number_case_1 ;
+@D.CLT.LA@+Clt/la:@D.CLT.LA@%>la 		person_number_case_1 ;
+@D.CLT.LTA@+Clt/lta:@D.CLT.LTA@%>lta		person_number_case_1 ;
+@D.CLT.YILA@+Clt/yila:@D.CLT.YILA@%>yila	person_number_case_1 ;
 
 !! !! Pronoun clitics (quite long)
 LEXICON person_number_case_1
-! # ; ! absolutive declension, if this exists.
-! vocative ;
  person_number_case_2 ;
 ! Subject case 
-+1Sg:%>rna 		person_number_case_2 ; 	! wakalurna 
-+2Sg:%>n 		person_number_case_2 ;
-+3Sg:%>ø 		person_number_case_2 ;
-+1Du+Incl%>li 		person_number_case_2 ;
-+1Du+Excl:%>liju 	person_number_case_2 ;
-+2Du:%>npula 		person_number_case_2 ;
-+3Du:%>pula 		person_number_case_2 ;
-+1Pl+Incl%>la 		person_number_case_2 ;
-+1Pl+Excl:%>laju 	person_number_case_2 ;
-+2Pl:%>nyurra 		person_number_case_2 ;
-+3Pl:%>ya 		person_number_case_2 ;
+@U.CLCASE.S@+1Sg:@U.CLCASE.S@%>rna 		person_number_case_2 ;
+@U.CLCASE.S@+2Sg:@U.CLCASE.S@%>n 		person_number_case_2 ;
+@U.CLCASE.S@+3Sg:@U.CLCASE.S@%> 		person_number_case_2 ;
+@U.CLCASE.S@+1Du+Incl:@U.CLCASE.S@%>li 		person_number_case_2 ;
+@U.CLCASE.S@+1Du+Excl:@U.CLCASE.S@%>liju 	person_number_case_2 ;
+@U.CLCASE.S@+2Du:@U.CLCASE.S@%>npula 		person_number_case_2 ;
+@U.CLCASE.S@+3Du:@U.CLCASE.S@%>pula 		person_number_case_2 ;
+@U.CLCASE.S@+1Pl+Incl:@U.CLCASE.S@%>la 		person_number_case_2 ;
+@U.CLCASE.S@+1Pl+Excl:@U.CLCASE.S@%>laju 	person_number_case_2 ;
+@U.CLCASE.S@+2Pl:@U.CLCASE.S@%>nyurra 		person_number_case_2 ;
+@U.CLCASE.S@+3Pl:@U.CLCASE.S@%>ya 		person_number_case_2 ;
 
 ! Absolutive case (object of transitive verbs)
-+1Sg+Abs:%>rni 		person_number_case_2 ;
-+2Sg+Abs:%>nta 		person_number_case_2 ;
-+3Sg+Abs:%> 		person_number_case_2 ;
-+1Du+Incl+Abs:%>linya 	person_number_case_2 ;
-+1Du+Excl+Abs:%>linyaju person_number_case_2 ;
-+2Du+Abs:%>ntapula 	person_number_case_2 ;
-+3Du+Abs:%>pulanya 	person_number_case_2 ;
-+1Pl+Incl+Abs:%>lanya 	person_number_case_2 ;
-+1Pl+Excl+Abs:%>lanyaju person_number_case_2 ;
-+2Pl+Abs:%>nyurranya 	person_number_case_2 ;
-+3Pl+Abs:%>jananya 	person_number_case_2 ;
+@U.CLCASE.ABS@+1Sg+Abs:@U.CLCASE.ABS@%>rni 		person_number_case_2 ;
+@U.CLCASE.ABS@+2Sg+Abs:@U.CLCASE.ABS@%>nta 		person_number_case_2 ;
+@U.CLCASE.ABS@+3Sg+Abs:@U.CLCASE.ABS@%> 		person_number_case_2 ;
+@U.CLCASE.ABS@+1Du+Incl+Abs:@U.CLCASE.ABS@%>linya 	person_number_case_2 ;
+@U.CLCASE.ABS@+1Du+Excl+Abs:@U.CLCASE.ABS@%>linyaju 	person_number_case_2 ;
+@U.CLCASE.ABS@+2Du+Abs:@U.CLCASE.ABS@%>ntapula 		person_number_case_2 ;
+@U.CLCASE.ABS@+3Du+Abs:@U.CLCASE.ABS@%>pulanya 		person_number_case_2 ;
+@U.CLCASE.ABS@+1Pl+Incl+Abs:@U.CLCASE.ABS@%>lanya 	person_number_case_2 ;
+@U.CLCASE.ABS@+1Pl+Excl+Abs:@U.CLCASE.ABS@%>lanyaju 	person_number_case_2 ;
+@U.CLCASE.ABS@+2Pl+Abs:@U.CLCASE.ABS@%>nyurranya 	person_number_case_2 ;
+@U.CLCASE.ABS@+3Pl+Abs:@U.CLCASE.ABS@%>jananya 		person_number_case_2 ;
  
 ! Dative case 
-+1Sg+Dat:%>ju 		person_number_case_2 ;
-+2Sg+Dat:%>ngku 	person_number_case_2 ;
-+3Sg+Dat:%>ra 		person_number_case_2 ;
-+1Du+Incl+Dat:%>limpa 	person_number_case_2 ;
-+1Du+Excl+Dat:%>limpaju person_number_case_2 ;
-+2Du+Dat:%>ngkupula 	person_number_case_2 ;
-+3Du+Dat:%>pulampa 	person_number_case_2 ;
-+1Pl+Incl+Dat:%>lampa 	person_number_case_2 ;
-+1Pl+Excl+Dat:%>lampaju person_number_case_2 ;
-+2Pl+Dat:%>nyurrampa 	person_number_case_2 ;
-+3Pl+Dat:%>janampa 	person_number_case_2 ;
+@U.CLCASE.DAT@+1Sg+Dat:@U.CLCASE.DAT@%>ju 		person_number_case_2 ;
+@U.CLCASE.DAT@+2Sg+Dat:@U.CLCASE.DAT@%>ngku	 	person_number_case_2 ;
+@U.CLCASE.DAT@+3Sg+Dat:@U.CLCASE.DAT@%>ra 		person_number_case_2 ;
+@U.CLCASE.DAT@+1Du+Incl+Dat:@U.CLCASE.DAT@%>limpa 	person_number_case_2 ;
+@U.CLCASE.DAT@+1Du+Excl+Dat:@U.CLCASE.DAT@%>limpaju	person_number_case_2 ;
+@U.CLCASE.DAT@+2Du+Dat:@U.CLCASE.DAT@%>ngkupula 	person_number_case_2 ;
+@U.CLCASE.DAT@+3Du+Dat:@U.CLCASE.DAT@%>pulampa 		person_number_case_2 ;
+@U.CLCASE.DAT@+1Pl+Incl+Dat:@U.CLCASE.DAT@%>lampa 	person_number_case_2 ;
+@U.CLCASE.DAT@+1Pl+Excl+Dat:@U.CLCASE.DAT@%>lampaju 	person_number_case_2 ;
+@U.CLCASE.DAT@+2Pl+Dat:@U.CLCASE.DAT@%>nyurrampa 	person_number_case_2 ;
+@U.CLCASE.DAT@+3Pl+Dat:@U.CLCASE.DAT@%>janampa 		person_number_case_2 ;
 
 ! Accessory case - accessory can be Locative or Allative
-+1Sg+Acs:%>rni 		person_number_case_2 ;
-+2Sg+Acs:%>nta 		person_number_case_2 ;
-+3Sg+Acs:%>lu 		person_number_case_2 ;
-+1Du+Incl+Acs:%>linya 	person_number_case_2 ;
-+1Du+Excl+Acs:%>linyaju person_number_case_2 ;
-+2Du+Acs:%>ntapula 	person_number_case_2 ;
-+3Du+Acs:%>pulanya 	person_number_case_2 ;
-+1Pl+Acs:%>lanya 	person_number_case_2 ;
-+1Pl+Excl+Acs:%>lanyaju person_number_case_2 ;
-+2Pl+Acs:%>nyurranya 	person_number_case_2 ;
-+3Pl+Acs:%>jananya 	person_number_case_2 ;
+@U.CLCASE.ACS@+1Sg+Acs:@U.CLCASE.ACS@%>rni 		person_number_case_2 ;
+@U.CLCASE.ACS@+2Sg+Acs:@U.CLCASE.ACS@%>nta 		person_number_case_2 ;
+@U.CLCASE.ACS@+3Sg+Acs:@U.CLCASE.ACS@%>lu 		person_number_case_2 ;
+@U.CLCASE.ACS@+1Du+Incl+Acs:@U.CLCASE.ACS@%>linya 	person_number_case_2 ;
+@U.CLCASE.ACS@+1Du+Excl+Acs:@U.CLCASE.ACS@%>linyaju	person_number_case_2 ;
+@U.CLCASE.ACS@+2Du+Acs:@U.CLCASE.ACS@%>ntapula 		person_number_case_2 ;
+@U.CLCASE.ACS@+3Du+Acs:@U.CLCASE.ACS@%>pulanya 		person_number_case_2 ;
+@U.CLCASE.ACS@+1Pl+Acs:@U.CLCASE.ACS@%>lanya 		person_number_case_2 ;
+@U.CLCASE.ACS@+1Pl+Excl+Acs:@U.CLCASE.ACS@%>lanyaju 	person_number_case_2 ;
+@U.CLCASE.ACS@+2Pl+Acs:@U.CLCASE.ACS@%>nyurranya 	person_number_case_2 ;
+@U.CLCASE.ACS@+3Pl+Acs:@U.CLCASE.ACS@%>jananya 		person_number_case_2 ;
  
 ! Ablative case
-+1Sg+Abl:%>jura 	person_number_case_2 ;
-+2Sg+Abl:%>ngkura 	person_number_case_2 ;
-+3Sg+Abl:%>lura 	person_number_case_2 ;
-+1Du+Incl+Abl:%>limpajura person_number_case_2 ;
-+2Du+Excl+Abl:%>ngkurapula person_number_case_2 ;
-+3Du+Abl:%>janampalura 	person_number_case_2 ;
-+1Pl+Abl:%>lampajura 	person_number_case_2 ;
-+2Pl+Abl:%>ngkurapula 	person_number_case_2 ;
-+3Pl+Abl:%>janampalura 	person_number_case_2 ;
+@U.CLCASE.ABL@+1Sg+Abl:@U.CLCASE.ABL@%>jura 		person_number_case_2 ;
+@U.CLCASE.ABL@+2Sg+Abl:@U.CLCASE.ABL@%>ngkura 		person_number_case_2 ;
+@U.CLCASE.ABL@+3Sg+Abl:@U.CLCASE.ABL@%>lura 		person_number_case_2 ;
+@U.CLCASE.ABL@+1Du+Incl+Abl:@U.CLCASE.ABL@%>limpajura 	person_number_case_2 ;
+@U.CLCASE.ABL@+2Du+Excl+Abl:@U.CLCASE.ABL@%>ngkurapula 	person_number_case_2 ;
+@U.CLCASE.ABL@+3Du+Abl:@U.CLCASE.ABL@%>janampalura 	person_number_case_2 ;
+@U.CLCASE.ABL@+1Pl+Abl:@U.CLCASE.ABL@%>lampajura 	person_number_case_2 ;
+@U.CLCASE.ABL@+2Pl+Abl:@U.CLCASE.ABL@%>ngkurapula 	person_number_case_2 ;
+@U.CLCASE.ABL@+3Pl+Abl:@U.CLCASE.ABL@%>janampalura 	person_number_case_2 ;
  
 ! Reflexive pronoun clitics
 @U.CLCASE.REFL@+Refl:%>@U.CLCASE.REFL@ju 		person_number_case_2 ;
 @U.CLCASE.REFL@+Refl:%>@U.CLCASE.REFL@ngku 		person_number_case_2 ;
 
+
 LEXICON person_number_case_2
-! # ;
  vocative ;
 ! Subject case 
-+1Sg:%>rna 		vocative ; 	! wakalurna 
-+2Sg:%>n 		vocative ;
-+3Sg:%>ø 		vocative ;
-+1Du+Incl%>li 		vocative ;
-+1Du+Excl:%>liju 	vocative ;
-+2Du:%>npula 		vocative ;
-+3Du:%>pula 		vocative ;
-+1Pl+Incl%>la 		vocative ;
-+1Pl+Excl:%>laju 	vocative ;
-+2Pl:%>nyurra 		vocative ;
-+3Pl:%>ya 		vocative ;
+@D.CLCASE.S@+1Sg:@D.CLCASE.S@%>rna 		vocative ; 	! wakalurna 
+@D.CLCASE.S@+2Sg:@D.CLCASE.S@%>n 		vocative ;
+@D.CLCASE.S@+3Sg:@D.CLCASE.S@%>ø 		vocative ;
+@D.CLCASE.S@+1Du+Incl:@D.CLCASE.S@%>li 		vocative ;
+@D.CLCASE.S@+1Du+Excl:@D.CLCASE.S@%>liju 	vocative ;
+@D.CLCASE.S@+2Du:@D.CLCASE.S@%>npula 		vocative ;
+@D.CLCASE.S@+3Du:@D.CLCASE.S@%>pula 		vocative ;
+@D.CLCASE.S@+1Pl+Incl:@D.CLCASE.S@%>la 		vocative ;
+@D.CLCASE.S@+1Pl+Excl:@D.CLCASE.S@%>laju 	vocative ;
+@D.CLCASE.S@+2Pl:@D.CLCASE.S@%>nyurra 		vocative ;
+@D.CLCASE.S@+3Pl:@D.CLCASE.S@%>ya 		vocative ;
 
 ! Absolutive case (object of transitive verbs)
-+1Sg+Abs:%>rni 		vocative ;
-+2Sg+Abs:%>nta 		vocative ;
-+3Sg+Abs:%> 		vocative ;
-+1Du+Incl+Abs:%>linya 	vocative ;
-+1Du+Excl+Abs:%>linyaju vocative ;
-+2Du+Abs:%>ntapula 	vocative ;
-+3Du+Abs:%>pulanya 	vocative ;
-+1Pl+Incl+Abs:%>lanya 	vocative ;
-+1Pl+Excl+Abs:%>lanyaju vocative ;
-+2Pl+Abs:%>nyurranya 	vocative ;
-+3Pl+Abs:%>jananya 	vocative ;
+@D.CLCASE.ABS@+1Sg+Abs:@D.CLCASE.ABS@%>rni 		vocative ;
+@D.CLCASE.ABS@+2Sg+Abs:@D.CLCASE.ABS@%>nta 		vocative ;
+@D.CLCASE.ABS@+3Sg+Abs:@D.CLCASE.ABS@%> 		vocative ;
+@D.CLCASE.ABS@+1Du+Incl+Abs:@D.CLCASE.ABS@%>linya 	vocative ;
+@D.CLCASE.ABS@+1Du+Excl+Abs:@D.CLCASE.ABS@%>linyaju 	vocative ;
+@D.CLCASE.ABS@+2Du+Abs:@D.CLCASE.ABS@%>ntapula 		vocative ;
+@D.CLCASE.ABS@+3Du+Abs:@D.CLCASE.ABS@%>pulanya 		vocative ;
+@D.CLCASE.ABS@+1Pl+Incl+Abs:@D.CLCASE.ABS@%>lanya 	vocative ;
+@D.CLCASE.ABS@+1Pl+Excl+Abs:@D.CLCASE.ABS@%>lanyaju	vocative ;
+@D.CLCASE.ABS@+2Pl+Abs:@D.CLCASE.ABS@%>nyurranya 	vocative ;
+@D.CLCASE.ABS@+3Pl+Abs:@D.CLCASE.ABS@%>jananya	 	vocative ;
  
 ! Dative case 
-+1Sg+Dat:%>ju 		vocative ;
-+2Sg+Dat:%>ngku 	vocative ;
-+3Sg+Dat:%>ra 		vocative ;
-+1Du+Incl+Dat:%>limpa 	vocative ;
-+1Du+Excl+Dat:%>limpaju vocative ;
-+2Du+Dat:%>ngkupula 	vocative ;
-+3Du+Dat:%>pulampa 	vocative ;
-+1Pl+Incl+Dat:%>lampa 	vocative ;
-+1Pl+Excl+Dat:%>lampaju vocative ;
-+2Pl+Dat:%>nyurrampa 	vocative ;
-+3Pl+Dat:%>janampa 	vocative ;
+@D.CLCASE.DAT@+1Sg+Dat:@D.CLCASE.DAT@%>ju 		vocative ;
+@D.CLCASE.DAT@+2Sg+Dat:@D.CLCASE.DAT@%>ngku 		vocative ;
+@D.CLCASE.DAT@+3Sg+Dat:@D.CLCASE.DAT@%>ra 		vocative ;
+@D.CLCASE.DAT@+1Du+Incl+Dat:@D.CLCASE.DAT@%>limpa 	vocative ;
+@D.CLCASE.DAT@+1Du+Excl+Dat:@D.CLCASE.DAT@%>limpaju	vocative ;
+@D.CLCASE.DAT@+2Du+Dat:@D.CLCASE.DAT@%>ngkupula 	vocative ;
+@D.CLCASE.DAT@+3Du+Dat:@D.CLCASE.DAT@%>pulampa 		vocative ;
+@D.CLCASE.DAT@+1Pl+Incl+Dat:@D.CLCASE.DAT@%>lampa 	vocative ;
+@D.CLCASE.DAT@+1Pl+Excl+Dat:@D.CLCASE.DAT@%>lampaju 	vocative ;
+@D.CLCASE.DAT@+2Pl+Dat:@D.CLCASE.DAT@%>nyurrampa 	vocative ;
+@D.CLCASE.DAT@+3Pl+Dat:@D.CLCASE.DAT@%>janampa 		vocative ;
 
 ! Accessory case - accessory can be Locative or Allative
-+1Sg+Acs:%>rni 		vocative ;
-+2Sg+Acs:%>nta 		vocative ;
-+3Sg+Acs:%>lu 		vocative ;
-+1Du+Incl+Acs:%>linya 	vocative ;
-+1Du+Excl+Acs:%>linyaju vocative ;
-+2Du+Acs:%>ntapula 	vocative ;
-+3Du+Acs:%>pulanya 	vocative ;
-+1Pl+Acs:%>lanya 	vocative ;
-+1Pl+Excl+Acs:%>lanyaju vocative ;
-+2Pl+Acs:%>nyurranya 	vocative ;
-+3Pl+Acs:%>jananya 	vocative ;
+@D.CLCASE.ACS@+1Sg+Acs:@D.CLCASE.ACS@%>rni 		vocative ;
+@D.CLCASE.ACS@+2Sg+Acs:@D.CLCASE.ACS@%>nta 		vocative ;
+@D.CLCASE.ACS@+3Sg+Acs:@D.CLCASE.ACS@%>lu 		vocative ;
+@D.CLCASE.ACS@+1Du+Incl+Acs:@D.CLCASE.ACS@%>linya 	vocative ;
+@D.CLCASE.ACS@+1Du+Excl+Acs:@D.CLCASE.ACS@%>linyaju 	vocative ;
+@D.CLCASE.ACS@+2Du+Acs:@D.CLCASE.ACS@%>ntapula 		vocative ;
+@D.CLCASE.ACS@+3Du+Acs:@D.CLCASE.ACS@%>pulanya 		vocative ;
+@D.CLCASE.ACS@+1Pl+Acs:@D.CLCASE.ACS@%>lanya 		vocative ;
+@D.CLCASE.ACS@+1Pl+Excl+Acs:@D.CLCASE.ACS@%>lanyaju	vocative ;
+@D.CLCASE.ACS@+2Pl+Acs:@D.CLCASE.ACS@%>nyurranya 	vocative ;
+@D.CLCASE.ACS@+3Pl+Acs:@D.CLCASE.ACS@%>jananya 		vocative ;
  
 ! Ablative case
-+1Sg+Abl:%>jura 	vocative ;
-+2Sg+Abl:%>ngkura 	vocative ;
-+3Sg+Abl:%>lura 	vocative ;
-+1Du+Incl+Abl:%>limpajura vocative ;
-+2Du+Excl+Abl:%>ngkurapula vocative ;
-+3Du+Abl:%>janampalura 	vocative ;
-+1Pl+Abl:%>lampajura 	vocative ;
-+2Pl+Abl:%>ngkurapula 	vocative ;
-+3Pl+Abl:%>janampalura 	vocative ;
+@D.CLCASE.ABL@+1Sg+Abl:@D.CLCASE.ABL@%>jura 		vocative ;
+@D.CLCASE.ABL@+2Sg+Abl:@D.CLCASE.ABL@%>ngkura 		vocative ;
+@D.CLCASE.ABL@+3Sg+Abl:@D.CLCASE.ABL@%>lura 		vocative ;
+@D.CLCASE.ABL@+1Du+Incl+Abl:@D.CLCASE.ABL@%>limpajura 	vocative ;
+@D.CLCASE.ABL@+2Du+Excl+Abl:@D.CLCASE.ABL@%>ngkurapula 	vocative ;
+@D.CLCASE.ABL@+3Du+Abl:@D.CLCASE.ABL@%>janampalura 	vocative ;
+@D.CLCASE.ABL@+1Pl+Abl:@D.CLCASE.ABL@%>lampajura 	vocative ;
+@D.CLCASE.ABL@+2Pl+Abl:@D.CLCASE.ABL@%>ngkurapula 	vocative ;
+@D.CLCASE.ABL@+3Pl+Abl:@D.CLCASE.ABL@%>janampalura 	vocative ;
  
 ! Reflexive pronoun clitics
 @D.CLCASE.REFL@+Refl:%>@D.CLCASE.REFL@ju 		vocative ;
 @D.CLCASE.REFL@+Refl:%>@D.CLCASE.REFL@ngku 		vocative ;
-! temporarily applying to two lines before all the others. TODO: apply to other lines.
-! point to # and vocative (not enough that LEXICON vocative also contains blank -> # ?
-! @D.CLCASE.REFL@+Refl:%>@D.CLCASE.REFL@ju 		# ;
-! @D.CLCASE.REFL@+Refl:%>@D.CLCASE.REFL@ngku 		# ;
 
 LEXICON vocative ! (TODO: move to another file)
  # ;

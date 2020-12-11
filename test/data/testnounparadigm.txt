@@ -24,16 +24,25 @@
 
 +N+Abs+1Sg
 +N+1Sg+Acs
-+N+1Sg+Acs+Voc
-
 +N+1Sg+Acs+Refl
 +N+Refl+1Sg+Acs
 +N+1Sg+Acs+Refl+Voc
 +N+Refl+Refl+Voc
 +N+Refl+Refl
++N+Abl+1Sg+Abs+1Du+Excl+Abs
++N+Abl+1Sg+Dat+1Du+Excl+Abs
++N+Der/Hav+Der/Hav
++N+Der/Hav+Der/Thing
++N+Abl+Abl
++N+Abl+All
+
 +N+Perl+Abl+1Sg+Acs+Refl
 +N+Perl+Abl+1Sg+Acs+Refl+Voc
-+N+Perl+Abl+Clt/Foc+1Sg+Acs+Refl+
++N+Clt/Foc
++N+Perl+Abl+Clt/Foc+1Sg+Acs+Refl
++N+Perl+Abl+Clt/kirli+1Sg+Acs+Refl
++N+Perl+Abl+Clt/kirli+Clt/Foc+1Sg+Acs+Refl
++N+Perl+Abl+Clt/Foc+Clt/Foc+1Sg+Acs+Refl
 
 +N+Pa
 +N+Abs+Pa

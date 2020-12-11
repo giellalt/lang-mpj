@@ -32,8 +32,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !!nominal cases
 +Abl +Gen +Loc +Perl +All +Avoid
-+Der/Hav +Der/Thing +Der/Priv +Der/Int +Der/Want +Der/Asst +Der/Temp +Der/Dwell +Der/Side +Der/Type +Der/Sim +Der/Contr +Der/Mod +Der/Big +Der/Anoth +Der/Very +Der/Num +Der/Dual +Der/Few +Der/Pl +Der/Pl +Der/Grp +Der/Pair +Der/Only
-+Der/FOC
++Der/Hav +Der/Thing +Der/Priv +Der/Int +Der/Want +Der/Asst +Der/Temp +Der/Dwell +Der/Side +Der/Type +Der/Sim +Der/Contr +Der/Mod +Der/Big +Der/Anoth +Der/Very +Der/Num +Der/Dual +Der/Few +Der/Pl +Der/Grp +Der/Pair +Der/Only +Der/FOC
 +Abs +Erg +Dat
 +Der/SpatAbl +Der/SpatAll +TempLoc
 
@@ -46,48 +45,56 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  
  !! !! Verb affixes
 !! tense inflections 
-+Imprt			! Imperative 
-+PST			! Past Tense
-+FUT			! Future Tense
-+PRES			! Present Tense
++Prs			! Present Tense
+! perfect tense inflections
++Perf/Imprt		! Perfective Imperative OR maybe the other way around -> Imprt/Perf?	
++Perf/Pst		! Perfective Past Tense
++Perf/Fut		! Perfective Future Tense
+! imperfect tense inflections
++Imperf/Pst		! Imperfective Past asdf+V+PST+IMP // asdf+V+PSTIMP
++Imperf/PstHbt		! Imperfective Past Habitual
++Imperf/Fut		! Imperfective Future
++Imperf/Imprt		! Imperfective Imperative
 
-! +PSTIMP		! Past Imperfective asdf+V+PST+IMP // asdf+V+PSTIMP
-+PSTHBT			! Past Habitual
-+FUTIMP			! Future Imperfective
-+IMPIMP			! Imperfective Imperative
-
-!! irrealis tense inflections
-+ADMON		! Admonitive
-+INT		! Intentive
-+UNR			! Unrealised
-+PURP		! Purposive
-+OBLIG	! Obligative
-+HYP		! Hypothetical
-+CHAR		! Characteristic (*payi may behave differently - nominalisation?)
+!! irrealis tense inflections ! TODO: work on tags. Irrealis/Admon? But two separate morphophonemes
++Admon		! Admonitive
++Int		! Intentive
++Unr		! Unrealised
++Purp		! Purposive
++Oblig		! Obligative
++Hyp		! Hypothetical
++Char		! Characteristic (*payi may behave differently - nominalisation?)
 
 !! affixes following from irrealis inflections
-+CONTR			! Contradictive
-+AVOID	! Avoidance
++Contr	! Contradictive
++Avoid	! Avoidance
 
 !! serial and nominalised inflections
-+SER			! Serial (Ø and LA conjugations)
-+NOMZ		! Nominaliser (Ø and LA conjugations)
-
++Ser		! Serial
++Nomz		! Nominaliser
 
 !! verb derivation affixes
 +Der/ti
 +Der/ma
 +Der/ju
 
-!! temporal relative affixes
-+TREL
-+TREL
+!! temporal relative affix
++Trel
+
 !! verb directional affixes
 +ni		! *the other 2 are prefixes - not sure how to deal with yet
++Prefix/maa +Prefix/parra
+
 !! verb post-inflection affixes
 +GRP		! group (different to GROUP as derivational nominal suffix)
 +COMPL		! completed action
 +WARN		! warning
+
+!! verb compounds
++Compound/jurra +Compound/puwa +Compound/kanyila +Compound/+kati +Compound/yarra +Compound/ngarrin +Compound/pakala +Compound/jarra
+
+!! Reduplication
++Redpl
 
 !! Clitics
 ^P^A +Pa
@@ -95,31 +102,126 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Clt/kaji +Clt/la +Clt/lta +Clt/yila
 +Voc
 
-
 !! !! Flag diacritics for verb conjugations
 @U.CONJ.Ø@
 @U.CONJ.WA@
 @U.CONJ.RRA@
 @U.CONJ.LA@
 
++Der/Hav +Der/Thing +Der/Priv +Der/Int +Der/Want +Der/Asst +Der/Temp +Der/Dwell +Der/Side +Der/Type +Der/Sim +Der/Contr +Der/Mod +Der/Big +Der/Anoth +Der/Very +Der/Num +Der/Dual +Der/Few +Der/Pl +Der/Grp +Der/Pair +Der/Only
+!! !! Flag diacritics for noun cases
+!! DCASE = derivational case
+@U.DCASE.HAV@
+@U.DCASE.THING@
+@U.DCASE.PRIV@
+@U.DCASE.INT@
+@U.DCASE.WANT@
+@U.DCASE.ASST@
+@U.DCASE.TEMP@
+@U.DCASE.DWELL@
+@U.DCASE.SIDE@
+@U.DCASE.TYPE@
+@U.DCASE.SIM@
+@U.DCASE.CONTR@
+@U.DCASE.MOD@
+@U.DCASE.BIG@
+@U.DCASE.ANOTH@
+@U.DCASE.VERY@
+@U.DCASE.NUM@
+@U.DCASE.DUAL@
+@U.DCASE.FEW@
+@U.DCASE.PL@
+@U.DCASE.GRP@
+@U.DCASE.PAIR@
+@U.DCASE.ONLY@
+@U.DCASE.FOC@
 
-!! !! Flag diacritics for pronoun clitics (to ensure the same case is not used twice within a cluster). CLCASE = pronoun clitic case
+! corresponding D-flags
+@D.DCASE.HAV@
+@D.DCASE.THING@
+@D.DCASE.PRIV@
+@D.DCASE.INT@
+@D.DCASE.WANT@
+@D.DCASE.ASST@
+@D.DCASE.TEMP@
+@D.DCASE.DWELL@
+@D.DCASE.SIDE@
+@D.DCASE.TYPE@
+@D.DCASE.SIM@
+@D.DCASE.CONTR@
+@D.DCASE.MOD@
+@D.DCASE.BIG@
+@D.DCASE.ANOTH@
+@D.DCASE.VERY@
+@D.DCASE.NUM@
+@D.DCASE.DUAL@
+@D.DCASE.FEW@
+@D.DCASE.PL@
+@D.DCASE.GRP@
+@D.DCASE.PAIR@
+@D.DCASE.ONLY@
+@D.DCASE.FOC@
+
+!! SCASE = semantic case
+@U.SCASE.ABL@
+@U.SCASE.GEN@
+@U.SCASE.LOC@
+@U.SCASE.PERL@
+@U.SCASE.ALL@
+! corresponding D-flags
+@D.SCASE.ABL@
+@D.SCASE.GEN@
+@D.SCASE.LOC@
+@D.SCASE.PERL@
+@D.SCASE.ALL@
+
+!! !! Flag diacritics for clitics (to ensure the same clitic does not appear twice on a single word)
+!! CLT = clitic
+@U.CLT.FOC@
+@U.CLT.KIRLI@
+@U.CLT.LKA@
+@U.CLT.YILTA@
+@U.CLT.CERT@
+@U.CLT.REP@
+@U.CLT.DUB@
+@U.CLT.EMPH@
+@U.CLT.KAJI@
+@U.CLT.LA@
+@U.CLT.LTA@
+@U.CLT.YILA@
+
+! corresponding D-flags
+@D.CLT.FOC@
+@D.CLT.KIRLI@
+@D.CLT.LKA@
+@D.CLT.YILTA@
+@D.CLT.CERT@
+@D.CLT.REP@
+@D.CLT.DUB@
+@D.CLT.EMPH@
+@D.CLT.KAJI@
+@D.CLT.LA@
+@D.CLT.LTA@
+@D.CLT.YILA@
+
+!! !! Flag diacritics for pronoun clitics (to ensure the same case is not used twice within a cluster).
+!! CLCASE = pronoun clitic case TODO: consider changing name to PCCASE
 @U.CLCASE.S@
-@U.CLCASE.O@
+@U.CLCASE.ABS@
 @U.CLCASE.DAT@
 @U.CLCASE.ACS@
 @U.CLCASE.ABL@
 @U.CLCASE.REFL@
 
-! D-flags (to make sure that the same case is not repeated in two-length pronoun clitic clusters)
+! corresponding D-flags
 @D.CLCASE.S@
-@D.CLCASE.O@
+@D.CLCASE.ABS@
 @D.CLCASE.DAT@
 @D.CLCASE.ACS@
 @D.CLCASE.ABL@
 @D.CLCASE.REFL@
  
- 
+
  
  
  

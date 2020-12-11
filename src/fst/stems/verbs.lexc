@@ -3,6 +3,17 @@
 !! Verbs in the Wangkajunga language are actions.
 
 LEXICON Verbs
+nyina	simple_verbs ;
+pu	simple_verbs ;
+ya	simple_verbs ;
+paja	simple_verbs ;
+
+
+! nyina@U.CONJ.Ø@	simple_verbs ;
+! pu@U.CONJ.WA@		simple_verbs ;
+! ya@U.CONJ.RRA@	simple_verbs ;
+! paja@U.CONJ.LA@	simple_verbs ;
+
 verb    Persons   ;
 
 ! vim: set ft=xfst-lexc:
