@@ -85,7 +85,7 @@ LEXICON semantic_case_1
 ! +Loc:%>ngka		derivational_case_3 ;	! Locative - following a vowel (better done in twolc)
 ! +Loc:%>ta		derivational_case_3 ;	! following a consonant (difference betw t and j?)
 ! +Loc:%>ja		derivational_case_3 ;	! following a consonant
-+Loc:%>		derivational_case_3 ;
++Loc:%>+Loc		derivational_case_3 ;
 +Perl:%>wana		derivational_case_3 ;	! Perlative (motion along / across a place)
 +All:%>kutu		derivational_case_3 ;	! Allative (motion towards a place)
 
@@ -140,7 +140,7 @@ LEXICON semantic_case_2
 ! +Loc:%>ngka		grammatical_case_3 ;
 ! +Loc:%>ta		grammatical_case_3 ;
 ! +Loc:%>ja		grammatical_case_3 ;
-+Loc:%>		grammatical_case_3 ;
++Loc:%>+L		grammatical_case_3 ;
 +Perl:%>wana		grammatical_case_3 ;
 +All:%>kutu		grammatical_case_3 ;
 ! leading to semantic_case_3
@@ -153,7 +153,7 @@ LEXICON semantic_case_2
 ! @U.SCASE.LOC@+Loc:@U.SCASE.LOC@%>ngka		semantic_case_3 ;
 ! @U.SCASE.LOC@+Loc:@U.SCASE.LOC@%>ta		semantic_case_3 ;
 ! @U.SCASE.LOC@+Loc:@U.SCASE.LOC@%>ja		semantic_case_3 ;
-@U.SCASE.LOC@+Loc:@U.SCASE.LOC@%>		semantic_case_3 ;
+@U.SCASE.LOC@+Loc:@U.SCASE.LOC@%>+L		semantic_case_3 ;
 @U.SCASE.PERL@+Perl:@U.SCASE.PERL@%>wana	semantic_case_3 ;
 @U.SCASE.ALL@+All:@U.SCASE.ALL@%>kutu		semantic_case_3 ;
 
@@ -199,7 +199,7 @@ LEXICON semantic_case_3
 ! @D.SCASE.LOC@+Loc:@D.SCASE.LOC@%>ngka		end_noun_cases ;
 ! @D.SCASE.LOC@+Loc:@D.SCASE.LOC@%>ta		end_noun_cases ;
 ! @D.SCASE.LOC@+Loc:@D.SCASE.LOC@%>ja		end_noun_cases ;
-@D.SCASE.LOC@+Loc:@D.SCASE.LOC@%>		end_noun_cases ;
+@D.SCASE.LOC@+Loc:@D.SCASE.LOC@%>+L		end_noun_cases ;
 @D.SCASE.PERL@+Perl:@D.SCASE.PERL@%>wana	end_noun_cases ;
 @D.SCASE.ALL@+All:@D.SCASE.ALL@%>kutu		end_noun_cases ;
 
