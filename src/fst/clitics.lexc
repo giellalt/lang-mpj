@@ -4,9 +4,9 @@ LEXICON PA
 !+Pa:%>pa # ;
 +Pa:%>^P^A # ; ! TODO: connect the lexicon. First = test in twolc that it works.
 
-LEXICON K_1
+LEXICON K_1 ! U flag diacritics so the same case clitic cannot occur twice (then D flags in K_2)
  K_2 ;
-@U.CLT.FOC@+Clt/Foc:@U.CLT.FOC@%>nga 	# ;	! (different to +Der/Foc "nguninji")
+@U.CLT.FOC@+Clt/Foc:@U.CLT.FOC@%>nga 	# ;	! (NB different to +Der/Foc "nguninji")
 ! modifiers
 @U.CLT.KIRLI@+Clt/kirli:@U.CLT.KIRLI@%>kirli	K_2 ;	! 'probably'
 @U.CLT.LKA@+Clt/lka:@U.CLT.LKA@%>lka		K_2 ;	! 'contrary to expectation'
@@ -44,7 +44,8 @@ LEXICON K_2
 @D.CLT.YILA@+Clt/yila:@D.CLT.YILA@%>yila	person_number_case_1 ;
 
 !! !! Pronoun clitics (quite long)
-LEXICON person_number_case_1
+LEXICON person_number_case_1 ! U flag diacritics so the same case cannot appear twice -> D flag
+! diacritics on lexicon person_number_case_2
  person_number_case_2 ;
 ! Subject case 
 @U.CLCASE.S@+1Sg:@U.CLCASE.S@%>rna 		person_number_case_2 ;
@@ -117,7 +118,7 @@ LEXICON person_number_case_1
 LEXICON person_number_case_2
  vocative ;
 ! Subject case 
-@D.CLCASE.S@+1Sg:@D.CLCASE.S@%>rna 		vocative ; 	! wakalurna 
+@D.CLCASE.S@+1Sg:@D.CLCASE.S@%>rna 		vocative ;
 @D.CLCASE.S@+2Sg:@D.CLCASE.S@%>n 		vocative ;
 @D.CLCASE.S@+3Sg:@D.CLCASE.S@%>ø 		vocative ;
 @D.CLCASE.S@+1Du+Incl:@D.CLCASE.S@%>li 		vocative ;

@@ -7,7 +7,7 @@ Alphabet
 
  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
- %>:0 %^P:0 %^A:0 %+LOC:0 ngka ;
+ %>:0 %^P:0 %^A:0 %+L:0 ngka ;
 ! %^P:p %^A:a ! should I also include these pairs?
 
 Sets
@@ -17,6 +17,29 @@ Sets
        b c d f h q s v x z ;	! Introduced consonants
 
 Rules
+! Linguistic quasi-code:
+! 1. PA (^P^A). Added to every noun on the lexical level - after noun cases and before clitic and pronoun clitic
+! endings. If the letter before ^P^A is a consonant, ^P^A -> pa. If the letter before ^P^A is a vowel, delete
+! ^P^A. Right-hand context can't be specified, as it could be end-of-word or 1 or more endings from clitic
+! lexicons (K_1, K_2, person_number_case_1, person-number_case_2. (^P^A will also be added to other word types,
+! I haven't implemented them yet. The behaviour is the same - consonant vs vowel).
+!
+! 2. Locative allomorphs (ngka, ta, ja). Following a vowel, the locative ending is -ngka. Following a consonant
+! (in Wangkajunga words) the locative is -ta. For introduced words, following a consonant the locative can be 
+! -ta or -ja. Right-hand context can't be specified.
+! I focused on just trying to implement ngka vs ja initially, but couldn't get that to work. A thought for the 
+! ta/ja issue in introduced words was to add a marker / flag diacritic in the stem vocabulary?
+!
+! 3. Ergative allomorphs (lu, ju, tu). Same as locative above: lu after vowels, ju after consonants in
+! Wangkajunga words, ju or tu after consonants in introduced words.
+!
+!4. Avoidance case (+Avoid ngkamarra vs jamarra). Ngkamarra following a vowel and jamarra following a consonant.
+!
+! There are additionally some things for verbs -> a vowel drop in the present tense, two irregular verbs, and
+! one other simple change: the Inchoative ending is -rri following a vowel and -arri following a consonant.
+
+
+
 
 "turning ^P^A to pa at word ending (pre clitics) after consonant. Part 1. ^P -> p"
 %^P:p <=> Cns _ ;
@@ -29,16 +52,18 @@ Rules
 
 
 "+LOC -> ngka after vowel"
-%+LOC:ngka <=> Vow _ ;
+%+L:ngka <=> Vow _ ;
 
 "+LOC -> ta after consonant" ! or -ja/-ta if the word is of non-Wangkajunga origin, but first testing just this.
-%+LOC:ta <=> Cns _ ;
+%+L:ta <=> Cns _ ;
 
 !!€ waka+LOC  !! or this?	waka+LOC000
 !!€ wakangka  !!		wakangka	
 
 !!€ pilyurr+LOC !! or	pilyurr+LOC0
 !!€ pilyurrta   !!	pilyurrta
+
+
 
 
 
