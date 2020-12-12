@@ -3,17 +3,33 @@
 !! Verbs in the Wangkajunga language are actions.
 
 LEXICON Verbs
-nyina	simple_verbs ;
+! simple verbs
+nyina	simple_verbs "sit" ;
 pu	simple_verbs ;
 ya	simple_verbs ;
 paja	simple_verbs ;
 
+! Ø conjugation
+! nyina@U.CONJ.Ø@	simple_verbs "sit" ;
+! ngara@U.CONJ.Ø@	simple_verbs "stand" ;
+! ngarri@U.CONJ.Ø@	simple_verbs "lie" ;
+! jarrpa@U.CONJ.Ø@	simple_verbs "enter" ;
 
-! nyina@U.CONJ.Ø@	simple_verbs ;
-! pu@U.CONJ.WA@		simple_verbs ;
-! ya@U.CONJ.RRA@	simple_verbs ;
-! paja@U.CONJ.LA@	simple_verbs ;
+! WA conjugation
+! pu@U.CONJ.WA@		simple_verbs "hit" ;
+! ka@U.CONJ.WA@		simple_verbs "carry" ;
+! palipu@U.CONJ.WA@	simple_verbs "find" ;
 
-verb    Persons   ;
+! RRA conjugation
+! ya@U.CONJ.RRA@	simple_verbs "go" ;
+! ma@U.CONJ.RRA@	simple_verbs "get" ;
+! ju@U.CONJ.RRA@	simple_verbs "put" ;
+
+! LA conjugation
+! paja@U.CONJ.LA@	simple_verbs "bite" ;
+! kunta@U.CONJ.LA@	simple_verbs "cut" ;
+! manji@U.CONJ.LA@	simple_verbs "collect" ;
+
+! preverbs (as part of complex verbs)
 
 ! vim: set ft=xfst-lexc:

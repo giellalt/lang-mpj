@@ -45,12 +45,12 @@ LEXICON compound_verb_compounds
 
 LEXICON verb_derivational_suffix
 		verb_tense_inflections;
-+Der/ti:%>ti	verb_tense_inflections;
+@U.CONJ.WA@+Der/ti:@U.CONJ.WA@%>ti	verb_tense_inflections;
 +Der/ma:%>ma	verb_tense_inflections;
 +Der/ju:%>ju	verb_tense_inflections;
 
 LEXICON verb_tense_inflections
- # ;
+ directional_suffix ; ! TODO: check - does every verb need a tense inflection?
 ! nominaliser form going to temp_rel
 @U.CONJ.Ø@+Nomz:%>@U.CONJ.Ø@nja			temporal_relative ;
 @U.CONJ.WA@+Nomz:%>@U.CONJ.WA@ngkunja		temporal_relative ;
@@ -66,15 +66,79 @@ LEXICON verb_tense_inflections
 @U.CONJ.WA@+Ser:%>@U.CONJ.WA@ngkura	# ; ! PA
 @U.CONJ.RRA@+Ser:%>@U.CONJ.RRA@nkura	# ; ! PA
 @U.CONJ.LA@+Ser:%>@U.CONJ.LA@ra		# ; ! PA
-!	 
+! present tense. TODO: return to this.
+
+! perfective tense endings (imperative, past, future)
+@U.CONJ.Ø@+Perf/Imprt:@U.CONJ.Ø%>		directional_suffix ;
+@U.CONJ.WA@+Perf/Imprt:@U.CONJ.WA@%>wa		directional_suffix ;
+@U.CONJ.RRA@+Perf/Imprt:@U.CONJ.RRA@%>rra	directional_suffix ;
+@U.CONJ.LA@+Perf/Imprt:@U.CONJ.LA@%>la		directional_suffix ;
+@U.CONJ.Ø@+Perf/Pst:@U.CONJ.Ø@%>ngu		directional_suffix ;
+@U.CONJ.Ø@+Perf/Pst:@U.CONJ.Ø@%>ngun		directional_suffix ;
+@U.CONJ.WA@+Perf/Pst:@U.CONJ.WA@%>ngu		directional_suffix ;
+@U.CONJ.WA@+Perf/Pst:@U.CONJ.WA@%>ngun		directional_suffix ;
+@U.CONJ.RRA@+Perf/Pst:@U.CONJ.RRA@%>nu		directional_suffix ;
+@U.CONJ.RRA@+Perf/Pst:@U.CONJ.RRA@%>nun		directional_suffix ;
+@U.CONJ.LA@+Perf/Pst:@U.CONJ.LA@%>rnu		directional_suffix ;
+@U.CONJ.LA@+Perf/Pst:@U.CONJ.LA@%>rnun		directional_suffix ;
+@U.CONJ.Ø@+Perf/Fut:@U.CONJ.Ø@%>ku		directional_suffix ;
+@U.CONJ.WA@+Perf/Fut:@U.CONJ.WA@%>ngku		directional_suffix ;
+@U.CONJ.RRA@+Perf/Fut:@U.CONJ.RRA@%>nku		directional_suffix ;
+@U.CONJ.LA@+Perf/Fut:@U.CONJ.LA@%>lku		directional_suffix ;
+! imperfective forms (expanded in separate lexicon)
+@U.CONJ.Ø@+Imperf:@U.CONJ.Ø@%>		imperfective_inflections ;
+@U.CONJ.WA@+Imperf:@U.CONJ.WA@%>nga	imperfective_inflections ;
+@U.CONJ.RRA@+Imperf:@U.CONJ.RRA@%>na	imperfective_inflections ;
+@U.CONJ.LA@+Imperf:@U.CONJ.LA@%>n	imperfective_inflections ;
+! irrealis forms (expanded in separate lexicon)
+@U.CONJ.Ø@+Irr:@U.CONJ.Ø@%>		irrealis_inflections ;
+@U.CONJ.WA@+Irr:@U.CONJ.WA@%>ngku	irrealis_inflections ;
+@U.CONJ.RRA@+Irr:@U.CONJ.RRA@%>nku	irrealis_inflections ;
+@U.CONJ.LA@+Irr:@U.CONJ.LA@%>l		irrealis_inflections ; 
 
 LEXICON temporal_relative
-+Trel:%>janu	#;
-+Trel:%>nu	#;
++Trel:%>janu	# ;
++Trel:%>nu	# ;
 
+LEXICON imperfective_inflections
++Pst:%>ma	directional_suffix ;
++PstHbt:%>ma	directional_suffix ;
++Fut:%>mal	directional_suffix ;
++Imprt:%>ma	directional_suffix ;
 
+LEXICON irrealis_inflections
++Admon:%>jaku		Avoid ; ! it can also go to the same lexicon as for noun avoid case..
++Avoid:%>ngkamarra	# ; ! jaku ADMON not required for avoid
+! Avoid ; ! this will have the same result as the line above.
++Admon:%>jaku		directional_suffix ;
++Oblig:%>ngara		directional_suffix ;
++Hyp:%>mara		directional_suffix ;
++Char:%>payi		directional_suffix ;
++Int:%>kija		Intentional ;
++Unr:%>ra		Unrealistic;
 
+LEXICON Avoid ! there is also an avoid nominal suffix
++Avoid:%>ngkamarra	# ;
 
+LEXICON Unrealistic
+			directional_suffix ;
++Purp:%>ku		directional_suffix ;
++Contr:%>munu		directional_suffix ;
++Int:%>kija		Intentional;
+
+LEXICON Intentional
+ # ;
++Erg:%>lu	# ;
+
+LEXICON directional_suffix
+ post_inflection_endings ;
++Direct/ni:%>ni		post_inflection_endings ;
+
+LEXICON post_inflection_endings
+ K_1 ; ! PA ;
++Grp:%>nirra		K_1 ; ! PA ;
++Compl:%>ka		K_1 ; ! PA ;
++Warn:%>rta		K_1 ; ! PA ;
 
 
 

@@ -15,38 +15,38 @@ derivational_case_1 ;
 semantic_case_1 ;
 grammatical_case_1 ;
 derivational_avoid_case ;
-! focus ;
-! inchoative;	! NB from the book, inchoative is used as verbalisation
-! verb_derivation_ti;
+! TODO: add flag diacritic for INCH. add a-insert in twolc after consonants.
++V+INCH:%>rri 	verb_tense_inflections ; ! inchoative
+@U.CONJ.WA@+V+Der/ti:@U.CONJ.WA@%>ti	verb_tense_inflections;
 
 LEXICON derivational_case_1
 ! leading to derivational_case_2
 				derivational_case_2 ;
-@U.DCASE.HAV@+Der/Hav:@U.DCASE.HAV@%>kurlu		derivational_case_2 ;		! having
-@U.DCASE.THING@+Der/Thing:@U.DCASE.THING@%>pinti	derivational_case_2 ;		! associated thing
-@U.DCASE.PRIV@+Der/Priv:@U.DCASE.PRIV@%>parni		derivational_case_2 ;		! privative
-@U.DCASE.INT@+Der/Int:@U.DCASE.INT@%>kija		derivational_case_2 ;		! intentive
-@U.DCASE.WANT@+Der/Want:@U.DCASE.WANT@%>jiraja		derivational_case_2 ;		! want
-@U.DCASE.ASST@+Der/Asst:@U.DCASE.ASST@%>jarra	derivational_case_2 ;		! associated time or space
-@U.DCASE.TEMP@+Der/Temp:@U.DCASE.TEMP@%>puru		derivational_case_2 ;		! temporal
-@U.DCASE.DWELL@+Der/Dwell:@U.DCASE.DWELL@%>karraja		derivational_case_2 ;		! dweller
-@U.DCASE.SIDE@+Der/Side:@U.DCASE.SIDE@%>karti		derivational_case_2 ;		! side
-@U.DCASE.TYPE@+Der/Type:@U.DCASE.TYPE@%>partu		derivational_case_2 ;		! type
-@U.DCASE.SIM@+Der/Sim:@U.DCASE.SIM@%>yuru			derivational_case_2 ;		! similar
-@U.DCASE.CONTR@+Der/Contr:@U.DCASE.CONTR@%>munu		derivational_case_2 ;		! contradictive
-@U.DCASE.MOD@+Der/Mod:@U.DCASE.MOD@%>marta		derivational_case_2 ;		! moderative
-@U.DCASE.BIG@+Der/Big:@U.DCASE.BIG@%>paka			derivational_case_2 ;		! very big
-@U.DCASE.ANOTH@+Der/Anoth:@U.DCASE.ANOTH@%>kujupa		derivational_case_2 ;		! another
-@U.DCASE.VERY@+Der/Very:@U.DCASE.VERY@%>minyirri		derivational_case_2 ;		! very
-@U.DCASE.NUM@+Der/Num:@U.DCASE.NUM@%>marlu		derivational_case_2 ;		! numerative
-@U.DCASE.DUAL@+Der/Dual:@U.DCASE.DUAL@%>kujarra		derivational_case_2 ;		! dual
-@U.DCASE.FEW@+Der/Few:@U.DCASE.FEW@%>paraku		derivational_case_2 ;		! few
-@U.DCASE.PL@+Der/Pl:@U.DCASE.PL@%>n		derivational_case_2 ;		! plural alternative 1
-@U.DCASE.PL@+Der/Pl:@U.DCASE.PL@%>rti		derivational_case_2 ;		! plural alternative 2
-@U.DCASE.GRP@+Der/Grp:@U.DCASE.GRP@%>ngurun	derivational_case_2 ;	! group *afterwards comes PA
-@U.DCASE.PAIR@+Der/Pair:@U.DCASE.PAIR@%>rarra		derivational_case_2 ;		! pair
-@U.DCASE.ONLY@+Der/Only:@U.DCASE.ONLY@%>wiyaju		derivational_case_2 ;		! only
-@U.DCASE.FOC@+Der/Foc:@U.DCASE.FOC@%>nguninji derivational_case_2 ;! focus (sometimes annotated as SPEC)
+@U.DCASE.HAV@+Der/Hav:@U.DCASE.HAV@%>kurlu		derivational_case_2 ; ! having
+@U.DCASE.THING@+Der/Thing:@U.DCASE.THING@%>pinti	derivational_case_2 ; ! associated thing
+@U.DCASE.PRIV@+Der/Priv:@U.DCASE.PRIV@%>parni		derivational_case_2 ; ! privative
+@U.DCASE.INT@+Der/Int:@U.DCASE.INT@%>kija		derivational_case_2 ; ! intentive
+@U.DCASE.WANT@+Der/Want:@U.DCASE.WANT@%>jiraja		derivational_case_2 ; ! want
+@U.DCASE.ASST@+Der/Asst:@U.DCASE.ASST@%>jarra		derivational_case_2 ; ! associated time or space
+@U.DCASE.TEMP@+Der/Temp:@U.DCASE.TEMP@%>puru		derivational_case_2 ; ! temporal
+@U.DCASE.DWELL@+Der/Dwell:@U.DCASE.DWELL@%>karraja	derivational_case_2 ; ! dweller
+@U.DCASE.SIDE@+Der/Side:@U.DCASE.SIDE@%>karti		derivational_case_2 ; ! side
+@U.DCASE.TYPE@+Der/Type:@U.DCASE.TYPE@%>partu		derivational_case_2 ; ! type
+@U.DCASE.SIM@+Der/Sim:@U.DCASE.SIM@%>yuru		derivational_case_2 ; ! similar
+@U.DCASE.CONTR@+Der/Contr:@U.DCASE.CONTR@%>munu		derivational_case_2 ; ! contradictive
+@U.DCASE.MOD@+Der/Mod:@U.DCASE.MOD@%>marta		derivational_case_2 ; ! moderative
+@U.DCASE.BIG@+Der/Big:@U.DCASE.BIG@%>paka		derivational_case_2 ; ! very big
+@U.DCASE.ANOTH@+Der/Anoth:@U.DCASE.ANOTH@%>kujupa	derivational_case_2 ; ! another
+@U.DCASE.VERY@+Der/Very:@U.DCASE.VERY@%>minyirri	derivational_case_2 ; ! very
+@U.DCASE.NUM@+Der/Num:@U.DCASE.NUM@%>marlu		derivational_case_2 ; ! numerative
+@U.DCASE.DUAL@+Der/Dual:@U.DCASE.DUAL@%>kujarra		derivational_case_2 ; ! dual
+@U.DCASE.FEW@+Der/Few:@U.DCASE.FEW@%>paraku		derivational_case_2 ; ! few
+@U.DCASE.PL@+Der/Pl:@U.DCASE.PL@%>n			derivational_case_2 ; ! plural alternative 1
+@U.DCASE.PL@+Der/Pl:@U.DCASE.PL@%>rti			derivational_case_2 ; ! plural alternative 2
+@U.DCASE.GRP@+Der/Grp:@U.DCASE.GRP@%>ngurun		derivational_case_2 ; ! group *afterwards comes PA
+@U.DCASE.PAIR@+Der/Pair:@U.DCASE.PAIR@%>rarra		derivational_case_2 ; ! pair
+@U.DCASE.ONLY@+Der/Only:@U.DCASE.ONLY@%>wiyaju		derivational_case_2 ; ! only
+@U.DCASE.FOC@+Der/Foc:@U.DCASE.FOC@%>nguninji derivational_case_2 ; ! focus (sometimes annotated as SPEC)
 ! leading to semantic_case_2
 				semantic_case_2 ;	
 +Der/Hav:%>kurlu		semantic_case_2 ;
@@ -85,7 +85,7 @@ LEXICON semantic_case_1
 ! +Loc:%>ngka		derivational_case_3 ;	! Locative - following a vowel (better done in twolc)
 ! +Loc:%>ta		derivational_case_3 ;	! following a consonant (difference betw t and j?)
 ! +Loc:%>ja		derivational_case_3 ;	! following a consonant
-+Loc:%>+Loc		derivational_case_3 ;
++Loc:%>+L		derivational_case_3 ;
 +Perl:%>wana		derivational_case_3 ;	! Perlative (motion along / across a place)
 +All:%>kutu		derivational_case_3 ;	! Allative (motion towards a place)
 

@@ -35,6 +35,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Der/Hav +Der/Thing +Der/Priv +Der/Int +Der/Want +Der/Asst +Der/Temp +Der/Dwell +Der/Side +Der/Type +Der/Sim +Der/Contr +Der/Mod +Der/Big +Der/Anoth +Der/Very +Der/Num +Der/Dual +Der/Few +Der/Pl +Der/Grp +Der/Pair +Der/Only +Der/FOC
 +Abs +Erg +Dat
 +Der/SpatAbl +Der/SpatAll +TempLoc
++Inch ! NB from the reference book, inchoative is used as verbalisation
 
 !!pronoun clitics
 +1Sg +2Sg +3Sg 
@@ -48,15 +49,17 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Prs			! Present Tense
 ! perfect tense inflections
 +Perf/Imprt		! Perfective Imperative OR maybe the other way around -> Imprt/Perf?	
-+Perf/Pst		! Perfective Past Tense
++Perf/Pst		! Perfective Past Tense OR past as Prt and not Pst
 +Perf/Fut		! Perfective Future Tense
 ! imperfect tense inflections
-+Imperf/Pst		! Imperfective Past asdf+V+PST+IMP // asdf+V+PSTIMP
-+Imperf/PstHbt		! Imperfective Past Habitual
-+Imperf/Fut		! Imperfective Future
-+Imperf/Imprt		! Imperfective Imperative
+! +Imperf/Pst		! Imperfective Past asdf+V+PST+IMP // asdf+V+PSTIMP
+! +Imperf/PstHbt		! Imperfective Past Habitual
+! +Imperf/Fut		! Imperfective Future
+! +Imperf/Imprt		! Imperfective Imperative
++Imperf +Pst +PstHbt +Fut +Imprt
 
 !! irrealis tense inflections ! TODO: work on tags. Irrealis/Admon? But two separate morphophonemes
++Irr		! Irrealis
 +Admon		! Admonitive
 +Int		! Intentive
 +Unr		! Unrealised
@@ -82,13 +85,13 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Trel
 
 !! verb directional affixes
-+ni		! *the other 2 are prefixes - not sure how to deal with yet
-+Prefix/maa +Prefix/parra
++Direct/ni
++Prefix/maa +Prefix/parra ! OR - +Direct/maa & +Direct/parra
 
 !! verb post-inflection affixes
-+GRP		! group (different to GROUP as derivational nominal suffix)
-+COMPL		! completed action
-+WARN		! warning
++Grp		! group (different to GROUP as derivational nominal suffix)
++Compl		! completed action
++Warn		! warning
 
 !! verb compounds
 +Compound/jurra +Compound/puwa +Compound/kanyila +Compound/+kati +Compound/yarra +Compound/ngarrin +Compound/pakala +Compound/jarra
