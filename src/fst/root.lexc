@@ -44,7 +44,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Incl +Excl
 +Acs +Refl
  
- !! !! Verb affixes
+!! !! Verb affixes
 !! tense inflections 
 +Prs			! Present Tense
 ! perfect tense inflections
@@ -104,6 +104,12 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Clt/Foc +Clt/kirli +Clt/lka +Clt/yilta +Clt/Rep +Clt/Dub +Clt/Emph 
 +Clt/kaji +Clt/la +Clt/lta +Clt/yila
 +Voc
+
+!! Demonstrative affixes TODO: change tag names
++SentMod
++Dem/ngula +Dem/pa +Dem/na +Dem/janu +Dem/janulu
+
+
 
 !! !! Flag diacritics for verb conjugations
 @U.CONJ.Ø@

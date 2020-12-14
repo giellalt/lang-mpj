@@ -29,4 +29,11 @@ yulparrira n_spatial_agr "south" ;
 kankani n_spatial_agr "above, on top of" ;
 kanin n_spatial_agr "below" ;
 
+! demonstratives
+yangka yangka_inflection ;
+palunya	palunya_inflection ;
+jii	jii_inflection ;
+ngaa	demonstrative_cases ;
+nyarra	demonstrative_cases ;
+
 ! vim: set ft=xfst-lexc:

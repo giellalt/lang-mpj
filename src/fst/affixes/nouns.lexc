@@ -15,8 +15,8 @@ derivational_case_1 ;
 semantic_case_1 ;
 grammatical_case_1 ;
 derivational_avoid_case ;
-! TODO: add flag diacritic for INCH. add a-insert in twolc after consonants.
-+V+INCH:%>rri 	verb_tense_inflections ; ! inchoative
+! TODO: add flag diacritic for INCH as to verb conjugation. add a-insert in twolc after consonants.
++V+INCH:%>rri 	verb_tense_inflections ; ! inchoative. Maybe +INCH+V is more intuitive?
 @U.CONJ.WA@+V+Der/ti:@U.CONJ.WA@%>ti	verb_tense_inflections;
 
 LEXICON derivational_case_1
@@ -237,4 +237,32 @@ LEXICON spatial_case
 +Der/Side:%>karti	# ;
 +Der/SpatAbl:%>mpanguru	# ;
 +Der/SpatAll:%>warraku	# ;
+
+
+!! !! demonstrative lexicons
+LEXICON yangka_inflection
++Dem/ngula:%>ngula K_1 ; ! PA ;
++Dem/pa:%>pa K_1 ; ! PA ;
+
+LEXICON palunya_inflection
++Loc:%>ngka sentence_modifier ;
++Abl:%>janu sentence_modifier ;
++Dem/janulu:%>janulu sentence_modifier ;
+
+LEXICON jii_inflection
+ demonstrative_cases ;
++Dem/na:%>na sentence_modifier ;
++Dem/janu:%>janu sentence_modifier ;
+
+LEXICON sentence_modifier
++SentMod:	K_1 ; ! PA ;
+
+LEXICON demonstrative_cases ! TODO: fill in when worked out which cases are possible.
+ # ;
+
+
+
+
+
+
 

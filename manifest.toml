@@ -1,8 +1,8 @@
-name = "Undefined"
+name = "Wangkajunga"
 version = "0.1.0"
 
 [macos]
-system_pkg_id = "no.divvun.MacDivvun.und"
+system_pkg_id = "no.divvun.MacDivvun.mpj"
 
 [windows]
 system_product_code = "{499EE785-A495-4A23-9C94-70734A16F15C}_is1"

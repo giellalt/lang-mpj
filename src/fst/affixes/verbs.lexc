@@ -21,6 +21,7 @@ LEXICON simple_verbs
 +V:	verb_derivational_suffix ;
 	
 LEXICON simple_verb_reduplication
+ # ; ! remove when Redpl is working
 +Redpl:%>__	verb_derivational_suffix;
 
 LEXICON compound_verb_preverbs
@@ -45,12 +46,11 @@ LEXICON compound_verb_compounds
 
 LEXICON verb_derivational_suffix
 		verb_tense_inflections;
-@U.CONJ.WA@+Der/ti:@U.CONJ.WA@%>ti	verb_tense_inflections;
+@U.CONJ.WA@+Der/ti:@U.CONJ.WA@%>ti	verb_tense_inflections ;
 +Der/ma:%>ma	verb_tense_inflections;
 +Der/ju:%>ju	verb_tense_inflections;
 
 LEXICON verb_tense_inflections
- directional_suffix ; ! TODO: check - does every verb need a tense inflection?
 ! nominaliser form going to temp_rel
 @U.CONJ.Ø@+Nomz:%>@U.CONJ.Ø@nja			temporal_relative ;
 @U.CONJ.WA@+Nomz:%>@U.CONJ.WA@ngkunja		temporal_relative ;
@@ -62,10 +62,10 @@ LEXICON verb_tense_inflections
 @U.CONJ.RRA@+Nomz:%>@U.CONJ.RRA@nkunja		n_agr ;
 @U.CONJ.LA@+Nomz:%>@U.CONJ.LA@nja		n_agr ;
 ! serial forms TODO: replace # with PA
-@U.CONJ.Ø@+Ser:%>@U.CONJ.Ø@ra		# ; ! PA
-@U.CONJ.WA@+Ser:%>@U.CONJ.WA@ngkura	# ; ! PA
-@U.CONJ.RRA@+Ser:%>@U.CONJ.RRA@nkura	# ; ! PA
-@U.CONJ.LA@+Ser:%>@U.CONJ.LA@ra		# ; ! PA
+@U.CONJ.Ø@+Ser:%>@U.CONJ.Ø@ra		person_number_case_1 ;
+@U.CONJ.WA@+Ser:%>@U.CONJ.WA@ngkura	person_number_case_1 ;
+@U.CONJ.RRA@+Ser:%>@U.CONJ.RRA@nkura	person_number_case_1 ;
+@U.CONJ.LA@+Ser:%>@U.CONJ.LA@ra		person_number_case_1 ;
 ! present tense. TODO: return to this.
 
 ! perfective tense endings (imperative, past, future)
