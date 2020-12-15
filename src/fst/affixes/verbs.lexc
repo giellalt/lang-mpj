@@ -67,7 +67,10 @@ LEXICON verb_tense_inflections
 @U.CONJ.RRA@+Ser:%>@U.CONJ.RRA@nkura	person_number_case_1 ;
 @U.CONJ.LA@+Ser:%>@U.CONJ.LA@ra		person_number_case_1 ;
 ! present tense. TODO: return to this.
-
+@U.CONJ.Ø@+Prs:@U.CONJ.Ø@%>in		directional_suffix ; ! additional vowel-deletion in twolc.
+@U.CONJ.WA@+Prs:@U.CONJ.WA@%>ngin	directional_suffix ;
+@U.CONJ.RRA@+Prs:@U.CONJ.RRA@%>nin	directional_suffix ;
+@U.CONJ.LA@+Prs:@U.CONJ.LA@%>nin 	directional_suffix ;
 ! perfective tense endings (imperative, past, future)
 @U.CONJ.Ø@+Perf/Imprt:@U.CONJ.Ø%>		directional_suffix ;
 @U.CONJ.WA@+Perf/Imprt:@U.CONJ.WA@%>wa		directional_suffix ;

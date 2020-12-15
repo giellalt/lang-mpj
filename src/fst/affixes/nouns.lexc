@@ -245,6 +245,7 @@ LEXICON yangka_inflection
 +Dem/pa:%>pa K_1 ; ! PA ;
 
 LEXICON palunya_inflection
+ demonstrative_cases ;
 +Loc:%>ngka sentence_modifier ;
 +Abl:%>janu sentence_modifier ;
 +Dem/janulu:%>janulu sentence_modifier ;
