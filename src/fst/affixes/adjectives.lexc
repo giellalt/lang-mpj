@@ -2,10 +2,7 @@
 !  --------------------
 !! The Wangkajunga language adjectives compare.
 
-LEXICON Comparisons
-+A+pos:0        Cases   ;
-+A+cmp:er       Cases   ;
-+A+sup:est      Cases   ;
+!LEXICON Comparisons
 
 ! vim: set ft=xfst-lexc:
 

@@ -16,7 +16,7 @@ semantic_case_1 ;
 grammatical_case_1 ;
 derivational_avoid_case ;
 ! TODO: add flag diacritic for INCH as to verb conjugation. add a-insert in twolc after consonants.
-+V+INCH:%>rri 	verb_tense_inflections ; ! inchoative. Maybe +INCH+V is more intuitive?
++V+Inch:%>rri 	verb_tense_inflections ; ! inchoative. Maybe +Inch+V is more intuitive?
 @U.CONJ.WA@+V+Der/ti:@U.CONJ.WA@%>ti	verb_tense_inflections;
 
 LEXICON derivational_case_1
@@ -228,7 +228,7 @@ LEXICON n_spatial_agr
 
 LEXICON temporal_case
 		# ;
-+SpatLoc:%>ngka	# ;
++Der/SpatLoc:%>ngka	# ;
 +Der/Asst:%>jarra	# ;
 
 LEXICON spatial_case

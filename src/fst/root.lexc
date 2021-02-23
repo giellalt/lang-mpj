@@ -31,11 +31,32 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  +Pron +CS +CC +Adp +Po +Pr +Interj +Pcle +Num !!≈
 
 !!nominal cases
-+Abl +Gen +Loc +Perl +All +Avoid
-+Der/Hav +Der/Thing +Der/Priv +Der/Int +Der/Want +Der/Asst +Der/Temp +Der/Dwell +Der/Side +Der/Type +Der/Sim +Der/Contr +Der/Mod +Der/Big +Der/Anoth +Der/Very +Der/Num +Der/Dual +Der/Few +Der/Pl +Der/Grp +Der/Pair +Der/Only +Der/FOC
-+Abs +Erg +Dat
-+Der/SpatAbl +Der/SpatAll +TempLoc
++Abs
++Erg
++Dat
+
++Abl
++Gen
++Loc
++Perl
++All
++Avoid
+
+
++Der/Hav +Der/Thing +Der/Priv +Der/Int +Der/Want +Der/Asst +Der/Temp +Der/Dwell +Der/Side +Der/Type +Der/Sim +Der/Contr +Der/Mod +Der/Big +Der/Anoth +Der/Very +Der/Num +Der/Dual +Der/Few +Der/Pl +Der/Grp +Der/Pair +Der/Only
++Der/Foc
+
++Clt/Cert
++Compound/kati
+
+
++Der/SpatAbl
++Der/SpatAll
++Der/TempLoc
++Der/SpatLoc
+
 +Inch ! NB from the reference book, inchoative is used as verbalisation
++INCH
 
 !!pronoun clitics
 +1Sg +2Sg +3Sg 
