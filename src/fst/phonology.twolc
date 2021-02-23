@@ -7,7 +7,7 @@ Alphabet
 
  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
- %> %^P:0 %^A:0 %+L:0 ngka ;
+ %> %^P:0 %^A:0 ;
 ! %^P:p %^A:a ! should I also include these pairs?
 
 Sets
@@ -25,7 +25,7 @@ Rules
 ! I haven't implemented them yet. The behaviour is the same - consonant vs vowel).
 !
 ! 2. Locative allomorphs (ngka, ta, ja). Following a vowel, the locative ending is -ngka. Following a consonant
-! (in Wangkajunga words) the locative is -ta. For introduced words, following a consonant the locative can be 
+! (in Wangkajunga words) the locative is -ja. For introduced words, following a consonant the locative can be 
 ! -ta or -ja. Right-hand context can't be specified.
 ! I focused on just trying to implement ngka vs ja initially, but couldn't get that to work. A thought for the 
 ! ta/ja issue in introduced words was to add a marker / flag diacritic in the stem vocabulary?
@@ -35,7 +35,7 @@ Rules
 !
 ! a. lexc solution: 3 noun classes:
 ! -V: loc -ngka, erg -lu;
-! -C: loc -ta, erg -ju,
+! -C: loc -ja, erg -ju,
 ! Foreign C: loc ta/ja, erg tu/ju
 
 ! b. twolc solution
@@ -49,27 +49,34 @@ Rules
 ! There are additionally some things for verbs -> a vowel drop in the present tense, two irregular verbs, and
 ! one other simple change: the Inchoative ending is -rri following a vowel and -arri following a consonant.
 
+! Inchoative change:
+"inchoative arri -> rri when following a vowel"
+a:0 <=> Vow %> _ r: r: i: ;
 
 
+"^P^A -> pa after consonant at word ending (pre clitics) 1"
+%^P:p <=> Cns %> _ %^A: ;
 
-"turning ^P^A to pa at word ending (pre clitics) after consonant. Part 1. ^P -> p"
-%^P:p <=> Cns _ ;
+"^P^A -> pa after consonant at word ending (pre clitics) 2"
+%^A:a <=> Cns %> %^P: _ ;
 
-"part 2 of above. ^A -> a"
-%^A:a <=> Cns _ ;
+"^P^A -> 00 after vowel at word ending (pre clitics) 1"
+%^P:0 <=> Vow %> _ %^A: ;
+
+"^P^A -> 00 after vowel at word ending (pre clitics) 2"
+%^A:0 <=> Vow %> _ %^P: ;
 
 !!€ pilyurr%>^P^A
 !!€ pilyurr%>pa
 
 
+"+LOC -> ja after consonant 1" ! or -ja/-ta if the word is of non-Wangkajunga origin
+n:j <=> Cns %>  _ g: k:  ;
 
-"+LOC -> ta after consonant 1" ! or -ja/-ta if the word is of non-Wangkajunga origin, but first testing just this.
-n:t <=> Cns %>  _ g: k:  ;
-
-"+LOC -> ta after consonant 2" ! or -ja/-ta if the word is of non-Wangkajunga origin, but first testing just this.
+"+LOC -> ja after consonant 2" ! or -ja/-ta if the word is of non-Wangkajunga origin
 g:0 <=> Cns %>  n: _ k:  ;
 
-"+LOC -> ta after consonant 3" ! or -ja/-ta if the word is of non-Wangkajunga origin, but first testing just this.
+"+LOC -> ja after consonant 3" ! or -ja/-ta if the word is of non-Wangkajunga origin
 k:0 <=> Cns %>  n: g: _  ;
 
 "lu/ju"

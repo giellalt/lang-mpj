@@ -9,6 +9,7 @@
 +N+Abl
 +N+Gen
 +N+Loc
++N+Avoid
 +N+Perl
 +N+All
 +N+Abl+Abl
@@ -50,6 +51,7 @@
 +N+Der/ti
 +N+Der/ti+Irr+Unr+Purp
 +N+V+Inch
++N+V+Inch+Perf/Imprt
 +N+V+Perf/Imprt
 
 +V
