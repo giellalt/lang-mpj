@@ -82,10 +82,10 @@ LEXICON semantic_case_1
 +Gen:%>kurnu		derivational_case_3 ;	! Genitive (referred to as POSS - possessive - in book)
 ! +Gen:%>kura		derivational_case_3 ;	! kurnu is by far the most common GEN form
 ! +Gen:%>kurangu	derivational_case_3 ;
-! +Loc:%>ngka		derivational_case_3 ;	! Locative - following a vowel (better done in twolc)
+ +Loc:%>ngka		derivational_case_3 ;	! Locative - following a vowel (better done in twolc)
 ! +Loc:%>ta		derivational_case_3 ;	! following a consonant (difference betw t and j?)
 ! +Loc:%>ja		derivational_case_3 ;	! following a consonant
-+Loc:%>+L		derivational_case_3 ;
+!+Loc:%>+L		derivational_case_3 ;
 +Perl:%>wana		derivational_case_3 ;	! Perlative (motion along / across a place)
 +All:%>kutu		derivational_case_3 ;	! Allative (motion towards a place)
 
@@ -93,8 +93,9 @@ LEXICON grammatical_case_1
 	derivational_focus_case ;
 +Abs: 	derivational_focus_case ;
 +Erg:%>lu derivational_focus_case; ! will do different ergative forms in twolc
-+Erg:%>tu derivational_focus_case;
-+Erg:%>ju derivational_focus_case;
+! +Erg:%>ju derivational_focus_case; ! twolc
+! +Erg:%>tu derivational_focus_case; XXX must get a separate contlex from Foreign words in -C.
+
 +Dat:%>ku derivational_focus_case;
 
 LEXICON derivational_avoid_case
@@ -207,8 +208,8 @@ LEXICON grammatical_case_3
 	end_noun_cases ;
 +Abs: 	end_noun_cases ;
 +Erg:%>lu end_noun_cases ; ! will do different ergative forms in twolc
-+Erg:%>tu end_noun_cases ;
-+Erg:%>ju end_noun_cases ;
+!+Erg:%>tu end_noun_cases ;
+!+Erg:%>ju end_noun_cases ;
 +Dat:%>ku end_noun_cases ;
 
 LEXICON end_noun_cases

@@ -33,6 +33,17 @@ Rules
 ! 3. Ergative allomorphs (lu, ju, tu). Same as locative above: lu after vowels, ju after consonants in
 ! Wangkajunga words, ju or tu after consonants in introduced words.
 !
+! a. lexc solution: 3 noun classes:
+! -V: loc -ngka, erg -lu;
+! -C: loc -ta, erg -ju,
+! Foreign C: loc ta/ja, erg tu/ju
+
+! b. twolc solution
+! Native words: lexc: loc ngka, erg: lu
+! Foreign C-words: loc ta/ja erg tu/ju
+! twolc: n:t, g:0, k:0 <=> Vow %> _ ; l:j <=> Vow %> _ u
+
+
 !4. Avoidance case (+Avoid ngkamarra vs jamarra). Ngkamarra following a vowel and jamarra following a consonant.
 !
 ! There are additionally some things for verbs -> a vowel drop in the present tense, two irregular verbs, and
@@ -51,11 +62,18 @@ Rules
 !!€ pilyurr%>pa
 
 
-"+LOC -> ngka after vowel"
-%+L:ngka <=> Vow _ ;
 
-"+LOC -> ta after consonant" ! or -ja/-ta if the word is of non-Wangkajunga origin, but first testing just this.
-%+L:ta <=> Cns _ ;
+"+LOC -> ta after consonant 1" ! or -ja/-ta if the word is of non-Wangkajunga origin, but first testing just this.
+n:t <=> Cns %>  _ g: k:  ;
+
+"+LOC -> ta after consonant 2" ! or -ja/-ta if the word is of non-Wangkajunga origin, but first testing just this.
+g:0 <=> Cns %>  n: _ k:  ;
+
+"+LOC -> ta after consonant 3" ! or -ja/-ta if the word is of non-Wangkajunga origin, but first testing just this.
+k:0 <=> Cns %>  n: g: _  ;
+
+"lu/ju"
+l:j <=> Cns %> _ u ;
 
 !!€ waka+LOC  !! or this?	waka+LOC000
 !!€ wakangka  !!		wakangka	
