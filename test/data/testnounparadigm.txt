@@ -12,6 +12,7 @@
 +N+Avoid
 +N+Perl
 +N+All
++N+Loc+Der/Hav
 +N+Abl+Abl
 +N+Gen+Abl
 +N+Loc+Abl
