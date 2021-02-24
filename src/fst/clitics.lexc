@@ -5,7 +5,7 @@ LEXICON PA
 +Pa:%>^P^A # ; ! TODO: connect the lexicon. First = test in twolc that it works.
 
 LEXICON K_1 ! U flag diacritics so the same case clitic cannot occur twice (then D flags in K_2)
- K_2 ;
+ person_number_case_1 ;
 @U.CLT.FOC@+Clt/Foc:@U.CLT.FOC@%>nga 	# ;	! (NB different to +Der/Foc "nguninji")
 ! modifiers
 @U.CLT.KIRLI@+Clt/kirli:@U.CLT.KIRLI@%>kirli	K_2 ;	! 'probably'
@@ -46,7 +46,8 @@ LEXICON K_2
 !! !! Pronoun clitics (quite long)
 LEXICON person_number_case_1 ! U flag diacritics so the same case cannot appear twice -> D flag
 ! diacritics on lexicon person_number_case_2
- person_number_case_2 ;
+! person_number_case_2 ;
+ vocative ;
 ! Subject case 
 @U.CLCASE.S@+1Sg:@U.CLCASE.S@%>rna 		person_number_case_2 ;
 @U.CLCASE.S@+2Sg:@U.CLCASE.S@%>n 		person_number_case_2 ;

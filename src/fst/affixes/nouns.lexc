@@ -220,12 +220,11 @@ LEXICON n_temporal_agr
 +N+Sem/Temp:%> temporal_case ;
 
 LEXICON n_spatial_agr
-! +N+Sem/Spat:%> # ;
 +N+Sem/Spat: spatial_case ;
 
 LEXICON temporal_case
 		# ;
-+Der/SpatLoc:%>ngka	# ;
++Der/TempLoc:%>ngka	# ;
 +Der/Asst:%>jarra	# ;
 
 LEXICON spatial_case

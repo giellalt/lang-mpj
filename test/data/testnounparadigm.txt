@@ -21,7 +21,7 @@
 
 +N+Sem/Spat
 +N+Sem/Spat+Der/Anoth
-+N+Sem/Spat+SpAbl
++N+Sem/Spat+Der/SpatAbl
 
 
 +N+Abs+1Sg
