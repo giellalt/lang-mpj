@@ -5,13 +5,28 @@
 LEXICON Nouns	! can reduplicate before cases are added. Includes both nouns and adjective (descriptive)
 ! words
 yipi n_agr "mother" ;
-waka n_agr "stick" ;
+tilpu n_agr "mother" ;
+mama n_agr "father" ;
+jurtu n_agr "sister" ;
+kurta n_agr "brother" ;
+kaja n_agr "son, nephew" ;
+yurntal n_agr "daughter, niece" ;
+jamu n_agr "grandfather, grandson" ;
+yaparli n_agr "grandmother, granddaughter" ;
+nyupa n_agr "spouse" ;
+yirna n_agr "man" ;
+wirta n_agr "dog" ;
+waka n_agr "stick, spear" ;
 pilyurrpa:pilyurr n_agr "steep" ;
 kawanpa:kawan n_agr "deaf" ;
 juku n_agr "small" ;
 ngulu n_agr "frightened" ;
 ngunu n_agr "herb" ;
 karru n_agr "road" ;
+mutika n_agr "vehicle" ;
+tali n_agr "sandhill" ;
+kuka n_agr "game (animal/food sense)" ;
+kalyu n_agr "water, waterhole" ;
 
 ! temporal nouns
 munga n_temporal_agr "night" ;
