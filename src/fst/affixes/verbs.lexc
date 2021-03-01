@@ -15,10 +15,22 @@ LEXICON parra_reduplication
 +Redpl:%>parra		simple_verbs ;
 +Redpl:%>parra		compound_verb_preverbs ;
 
+LEXICON Ø_conjugation
++V@U.CONJ.Ø@:@U.CONJ.Ø@	simple_verbs ;
+
+LEXICON WA_conjugation
++V@U.CONJ.WA@:@U.CONJ.WA@	simple_verbs ;
+
+LEXICON RRA_conjugation
++V@U.CONJ.RRA@:@U.CONJ.RRA@	simple_verbs ;
+
+LEXICON LA_conjugation
++V@U.CONJ.LA@:@U.CONJ.LA@	simple_verbs ;
+
 !! is positioning of +V here okay? or better with separate lexicon / before prefixes?
 LEXICON simple_verbs
-+V:	simple_verb_reduplication ;
-+V:	verb_derivational_suffix ;
+ simple_verb_reduplication ;
+ verb_derivational_suffix ;
 	
 LEXICON simple_verb_reduplication
  # ; ! remove when Redpl is working

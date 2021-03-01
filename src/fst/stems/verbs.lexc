@@ -4,31 +4,27 @@
 
 LEXICON Verbs
 ! simple verbs
-nyina	simple_verbs "sit" ;
-pu	simple_verbs ;
-ya	simple_verbs ;
-paja	simple_verbs ;
 
 ! Ø conjugation
-! nyina@U.CONJ.Ø@	simple_verbs "sit" ;
-! ngara@U.CONJ.Ø@	simple_verbs "stand" ;
-! ngarri@U.CONJ.Ø@	simple_verbs "lie" ;
-! jarrpa@U.CONJ.Ø@	simple_verbs "enter" ;
+nyina	Ø_conjugation "to sit" ;
+ngara	Ø_conjugation "to stand" ;
+ngarri	Ø_conjugation "to lie" ;
+jarrpa	Ø_conjugation "to enter" ;
 
 ! WA conjugation
-! pu@U.CONJ.WA@		simple_verbs "hit" ;
-! ka@U.CONJ.WA@		simple_verbs "carry" ;
-! palipu@U.CONJ.WA@	simple_verbs "find" ;
+pu WA_conjugation "to hit" ;
+ka WA_conjugation "to carry" ;
+palipu	WA_conjugation "to find" ;
 
 ! RRA conjugation
-! ya@U.CONJ.RRA@	simple_verbs "go" ;
-! ma@U.CONJ.RRA@	simple_verbs "get" ;
-! ju@U.CONJ.RRA@	simple_verbs "put" ;
+ya	RRA_conjugation "to go" ;
+ma	RRA_conjugation "to get" ;
+ju	RRA_conjugation "to put" ;
 
 ! LA conjugation
-! paja@U.CONJ.LA@	simple_verbs "bite" ;
-! kunta@U.CONJ.LA@	simple_verbs "cut" ;
-! manji@U.CONJ.LA@	simple_verbs "collect" ;
+paja	LA_conjugation "to bite" ;
+kunta	LA_conjugation "to cut" ;
+manji	LA_conjugation "to collect" ;
 
 ! preverbs (as part of complex verbs)
 
