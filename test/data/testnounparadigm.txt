@@ -24,27 +24,27 @@
 +N+Sem/Spat+Der/SpatAbl
 
 
-+N+Abs+1Sg
-+N+1Sg+Acs
-+N+1Sg+Acs+Refl
-+N+Refl+1Sg+Acs
-+N+1Sg+Acs+Refl+Voc
-+N+Refl+Refl+Voc
-+N+Refl+Refl
-+N+Abl+1Sg+Abs+1Du+Excl+Abs
-+N+Abl+1Sg+Dat+1Du+Excl+Abs
++N+Abs+Pron/Clt+1Sg
++N+Pron/Clt+1Sg+Acs
++N+Pron/Clt+1Sg+Acs+Pron/Clt+Refl
++N+Pron/Clt+Refl+Pron/Clt+1Sg+Acs
++N+Pron/Clt+1Sg+Acs+Pron/Clt+Refl+Voc
++N+Pron/Clt+Refl+Pron/Clt+Refl+Voc
++N+Pron/Clt+Refl+Pron/Clt+Refl
++N+Abl+Pron/Clt+1Sg+Abs+Pron/Clt+1Du+Excl+Abs
++N+Abl+Pron/Clt+1Sg+Dat+Pron/Clt+1Du+Excl+Abs
 +N+Der/Hav+Der/Hav
 +N+Der/Hav+Der/Thing
 +N+Abl+Abl
 +N+Abl+All
 
-+N+Perl+Abl+1Sg+Acs+Refl
-+N+Perl+Abl+1Sg+Acs+Refl+Voc
++N+Perl+Abl+Pron/Clt+1Sg+Acs+Pron/Clt+Refl
++N+Perl+Abl+Pron/Clt+1Sg+Acs+Pron/Clt+Refl+Voc
 +N+Clt/Foc
-+N+Perl+Abl+Clt/Foc+1Sg+Acs+Refl
-+N+Perl+Abl+Clt/kirli+1Sg+Acs+Refl
-+N+Perl+Abl+Clt/kirli+Clt/Foc+1Sg+Acs+Refl
-+N+Perl+Abl+Clt/Foc+Clt/Foc+1Sg+Acs+Refl
++N+Perl+Abl+Clt/Foc+Pron/Clt+1Sg+Acs+Pron/Clt+Refl
++N+Perl+Abl+Clt/kirli+Pron/Clt+1Sg+Acs+Pron/Clt+Refl
++N+Perl+Abl+Clt/kirli+Clt/Foc+Pron/Clt+1Sg+Acs+Pron/Clt+Refl
++N+Perl+Abl+Clt/Foc+Clt/Foc+Pron/Clt+1Sg+Acs+Pron/Clt+Refl
 
 +N+Pa
 +N+Abs+Pa
