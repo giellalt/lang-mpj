@@ -57,11 +57,13 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Inch ! NB from the reference book, inchoative is used as verbalisation
 
 !!pronoun clitics
++Pron/Clt
 +1Sg +2Sg +3Sg 
 +1Du +2Du +3Du
 +1Pl +2Pl +3Pl
 +Incl +Excl
 +Acs +Refl
+! other cases are declared elsewhere - Dat, Abs, Abl. Subject case is currently not marked. 
  
 !! !! Verb affixes
 !! tense inflections 
