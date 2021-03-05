@@ -3,157 +3,198 @@
 !! The Wangkajunga language verbs inflect in persons.
 
 LEXICON directional_prefixes ! TODO: finalise prefix codes. Preliminarily: +Prefix/maa
-			simple_verbs ;
-+Prefix/maa:%>maa	simple_verbs ;
-+Prefix/parra:%>parra	simple_verbs ;
-			compound_verb_preverbs ;
-+Prefix/maa:%>maa	compound_verb_preverbs ;
-+Prefix/parra:%>parra	compound_verb_preverbs ;
-+Prefix/parra:%>parra	parra_reduplication ;
+   simple_verbs ;
++Prefix/maa:%>maa simple_verbs ;
++Prefix/parra:%>parra simple_verbs ;
+   compound_verb_preverbs ;
++Prefix/maa:%>maa compound_verb_preverbs ;
++Prefix/parra:%>parra compound_verb_preverbs ;
++Prefix/parra:%>parra parra_reduplication ;
 
 LEXICON parra_reduplication
-+Redpl:%>parra		simple_verbs ;
-+Redpl:%>parra		compound_verb_preverbs ;
++Redpl:%>parra  simple_verbs ;
++Redpl:%>parra  compound_verb_preverbs ;
 
-LEXICON Ø_conjugation
-+V@U.CONJ.Ø@:@U.CONJ.Ø@	simple_verbs ;
+! The Ø set
+!LEXICON Ø_conjugation
+!+V: Ø_conjugation_flags ;
 
-LEXICON WA_conjugation
-+V@U.CONJ.WA@:@U.CONJ.WA@	simple_verbs ;
+LEXICON Ø_conjugation_iv 
++V+IV: Ø_conjugation_flags ;
 
-LEXICON RRA_conjugation
-+V@U.CONJ.RRA@:@U.CONJ.RRA@	simple_verbs ;
+LEXICON Ø_conjugation_tv
++V+TV: Ø_conjugation_flags ;
 
-LEXICON LA_conjugation
-+V@U.CONJ.LA@:@U.CONJ.LA@	simple_verbs ;
+LEXICON Ø_conjugation_flags
+@U.CONJ.Ø@ simple_verbs ;
+
+! The WA set
+!LEXICON WA_conjugation
+!+V: WA_conjugation_flags ;
+
+!LEXICON WA_conjugation_iv
+!+V+IV: WA_conjugation_flags ;
+
+LEXICON WA_conjugation_tv
++V+TV: WA_conjugation_flags ;
+
+LEXICON WA_conjugation_flags
+@U.CONJ.WA@ simple_verbs ;
+
+! The RRA set
+!LEXICON RAA_conjugation
+!+V: RAA_conjugation_flags ;
+
+LEXICON RRA_conjugation_iv 
++V+IV: RAA_conjugation_flags ;
+
+LEXICON RRA_conjugation_tv
++V+TV: RAA_conjugation_flags ;
+
+LEXICON RAA_conjugation_flags
+@U.CONJ.RRA@ simple_verbs ;
+
+! The LA set
+!LEXICON LA_conjugation
+!+V: LA_conjugation_flags ;
+
+!LEXICON LA_conjugation_iv
+!+V+IV: LA_conjugation_flags ;
+
+LEXICON LA_conjugation_tv
++V+TV: LA_conjugation_flags ;
+
+LEXICON LA_conjugation_flags
+@U.CONJ.LA@ simple_verbs ;
+
 
 !! is positioning of +V here okay? or better with separate lexicon / before prefixes?
 LEXICON simple_verbs
  simple_verb_reduplication ;
  verb_derivational_suffix ;
-	
+ 
 LEXICON simple_verb_reduplication
  # ; ! remove when Redpl is working
-+Redpl:%>__	verb_derivational_suffix;
++Redpl:%>__ verb_derivational_suffix;
 
 LEXICON compound_verb_preverbs
-+V:	preverb_reduplication ;
-+V:	compound_verb_compounds ;
++V: preverb_reduplication ;
++V: compound_verb_compounds ;
 
 LEXICON preverb_reduplication
-+Redpl:%>__	compound_verb_compounds ;
++Redpl:%>__ compound_verb_compounds ;
 
 LEXICON compound_verb_compounds 
 ! another option is to have compound (preverb + compound) in verb stems (won't account for extra preverb
 ! reduplication)
-@U.CONJ.RRA@+Compound/jurra:%>@U.CONJ.RRA@ju	verb_derivational_suffix ;
-@U.CONJ.WA@+Compound/puwa:%>@U.CONJ.WA@pu	verb_derivational_suffix ;
-@U.CONJ.LA@+Compound/kanyila:%>@U.CONJ.LA@kanyi	verb_derivational_suffix ;
-@U.CONJ.Ø@+Compound/kati:%>@U.CONJ.Ø@kati	verb_derivational_suffix ;
-@U.CONJ.RRA@+Compound/yarra:%>@U.CONJ.RRA@ya	verb_derivational_suffix ;
-@U.CONJ.Ø@+Compound/ngarrin:%>@U.CONJ.Ø@ngarri	verb_derivational_suffix ;
-@U.CONJ.LA@+Compound/pakala:%>@U.CONJ.LA@paka	verb_derivational_suffix ;
-@U.CONJ.RRA@+Compound/jarra:%>@U.CONJ.RRA@ja	verb_derivational_suffix ;
+@U.CONJ.RRA@+Compound/jurra:%>@U.CONJ.RRA@ju verb_derivational_suffix ;
+@U.CONJ.WA@+Compound/puwa:%>@U.CONJ.WA@pu verb_derivational_suffix ;
+@U.CONJ.LA@+Compound/kanyila:%>@U.CONJ.LA@kanyi verb_derivational_suffix ;
+@U.CONJ.Ø@+Compound/kati:%>@U.CONJ.Ø@kati verb_derivational_suffix ;
+@U.CONJ.RRA@+Compound/yarra:%>@U.CONJ.RRA@ya verb_derivational_suffix ;
+@U.CONJ.Ø@+Compound/ngarrin:%>@U.CONJ.Ø@ngarri verb_derivational_suffix ;
+@U.CONJ.LA@+Compound/pakala:%>@U.CONJ.LA@paka verb_derivational_suffix ;
+@U.CONJ.RRA@+Compound/jarra:%>@U.CONJ.RRA@ja verb_derivational_suffix ;
 
 
 LEXICON verb_derivational_suffix
-		verb_tense_inflections;
-@U.CONJ.WA@+Der/ti:@U.CONJ.WA@%>ti	verb_tense_inflections ;
-+Der/ma:%>ma	verb_tense_inflections;
-+Der/ju:%>ju	verb_tense_inflections;
+  verb_tense_inflections;
+@U.CONJ.WA@+Der/ti:@U.CONJ.WA@%>ti verb_tense_inflections ;
++Der/ma:%>ma verb_tense_inflections;
++Der/ju:%>ju verb_tense_inflections;
 
 LEXICON verb_tense_inflections
 ! nominaliser form going to temp_rel
-@U.CONJ.Ø@+Nomz:%>@U.CONJ.Ø@nja			temporal_relative ;
-@U.CONJ.WA@+Nomz:%>@U.CONJ.WA@ngkunja		temporal_relative ;
-@U.CONJ.RRA@+Nomz:%>@U.CONJ.RRA@nkunja		temporal_relative ;
-@U.CONJ.LA@+Nomz:%>@U.CONJ.LA@nja		temporal_relative ;
+@U.CONJ.Ø@+Nomz:%>@U.CONJ.Ø@nja   temporal_relative ;
+@U.CONJ.WA@+Nomz:%>@U.CONJ.WA@ngkunja  temporal_relative ;
+@U.CONJ.RRA@+Nomz:%>@U.CONJ.RRA@nkunja  temporal_relative ;
+@U.CONJ.LA@+Nomz:%>@U.CONJ.LA@nja  temporal_relative ;
 ! nominaliser form going to noun stem
-@U.CONJ.Ø@+Nomz:%>@U.CONJ.Ø@nja			n_agr ; ! TODO: remove +V? +N will be added in n_agr
-@U.CONJ.WA@+Nomz:%>@U.CONJ.WA@ngkunja		n_agr ; ! TODO: remove flag diacritics as no longer verbs?
-@U.CONJ.RRA@+Nomz:%>@U.CONJ.RRA@nkunja		n_agr ;
-@U.CONJ.LA@+Nomz:%>@U.CONJ.LA@nja		n_agr ;
+@U.CONJ.Ø@+Nomz:%>@U.CONJ.Ø@nja   n_agr ; ! TODO: remove +V? +N will be added in n_agr
+@U.CONJ.WA@+Nomz:%>@U.CONJ.WA@ngkunja  n_agr ; ! TODO: remove flag diacritics as no longer verbs?
+@U.CONJ.RRA@+Nomz:%>@U.CONJ.RRA@nkunja  n_agr ;
+@U.CONJ.LA@+Nomz:%>@U.CONJ.LA@nja  n_agr ;
 ! serial forms TODO: replace # with PA
-@U.CONJ.Ø@+Ser:%>@U.CONJ.Ø@ra		person_number_case_1 ;
-@U.CONJ.WA@+Ser:%>@U.CONJ.WA@ngkura	person_number_case_1 ;
-@U.CONJ.RRA@+Ser:%>@U.CONJ.RRA@nkura	person_number_case_1 ;
-@U.CONJ.LA@+Ser:%>@U.CONJ.LA@ra		person_number_case_1 ;
+@U.CONJ.Ø@+Ser:%>@U.CONJ.Ø@ra  person_number_case_1 ;
+@U.CONJ.WA@+Ser:%>@U.CONJ.WA@ngkura person_number_case_1 ;
+@U.CONJ.RRA@+Ser:%>@U.CONJ.RRA@nkura person_number_case_1 ;
+@U.CONJ.LA@+Ser:%>@U.CONJ.LA@ra  person_number_case_1 ;
 ! present tense. TODO: return to this.
-@U.CONJ.Ø@+Prs:@U.CONJ.Ø@%>in		directional_suffix ; ! additional vowel-deletion in twolc.
-@U.CONJ.WA@+Prs:@U.CONJ.WA@%>ngin	directional_suffix ;
-@U.CONJ.RRA@+Prs:@U.CONJ.RRA@%>nin	directional_suffix ;
-@U.CONJ.LA@+Prs:@U.CONJ.LA@%>nin 	directional_suffix ;
+@U.CONJ.Ø@+Prs:@U.CONJ.Ø@%>in  directional_suffix ; ! additional vowel-deletion in twolc.
+@U.CONJ.WA@+Prs:@U.CONJ.WA@%>ngin directional_suffix ;
+@U.CONJ.RRA@+Prs:@U.CONJ.RRA@%>nin directional_suffix ;
+@U.CONJ.LA@+Prs:@U.CONJ.LA@%>nin  directional_suffix ;
 ! perfective tense endings (imperative, past, future)
-@U.CONJ.Ø@+Perf/Imprt:@U.CONJ.Ø%>		directional_suffix ;
-@U.CONJ.WA@+Perf/Imprt:@U.CONJ.WA@%>wa		directional_suffix ;
-@U.CONJ.RRA@+Perf/Imprt:@U.CONJ.RRA@%>rra	directional_suffix ;
-@U.CONJ.LA@+Perf/Imprt:@U.CONJ.LA@%>la		directional_suffix ;
-@U.CONJ.Ø@+Perf/Pst:@U.CONJ.Ø@%>ngu		directional_suffix ;
-@U.CONJ.Ø@+Perf/Pst:@U.CONJ.Ø@%>ngun		directional_suffix ;
-@U.CONJ.WA@+Perf/Pst:@U.CONJ.WA@%>ngu		directional_suffix ;
-@U.CONJ.WA@+Perf/Pst:@U.CONJ.WA@%>ngun		directional_suffix ;
-@U.CONJ.RRA@+Perf/Pst:@U.CONJ.RRA@%>nu		directional_suffix ;
-@U.CONJ.RRA@+Perf/Pst:@U.CONJ.RRA@%>nun		directional_suffix ;
-@U.CONJ.LA@+Perf/Pst:@U.CONJ.LA@%>rnu		directional_suffix ;
-@U.CONJ.LA@+Perf/Pst:@U.CONJ.LA@%>rnun		directional_suffix ;
-@U.CONJ.Ø@+Perf/Fut:@U.CONJ.Ø@%>ku		directional_suffix ;
-@U.CONJ.WA@+Perf/Fut:@U.CONJ.WA@%>ngku		directional_suffix ;
-@U.CONJ.RRA@+Perf/Fut:@U.CONJ.RRA@%>nku		directional_suffix ;
-@U.CONJ.LA@+Perf/Fut:@U.CONJ.LA@%>lku		directional_suffix ;
+@U.CONJ.Ø@+Perf/Imprt:@U.CONJ.Ø%>  directional_suffix ;
+@U.CONJ.WA@+Perf/Imprt:@U.CONJ.WA@%>wa  directional_suffix ;
+@U.CONJ.RRA@+Perf/Imprt:@U.CONJ.RRA@%>rra directional_suffix ;
+@U.CONJ.LA@+Perf/Imprt:@U.CONJ.LA@%>la  directional_suffix ;
+@U.CONJ.Ø@+Perf/Pst:@U.CONJ.Ø@%>ngu  directional_suffix ;
+@U.CONJ.Ø@+Perf/Pst:@U.CONJ.Ø@%>ngun  directional_suffix ;
+@U.CONJ.WA@+Perf/Pst:@U.CONJ.WA@%>ngu  directional_suffix ;
+@U.CONJ.WA@+Perf/Pst:@U.CONJ.WA@%>ngun  directional_suffix ;
+@U.CONJ.RRA@+Perf/Pst:@U.CONJ.RRA@%>nu  directional_suffix ;
+@U.CONJ.RRA@+Perf/Pst:@U.CONJ.RRA@%>nun  directional_suffix ;
+@U.CONJ.LA@+Perf/Pst:@U.CONJ.LA@%>rnu  directional_suffix ;
+@U.CONJ.LA@+Perf/Pst:@U.CONJ.LA@%>rnun  directional_suffix ;
+@U.CONJ.Ø@+Perf/Fut:@U.CONJ.Ø@%>ku  directional_suffix ;
+@U.CONJ.WA@+Perf/Fut:@U.CONJ.WA@%>ngku  directional_suffix ;
+@U.CONJ.RRA@+Perf/Fut:@U.CONJ.RRA@%>nku  directional_suffix ;
+@U.CONJ.LA@+Perf/Fut:@U.CONJ.LA@%>lku  directional_suffix ;
 ! imperfective forms (expanded in separate lexicon)
-@U.CONJ.Ø@+Imperf:@U.CONJ.Ø@%>		imperfective_inflections ;
-@U.CONJ.WA@+Imperf:@U.CONJ.WA@%>nga	imperfective_inflections ;
-@U.CONJ.RRA@+Imperf:@U.CONJ.RRA@%>na	imperfective_inflections ;
-@U.CONJ.LA@+Imperf:@U.CONJ.LA@%>n	imperfective_inflections ;
+@U.CONJ.Ø@+Imperf:@U.CONJ.Ø@%>  imperfective_inflections ;
+@U.CONJ.WA@+Imperf:@U.CONJ.WA@%>nga imperfective_inflections ;
+@U.CONJ.RRA@+Imperf:@U.CONJ.RRA@%>na imperfective_inflections ;
+@U.CONJ.LA@+Imperf:@U.CONJ.LA@%>n imperfective_inflections ;
 ! irrealis forms (expanded in separate lexicon)
-@U.CONJ.Ø@+Irr:@U.CONJ.Ø@%>		irrealis_inflections ;
-@U.CONJ.WA@+Irr:@U.CONJ.WA@%>ngku	irrealis_inflections ;
-@U.CONJ.RRA@+Irr:@U.CONJ.RRA@%>nku	irrealis_inflections ;
-@U.CONJ.LA@+Irr:@U.CONJ.LA@%>l		irrealis_inflections ; 
+@U.CONJ.Ø@+Irr:@U.CONJ.Ø@%>  irrealis_inflections ;
+@U.CONJ.WA@+Irr:@U.CONJ.WA@%>ngku irrealis_inflections ;
+@U.CONJ.RRA@+Irr:@U.CONJ.RRA@%>nku irrealis_inflections ;
+@U.CONJ.LA@+Irr:@U.CONJ.LA@%>l  irrealis_inflections ; 
 
 LEXICON temporal_relative
-+Trel:%>janu	# ;
-+Trel:%>nu	# ;
++Trel:%>janu # ;
++Trel:%>nu # ;
 
 LEXICON imperfective_inflections
-+Pst:%>ma	directional_suffix ;
-+PstHbt:%>ma	directional_suffix ;
-+Fut:%>mal	directional_suffix ;
-+Imprt:%>ma	directional_suffix ;
++Pst:%>ma directional_suffix ;
++PstHbt:%>ma directional_suffix ;
++Fut:%>mal directional_suffix ;
++Imprt:%>ma directional_suffix ;
 
 LEXICON irrealis_inflections
-+Admon:%>jaku		Avoid ; ! it can also go to the same lexicon as for noun avoid case..
-+Avoid:%>ngkamarra	# ; ! jaku ADMON not required for avoid
++Admon:%>jaku  Avoid ; ! it can also go to the same lexicon as for noun avoid case..
++Avoid:%>ngkamarra # ; ! jaku ADMON not required for avoid
 ! Avoid ; ! this will have the same result as the line above.
-+Admon:%>jaku		directional_suffix ;
-+Oblig:%>ngara		directional_suffix ;
-+Hyp:%>mara		directional_suffix ;
-+Char:%>payi		directional_suffix ;
-+Int:%>kija		Intentional ;
-+Unr:%>ra		Unrealistic;
++Admon:%>jaku  directional_suffix ;
++Oblig:%>ngara  directional_suffix ;
++Hyp:%>mara  directional_suffix ;
++Char:%>payi  directional_suffix ;
++Int:%>kija  Intentional ;
++Unr:%>ra  Unrealistic;
 
 LEXICON Avoid ! there is also an avoid nominal suffix
-+Avoid:%>ngkamarra	# ;
++Avoid:%>ngkamarra # ;
 
 LEXICON Unrealistic
-			directional_suffix ;
-+Purp:%>ku		directional_suffix ;
-+Contr:%>munu		directional_suffix ;
-+Int:%>kija		Intentional;
+   directional_suffix ;
++Purp:%>ku  directional_suffix ;
++Contr:%>munu  directional_suffix ;
++Int:%>kija  Intentional;
 
 LEXICON Intentional
  # ;
-+Erg:%>lu	# ;
++Erg:%>lu # ;
 
 LEXICON directional_suffix
  post_inflection_endings ;
-+Direct/ni:%>ni		post_inflection_endings ;
++Direct/ni:%>ni  post_inflection_endings ;
 
 LEXICON post_inflection_endings
  K_1 ; ! PA ;
-+Grp:%>nirra		K_1 ; ! PA ;
-+Compl:%>ka		K_1 ; ! PA ;
-+Warn:%>rta		K_1 ; ! PA ;
++Grp:%>nirra  K_1 ; ! PA ;
++Compl:%>ka  K_1 ; ! PA ;
++Warn:%>rta  K_1 ; ! PA ;
 
 
 

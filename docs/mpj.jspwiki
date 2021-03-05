@@ -21,8 +21,34 @@ language are presented in this system in terms of the following symbols.
 (It is highly suggested to follow existing standards when adding new tags).
 
 The parts-of-speech are:
+ *  +N  
+ *  +A  
+ *  +Adv  
+ *  +V  
+ *  +Pron  
+ *  +CS  
+ *  +CC  
+ *  +Adp  
+ *  +Po  
+ *  +Pr  
+ *  +Interj  
+ *  +Pcle  
+ *  +Num   
 
+Transitivity:
+ *  +IV    Intransitive (i.e. with Abs)
+ *  +TV   Transitive (i.e. with Erg + Abs)
 
+ * +Abs  
+ * +Erg  
+ * +Dat  
+
+ * +Abl  
+ * +Gen  
+ * +Loc  
+ * +Perl  
+ * +All  
+ * +Avoid  
 
 
 

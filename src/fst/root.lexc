@@ -27,20 +27,35 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! (It is highly suggested to follow existing standards when adding new tags).
 
 !! The parts-of-speech are:
- +N +A +Adv +V                                 !!≈
- +Pron +CS +CC +Adp +Po +Pr +Interj +Pcle +Num !!≈
+ +N  !!= * @CODE@
+ +A  !!= * @CODE@
+ +Adv  !!= * @CODE@
+ +V  !!= * @CODE@
+ +Pron  !!= * @CODE@
+ +CS  !!= * @CODE@
+ +CC  !!= * @CODE@
+ +Adp  !!= * @CODE@
+ +Po  !!= * @CODE@
+ +Pr  !!= * @CODE@
+ +Interj  !!= * @CODE@
+ +Pcle  !!= * @CODE@
+ +Num   !!= * @CODE@
+
+!! Transitivity:
+ +IV   !!= * @CODE@ Intransitive (i.e. with Abs)
+ +TV  !!= * @CODE@ Transitive (i.e. with Erg + Abs)
 
 !!nominal cases
-+Abs
-+Erg
-+Dat
++Abs  !!= * @CODE@
++Erg  !!= * @CODE@
++Dat  !!= * @CODE@
 
-+Abl
-+Gen
-+Loc
-+Perl
-+All
-+Avoid
++Abl  !!= * @CODE@
++Gen  !!= * @CODE@
++Loc  !!= * @CODE@
++Perl  !!= * @CODE@
++All  !!= * @CODE@
++Avoid  !!= * @CODE@
 
 
 +Der/Hav +Der/Thing +Der/Priv +Der/Int +Der/Want +Der/Asst +Der/Temp +Der/Dwell +Der/Side +Der/Type +Der/Sim +Der/Contr +Der/Mod +Der/Big +Der/Anoth +Der/Very +Der/Num +Der/Dual +Der/Few +Der/Pl +Der/Grp +Der/Pair +Der/Only
@@ -376,7 +391,7 @@ LEXICON Root
 0   Nouns       ;
 0   Verbs       ;
 ! 0   Adjectives  ;
-! 0   Pronouns    ;
+ 0   Pronouns    ;
 ! 0   Numerals    ;
 ! 0   Prefixes    ;
      Punctuation ;

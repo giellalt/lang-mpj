@@ -6,26 +6,27 @@ LEXICON Verbs
 ! simple verbs
 
 ! Ø conjugation
-nyina	Ø_conjugation "to sit" ;
-ngara	Ø_conjugation "to stand" ;
-ngarri	Ø_conjugation "to lie" ;
-jarrpa	Ø_conjugation "to enter" ;
+nyina Ø_conjugation_iv "to sit" ;
+ngara Ø_conjugation_iv "to stand" ;
+ngarri Ø_conjugation_iv "to lie" ;
+jarrpa Ø_conjugation_tv "to enter" ; ! if 2nd arg is not Dat
 
 ! WA conjugation
-pu WA_conjugation "to hit" ;
-ka WA_conjugation "to carry" ;
-palipu	WA_conjugation "to find" ;
+pu WA_conjugation_tv "to hit" ;
+ka WA_conjugation_tv "to carry" ;
+palipu WA_conjugation_tv "to find" ;
 
 ! RRA conjugation
-ya	RRA_conjugation "to go" ;
-ma	RRA_conjugation "to get" ;
-ju	RRA_conjugation "to put" ;
+ya RRA_conjugation_iv "to go" ;
+ma RRA_conjugation_tv "to get" ;
+ju RRA_conjugation_iv "to put" ; ! if 2nd arg is Dat
 
 ! LA conjugation
-paja	LA_conjugation "to bite" ;
-kunta	LA_conjugation "to cut" ;
-manji	LA_conjugation "to collect" ;
+paja LA_conjugation_tv "to bite" ;
+kunta LA_conjugation_tv "to cut" ;
+manji LA_conjugation_tv "to collect" ;
 
 ! preverbs (as part of complex verbs)
 
 ! vim: set ft=xfst-lexc:
+ 
