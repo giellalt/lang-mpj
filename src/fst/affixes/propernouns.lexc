@@ -3,14 +3,18 @@
 !! The Wangkajunga language proper nouns inflect in the same cases as regular
 !! nouns, but with a colon (':') as separator.
 
-LEXICON ProperNounCases
-+N+Prop:%:   Cases  ;
-+N+Prop:%:   Cases  ;
-+N+Prop:%:   Cases  ;
-+N+Prop:%:   Cases  ;
-+N+Prop:%:   Cases  ;
-+N+Prop:%:   Cases  ;
-        -    Nouns  ;
+LEXICON prop_agr_mal
++N+Prop+Sem/Mal: x_agr ;
+
+LEXICON prop_agr_fem
++N+Prop+Sem/Plc: x_agr ;
+
+LEXICON prop_agr_plc
++N+Prop+Sem/Plc: x_agr ;
+
+LEXICON prop_agr
++N+Prop: x_agr ;
+
 
 ! vim: set ft=xfst-lexc:
 
