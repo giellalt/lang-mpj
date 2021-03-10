@@ -119,8 +119,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Trel
 
 !! verb directional affixes
-+mvmt_to_speaker ! form -ni-
-+Prefix/mvmt_away +Prefix/mvmt_around ! respectively maa- and parra-
++Direct/ni
++Prefix/maa+ +Prefix/parra+ ! OR - +Direct/maa & +Direct/parra
+
 
 !! verb post-inflection affixes
 +Grp		! group (different to GROUP as derivational nominal suffix)
@@ -393,13 +394,14 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 LEXICON Root
 !! The word forms in Wangkajunga language start from the lexeme roots of basic
 !! word classes, or optionally from prefixes:
-0   Nouns       ;
-0   Verb_prefixes	;
-! 0   Adjectives  ;
- 0   Pronouns    ;
- 0   Propernouns    ;
-! 0   Numerals    ;
-! 0   Prefixes    ;
+   Nouns       ;
+   Verbs       ;
+   directional_prefixes ;
+!    Adjectives  ;
+    Pronouns    ;
+    Propernouns    ;
+!    Numerals    ;
+!    Prefixes    ;
      Punctuation ;
      Symbols     ;
 
