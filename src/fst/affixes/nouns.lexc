@@ -21,7 +21,6 @@ derivational_avoid_case ;
 
 LEXICON derivational_case_1
 ! leading to derivational_case_2
-!				derivational_case_2 ;
 @U.DCASE.HAV@+Der/Hav:@U.DCASE.HAV@%>kurlu		derivational_case_2 ; ! having
 @U.DCASE.THING@+Der/Thing:@U.DCASE.THING@%>pinti	derivational_case_2 ; ! associated thing
 @U.DCASE.PRIV@+Der/Priv:@U.DCASE.PRIV@%>parni		derivational_case_2 ; ! privative
@@ -76,7 +75,6 @@ LEXICON derivational_case_1
 +Der/Foc:%>nguninji		semantic_case_2 ;
 
 LEXICON semantic_case_1
-!			derivational_case_3 ;
 +Abl:%>janu		derivational_case_3 ;	! Ablative (motion away from a place)
 +Abl:%>nguru		derivational_case_3 ;
 +Gen:%>kurnu		derivational_case_3 ;	! Genitive (referred to as POSS - possessive - in book)
@@ -94,7 +92,6 @@ LEXICON grammatical_case_1
 +Erg:%>lu derivational_focus_case; ! will do different ergative forms in twolc
 ! +Erg:%>ju derivational_focus_case; ! twolc
 ! +Erg:%>tu derivational_focus_case; XXX must get a separate contlex from Foreign words in -C.
-
 +Dat:%>ku derivational_focus_case;
 
 LEXICON derivational_avoid_case
@@ -102,7 +99,6 @@ LEXICON derivational_avoid_case
 ! +Avoid:%>jamarra	# ;	! Avoid (following a consonant)
 
 LEXICON derivational_case_2
-!				grammatical_case_3 ;
 @D.DCASE.HAV@+Der/Hav:@D.DCASE.HAV@%>kurlu		grammatical_case_3 ;
 @D.DCASE.THING@+Der/Thing:@D.DCASE.THING@%>pinti	grammatical_case_3 ;
 @D.DCASE.PRIV@+Der/Priv:@D.DCASE.PRIV@%>parni		grammatical_case_3 ;
@@ -143,7 +139,6 @@ LEXICON semantic_case_2
 +Perl:%>wana		grammatical_case_3 ;
 +All:%>kutu		grammatical_case_3 ;
 ! leading to semantic_case_3
-!			semantic_case_3 ;
 @U.SCASE.ABL@+Abl:@U.SCASE.ABL@%>janu		semantic_case_3 ;
 @U.SCASE.ABL@+Abl:@U.SCASE.ABL@%>nguru		semantic_case_3 ;
 @U.SCASE.GEN@+Gen:@U.SCASE.GEN@%>kurnu		semantic_case_3 ; ! kurnu is by far the most common form
@@ -156,11 +151,10 @@ LEXICON semantic_case_2
 @U.SCASE.ALL@+All:@U.SCASE.ALL@%>kutu		semantic_case_3 ;
 
 LEXICON derivational_focus_case
-end_noun_cases ;
+ end_noun_cases ;
 +Der/Foc:%>nguninji		end_noun_cases;		! focus (sometimes annotated as SPEC)
 
 LEXICON derivational_case_3
-!				end_noun_cases ;
 +Der/Hav:%>kurlu		end_noun_cases ;
 +Der/Thing:%>pinti		end_noun_cases ;
 +Der/Priv:%>parni		end_noun_cases ;
@@ -188,7 +182,6 @@ LEXICON derivational_case_3
 +Der/Foc:%>nguninji		end_noun_cases ;
 
 LEXICON semantic_case_3
-!			end_noun_cases ;
 @D.SCASE.ABL@+Abl:@D.SCASE.ABL@%>janu		end_noun_cases ;
 @D.SCASE.ABL@+Abl:@D.SCASE.ABL@%>nguru		end_noun_cases ;
 @D.SCASE.GEN@+Gen:@D.SCASE.GEN@%>kurnu		end_noun_cases ;
@@ -210,8 +203,7 @@ LEXICON grammatical_case_3
 
 LEXICON end_noun_cases
  PA ;
- K_1 ; ! no person-number suffixed 
-! person_number_case_1 ; ! XXX is _1 the intendend lexicon?
+ K_1 ; ! no person-number suffixed
 
 
 !! !! temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun

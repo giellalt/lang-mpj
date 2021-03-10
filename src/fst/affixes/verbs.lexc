@@ -2,18 +2,22 @@
 !  ---------------
 !! The Wangkajunga language verbs inflect in persons.
 
-LEXICON directional_prefixes ! TODO: finalise prefix codes. Preliminarily: +Prefix/maa
-   simple_verbs ;
-+Prefix/maa:%>maa simple_verbs ;
-+Prefix/parra:%>parra simple_verbs ;
+LEXICON Verb_prefixes ! TODO: finalise prefix codes. Preliminarily: +Prefix/maa
+   Verb_stems ;
+Prefix/mvmt_away+:%>maa Verb_stems ;
+Prefix/mvmt_around+:%>parra Verb_stems ;
    compound_verb_preverbs ;
-+Prefix/maa:%>maa compound_verb_preverbs ;
-+Prefix/parra:%>parra compound_verb_preverbs ;
-+Prefix/parra:%>parra parra_reduplication ;
+Prefix/mvmt_away+:%>maa compound_verb_preverbs ;
+Prefix/mvmt_around+:%>parra compound_verb_preverbs ;
+Prefix/mvmt_around+:%>parra parra_reduplication ;
 
 LEXICON parra_reduplication
-+Redpl:%>parra  simple_verbs ;
++Redpl:%>parra  Verb_stems ;
 +Redpl:%>parra  compound_verb_preverbs ;
+
+
+!! lexicon Verb_prefixes (above) -> lexicon Verb_stems (separate file) -> following lexicons, depending on
+!! relevant conjugation:
 
 ! The Ø set
 !LEXICON Ø_conjugation
@@ -87,14 +91,14 @@ LEXICON preverb_reduplication
 LEXICON compound_verb_compounds 
 ! another option is to have compound (preverb + compound) in verb stems (won't account for extra preverb
 ! reduplication)
-@U.CONJ.RRA@+Compound/jurra:%>@U.CONJ.RRA@ju verb_derivational_suffix ;
-@U.CONJ.WA@+Compound/puwa:%>@U.CONJ.WA@pu verb_derivational_suffix ;
-@U.CONJ.LA@+Compound/kanyila:%>@U.CONJ.LA@kanyi verb_derivational_suffix ;
-@U.CONJ.Ø@+Compound/kati:%>@U.CONJ.Ø@kati verb_derivational_suffix ;
-@U.CONJ.RRA@+Compound/yarra:%>@U.CONJ.RRA@ya verb_derivational_suffix ;
-@U.CONJ.Ø@+Compound/ngarrin:%>@U.CONJ.Ø@ngarri verb_derivational_suffix ;
-@U.CONJ.LA@+Compound/pakala:%>@U.CONJ.LA@paka verb_derivational_suffix ;
-@U.CONJ.RRA@+Compound/jarra:%>@U.CONJ.RRA@ja verb_derivational_suffix ;
+@U.CONJ.RRA@+Compound/put:%>@U.CONJ.RRA@ju 		verb_derivational_suffix ;
+@U.CONJ.WA@+Compound/hit:%>@U.CONJ.WA@pu 		verb_derivational_suffix ;
+@U.CONJ.LA@+Compound/have:%>@U.CONJ.LA@kanyi		verb_derivational_suffix ;
+@U.CONJ.Ø@+Compound/carry:%>@U.CONJ.Ø@kati 		verb_derivational_suffix ;
+@U.CONJ.RRA@+Compound/go:%>@U.CONJ.RRA@ya 		verb_derivational_suffix ;
+@U.CONJ.Ø@+Compound/lie:%>@U.CONJ.Ø@ngarri 		verb_derivational_suffix ;
+@U.CONJ.LA@+Compound/get_up:%>@U.CONJ.LA@paka 		verb_derivational_suffix ;
+@U.CONJ.RRA@+Compound/mouth_action:%>@U.CONJ.RRA@ja 	verb_derivational_suffix ;
 
 
 LEXICON verb_derivational_suffix
@@ -188,7 +192,7 @@ LEXICON Intentional
 
 LEXICON directional_suffix
  post_inflection_endings ;
-+Direct/ni:%>ni  post_inflection_endings ;
++mvmt_to_speaker:%>ni  post_inflection_endings ;
 
 LEXICON post_inflection_endings
  K_1 ; ! PA ;
