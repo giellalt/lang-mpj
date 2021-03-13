@@ -395,7 +395,7 @@ LEXICON Root
 !! The word forms in Wangkajunga language start from the lexeme roots of basic
 !! word classes, or optionally from prefixes:
    Nouns       ;
-   Verbs       ;
+   Verb_stems       ;
    directional_prefixes ;
 !    Adjectives  ;
     Pronouns    ;
