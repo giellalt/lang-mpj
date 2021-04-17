@@ -42,7 +42,7 @@ LEXICON K_2
 @D.CLT.LTA@+Clt/then:@D.CLT.LTA@%>lta		person_number_case_1 ;
 @D.CLT.YILA@+Clt/then:@D.CLT.YILA@%>yila	person_number_case_1 ;
 
-!! !! Pronoun clitics (quite long)
+!! Pronoun clitics (quite long)
 LEXICON person_number_case_1 ! U flag diacritics so the same case cannot appear twice -> D flag
 ! diacritics on lexicon person_number_case_2
  vocative ;

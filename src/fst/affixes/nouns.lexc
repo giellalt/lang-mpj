@@ -206,8 +206,8 @@ LEXICON end_noun_cases
  K_1 ; ! no person-number suffixed
 
 
-!! !! temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun
-!! !! clitics
+!! temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun
+!! clitics
 LEXICON n_temporal_agr
 +N+Sem/Temp:%> temporal_case ;
 
@@ -227,7 +227,7 @@ LEXICON spatial_case
 +Der/SpatAll:%>warraku	# ;
 
 
-!! !! demonstrative lexicons
+!! demonstrative lexicons
 LEXICON yangka_inflection
 +Dem/ngula:%>ngula K_1 ; ! PA ;
 +Dem/pa:%>pa K_1 ; ! PA ;

@@ -18,9 +18,9 @@
 !! INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Wangkajunga LANGUAGE.
  
 
-Multichar_Symbols  !!≈ !!!Definitions for @CODE@
+Multichar_Symbols  !!≈ # Definitions for @CODE@
 
-!! !!Analysis symbols
+!! ## Analysis symbols
 !  ----------------
 !! The morphological analyses of wordforms for the Wangkajunga
 !! language are presented in this system in terms of the following symbols.
@@ -78,7 +78,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Subj	!  Subj = abs with intransitive verb, erg with transitive verb
 ! other cases are declared elsewhere - Dat, Abs, Abl.
  
-!! !! Verb affixes
+!! Verb affixes
 !! tense inflections 
 +Prs			! Present Tense
 ! perfect tense inflections
@@ -153,14 +153,14 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 
 
-!! !! Flag diacritics for verb conjugations
+!! Flag diacritics for verb conjugations
 @U.CONJ.Ø@
 @U.CONJ.WA@
 @U.CONJ.RRA@
 @U.CONJ.LA@
 
 +Der/Hav +Der/Thing +Der/Priv +Der/Int +Der/Want +Der/Asst +Der/Temp +Der/Dwell +Der/Side +Der/Type +Der/Sim +Der/Contr +Der/Mod +Der/Big +Der/Anoth +Der/Very +Der/Num +Der/Dual +Der/Few +Der/Pl +Der/Grp +Der/Pair +Der/Only
-!! !! Flag diacritics for noun cases
+!! Flag diacritics for noun cases
 !! DCASE = derivational case
 @U.DCASE.HAV@
 @U.DCASE.THING@
@@ -226,7 +226,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 @D.SCASE.PERL@
 @D.SCASE.ALL@
 
-!! !! Flag diacritics for clitics (to ensure the same clitic does not appear twice on a single word)
+!! Flag diacritics for clitics (to ensure the same clitic does not appear twice on a single word)
 !! CLT = clitic
 @U.CLT.FOC@
 @U.CLT.KIRLI@
@@ -255,7 +255,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 @D.CLT.LTA@
 @D.CLT.YILA@
 
-!! !! Flag diacritics for pronoun clitics (to ensure the same case is not used twice within a cluster).
+!! Flag diacritics for pronoun clitics (to ensure the same case is not used twice within a cluster).
 !! CLCASE = pronoun clitic case TODO: consider changing name to PCCASE
 @U.CLCASE.S@
 @U.CLCASE.ABS@
@@ -363,33 +363,33 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! Morphophonology
 !  ---------------
 
-!! !!Flag diacritics
+!! ## Flag diacritics
 !! We have manually optimised the structure of our lexicon using following
 !! flag diacritics to restrict morhpological combinatorics - only allow compounds
 !! with verbs if the verb is further derived into a noun again:
- @P.NeedNoun.ON@    !!≈ | @CODE@ | (Dis)allow compounds with verbs unless nominalised
- @D.NeedNoun.ON@    !!≈ | @CODE@ | (Dis)allow compounds with verbs unless nominalised
- @C.NeedNoun@       !!≈ | @CODE@ | (Dis)allow compounds with verbs unless nominalised
+ @P.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
+ @D.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
+ @C.NeedNoun@       !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
 !! 
 !! For languages that allow compounding, the following flag diacritics are needed
 !! to control position-based compounding restrictions for nominals. Their use is
 !! handled automatically if combined with +CmpN/xxx tags. If not used, they will
 !! do no harm.
- @P.CmpFrst.FALSE@ !!≈ | @CODE@ | Require that words tagged as such only appear first
- @D.CmpPref.TRUE@  !!≈ | @CODE@ | Block such words from entering ENDLEX
- @P.CmpPref.FALSE@ !!≈ | @CODE@ | Block these words from making further compounds
- @D.CmpLast.TRUE@  !!≈ | @CODE@ | Block such words from entering R
- @D.CmpNone.TRUE@  !!≈ | @CODE@ | Combines with the next tag to prohibit compounding
- @U.CmpNone.FALSE@ !!≈ | @CODE@ | Combines with the prev tag to prohibit compounding
- @P.CmpOnly.TRUE@  !!≈ | @CODE@ | Sets a flag to indicate that the word has passed R
- @D.CmpOnly.FALSE@ !!≈ | @CODE@ | Disallow words coming directly from root.
+ @P.CmpFrst.FALSE@ !!≈ |  @CODE@ | Require that words tagged as such only appear first
+ @D.CmpPref.TRUE@  !!≈ |  @CODE@ | Block such words from entering ENDLEX
+ @P.CmpPref.FALSE@ !!≈ |  @CODE@ | Block these words from making further compounds
+ @D.CmpLast.TRUE@  !!≈ |  @CODE@ | Block such words from entering R
+ @D.CmpNone.TRUE@  !!≈ |  @CODE@ | Combines with the next tag to prohibit compounding
+ @U.CmpNone.FALSE@ !!≈ |  @CODE@ | Combines with the prev tag to prohibit compounding
+ @P.CmpOnly.TRUE@  !!≈ |  @CODE@ | Sets a flag to indicate that the word has passed R
+ @D.CmpOnly.FALSE@ !!≈ |  @CODE@ | Disallow words coming directly from root.
 !! 
 !! Use the following flag diacritics to control downcasing of derived proper
 !! nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 !! these flags. There exists a ready-made regex that will do the actual down-casing
 !! given the proper use of these flags.
- @U.Cap.Obl@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
- @U.Cap.Opt@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
+ @U.Cap.Obl@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
+ @U.Cap.Opt@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
 
 LEXICON Root
 !! The word forms in Wangkajunga language start from the lexeme roots of basic

@@ -2,10 +2,10 @@
 # echo 'sentence' | preprocess | lookup -flags mbTT 1.fst | lookup2cg|vislcg3 -g ../../syntax/1_disambiguation.cg3
 
 #   ============================ #
-#!! !!!Start making a syntactic disambiguator
+#!! # Start making a syntactic disambiguator
 #   ============================ #
 
-#!! !!Sets
+#!! ## Sets
 
 # ========== #
 # Delimiters #
@@ -30,7 +30,7 @@ DELIMITERS = "<.>" "<...>" "<!>" "<?>" "<¶>" ;
 LIST BOS = (>>>) (<s>) (sent);
 LIST EOS = (<<<) (</s>); # vislcg and CG-2 together.
 
-#!! !Part-of-Speech
+#!! ### Part-of-Speech
 LIST N = N ;  #!! * N = noun
 LIST A = A ;  #!! * A = adjective
 LIST Num = Num ;  #!! * Num = numeral
@@ -53,7 +53,7 @@ LIST Pass = Pass ;
 
 LIST Attr = Attr ; # ?
 
-#!! !Numerus
+#!! ### Numerus
 LIST Sg = Sg ;   #!! * Sg = Singular
 LIST Pl = Pl ;   #!! * Pl = Plural
 LIST Sg1 = Sg1 ;   #!! * Sg1 = Singular 1.p.
@@ -62,7 +62,7 @@ LIST Sg3 = Sg3 ;   #!! * Sg3 = Singular 3.p.
 LIST Pl1 = Pl1 ;   #!! * Pl1 = Plural 1.p.
 LIST Pl2 = Pl2 ;   #!! * Pl2 = Plural 2.p.
 LIST Pl3 = Pl3 ;   #!! * Pl3 = Plural 3.p.
-#!! !Cases
+#!! ### Cases
 LIST Nom = Nom ; #!! * Nom
 LIST Gen = Gen ;   #!! * Gen
 LIST Acc = Acc ;   #!! * Acc
@@ -89,7 +89,7 @@ LIST Ord = Ord ;
 
 LIST Err/Orth = Err/Orth ;
 	
-#!! !Types
+#!! ### Types
 LIST Prop = Prop ;   #!! * Prop = Proper noun
 LIST Interr = Interr ;   #!! * Interr = Interrogative
 LIST Dem = Dem ; #!! * Dem = demonstrative pron
@@ -131,7 +131,7 @@ LIST Arab = Arab ;
 LIST CURRENCY = "dinaari" "dollari" "euro" "kruunu" "kr" "rupla" "rubel" "¢" "€" "$";
 	
 
-#!! !!Sets with more members
+#!! ## Sets with more members
 # ====
 
 LIST WORD = N V A Adv Pr Interj Po Num CC CS Pron  ; #!! * WORD = all PoS
