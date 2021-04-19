@@ -1,0 +1,29 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-dict-gt-norm.hfst
+    Morph: ../../../src/analyser-dict-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-dict-gt-norm.xfst
+    Morph: ../../../src/analyser-dict-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+  Noun - kaja: # 
+    kaja+N+Abs: kaja
+    kaja+N+Erg: kajalu
+    kaja+N+Dat: kajaku
+    kaja+N+Der/Hav+Abs: kajakurlu
+    kaja+N+Der/Anoth+Erg: kajakujupalu
+    kaja+N+Der/Contr+Dat: kajamunuku
+    kaja+N+Abl: [kajajanu, kajanguru]
+    kaja+N+Gen: kajakurnu
+    kaja+N+Loc: kajangka
+    kaja+N+Avoid: kajangkamarra
+    kaja+N+Perl: kajawana
+    kaja+N+All: kajakutu
+    kaja+N+Loc+Der/Hav: kajangkakurlu
+    kaja+N+Gen+Abl: [kajakurnujanu, kajakurnunguru]
+    kaja+N+Loc+Abl: [kajangkajanu, kajangkanguru]
+    kaja+N+Perl+Abl: [kajawanajanu, kajawananguru]
+    kaja+N+All+Abl: [kajakutujanu, kajakutunguru]
