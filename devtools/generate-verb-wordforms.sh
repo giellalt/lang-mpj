@@ -19,14 +19,35 @@ fi
 
 ######### USER Variables - change these to your liking: #########
 # Codes for the word forms to be generated - list as many or few as needed:
-morf_codes="+V+Inf \
-            +V+Ind+Prs+Sg3 \
-            +V+Ind+Prt+Pl1 \
-            +V+ConNeg \
-            +V+PrfPrc"
+morf_codes="+V																	  \
+            +V+Der/ti															  \
+            +V+Der/ju															  \
+            +V+Ser+Pron/Clt+1Sg+Acs												  \
+            +V+Ser+Pron/Clt+1Sg+Acs+Pron/Clt+Refl+Voc							  \
+            +V+Nomz+Trel														  \
+            +V+Nomz+N															  \
+            +V+Perf/Imprt														  \
+            +V+Perf/Fut															  \
+            +V+Perf/Fut+Direct/ni												  \
+            +V+Perf/Fut+Direct/ni+Grp											  \
+            +V+Perf/Fut+Direct/ni+Compl											  \
+            +V+Perf/Fut+Direct/ni+Warn+Clt/Foc+Pron/Clt+1Sg+Acs+Pron/Clt+Refl+Voc \
+            +V+Imperf+Pst														  \
+            +V+Imperf+PstHbt													  \
+            +V+Imperf+Imprt+Warn+Pron/Clt+1Sg									  \
+            +V+Irr+Avoid														  \
+            +V+Irr+Oblig														  \
+            +V+Irr+Char															  \
+            +V+Irr+Int															  \
+            +V+Irr+Int+Erg														  \
+            +V+Irr+Unr+Int														  \
+            +V+Irr+Unr+Contr													  \
+            +V+Irr+Unr+Purp+Grp+Clt/Foc+Pron/Clt+1Sg+Acs						  \
+            +V+Irr+Avoid+Clt/Foc												  \
+            +V+Irr+Int+Loc"
 
 # Lexicon source file for lexicons and lemmas:
-source_file=src/morphology/stems/verbs.lexc
+source_file=src/fst/stems/verbs.lexc
 
 # Lexicons that should NOT be used to extract lemmas (egrep expression):
 exception_lexicons="(flagK)"
@@ -35,7 +56,7 @@ exception_lexicons="(flagK)"
 generator_file=src/generator-gt-norm
 
 # How many lemmas maximally for each lexicon:
-lemmacount=10
+lemmacount=20
 
 # Specify path to the dir containing the script used for generation:
 script_dir=$giella_core/scripts

@@ -19,16 +19,31 @@ fi
 
 ######### USER Variables - change these to your liking: #########
 # Codes for the word forms to be generated - list as many or few as needed:
-morf_codes="+N+Prop+Sg+Nom \
-            +N+Prop+Sg+Gen \
-            +N+Prop+Sg+Ill \
-            +N+Prop+Sg+Com \
-            +N+Prop+Pl+Nom \
-            +N+Prop+Pl+Com \
-            +N+Prop+Ess"
+morf_codes="+N+Prop+Abs			 \
+            +N+Prop+Erg			 \
+            +N+Prop+Dat			 \
+            +N+Prop+Der/Hav+Abs	 \
+            +N+Prop+Der/Anoth+Erg \
+            +N+Prop+Der/Contr+Dat \
+            +N+Prop+Abl			 \
+            +N+Prop+Gen			 \
+            +N+Prop+Loc			 \
+            +N+Prop+Avoid		 \
+            +N+Prop+Perl			 \
+            +N+Prop+All			 \
+            +N+Prop+Loc+Der/Hav	 \
+            +N+Prop+Abl+Abl		 \
+            +N+Prop+Gen+Abl		 \
+            +N+Prop+Loc+Abl		 \
+            +N+Prop+Perl+Abl		 \
+            +N+Prop+All+Abl		 \
+            +N+Prop+PA			 \
+            +N+Prop+Abs+PA"
+
+
 
 # Lexicon source file for lexicons and lemmas:
-source_file=src/morphology/generated_files/smi-sma-propernouns.lexc
+source_file=src/fst/stems/propernouns.lexc
 
 # Lexicons that should NOT be used to extract lemmas (egrep expression):
 exception_lexicons="(flagK)"
