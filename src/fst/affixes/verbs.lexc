@@ -192,7 +192,7 @@ LEXICON Intentional
 
 LEXICON directional_suffix
  post_inflection_endings ;
-+mvmt_to_speaker:%>ni  post_inflection_endings ;
++Mvmt_to_speaker:%>ni  post_inflection_endings ;
 
 LEXICON post_inflection_endings
  K_1 ; ! PA ;
