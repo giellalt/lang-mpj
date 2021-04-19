@@ -70,23 +70,24 @@ a:0 <=> Vow %> _ r: r: i: ;
 !!€ pilyurr%>pa
 
 
-"+LOC -> ja after consonant 1" ! or -ja/-ta if the word is of non-Wangkajunga origin
-n:j <=> Cns %>  _ g: k:  ;
-
-"+LOC -> ja after consonant 2" ! or -ja/-ta if the word is of non-Wangkajunga origin
-g:0 <=> Cns %>  n: _ k:  ;
-
-"+LOC -> ja after consonant 3" ! or -ja/-ta if the word is of non-Wangkajunga origin
-k:0 <=> Cns %>  n: g: _  ;
+! Commenting out these, since +LOC is not in use.
+!  "+LOC -> ja after consonant 1" ! or -ja/-ta if the word is of non-Wangkajunga origin
+!  n:j <=> Cns %>  _ g: k:  ;
+!  
+!  "+LOC -> ja after consonant 2" ! or -ja/-ta if the word is of non-Wangkajunga origin
+!  g:0 <=> Cns %>  n: _ k:  ;
+!  
+!  "+LOC -> ja after consonant 3" ! or -ja/-ta if the word is of non-Wangkajunga origin
+!  k:0 <=> Cns %>  n: g: _  ;
 
 "lu/ju"
 l:j <=> Cns %> _ u ;
 
-!!€ waka+LOC  !! or this?	waka+LOC000
-!!€ wakangka  !!		wakangka	
+! waka+LOC  !! or this?	waka+LOC000
+! wakangka  !!		wakangka	
 
-!!€ pilyurr+LOC !! or	pilyurr+LOC0
-!!€ pilyurrta   !!	pilyurrta
+! pilyurr+LOC !! or	pilyurr+LOC0
+! pilyurrta   !!	pilyurrta
 
 
 
