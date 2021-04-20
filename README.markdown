@@ -1,6 +1,10 @@
 The Wangkajunga morphology and tools
 ==========================================
 
+[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-mpj)](https://github.com/giellalt/lang-mpj/issues)
+[![Build Status](https://github.com/giellalt/lang-mpj/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-mpj/actions)
+[![License](https://img.shields.io/github/license/giellalt/lang-mpj)](https://raw.githubusercontent.com/giellalt/lang-mpj/develop/LICENSE)
+
 This repository contains finite state source files for the Wangkajunga language,
 for building morphological analysers, proofing tools
 and dictionaries. The data and implementation are licenced under __LGPLv3__
@@ -8,10 +12,6 @@ licence, also detailed in the
 [LICENCE](https://github.com/giellalt/lang-mpj/blob/develop/LICENCE). The
 authors named in the AUTHORS file are available to grant other licencing
 choices.
-
-[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-mpj)](https://github.com/giellalt/lang-mpj/issues)
-[![Build Status](https://github.com/giellalt/lang-mpj/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-mpj/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-mpj)](https://raw.githubusercontent.com/giellalt/lang-mpj/develop/LICENSE)
 
 Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-mpj)
 for the Wangkajunga language by using the [Divvun Installer](http://divvun.no)
