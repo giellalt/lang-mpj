@@ -1,3 +1,144 @@
+Noun inflection
+The Wangkajunga language nouns inflect in cases.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun
+clitics
+
+
+
+
+
+demonstrative lexicons
+
+
+
+
+
+
+
+
+
+
+
+Proper noun inflection
+The Wangkajunga language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
+
+
+
+
+
+
+
+
+# Symbol affixes
+
+
+
+
+
+Adjective inflection
+The Wangkajunga language adjectives compare.
+
+
+
+Verb inflection
+The Wangkajunga language verbs inflect in persons.
+
+
+
+
+lexicon Verb_prefixes (above) -> lexicon Verb_stems (separate file) -> following lexicons, depending on
+relevant conjugation:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+is positioning of +V here okay? or better with separate lexicon / before prefixes?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=================================== !
+The Wangkajunga morphophonological/twolc rules file !
+=================================== !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* *pilyurr%>^P^A*
+* *pilyurr%>pa*
+
+
+
+
+
+
+
+
+
+
+
 
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Wangkajunga LANGUAGE.
 
@@ -170,6 +311,119 @@ given the proper use of these flags.
 
 The word forms in Wangkajunga language start from the lexeme roots of basic
 word classes, or optionally from prefixes:
+
+Nouns
+Nouns in the Wangkajunga language are things.
+
+
+
+
+
+Prefixes
+Prefixes in the Wangkajunga language are bound to beginning of other words.
+
+
+
+Pronouns
+Pronouns in the Wangkajunga language are references to things.
+
+
+
+Adjectives
+Adjectives in the Wangkajunga language describe things.
+
+
+Verbs
+Verbs in the Wangkajunga language are actions.
+
+
+
+
+
+
+
+
+Numerals
+Numerals in the Wangkajunga language are numbers.
+
+
+
+
+
+
+Pronoun clitics (quite long)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% komma% :,      Root ;
+% tjuohkkis% :%. Root ;
+% kolon% :%:     Root ;
+% sárggis% :%-   Root ; 
+% násti% :%*     Root ; 
 
 
 
