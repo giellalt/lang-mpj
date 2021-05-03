@@ -1,3 +1,38 @@
+Nouns
+Nouns in the Wangkajunga language are things.
+
+
+
+
+
+Adjectives
+Adjectives in the Wangkajunga language describe things.
+
+
+Verbs
+Verbs in the Wangkajunga language are actions.
+
+
+
+
+
+
+
+
+Pronouns
+Pronouns in the Wangkajunga language are references to things.
+
+
+
+Prefixes
+Prefixes in the Wangkajunga language are bound to beginning of other words.
+
+
+
+Numerals
+Numerals in the Wangkajunga language are numbers.
+
+
 
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Wangkajunga LANGUAGE.
 
@@ -172,6 +207,216 @@ The word forms in Wangkajunga language start from the lexeme roots of basic
 word classes, or optionally from prefixes:
 
 
+# Symbol affixes
+
+
+
+
+
+Noun inflection
+The Wangkajunga language nouns inflect in cases.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun
+clitics
+
+
+
+
+
+demonstrative lexicons
+
+
+
+
+
+
+
+
+
+
+
+Adjective inflection
+The Wangkajunga language adjectives compare.
+
+
+
+Verb inflection
+The Wangkajunga language verbs inflect in persons.
+
+
+
+
+lexicon Verb_prefixes (above) -> lexicon Verb_stems (separate file) -> following lexicons, depending on
+relevant conjugation:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+is positioning of +V here okay? or better with separate lexicon / before prefixes?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Proper noun inflection
+The Wangkajunga language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
+
+
+
+
+
+
+
+=================================== !
+The Wangkajunga morphophonological/twolc rules file !
+=================================== !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* *pilyurr%>^P^A*
+* *pilyurr%>pa*
+
+
+
+
+
+
+
+
+
+
+
+
+!!!Punctuation symbols
+
+ * __LEXICON Punctuation   __ contains the list
+of punctuation symbols:
+* Symbols like .,: are tagged with __+CLB__
+* other symbols like +.& are tagged with __+PUNCT__, and
+* paired symbols like ()«» are tagged with __+PUNCT+LEFT__
+  and __+PUNCT+RIGHT__, respectively.
+
+* Clause boundary symbols:
+
+* Single punctuation marks
+
+
+* Paired punctuation marks
+
+
+
+
+
+ * __LEXICON PunctEnd   __ leads to # only.
+
+!!!Symbols
+Symbols are single character special signs typically denoting whole nouns. They are different from
+abbreviations and acronyms by not consisting of regular, alphabetic letters.
+
+Symbols are syntactic constituents, and thus part of the sentence analysis. That is, they are
+different from punctuation: punctuation express syntactic boundaries of various kinds, symbols
+are syntactic constituents.
+
+ __LEXICON Symbols__ contains symbols of two types: those that inflect, and those that don't.
+
+Miscellaneous symbols
+
+
+Symbols from Mari OCR reading
+
+
+
+
+
+Smileys
+
+Emojies
+
+
+
+
+Pronoun clitics (quite long)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 We describe here how abbreviations are in Wangkajunga are read out, e.g.
@@ -186,4 +431,58 @@ For example:
  * esim.:esimerkki # ; 
  * esim.:esimerkiksi # ; 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% komma% :,      Root ;
+% tjuohkkis% :%. Root ;
+% kolon% :%:     Root ;
+% sárggis% :%-   Root ; 
+% násti% :%*     Root ; 
 
