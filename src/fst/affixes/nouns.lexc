@@ -246,12 +246,63 @@ LEXICON jii_inflection
 LEXICON sentence_modifier
 +SentMod:	K_1 ; ! PA ;
 
-LEXICON demonstrative_cases ! TODO: fill in when worked out which cases are possible.
- # ;
+LEXICON demonstrative_cases
+ derivational_case_demonst ;
+ semantic_case_demonst ;
 
+LEXICON derivational_case_demonst
+ grammatical_case_demonst_1 ;
++Der/Hav:%>kurlu	grammatical_case_demonst_1 ;
++Der/Thing:%>pinti	grammatical_case_demonst_1 ;
++Der/Priv:%>parni	grammatical_case_demonst_1 ;
++Der/Int:%>kija		grammatical_case_demonst_1 ;
++Der/Want:%>jiraja	grammatical_case_demonst_1 ;
++Der/Asst:%>jarra	grammatical_case_demonst_1 ;
++Der/Temp:%>puru	grammatical_case_demonst_1 ;
++Der/Dwell:%>karraja	grammatical_case_demonst_1 ;
++Der/Side:%>karti	grammatical_case_demonst_1 ;
++Der/Type:%>partu	grammatical_case_demonst_1 ;
++Der/Sim:%>yuru		grammatical_case_demonst_1 ;
++Der/Contr:%>munu	grammatical_case_demonst_1 ;
++Der/Mod:%>marta	grammatical_case_demonst_1 ;
++Der/Big:%>paka		grammatical_case_demonst_1 ;
++Der/Anoth:%>kujupa	grammatical_case_demonst_1 ;
++Der/Very:%>minyirri	grammatical_case_demonst_1 ;
++Der/Num:%>marlu	grammatical_case_demonst_1 ;
++Der/Dual:%>kujarra	grammatical_case_demonst_1 ;
++Der/Few:%>paraku	grammatical_case_demonst_1 ;
++Der/Pl:%>n		grammatical_case_demonst_1 ;
++Der/Pl:%>rti		grammatical_case_demonst_1 ;
++Der/Grp:%>ngurun	grammatical_case_demonst_1 ;
++Der/Pair:%>rarra	grammatical_case_demonst_1 ;
++Der/Only:%>wiyaju	grammatical_case_demonst_1 ;
++Der/Foc:%>nguninji	grammatical_case_demonst_1 ;
 
+LEXICON grammatical_case_demonst_1
+ end_noun_cases ;
++Abs: 		end_noun_cases ;
++Erg:%>lu 	end_noun_cases ;
+!+Erg:%>tu 	end_noun_cases ;
+!+Erg:%>ju	end_noun_cases ;
++Dat:%>ku 	end_noun_cases ;
 
+LEXICON semantic_case_demonst
++Abl:%>janu		grammatical_case_demonst_2 ;
++Abl:%>nguru		grammatical_case_demonst_2 ;
++Gen:%>kurnu		grammatical_case_demonst_2 ;
+! +Gen:%>kura		grammatical_case_demonst_2 ;
+! +Gen:%>kurangu	grammatical_case_demonst_2 ;
++Loc:%>ngka		grammatical_case_demonst_2 ;
+! +Loc:%>ja		grammatical_case_demonst_2 ;
+! +Loc:%>ta		grammatical_case_demonst_2 ;
++Perl:%>wana		grammatical_case_demonst_2 ;
++All:%>kutu		grammatical_case_demonst_2 ;
 
-
-
-
+LEXICON grammatical_case_demonst_2
+ end_noun_cases ;
++Abs: 		end_noun_cases ;
++Erg:%>lu 	end_noun_cases ;
+!+Erg:%>tu 	end_noun_cases ;
+!+Erg:%>ju	end_noun_cases ;
++Dat:%>ku 	end_noun_cases ;
+ 
