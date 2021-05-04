@@ -2,14 +2,14 @@
 !  ---------------
 !! The Wangkajunga language verbs inflect in persons.
 
-LEXICON directional_prefixes ! TODO: finalise prefix codes. Preliminarily: +Prefix/maa
+LEXICON directional_prefixes
    simple_verbs ;
-Prefix/maa+:%>maa simple_verbs ;
-Prefix/parra+:%>parra simple_verbs ;
+Directional/away+:%>maa simple_verbs ;
+Directional/around+g:%>parra simple_verbs ;
    compound_verb_preverbs ;
-Prefix/maa+:%>maa compound_verb_preverbs ;
-Prefix/parra+:%>parra compound_verb_preverbs ;
-Prefix/parra+:%>parra parra_reduplication ;
+Directional/away+:%>maa compound_verb_preverbs ;
+Directional/around+:%>parra compound_verb_preverbs ;
+Directional/around+:%>parra parra_reduplication ;
 
 LEXICON parra_reduplication
 +Redpl:%>parra  Verb_stems ;
@@ -192,7 +192,7 @@ LEXICON Intentional
 
 LEXICON directional_suffix
  post_inflection_endings ;
-+Mvmt_to_speaker:%>ni  post_inflection_endings ;
++Directional/towards:%>ni  post_inflection_endings ;
 
 LEXICON post_inflection_endings
  K_1 ; ! PA ;
