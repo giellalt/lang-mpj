@@ -34,8 +34,6 @@ demonstrative lexicons
 
 
 
-
-
 Proper noun inflection
 The Wangkajunga language proper nouns inflect in the same cases as regular
 nouns, but with a colon (':') as separator.
@@ -185,7 +183,6 @@ Transitivity:
 
 
 
-
 Verb affixes
 tense inflections 
 
@@ -195,12 +192,11 @@ affixes following from irrealis inflections
 
 serial and nominalised inflections
 
-verb derivation affixes
+verb derivation affixes #TODO: rename giving sense of function
 
 temporal relative affix
 
 verb directional affixes
-
 
 verb post-inflection affixes
 
@@ -314,6 +310,10 @@ word classes, or optionally from prefixes:
 
 Nouns
 Nouns in the Wangkajunga language are things.
+
+
+
+
 
 
 
