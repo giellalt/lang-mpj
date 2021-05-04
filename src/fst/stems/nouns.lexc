@@ -27,10 +27,136 @@ mutika n_agr "vehicle" ;
 tali n_agr "sandhill" ;
 kuka n_agr "game (animal/food sense)" ;
 kalyu n_agr "water, waterhole" ;
+! words added while digitalising texts
+yirna n_agr "man" ;
+wartil n_agr "hunting" ;
+minyuparnta n_agr "marsupial mouse" ;
+waltaki n_agr "dingo" ;
+piti n_agr "hole" ;
+kanaji n_agr "snake" ;
+wungku n_agr "windbreak" ;
+minijartu n_agr "blue-tongue lizard" ;
+jamparn n_agr "wallaby" ;
+wayurta n_agr "possum" ;
+warta n_agr "tree, stick" ;
+kuniya n_agr "snake" ;
+kalirri n_agr "patterned" ;
+parnaparnti n_agr "sand goanna" ;
+pangarnu n_agr "large goanna" ;
+ngurti n_agr "hole" ;
+tiltil n_agr "red" ;
+tilytily n_agr "red" ;
+kurlata n_agr "spear" ;
+karlaya n_agr "emu" ;
+marlu n_agr "kangaroo" ;
+waru n_agr "fire" ;
+miku n_agr "nice" ;
+malaku n_agr "return" ; ! malaku can also take verbal inflection
+yurra n_agr "thirst" ; ! next two are alternative spellings as found in grammar
+yurrily n_agr "thirst" ;
+yuraly n_agr "thirst" ;
+waljamparra n_agr "separate" ;
+minyawu n_agr "cat" ;
+pukikatu n_agr "cat" ;
+jalapa n_agr "red-coloured lizard" ;
+laltu n_agr "lots" ;
+nyukurni n_agr "before, a long time ago" ;
+kuwarri n_agr "today, now" ;
+mingajurru n_agr "bandicoot" ;
+yurlta n_agr "in camp, being in camp" ; ! maybe more restricted case combinations than other nouns
+kaanu n_agr "small lizard" ;
+pura n_agr "bush tomato" ;
+mangarri n_agr "plant food" ;
+mirrka n_agr "plant food" ;
+tajitaji n_agr "tree species" ;
+wakan n_agr "spear" ;
+maru n_agr "black" ;
+munuka n_agr "different" ;
+pina n_agr "far" ; ! probably more restrictions on case combinations
+minyirri n_agr "very" ; ! normally a suffix - possible as stem
+ngurrpa n_agr "ignorant" ;
+kartiya n_agr "European, white person" ;
+kutu n_agr "centre, middle" ;
+jilji n_agr "sandhill" ;
+nyamu n_agr "finish; that's all" ; ! limited endings
+purtu n_agr "in vain" ; ! limited endings
+mijinin n_agr "hook" ;
+nyunjun n_agr "thigh, leg" ;
+parntany n_agr "woman" ;
+jiji n_agr "child" ;
+ngawuji n_agr "grandchild" ;
+pamarr n_agr "hill" ;
+jina n_agr "track" ;
+watijunku n_agr "track" ;
+maral n_agr "nothing" ;
+
+
+!non-Wangkajunga words ! #TODO: maybe separate into taking pa and not?
+seed n_agr "seed" ;
+! last week "last week" ;
+! trip "trip" ;
+! we never go "we never go" ;
+! really "really" ;
+! way "way" ;
+! only just "only just" ;
+! RoadBoard.camp "Roadboard camp" ;
+! road "road" ;
+! board "board" ;
+! mean "means" ;
+! deibin "they have been" ; #TODO: dei bin also exists
+! katimbat "cutting that/back?" ! #TODO: check which
+! langtaim "some time ago" ;
+! not "NEG" ;
+! on "on" ;
+! rut "rut" ;
+! country "country" ;
+! supper "dinner(K)" ;
+! dinner "dinner" ;
+! jupjup "stew (K)" ;
+! for "POSS(K)" ;
+! husband "husband" ;
+! only "only" ;
+! two "two" ;
+! three "three" ;
+! toyota "toyota, 4WD.vehicle" ;
+! trailer "trailer" ;
+! highwan "high(K)" ;
+! you know "you know" ;
+! big "big" ;
+! sandhill "sandhill" ;
+! we "we" ;
+! callim "say" ;
+! roadhouse "roadhouse" ;
+! warrkim "work" ;
+! petrol "petrol" ;
+! diesel "diesel" ;
+! bayim "buy" ;
+! leg "leg" ;
+! dat "DEM(K)" ;
+! olkoman "woman(K)" ;
+! right-up "right-up" ;
+! mutika "vehicle(K)" ;
+! nothing "NEG(K)" ;
+
+!non nouns/verbs to sort
+kuju n_agr "one" ;
+kujarra n_agr "two" ;
+! ahh "HES" ;
+! uh "HES" ;
+palunyajanu n_agr "after.that" ;
+! kamu CONJ ;
+! ngapi "HES" ;
+! yuu "yes" ;
+! wiya "NEG" ;
+! palayi "INTJCTN" ;
+! an "CONJ" ;
+! na "then, focus" ; ! unchanging
+! tii "DEM" ; ! appears twice. otherwise tii = tea. only takes final endings..
+
 
 ! temporal nouns
 munga n_temporal_agr "night" ;
-yungunypa n_temporal_agr "morning, tomorrow" ;
+yunguny n_temporal_agr "morning, tomorrow" ;
 ruka n_temporal_agr "sunset" ;
 raka n_temporal_agr "sunrise" ;
 rakarra n_temporal_agr "sunrise" ;

@@ -10,10 +10,10 @@
 
 +V+Perf/Imprt
 +V+Perf/Fut
-+V+Perf/Fut+Direct/ni
-+V+Perf/Fut+Direct/ni+Grp
-+V+Perf/Fut+Direct/ni+Compl
-+V+Perf/Fut+Direct/ni+Warn+Clt/Foc+Pron/Clt+1Sg+Acs+Pron/Clt+Refl+Voc
++V+Perf/Fut+Directional/towards
++V+Perf/Fut+Directional/towards+Grp
++V+Perf/Fut+Directional/towards+Compl
++V+Perf/Fut+Directional/towards+Warn+Clt/Foc+Pron/Clt+1Sg+Acs+Pron/Clt+Refl+Voc
 
 +V+Imperf+Pst
 +V+Imperf+PstHbt

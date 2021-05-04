@@ -61,7 +61,6 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
 +Der/Hav +Der/Thing +Der/Priv +Der/Int +Der/Want +Der/Asst +Der/Temp +Der/Dwell +Der/Side +Der/Type +Der/Sim +Der/Contr +Der/Mod +Der/Big +Der/Anoth +Der/Very +Der/Num +Der/Dual +Der/Few +Der/Pl +Der/Grp +Der/Pair +Der/Only
 +Der/Foc
 
-
 +Der/SpatAbl
 +Der/SpatAll
 +Der/TempLoc
@@ -110,7 +109,7 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
 +Ser		! Serial
 +Nomz		! Nominaliser
 
-!! verb derivation affixes
+!! verb derivation affixes #TODO: rename giving sense of function
 +Der/ti
 +Der/ma
 +Der/ju
@@ -119,10 +118,9 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
 +Trel
 
 !! verb directional affixes
-+Direct/ni
-+Prefix/maa+ +Prefix/parra+ ! OR - +Direct/maa & +Direct/parra
-
-+Mvmt_to_speaker
++Directional/towards	! ni (suffix / infix)
+Directional/away+	! maa (prefix)
+Directional/around+	! parra (prefix)
 
 !! verb post-inflection affixes
 +Grp		! group (different to GROUP as derivational nominal suffix)
@@ -160,7 +158,6 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
 @U.CONJ.RRA@
 @U.CONJ.LA@
 
-+Der/Hav +Der/Thing +Der/Priv +Der/Int +Der/Want +Der/Asst +Der/Temp +Der/Dwell +Der/Side +Der/Type +Der/Sim +Der/Contr +Der/Mod +Der/Big +Der/Anoth +Der/Very +Der/Num +Der/Dual +Der/Few +Der/Pl +Der/Grp +Der/Pair +Der/Only
 !! Flag diacritics for noun cases
 !! DCASE = derivational case
 @U.DCASE.HAV@
