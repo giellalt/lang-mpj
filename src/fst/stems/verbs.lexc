@@ -10,11 +10,14 @@ nyina Ø_conjugation_iv "to sit" ;
 ngara Ø_conjugation_iv "to stand" ;
 ngarri Ø_conjugation_iv "to lie" ;
 jarrpa Ø_conjugation_tv "to enter" ; ! if 2nd arg is not Dat
+kanyin Ø_conjugation_tv "to have" ;
+ngarri Ø_conjugation_iv "to lie (down), sleep" ;
 
 ! WA conjugation
 pu WA_conjugation_tv "to hit" ;
 ka WA_conjugation_tv "to carry" ;
 palipu WA_conjugation_tv "to find" ;
+wirrupu WA_conjugation_tv "to throw, throw away" ;
 
 ! RRA conjugation
 ya RRA_conjugation_iv "to go" ;
@@ -25,6 +28,9 @@ ju RRA_conjugation_iv "to put" ; ! if 2nd arg is Dat
 paja LA_conjugation_tv "to bite" ;
 kunta LA_conjugation_tv "to cut" ;
 manji LA_conjugation_tv "to collect" ;
+jawa LA_conjugation_iv "to dig, dig a hole, bury" ;
+tikarlpaka LA_conjugation_iv "to climb up" ;
+yatu LA_conjugation_iv "to scrape out, cut" ;
 
 ! preverbs (as part of complex verbs)
 
