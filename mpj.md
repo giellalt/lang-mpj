@@ -209,7 +209,6 @@ Clitics
 Demonstrative affixes #TODO: add more meaning to tag names?
 
 
-
 Flag diacritics for verb conjugations
 
 Flag diacritics for noun cases
@@ -330,7 +329,7 @@ Pronouns in the Wangkajunga language are references to things.
 
 
 
-# Closed parts of speak
+# Closed parts of speech
 
 This file contains closed parts of speech. It might be split later on.
 Each POS gets first a lexicon for the tag, then a lexicon for the words pointing to the tag lexicon.
@@ -339,12 +338,14 @@ Each POS gets first a lexicon for the tag, then a lexicon for the words pointing
 
 
 
-
 ## Particles
 
 
 
+
 ## Conjunctions
+
+
 
 
 Adjectives
