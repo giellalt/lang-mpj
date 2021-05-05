@@ -1,5 +1,5 @@
 
-!! # Closed parts of speak
+!! # Closed parts of speech
 
 !! This file contains closed parts of speech. It might be split later on.
 !! Each POS gets first a lexicon for the tag, then a lexicon for the words pointing to the tag lexicon.
@@ -10,22 +10,43 @@ LEXICON ij
 +Interj: # ;
 
 LEXICON Interjections
-wow ij ; ! these are just dummy forms, remove ad lib.
-gosh ij ;
-
+ahh ij "hesitation" ;
+uh ij "hesitiation" ;
+palayi ij "look out";
 
 !! ## Particles
 
-LEXICON prt
+LEXICON closed_prt
 +Pcle: # ;
 
+LEXICON open_prt
++Pcle: K_1 ;
+
 LEXICON Particles
-aj prt ; ! dummy form.
+yu closed_prt "yes" ;
+yuu closed_prt "yes" ;
+lurrju closed_prt "also, in addition" ;
+maitbi open_prt "maybe" ;
+wurna open_prt "away" ;
+wiya open_prt "no" ;
+tii open_prt "this, there" ; ! potentially a demonstrative but appears very rarely
+na closed_prt "then, focus" ;
+nyamu open_prt "finish; that's all" ;
+jamun open_prt "about to, almost" ;
+purtu open_prt "in vain" ;
+wituka open_prt "also, once again" ;
+wulu open_prt "continuously, endlessly" ;
 
 !! ## Conjunctions
 
-LEXICON cc
+LEXICON closed_cc
 +CC: # ;
 
+LEXICON open_cc
++CC: K_1 ;
+
 LEXICON Conjunctions
-and cc ; ! dummy form
+an closed_cc "and" ;
+kamu open_cc "and" ;
+kaji open_CC "when, while" ;
+

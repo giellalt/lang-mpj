@@ -143,8 +143,9 @@ Directional/around+	! parra (prefix)
 
 !! Demonstrative affixes #TODO: add more meaning to tag names?
 +SentMod
-+Dem/ngula +Dem/pa +Dem/na +Dem/janu +Dem/janulu
-
++Dem/ngula +Dem/pa ! only with yangka. In book +Rel +Pa
++Dem/na +Dem/janu ! in book +Foc +Abl
++Dem/janulu ! only with palunya
 
 
 !! Flag diacritics for verb conjugations

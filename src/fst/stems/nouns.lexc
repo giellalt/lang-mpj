@@ -60,8 +60,6 @@ minyawu n_agr "cat" ;
 pukikatu n_agr "cat" ;
 jalapa n_agr "red-coloured lizard" ;
 laltu n_agr "lots" ;
-nyukurni n_agr "before, a long time ago" ;
-kuwarri n_agr "today, now" ;
 mingajurru n_agr "bandicoot" ;
 yurlta n_agr "in camp, being in camp" ; ! maybe more restricted case combinations than other nouns
 kaanu n_agr "small lizard" ;
@@ -78,8 +76,6 @@ ngurrpa n_agr "ignorant" ;
 kartiya n_agr "European, white person" ;
 kutu n_agr "centre, middle" ;
 jilji n_agr "sandhill" ;
-nyamu n_agr "finish; that's all" ; ! limited endings
-purtu n_agr "in vain" ; ! limited endings
 mijinin n_agr "hook" ;
 nyunjun n_agr "thigh, leg" ;
 parntany n_agr "woman" ;
@@ -89,6 +85,11 @@ pamarr n_agr "hill" ;
 jina n_agr "track" ;
 watijunku n_agr "track" ;
 maral n_agr "nothing" ;
+ngapi n_agr "*hesitation*" ; ! hesitation word which can take normal noun cases
+kuju n_agr "one" ;
+kujarra n_agr "two" ;
+nyukurni n_agr "before, a long time ago" ; ! this and next word are historic time words - only take clitic endings
+kuwarri n_agr "today, now" ;
 
 
 !non-Wangkajunga words ! #TODO: maybe separate into taking pa and not?
@@ -138,21 +139,7 @@ seed n_agr "seed" ;
 ! mutika "vehicle(K)" ;
 ! nothing "NEG(K)" ;
 
-!non nouns/verbs to sort
-kuju n_agr "one" ;
-kujarra n_agr "two" ;
-! ahh "HES" ;
-! uh "HES" ;
-palunyajanu n_agr "after.that" ;
-! kamu CONJ ;
-! ngapi "HES" ;
-! yuu "yes" ;
-! wiya "NEG" ;
-! palayi "INTJCTN" ;
-! an "CONJ" ;
-! na "then, focus" ; ! unchanging
-! tii "DEM" ; ! appears twice. otherwise tii = tea. only takes final endings..
-! wurna "away" ; ! particle; can take clitics and seemingly nothing else.
+! palunyajanu n_agr "after.that" ; ! actually palunya-janu; not split properly
 
 
 ! temporal nouns
