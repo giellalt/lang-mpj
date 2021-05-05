@@ -62,8 +62,8 @@ LEXICON RAA_conjugation_flags
 !LEXICON LA_conjugation
 !+V: LA_conjugation_flags ;
 
-!LEXICON LA_conjugation_iv
-!+V+IV: LA_conjugation_flags ;
+LEXICON LA_conjugation_iv
++V+IV: LA_conjugation_flags ;
 
 LEXICON LA_conjugation_tv
 +V+TV: LA_conjugation_flags ;
@@ -128,23 +128,27 @@ LEXICON verb_tense_inflections
 @U.CONJ.WA@+Prs:@U.CONJ.WA@%>ngin directional_suffix ;
 @U.CONJ.RRA@+Prs:@U.CONJ.RRA@%>nin directional_suffix ;
 @U.CONJ.LA@+Prs:@U.CONJ.LA@%>nin  directional_suffix ;
-! perfective tense endings (imperative, past, future)
-@U.CONJ.Ø@+Perf/Imprt:@U.CONJ.Ø%>  directional_suffix ;
-@U.CONJ.WA@+Perf/Imprt:@U.CONJ.WA@%>wa  directional_suffix ;
-@U.CONJ.RRA@+Perf/Imprt:@U.CONJ.RRA@%>rra directional_suffix ;
-@U.CONJ.LA@+Perf/Imprt:@U.CONJ.LA@%>la  directional_suffix ;
-@U.CONJ.Ø@+Perf/Pst:@U.CONJ.Ø@%>ngu  directional_suffix ;
-@U.CONJ.Ø@+Perf/Pst:@U.CONJ.Ø@%>ngun  directional_suffix ;
-@U.CONJ.WA@+Perf/Pst:@U.CONJ.WA@%>ngu  directional_suffix ;
-@U.CONJ.WA@+Perf/Pst:@U.CONJ.WA@%>ngun  directional_suffix ;
-@U.CONJ.RRA@+Perf/Pst:@U.CONJ.RRA@%>nu  directional_suffix ;
-@U.CONJ.RRA@+Perf/Pst:@U.CONJ.RRA@%>nun  directional_suffix ;
-@U.CONJ.LA@+Perf/Pst:@U.CONJ.LA@%>rnu  directional_suffix ;
-@U.CONJ.LA@+Perf/Pst:@U.CONJ.LA@%>rnun  directional_suffix ;
-@U.CONJ.Ø@+Perf/Fut:@U.CONJ.Ø@%>ku  directional_suffix ;
-@U.CONJ.WA@+Perf/Fut:@U.CONJ.WA@%>ngku  directional_suffix ;
-@U.CONJ.RRA@+Perf/Fut:@U.CONJ.RRA@%>nku  directional_suffix ;
-@U.CONJ.LA@+Perf/Fut:@U.CONJ.LA@%>lku  directional_suffix ;
+! perfective tense endings (imperative, past narrative, past, future)
+@U.CONJ.Ø@+Perf+Imprt:@U.CONJ.Ø%>  directional_suffix ;
+@U.CONJ.WA@+Perf+Imprt:@U.CONJ.WA@%>wa  directional_suffix ;
+@U.CONJ.RRA@+Perf+Imprt:@U.CONJ.RRA@%>rra directional_suffix ;
+@U.CONJ.LA@+Perf+Imprt:@U.CONJ.LA@%>la  directional_suffix ;
+@U.CONJ.Ø@+Perf+PstNar:@U.CONJ.Ø%>  directional_suffix ;
+@U.CONJ.WA@+Perf+PstNar:@U.CONJ.WA@%>wa  directional_suffix ;
+@U.CONJ.RRA@+Perf+PstNar:@U.CONJ.RRA@%>rra directional_suffix ;
+@U.CONJ.LA@+Perf+PstNar:@U.CONJ.LA@%>la  directional_suffix ;
+@U.CONJ.Ø@+Perf+Pst:@U.CONJ.Ø@%>ngu  directional_suffix ;
+@U.CONJ.Ø@+Perf+Pst:@U.CONJ.Ø@%>ngun  directional_suffix ;
+@U.CONJ.WA@+Perf+Pst:@U.CONJ.WA@%>ngu  directional_suffix ;
+@U.CONJ.WA@+Perf+Pst:@U.CONJ.WA@%>ngun  directional_suffix ;
+@U.CONJ.RRA@+Perf+Pst:@U.CONJ.RRA@%>nu  directional_suffix ;
+@U.CONJ.RRA@+Perf+Pst:@U.CONJ.RRA@%>nun  directional_suffix ;
+@U.CONJ.LA@+Perf+Pst:@U.CONJ.LA@%>rnu  directional_suffix ;
+@U.CONJ.LA@+Perf+Pst:@U.CONJ.LA@%>rnun  directional_suffix ;
+@U.CONJ.Ø@+Perf+Fut:@U.CONJ.Ø@%>ku  directional_suffix ;
+@U.CONJ.WA@+Perf+Fut:@U.CONJ.WA@%>ngku  directional_suffix ;
+@U.CONJ.RRA@+Perf+Fut:@U.CONJ.RRA@%>nku  directional_suffix ;
+@U.CONJ.LA@+Perf+Fut:@U.CONJ.LA@%>lku  directional_suffix ;
 ! imperfective forms (expanded in separate lexicon)
 @U.CONJ.Ø@+Imperf:@U.CONJ.Ø@%>  imperfective_inflections ;
 @U.CONJ.WA@+Imperf:@U.CONJ.WA@%>nga imperfective_inflections ;

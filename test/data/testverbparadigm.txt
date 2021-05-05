@@ -8,12 +8,12 @@
 +V+Nomz+Trel
 +V+Nomz+N
 
-+V+Perf/Imprt
-+V+Perf/Fut
-+V+Perf/Fut+Directional/towards
-+V+Perf/Fut+Directional/towards+Grp
-+V+Perf/Fut+Directional/towards+Compl
-+V+Perf/Fut+Directional/towards+Warn+Clt/Foc+Pron/Clt+1Sg+Acs+Pron/Clt+Refl+Voc
++V+Perf+Imprt
++V+Perf+Fut
++V+Perf+Fut+Directional/towards
++V+Perf+Fut+Directional/towards+Grp
++V+Perf+Fut+Directional/towards+Compl
++V+Perf+Fut+Directional/towards+Warn+Clt/Foc+Pron/Clt+1Sg+Acs+Pron/Clt+Refl+Voc
 
 +V+Imperf+Pst
 +V+Imperf+PstHbt

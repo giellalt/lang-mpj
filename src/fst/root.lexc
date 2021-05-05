@@ -80,16 +80,11 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
 !! Verb affixes
 !! tense inflections 
 +Prs			! Present Tense
-! perfect tense inflections
-+Perf/Imprt		! Perfective Imperative OR maybe the other way around -> Imprt/Perf?	
-+Perf/Pst		! Perfective Past Tense OR past as Prt and not Pst
-+Perf/Fut		! Perfective Future Tense
-! imperfect tense inflections
-! +Imperf/Pst		! Imperfective Past asdf+V+PST+IMP // asdf+V+PSTIMP
-! +Imperf/PstHbt		! Imperfective Past Habitual
-! +Imperf/Fut		! Imperfective Future
-! +Imperf/Imprt		! Imperfective Imperative
-+Imperf +Pst +PstHbt +Fut +Imprt
+! perfect tense inflections for Perfective: Imperative, Past, Past Narrative, Future.
+! Perfective Imperative and Perfective Past Narrative have the same form
++Perf +Imprt +Pst +PstNar +Fut
+! imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imperative
++Imperf +PstHbt
 
 !! irrealis tense inflections ! TODO: work on tags. Irrealis/Admon? But two separate morphophonemes
 +Irr		! Irrealis
@@ -146,7 +141,7 @@ Directional/around+	! parra (prefix)
 +Clt/while +Clt/when +Clt/then
 +Voc
 
-!! Demonstrative affixes TODO: change tag names
+!! Demonstrative affixes #TODO: add more meaning to tag names?
 +SentMod
 +Dem/ngula +Dem/pa +Dem/na +Dem/janu +Dem/janulu
 
