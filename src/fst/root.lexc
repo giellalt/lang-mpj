@@ -396,7 +396,10 @@ LEXICON Root
    Verb_stems       ;
    directional_prefixes ;
 !    Adjectives  ;
-    Pronouns    ;
+Interjections ;
+Particles ;
+Conjunctions ;
+Pronouns    ;
     Propernouns    ;
 !    Numerals    ;
 !    Prefixes    ;
