@@ -8,7 +8,6 @@
 * [nouns-stems-fst-src.md](nouns-stems-fst-src.md)
 * [prefixes-stems-fst-src.md](prefixes-stems-fst-src.md)
 * [pronouns-stems-fst-src.md](pronouns-stems-fst-src.md)
-* [closed-stems-fst-src.md](closed-stems-fst-src.md)
 * [adjectives-stems-fst-src.md](adjectives-stems-fst-src.md)
 * [verbs-stems-fst-src.md](verbs-stems-fst-src.md)
 * [numerals-stems-fst-src.md](numerals-stems-fst-src.md)

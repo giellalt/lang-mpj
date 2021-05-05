@@ -67,7 +67,7 @@ Reduplication
 
 Clitics
 
-Demonstrative affixes TODO: change tag names
+Demonstrative affixes #TODO: add more meaning to tag names?
 
 
 
