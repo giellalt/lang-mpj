@@ -8,7 +8,7 @@ LEXICON K_1 ! U flag diacritics so the same case clitic cannot occur twice (then
  person_number_case_1 ;
 @U.CLT.FOC@+Clt/Foc:@U.CLT.FOC@%>nga 	K_2 ;	! (NB different to +Der/Foc "nguninji")
 ! modifiers
-@U.CLT.KIRLI@+Clt/probably:@U.CLT.KIRLI@%>kirli	K_2 ;
+@U.CLT.KIRLI@+Clt/Prob:@U.CLT.KIRLI@%>kirli	K_2 ;
 @U.CLT.LKA@+Clt/contrary_to_expectation:@U.CLT.LKA@%>lka	K_2 ;
 @U.CLT.YILTA@+Clt/really:@U.CLT.YILTA@%>yilta	K_2 ;
 @U.CLT.CERT@+Clt/Cert:@U.CLT.CERT@%>ngulyu	K_2 ;
@@ -27,7 +27,7 @@ LEXICON K_2
  person_number_case_1 ;
 @D.CLT.FOC@+Clt/Foc:@D.CLT.FOC@%>nga 		person_number_case_1 ;
 ! modifiers
-@D.CLT.KIRLI@+Clt/probably:@D.CLT.KIRLI@%>kirli	person_number_case_1 ;
+@D.CLT.KIRLI@+Clt/Prob:@D.CLT.KIRLI@%>kirli	person_number_case_1 ;
 @D.CLT.LKA@+Clt/contrary_to_expectation:@D.CLT.LKA@%>lka	person_number_case_1 ;
 @D.CLT.YILTA@+Clt/really:@D.CLT.YILTA@%>yilta	person_number_case_1 ;
 @D.CLT.CERT@+Clt/Cert:@D.CLT.CERT@%>ngulyu	person_number_case_1 ;

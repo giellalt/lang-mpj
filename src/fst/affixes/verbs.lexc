@@ -4,16 +4,19 @@
 
 LEXICON directional_prefixes
    simple_verbs ;
-Directional/away+:%>maa simple_verbs ;
-Directional/around+g:%>parra simple_verbs ;
+Directional/away+:%>maa Verb_stems ;
+Directional/around+:%>parra parra_reduplication ;
+
+! no compound stems as of yet - following lines won't yet have any effect.
    compound_verb_preverbs ;
 Directional/away+:%>maa compound_verb_preverbs ;
 Directional/around+:%>parra compound_verb_preverbs ;
 Directional/around+:%>parra parra_reduplication ;
 
 LEXICON parra_reduplication
-+Redpl:%>parra  Verb_stems ;
-+Redpl:%>parra  compound_verb_preverbs ;
+Redpl+:%>parra  Verb_stems ;
+ Verb_stems ;
+Redpl+:%>parra  compound_verb_preverbs ;
 
 
 !! lexicon Verb_prefixes (above) -> lexicon Verb_stems (separate file) -> following lexicons, depending on
@@ -81,6 +84,7 @@ LEXICON simple_verb_reduplication
  # ; ! remove when Redpl is working
 +Redpl:%>__ verb_derivational_suffix;
 
+! no compound verbs stems added so next 3 lexicons will not be reached / used. No compound verbs found in W. texts.
 LEXICON compound_verb_preverbs
 +V: preverb_reduplication ;
 +V: compound_verb_compounds ;
@@ -103,7 +107,7 @@ LEXICON compound_verb_compounds
 
 LEXICON verb_derivational_suffix
   verb_tense_inflections;
-@U.CONJ.WA@+Der/ti:@U.CONJ.WA@%>ti verb_tense_inflections ;
+@U.CONJ.WA@+Act:@U.CONJ.WA@%>ti verb_tense_inflections ;
 +Der/ma:%>ma verb_tense_inflections;
 +Der/ju:%>ju verb_tense_inflections;
 
