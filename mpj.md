@@ -1,3 +1,100 @@
+Nouns
+Nouns in the Wangkajunga language are things.
+
+
+
+
+
+
+
+
+
+Numerals
+Numerals in the Wangkajunga language are numbers.
+
+
+
+# Closed parts of speech
+
+This file contains closed parts of speech. It might be split later on.
+Each POS gets first a lexicon for the tag, then a lexicon for the words pointing to the tag lexicon.
+
+## Interjections
+
+
+
+## Particles
+
+
+
+
+## Conjunctions
+
+
+
+
+Verbs
+Verbs in the Wangkajunga language are actions.
+
+
+
+
+
+
+
+
+Prefixes
+Prefixes in the Wangkajunga language are bound to beginning of other words.
+
+
+
+Adjectives
+Adjectives in the Wangkajunga language describe things.
+
+
+Pronouns
+Pronouns in the Wangkajunga language are references to things.
+
+
+
+=================================== !
+The Wangkajunga morphophonological/twolc rules file !
+=================================== !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* *pilyurr%>^P^A*
+* *pilyurr%>pa*
+
+
+
+
+
+
+
+
+
+
+
+
+# Symbol affixes
+
+
+
+
+
 Noun inflection
 The Wangkajunga language nouns inflect in cases.
 
@@ -41,18 +138,6 @@ nouns, but with a colon (':') as separator.
 
 
 
-
-
-
-
-# Symbol affixes
-
-
-
-
-
-Adjective inflection
-The Wangkajunga language adjectives compare.
 
 
 
@@ -106,34 +191,8 @@ is positioning of +V here okay? or better with separate lexicon / before prefixe
 
 
 
-=================================== !
-The Wangkajunga morphophonological/twolc rules file !
-=================================== !
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* *pilyurr%>^P^A*
-* *pilyurr%>pa*
-
-
-
-
-
-
-
-
+Adjective inflection
+The Wangkajunga language adjectives compare.
 
 
 
@@ -307,65 +366,6 @@ given the proper use of these flags.
 The word forms in Wangkajunga language start from the lexeme roots of basic
 word classes, or optionally from prefixes:
 
-Nouns
-Nouns in the Wangkajunga language are things.
-
-
-
-
-
-
-
-
-
-Prefixes
-Prefixes in the Wangkajunga language are bound to beginning of other words.
-
-
-
-Pronouns
-Pronouns in the Wangkajunga language are references to things.
-
-
-
-
-# Closed parts of speech
-
-This file contains closed parts of speech. It might be split later on.
-Each POS gets first a lexicon for the tag, then a lexicon for the words pointing to the tag lexicon.
-
-## Interjections
-
-
-
-## Particles
-
-
-
-
-## Conjunctions
-
-
-
-
-Adjectives
-Adjectives in the Wangkajunga language describe things.
-
-
-Verbs
-Verbs in the Wangkajunga language are actions.
-
-
-
-
-
-
-
-
-Numerals
-Numerals in the Wangkajunga language are numbers.
-
-
 
 
 
@@ -388,6 +388,22 @@ Pronoun clitics (quite long)
 
 
 
+
+
+
+
+
+We describe here how abbreviations are in Wangkajunga are read out, e.g.
+for text-to-speech systems.
+
+For example:
+
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
 
 
 
@@ -443,20 +459,4 @@ Pronoun clitics (quite long)
 % kolon% :%:     Root ;
 % sárggis% :%-   Root ; 
 % násti% :%*     Root ; 
-
-
-
-
-We describe here how abbreviations are in Wangkajunga are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
 
