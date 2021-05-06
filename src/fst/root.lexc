@@ -105,7 +105,7 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
 +Nomz		! Nominaliser
 
 !! verb derivation affixes #TODO: rename giving sense of function
-+Der/ti
++Act ! attached to nominals -> intransitive verb. changes position/stance meaning to action.
 +Der/ma
 +Der/ju
 
@@ -133,12 +133,22 @@ Directional/around+	! parra (prefix)
 +Compound/mouth_action	! jarra
 
 !! Reduplication
-+Redpl
++Redpl Redpl+
 
 !! Clitics
 ^P^A +Pa
-+Clt/Foc +Clt/probably +Clt/contrary_to_expectation +Clt/really +Clt/Cert +Clt/Rep +Clt/Dub +Clt/Emph 
-+Clt/while +Clt/when +Clt/then
++Clt/Foc
++Clt/Prob 		! kirli
++Clt/contrary_to_expectation ! lka
++Clt/really		
++Clt/Cert		! ngulyu
++Clt/Rep		! nyu
++Clt/Dub		! pa
++Clt/Emph 		! kaja, rtuka, rtu
++Clt/while		! kaji
++Clt/when		! la
++Clt/then		! yila, lta
+
 +Voc
 
 !! Demonstrative affixes #TODO: add more meaning to tag names?

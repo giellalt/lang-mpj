@@ -49,8 +49,8 @@
 +N+Pa
 +N+Abs+Pa
 
-+N+Der/ti
-+N+Der/ti+Irr+Unr+Purp
++N+Act
++N+Act+Irr+Unr+Purp
 +N+V+Inch
 +N+V+Inch+Perf+Imprt
 +N+V+Perf+Imprt
