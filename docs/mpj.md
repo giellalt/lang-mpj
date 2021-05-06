@@ -5,6 +5,10 @@ Nouns in the Wangkajunga language are things.
 
 
 
+
+
+
+
 Adjectives
 Adjectives in the Wangkajunga language describe things.
 
@@ -15,6 +19,26 @@ Verbs in the Wangkajunga language are actions.
 
 
 
+
+
+
+
+
+# Closed parts of speech
+
+This file contains closed parts of speech. It might be split later on.
+Each POS gets first a lexicon for the tag, then a lexicon for the words pointing to the tag lexicon.
+
+## Interjections
+
+
+
+## Particles
+
+
+
+
+## Conjunctions
 
 
 
@@ -79,7 +103,6 @@ Transitivity:
 
 
 
-
 Verb affixes
 tense inflections 
 
@@ -89,12 +112,11 @@ affixes following from irrealis inflections
 
 serial and nominalised inflections
 
-verb derivation affixes
+verb derivation affixes #TODO: rename giving sense of function
 
 temporal relative affix
 
 verb directional affixes
-
 
 verb post-inflection affixes
 
@@ -104,8 +126,7 @@ Reduplication
 
 Clitics
 
-Demonstrative affixes TODO: change tag names
-
+Demonstrative affixes #TODO: add more meaning to tag names?
 
 
 Flag diacritics for verb conjugations
@@ -240,8 +261,6 @@ clitics
 
 
 demonstrative lexicons
-
-
 
 
 
