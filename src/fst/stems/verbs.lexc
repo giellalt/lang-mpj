@@ -12,12 +12,16 @@ ngarri Ø_conjugation_iv "to lie" ;
 jarrpa Ø_conjugation_tv "to enter" ; ! if 2nd arg is not Dat
 kanyin Ø_conjugation_tv "to have" ;
 ngarri Ø_conjugation_iv "to lie (down), sleep" ;
+kati Ø_conjugation_tv "to take, carry" ;
 
 ! WA conjugation
 pu WA_conjugation_tv "to hit" ;
 ka WA_conjugation_tv "to carry" ;
 palipu WA_conjugation_tv "to find" ;
 wirrupu WA_conjugation_tv "to throw, throw away" ;
+kulyarti WA_conjugation_tv "to track" ;
+nyaku WA_conjugation_tv "to look, see" ; ! could also be RRA conj?
+nya WA_conjugation_tv "to see" ;
 
 ! RRA conjugation
 ya RRA_conjugation_iv "to go" ;
@@ -33,6 +37,9 @@ tikarlpaka LA_conjugation_iv "to climb up" ;
 yatu LA_conjugation_iv "to scrape out, cut" ;
 wana LA_conjugation_tv "to follow, chase" ;
 waja LA_conjugation_tv "to spear" ;
+paka LA_conjugation_iv "to get up" ;
+waka LA_conjugation_tv "to spear" ;
+pawu LA_conjugation_tv "to cook" ;
 
 ! preverbs (as part of complex verbs)
 
