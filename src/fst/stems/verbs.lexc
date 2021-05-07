@@ -13,6 +13,7 @@ jarrpa Ø_conjugation_tv "to enter" ; ! if 2nd arg is not Dat
 kanyin Ø_conjugation_tv "to have" ;
 ngarri Ø_conjugation_iv "to lie (down), sleep" ;
 kati Ø_conjugation_tv "to take, carry" ;
+ngalkun Ø_conjugation_tv "to eat" ; ! intransitive also possible
 
 ! WA conjugation
 pu WA_conjugation_tv "to hit" ;
@@ -22,11 +23,15 @@ wirrupu WA_conjugation_tv "to throw, throw away" ;
 kulyarti WA_conjugation_tv "to track" ;
 nyaku WA_conjugation_tv "to look, see" ; ! could also be RRA conj?
 nya WA_conjugation_tv "to see" ;
+purlturrpu WA_conjugation_tv "to skewer" ; ! actually compound verb purlturr + pu
+wirrupu WA_conjugation_tv "to throw away" ; ! actually compound verb wirru + pu
+yu WA_conjugation_tv "to give" ;
 
 ! RRA conjugation
 ya RRA_conjugation_iv "to go" ;
 ma RRA_conjugation_tv "to get" ;
 ju RRA_conjugation_iv "to put" ; ! if 2nd arg is Dat
+wanin WA_conjugation_tv "to cut, grade (a road)" ; ! could be any conj? only PstHbt and PerfPst in texts.
 
 ! LA conjugation
 paja LA_conjugation_tv "to bite" ;
@@ -40,6 +45,12 @@ waja LA_conjugation_tv "to spear" ;
 paka LA_conjugation_iv "to get up" ;
 waka LA_conjugation_tv "to spear" ;
 pawu LA_conjugation_tv "to cook" ;
+jiki LA_conjugation_iv "to drink" ;
+ngalanga LA_conjugation_tv "to eat" ;
+ngala LA_conjugation_tv "to eat" ; ! irregular?
+tili LA_conjugation_tv "to set alight" ;
+yirna LA_conjugation_tv "to collect" ; ! normally the nominal stem "man"
+ngarangura LA_conjugation_iv "to take a break, rest" ; 
 
 ! preverbs (as part of complex verbs)
 

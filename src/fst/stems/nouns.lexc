@@ -100,7 +100,7 @@ seed n_agr "seed" ;
 ! really "really" ;
 ! way "way" ;
 ! only just "only just" ;
-! RoadBoard.camp "Roadboard camp" ;
+! RoadBoard-camp "Roadboard camp" ;
 ! road "road" ;
 ! board "board" ;
 ! mean "means" ;
@@ -160,10 +160,10 @@ kankani n_spatial_agr "above, on top of" ;
 kanin n_spatial_agr "below" ;
 
 ! demonstratives
-yangka yangka_inflection ;
-palunya	palunya_inflection ;
-jii	jii_inflection ;
-ngaa	demonstrative_cases ;
-nyarra	demonstrative_cases ;
+yangka yangka_inflection "that known";
+palunya	palunya_inflection ; ! often "they", sometimes "those"
+jii	jii_inflection "that" ;
+ngaa	demonstrative_cases "this" ;
+nyarra	demonstrative_cases "over there" ;
 
 ! vim: set ft=xfst-lexc:
