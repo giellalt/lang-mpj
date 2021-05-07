@@ -3,7 +3,6 @@
 !! The Wangkajunga language verbs inflect in persons.
 
 LEXICON directional_prefixes
-   simple_verbs ;
 Directional/away+:%>maa Verb_stems ;
 Directional/around+:%>parra parra_reduplication ;
 
@@ -82,7 +81,7 @@ LEXICON simple_verbs
  
 LEXICON simple_verb_reduplication
  # ; ! remove when Redpl is working
-+Redpl:%>__ verb_derivational_suffix;
+! +Redpl:%>__ verb_derivational_suffix;
 
 ! no compound verbs stems added so next 3 lexicons will not be reached / used. No compound verbs found in W. texts.
 LEXICON compound_verb_preverbs
@@ -124,8 +123,8 @@ LEXICON verb_tense_inflections
 @U.CONJ.LA@+Nomz:%>@U.CONJ.LA@nja  n_agr ;
 ! serial forms TODO: replace # with PA
 @U.CONJ.Ø@+Ser:%>@U.CONJ.Ø@ra  person_number_case_1 ;
-@U.CONJ.WA@+Ser:%>@U.CONJ.WA@ngkura person_number_case_1 ;
-@U.CONJ.RRA@+Ser:%>@U.CONJ.RRA@nkura person_number_case_1 ;
+@U.CONJ.WA@+Ser:%>@U.CONJ.WA@ngkula person_number_case_1 ;
+@U.CONJ.RRA@+Ser:%>@U.CONJ.RRA@nkula person_number_case_1 ;
 @U.CONJ.LA@+Ser:%>@U.CONJ.LA@ra  person_number_case_1 ;
 ! present tense. TODO: return to this.
 @U.CONJ.Ø@+Prs:@U.CONJ.Ø@%>in  directional_suffix ; ! additional vowel-deletion in twolc.
