@@ -104,10 +104,10 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
 +Ser		! Serial
 +Nomz		! Nominaliser
 
-!! verb derivation affixes #TODO: rename giving sense of function
-+Act ! attached to nominals -> intransitive verb. changes position/stance meaning to action.
-+Der/ma
-+Der/ju
+!! verb derivation affixes
++Act 		! -ti	nominal -> IT verb. changes position/stance meaning to action.
++Caus/Make 	! -ma	nominal -> T verb. (particularly for attributes)
++Caus/PutTo 	! -ju	nominal -> T verb.
 
 !! temporal relative affix
 +Trel
