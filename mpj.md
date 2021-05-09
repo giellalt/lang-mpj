@@ -252,7 +252,7 @@ affixes following from irrealis inflections
 
 serial and nominalised inflections
 
-verb derivation affixes #TODO: rename giving sense of function
+verb derivation affixes
 
 temporal relative affix
 
