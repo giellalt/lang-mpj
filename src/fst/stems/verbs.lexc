@@ -14,6 +14,7 @@ kanyin Ø_conjugation_tv "to have" ;
 ngarri Ø_conjugation_iv "to lie (down), sleep" ;
 kati Ø_conjugation_tv "to take, carry" ;
 ngalkun Ø_conjugation_tv "to eat" ; ! intransitive also possible
+ngurrin Ø_conjugation_tv "to search" ;
 
 ! WA conjugation
 pu WA_conjugation_tv "to hit" ;
@@ -26,12 +27,17 @@ nya WA_conjugation_tv "to see" ;
 purlturrpu WA_conjugation_tv "to skewer" ; ! actually compound verb purlturr + pu
 wirrupu WA_conjugation_tv "to throw away" ; ! actually compound verb wirru + pu
 yu WA_conjugation_tv "to give" ;
+kaarlpu WA_conjugation_tv "to break" ; ! compound kaarl + pu
 
 ! RRA conjugation
 ya RRA_conjugation_iv "to go" ;
+ngartalya RRA_conjugation_tv "to break, crack" ; ! compound ngartal + ya
 ma RRA_conjugation_tv "to get" ;
 ju RRA_conjugation_iv "to put" ; ! if 2nd arg is Dat
 wanin WA_conjugation_tv "to cut, grade (a road)" ; ! could be any conj? only PstHbt and PerfPst in texts.
+pali WA_conjugation_tv "to flatten" ;
+watiju WA_conjugation_tv "to track" ; ! instances of -nu and -rnu past forms.
+tirrirtika WA_conjugation_iv "to descend, climb down" ; ! similar form tirrirti
 
 ! LA conjugation
 paja LA_conjugation_tv "to bite" ;
@@ -51,6 +57,12 @@ ngala LA_conjugation_tv "to eat" ; ! irregular?
 tili LA_conjugation_tv "to set alight" ;
 yirna LA_conjugation_tv "to collect" ; ! normally the nominal stem "man"
 ngarangura LA_conjugation_iv "to take a break, rest" ; 
+kaarla LA_conjugation_tv "to break" ;
+yankirra LA_conjugation_tv "to crack" ;
+yarra LA_conjugation_tv "to untie" ;
+ngarra LA_conjugation_tv "to fix" ;
+karrpi LA_conjugation_tv "to tie up" ;
+yirrpi LA_conjugation_iv "to come, enter" ;
 
 ! preverbs (as part of complex verbs)
 

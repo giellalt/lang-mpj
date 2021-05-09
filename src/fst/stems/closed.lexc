@@ -48,5 +48,6 @@ LEXICON open_cc
 LEXICON Conjunctions
 an closed_cc "and" ;
 kamu open_cc "and" ;
+ka open_CC "and" ;
 kaji open_CC "when, while" ;
 

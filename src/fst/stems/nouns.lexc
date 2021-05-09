@@ -94,50 +94,55 @@ kuwarri n_agr "today, now" ;
 
 !non-Wangkajunga words ! #TODO: maybe separate into taking pa and not?
 seed n_agr "seed" ;
-! last week "last week" ;
-! trip "trip" ;
-! we never go "we never go" ;
-! really "really" ;
-! way "way" ;
-! only just "only just" ;
-! RoadBoard-camp "Roadboard camp" ;
-! road "road" ;
-! board "board" ;
-! mean "means" ;
-! deibin "they have been" ; #TODO: dei bin also exists
-! katimbat "cutting that/back?" ! #TODO: check which
-! langtaim "some time ago" ;
-! not "NEG" ;
-! on "on" ;
-! rut "rut" ;
-! country "country" ;
-! supper "dinner(K)" ;
-! dinner "dinner" ;
-! jupjup "stew (K)" ;
-! for "POSS(K)" ;
-! husband "husband" ;
-! only "only" ;
-! two "two" ;
-! three "three" ;
-! toyota "toyota, 4WD.vehicle" ;
-! trailer "trailer" ;
-! highwan "high(K)" ;
-! you know "you know" ;
-! big "big" ;
-! sandhill "sandhill" ;
-! we "we" ;
-! callim "say" ;
-! roadhouse "roadhouse" ;
-! warrkim "work" ;
-! petrol "petrol" ;
-! diesel "diesel" ;
-! bayim "buy" ;
-! leg "leg" ;
-! dat "DEM(K)" ;
-! olkoman "woman(K)" ;
-! right-up "right-up" ;
-! mutika "vehicle(K)" ;
-! nothing "NEG(K)" ;
+last # "last" ;
+week # "week" ;
+trip # "trip" ;
+we # "we" ;
+never # "never" ;
+go # "go" ;
+really # "really" ;
+way # "way" ;
+only # "only" ;
+just # "just" ;
+RoadBoard-camp # "Roadboard camp" ;
+road # "road" ;
+board # "board" ;
+mean # "means" ;
+deibin # "they have been" ; ! #TODO: dei bin also exists
+katimbat # "cutting that/back?" ; ! #TODO: check which
+langtaim # "some time ago" ;
+not # "NEG" ;
+on # "on" ;
+rut # "rut" ;
+country # "country" ;
+supper # "dinner(K)" ;
+dinner # "dinner" ;
+jupjup # "stew (K)" ;
+for # "POSS(K)" ;
+husband # "husband" ;
+only # "only" ;
+two # "two" ;
+three # "three" ;
+toyota # "toyota, 4WD.vehicle" ;
+trailer # "trailer" ;
+highwan # "high(K)" ;
+you # "you" ;
+know # "know" ;
+big # "big" ;
+sandhill # "sandhill" ;
+we # "we" ;
+callim # "say" ;
+roadhouse # "roadhouse" ;
+warrkim # "work" ;
+petrol # "petrol" ;
+diesel # "diesel" ;
+bayim # "buy" ;
+leg # "leg" ;
+dat # "DEM(K)" ;
+olkoman # "woman(K)" ;
+right-up # "right-up" ;
+mutika # "vehicle(K)" ;
+nothing # "NEG(K)" ;
 
 ! palunyajanu n_agr "after.that" ; ! actually palunya-janu; not split properly
 
@@ -161,9 +166,11 @@ kanin n_spatial_agr "below" ;
 
 ! demonstratives
 yangka yangka_inflection "that known";
+yanga # "that known" ; ! potentially alternate spelling of yangka; but no instances with affixes
 palunya	palunya_inflection ; ! often "they", sometimes "those"
 jii	jii_inflection "that" ;
 ngaa	demonstrative_cases "this" ;
 nyarra	demonstrative_cases "over there" ;
+tii	K_1 ; ! "they/their/it" not enough examples..
 
 ! vim: set ft=xfst-lexc:
