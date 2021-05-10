@@ -12,7 +12,7 @@ Spider prop_agr ;
 Dolly prop_agr_fem ;
 Snell prop_agr ;
 Ngarta prop_agr ;
-Noreen prop_agr ;
+Noreen prop_agr_fem ;
 Michael prop_agr_mal ;
 Morgan prop_agr ;
 Wajinya prop_agr ;
@@ -31,5 +31,4 @@ Catfish.Tank prop_agr_plc ;
 Kurrapa prop_agr ;
 Walmajarri prop_agr ; ! language name
 Wangkajunga prop_agr ; ! language name
-
 
