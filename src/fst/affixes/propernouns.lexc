@@ -7,7 +7,7 @@ LEXICON prop_agr_mal
 +N+Prop+Sem/Mal: x_agr ;
 
 LEXICON prop_agr_fem
-+N+Prop+Sem/Plc: x_agr ;
++N+Prop+Sem/Fem: x_agr ;
 
 LEXICON prop_agr_plc
 +N+Prop+Sem/Plc: x_agr ;
