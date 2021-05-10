@@ -38,8 +38,8 @@ LEXICON Ø_conjugation_flags
 !LEXICON WA_conjugation
 !+V: WA_conjugation_flags ;
 
-!LEXICON WA_conjugation_iv
-!+V+IV: WA_conjugation_flags ;
+LEXICON WA_conjugation_iv
++V+IV: WA_conjugation_flags ;
 
 LEXICON WA_conjugation_tv
 +V+TV: WA_conjugation_flags ;
