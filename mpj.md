@@ -33,6 +33,8 @@ Each POS gets first a lexicon for the tag, then a lexicon for the words pointing
 
 
 
+
+
 Verbs
 Verbs in the Wangkajunga language are actions.
 
@@ -54,6 +56,7 @@ Adjectives in the Wangkajunga language describe things.
 
 Pronouns
 Pronouns in the Wangkajunga language are references to things.
+
 
 
 
