@@ -167,13 +167,5 @@ kankani n_spatial_agr "above, on top of" ;
 kani n_spatial_agr "above, top" ; ! alternate form of kankani?
 kanin n_spatial_agr "below" ;
 
-! demonstratives
-yangka yangka_inflection "that known";
-yanga # "that known" ; ! potentially alternate spelling of yangka; but no instances with affixes
-palunya	palunya_inflection ; ! often "they", sometimes "those"
-jii	jii_inflection "that" ;
-ngaa	demonstrative_cases "this" ;
-nyarra	demonstrative_cases "over there" ;
-tii	K_1 ; ! "they/their/it" not enough examples..
 
 ! vim: set ft=xfst-lexc:

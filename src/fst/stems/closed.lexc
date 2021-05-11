@@ -51,3 +51,13 @@ kamu open_cc "and" ;
 ka open_CC "and" ;
 kaji open_CC "when, while" ;
 
+
+LEXICON Demonstratives
+yangka+Dem:yangka	yangka_inflection "that known";
+yanga+Dem:yanga		# "that known" ; ! potentially alternate spelling of yangka; no instances with affixes
+palunya+Dem:palunya	palunya_inflection ; ! often "they", sometimes "those"
+jii+Dem:jii		jii_inflection "that" ;
+ngaa+Dem:ngaa		demonstrative_cases "this" ;
+nyarra+Dem:nyarra	demonstrative_cases "over there" ;
+tii+Dem:tii		K_1 ; ! "they/their/it" not enough examples..
+
