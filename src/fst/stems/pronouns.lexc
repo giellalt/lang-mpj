@@ -9,4 +9,8 @@ ngana+Pron+Interr:ngana x_agr "what" ;
 ! indefinite
 maarra+Pron+Indef:maarra x_agr "where" ;
 
+!personal
+ngayu+Pron+Pers:ngayu x_agr "first person pronoun" ;
+nyuntu+Pron+Pers:nyuntu x_agr "second person pronoun" ;
+
 ! vim: set ft=xfst-lexc:
