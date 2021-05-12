@@ -5,7 +5,7 @@
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-mpj)](https://github.com/giellalt/lang-mpj/issues)
 [![Build status](https://github.com/giellalt/lang-mpj/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-mpj/actions)
 
-This page documents the work on the **Wangkajunga language model**. 
+This page documents the work on the [Wangkajunga language model](http://github.com/giellalt/lang-mpj). 
 
 # Project documentation
 
