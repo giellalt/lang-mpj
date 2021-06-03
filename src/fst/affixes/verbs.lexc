@@ -6,16 +6,16 @@ LEXICON directional_prefixes
 Directional/away+:%>maa Verb_stems ;
 Directional/around+:%>parra parra_reduplication ;
 
-! no compound stems as of yet - following lines won't yet have any effect.
-   compound_verb_preverbs ;
-Directional/away+:%>maa compound_verb_preverbs ;
-Directional/around+:%>parra compound_verb_preverbs ;
+! no compound stems as of yet - following lines commented out
+! compound_verb_preverbs ;
+! Directional/away+:%>maa compound_verb_preverbs ;
+! Directional/around+:%>parra compound_verb_preverbs ;
 Directional/around+:%>parra parra_reduplication ;
 
 LEXICON parra_reduplication
 Redpl+:%>parra  Verb_stems ;
  Verb_stems ;
-Redpl+:%>parra  compound_verb_preverbs ;
+! Redpl+:%>parra  compound_verb_preverbs ;
 
 
 !! lexicon Verb_prefixes (above) -> lexicon Verb_stems (separate file) -> following lexicons, depending on
