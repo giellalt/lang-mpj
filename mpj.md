@@ -1836,8 +1836,6 @@ Nouns in the Wangkajunga language are things.
 
 
 
-
-
 # Closed parts of speech
 
 This file contains closed parts of speech. It might be split later on.
