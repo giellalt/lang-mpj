@@ -36,6 +36,8 @@ jamun open_prt "about to, almost" ;
 purtu open_prt "in vain" ;
 wituka open_prt "also, once again" ;
 wulu open_prt "continuously, endlessly" ;
+palunyajanu open_prt "after that; sentence_modifier" ;
+palunjanu open_prt "after that; sentence_modifier" ; ! abbreviated alternation of above
 
 !! ## Conjunctions
 

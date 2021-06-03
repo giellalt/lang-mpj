@@ -37,6 +37,8 @@ wanin WA_conjugation_tv "to cut, grade (a road)" ; ! could be any conj? only Pst
 pali WA_conjugation_tv "to flatten" ;
 watiju WA_conjugation_tv "to track" ; ! instances of -nu and -rnu past forms.
 tirrirtika WA_conjugation_iv "to descend, climb down" ; ! similar form tirrirti
+takurlju RRA_conjugation_tv "to put into" ; ! compound takurl + ju
+takurltakurlju RRA_conjugation_tv "to put into" ; ! compound with redpl takurl+Redpl+ju
 
 ! LA conjugation
 paja LA_conjugation_tv "to bite" ;

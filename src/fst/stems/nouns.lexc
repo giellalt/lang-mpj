@@ -145,9 +145,6 @@ right-up # "right-up" ;
 nothing # "NEG(K)" ;
 ngarlpu n_agr "play" ;
 
-! palunyajanu n_agr "after.that" ; ! actually palunya-janu; not split properly
-
-
 ! temporal nouns
 munga n_temporal_agr "night" ;
 yunguny n_temporal_agr "morning, tomorrow" ;
