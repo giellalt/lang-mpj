@@ -20,3 +20,8 @@ Each POS gets first a lexicon for the tag, then a lexicon for the words pointing
 
 
 
+
+
+
+
+

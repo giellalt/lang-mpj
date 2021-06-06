@@ -1857,6 +1857,11 @@ Each POS gets first a lexicon for the tag, then a lexicon for the words pointing
 
 
 
+
+
+
+
+
 #           Documenting the Wangkajunga *root.lexc* file                     
 
  This files documents the  Wangkajunga root.lexc file.
