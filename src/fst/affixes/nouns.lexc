@@ -219,6 +219,7 @@ LEXICON temporal_case
 		# ;
 +Der/TempLoc:%>ngka	# ;
 +Der/Asst:%>jarra	# ;
++Der/Anoth:%>kujupa	# ;
 
 LEXICON spatial_case
 			# ;
@@ -232,6 +233,7 @@ LEXICON spatial_case
 LEXICON yangka_inflection
 +Dem/ngula:%>ngula K_1 ; ! PA ;
 +Dem/pa:%>pa K_1 ; ! PA ;
+ K_1 ;
 
 LEXICON palunya_inflection
  demonstrative_cases ;

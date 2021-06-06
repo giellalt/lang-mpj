@@ -376,8 +376,8 @@ Directional/around+	  !!≈ * **@CODE@** parra (prefix)
 
 
 !! ##  Semantics are classified with
-+Sem/Spat 	  !!≈ * **@CODE@** 
-+Sem/Temp	  !!≈ * **@CODE@** 
+ +Sem/Spat 	  !!≈ * **@CODE@** 
+ +Sem/Temp	  !!≈ * **@CODE@** 
  +Sem/Mal 	  !!≈ * **@CODE@** 
  +Sem/Fem 	  !!≈ * **@CODE@** 
  +Sem/Sur 	  !!≈ * **@CODE@** 
@@ -464,6 +464,7 @@ Particles ;
 Conjunctions ;
 Pronouns    ;
     Propernouns    ;
+Demonstratives	;
 !     Numerals    ;
 !     Prefixes    ;
      Punctuation ;

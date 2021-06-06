@@ -50,16 +50,40 @@ LEXICON open_cc
 LEXICON Conjunctions
 an closed_cc "and" ;
 kamu open_cc "and" ;
-ka open_CC "and" ;
-kaji open_CC "when, while" ;
-
+ka open_cc "and" ;
+kaji open_cc "when, while" ;
 
 LEXICON Demonstratives
-yangka+Dem:yangka	yangka_inflection "that known";
-yanga+Dem:yanga		# "that known" ; ! potentially alternate spelling of yangka; no instances with affixes
+yangka+Dem:yangka	yangka_inflection "that known" ;
+yanga+Dem:yanga	# "that known" ; ! potentially alternate spelling of yangka
 palunya+Dem:palunya	palunya_inflection ; ! often "they", sometimes "those"
 jii+Dem:jii		jii_inflection "that" ;
 ngaa+Dem:ngaa		demonstrative_cases "this" ;
 nyarra+Dem:nyarra	demonstrative_cases "over there" ;
-tii+Dem:tii		K_1 ; ! "they/their/it" not enough examples..
+! tii+Dem:tii		K_1 ; ! "they/their/it" not enough examples.. In LEXICON Particles
+! yangka		dem_yangka "that known" ;
+! yanga		dem_yanga "that known" ; ! potentially alternate spelling of yangka
+!palunya		dem_palunya ; ! often "they", sometimes "those"
+!j ii		dem_jii "that" ;
+!ngaa		dem_ngaa_nyarra "this" ;
+!nyarra		dem_ngaa_nyarra "over there" ;
+!tii		dem_tii ; ! "they/their/it" not enough examples..
+
+LEXICON dem_yangka
++Dem: yangka_inflection ;
+
+LEXICON dem_yanga
++Dem: # ;
+
+LEXICON dem_palunya
++Dem: palunya_inflection ;
+
+LEXICON dem_jii
++Dem: jii_inflection ;
+
+LEXICON dem_ngaa_nyarra
++Dem: demonstrative_cases ;
+
+LEXICON dem_tii
++Dem: K_1 ;
 
