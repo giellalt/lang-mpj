@@ -143,7 +143,12 @@ dat # "DEM(K)" ;
 olkoman # "woman(K)" ;
 right-up # "right-up" ;
 nothing # "NEG(K)" ;
+before # "before" ;
 ngarlpu n_agr "play" ;
+our # "our" ;
+another # "another" ;
+one # "one" ;
+from # "from" ;
 
 ! temporal nouns
 munga n_temporal_agr "night" ;
