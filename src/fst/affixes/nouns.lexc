@@ -79,8 +79,8 @@ LEXICON semantic_case_1
 +Abl:%>janu		derivational_case_3 ;	! Ablative (motion away from a place)
 +Abl:%>nguru		derivational_case_3 ;
 +Gen:%>kurnu		derivational_case_3 ;	! Genitive (referred to as POSS - possessive - in book)
-! +Gen:%>kura		derivational_case_3 ;	! kurnu is by far the most common GEN form
-! +Gen:%>kurangu	derivational_case_3 ;
++Gen:%>kura		derivational_case_3 ;	! kurnu is by far the most common GEN form
++Gen:%>kurangu		derivational_case_3 ;
 +Loc:%>ngka		derivational_case_3 ;	! Locative - following a vowel (better done in twolc)
 ! +Loc:%>ja		derivational_case_3 ;	! following a consonant (native words or foreign words)
 ! +Loc:%>ta		derivational_case_3 ;	! following a consonant (alternative for foreign words)
@@ -132,8 +132,8 @@ LEXICON semantic_case_2
 +Abl:%>janu		grammatical_case_3 ;
 +Abl:%>nguru		grammatical_case_3 ;
 +Gen:%>kurnu		grammatical_case_3 ;
-! +Gen:%>kura		grammatical_case_3 ;
-! +Gen:%>kurangu	grammatical_case_3 ;
++Gen:%>kura		grammatical_case_3 ;
++Gen:%>kurangu		grammatical_case_3 ;
 +Loc:%>ngka		grammatical_case_3 ;
 ! +Loc:%>ja		grammatical_case_3 ;
 ! +Loc:%>ta		grammatical_case_3 ;
@@ -143,8 +143,8 @@ LEXICON semantic_case_2
 @U.SCASE.ABL@+Abl:@U.SCASE.ABL@%>janu		semantic_case_3 ;
 @U.SCASE.ABL@+Abl:@U.SCASE.ABL@%>nguru		semantic_case_3 ;
 @U.SCASE.GEN@+Gen:@U.SCASE.GEN@%>kurnu		semantic_case_3 ; ! kurnu is by far the most common form
-! @U.SCASE.GEN@+Gen:@U.SCASE.GEN@%>kura		semantic_case_3 ;
-! @U.SCASE.GEN@+Gen:@U.SCASE.GEN@%>kurangu	semantic_case_3 ;
+@U.SCASE.GEN@+Gen:@U.SCASE.GEN@%>kura		semantic_case_3 ;
+@U.SCASE.GEN@+Gen:@U.SCASE.GEN@%>kurangu	semantic_case_3 ;
 @U.SCASE.LOC@+Loc:@U.SCASE.LOC@%>ngka		semantic_case_3 ;
 ! @U.SCASE.LOC@+Loc:@U.SCASE.LOC@%>ja		semantic_case_3 ;
 ! @U.SCASE.LOC@+Loc:@U.SCASE.LOC@%>ta		semantic_case_3 ;
@@ -186,8 +186,8 @@ LEXICON semantic_case_3
 @D.SCASE.ABL@+Abl:@D.SCASE.ABL@%>janu		end_noun_cases ;
 @D.SCASE.ABL@+Abl:@D.SCASE.ABL@%>nguru		end_noun_cases ;
 @D.SCASE.GEN@+Gen:@D.SCASE.GEN@%>kurnu		end_noun_cases ;
-! @D.SCASE.GEN@+Gen:@D.SCASE.GEN@%>kura		end_noun_cases ;
-! @D.SCASE.GEN@+Gen:@D.SCASE.GEN@%>kurangu	end_noun_cases ;
+@D.SCASE.GEN@+Gen:@D.SCASE.GEN@%>kura		end_noun_cases ;
+@D.SCASE.GEN@+Gen:@D.SCASE.GEN@%>kurangu	end_noun_cases ;
 @D.SCASE.LOC@+Loc:@D.SCASE.LOC@%>ngka		end_noun_cases ;
 ! @D.SCASE.LOC@+Loc:@D.SCASE.LOC@%>ja		end_noun_cases ;
 ! @D.SCASE.LOC@+Loc:@D.SCASE.LOC@%>ta		end_noun_cases ;
@@ -293,8 +293,8 @@ LEXICON semantic_case_demonst
 +Abl:%>janu		grammatical_case_demonst_2 ;
 +Abl:%>nguru		grammatical_case_demonst_2 ;
 +Gen:%>kurnu		grammatical_case_demonst_2 ;
-! +Gen:%>kura		grammatical_case_demonst_2 ;
-! +Gen:%>kurangu	grammatical_case_demonst_2 ;
++Gen:%>kura		grammatical_case_demonst_2 ;
++Gen:%>kurangu		grammatical_case_demonst_2 ;
 +Loc:%>ngka		grammatical_case_demonst_2 ;
 ! +Loc:%>ja		grammatical_case_demonst_2 ;
 ! +Loc:%>ta		grammatical_case_demonst_2 ;
