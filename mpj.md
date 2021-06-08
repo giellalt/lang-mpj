@@ -2170,7 +2170,7 @@ Each POS gets first a lexicon for the tag, then a lexicon for the words pointing
 
 
 ##  The parts of speech are further split up into:
- * **+Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Indef** 
+ * **+Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Indef +Temp +Spat** 
 
 
 ##  The Usage extents are marked using following tags:
