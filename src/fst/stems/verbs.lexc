@@ -33,10 +33,10 @@ ya RRA_conjugation_iv "to go" ;
 ngartalya RRA_conjugation_tv "to break, crack" ; ! compound ngartal + ya
 ma RRA_conjugation_tv "to get" ;
 ju RRA_conjugation_iv "to put" ; ! if 2nd arg is Dat
-wanin WA_conjugation_tv "to cut, grade (a road)" ; ! could be any conj? only PstHbt and PerfPst in texts.
-pali WA_conjugation_tv "to flatten" ;
-watiju WA_conjugation_tv "to track" ; ! instances of -nu and -rnu past forms.
-tirrirtika WA_conjugation_iv "to descend, climb down" ; ! similar form tirrirti
+wanin RRA_conjugation_tv "to cut, grade (a road)" ; ! could be any conj? only PstHbt and PerfPst in texts.
+pali RRA_conjugation_tv "to flatten" ;
+watiju RRA_conjugation_tv "to track" ; ! instances of -nu and -rnu past forms.
+tirrirtika RRA_conjugation_iv "to descend, climb down" ; ! similar form tirrirti
 takurlju RRA_conjugation_tv "to put into" ; ! compound takurl + ju
 takurltakurlju RRA_conjugation_tv "to put into" ; ! compound with redpl takurl+Redpl+ju
 
