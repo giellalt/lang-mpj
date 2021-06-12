@@ -106,7 +106,7 @@ LEXICON compound_verb_compounds
 
 LEXICON verb_derivational_suffix
   verb_tense_inflections;
-@U.CONJ.WA@+Act:@U.CONJ.WA@%>ti verb_tense_inflections ;
+@P.CONJ.WA@+Act:@P.CONJ.WA@%>ti verb_tense_inflections ;
 @U.CONJ.LA@+Caus/Make:@U.CONJ.LA@%>ma verb_tense_inflections ;
 @U.CONJ.LA@+Caus/PutTo:@U.CONJ.LA@%>ju verb_tense_inflections ; ! -ju may have a mixed conjugation
 

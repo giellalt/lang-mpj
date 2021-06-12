@@ -16,9 +16,9 @@ semantic_case_1 ;
 grammatical_case_1 ;
 derivational_avoid_case ;
 end_noun_cases ; ! leads to overgeneration - but many unanalysed forms in "gold-standard" texts.
-! TODO: add flag diacritic for INCH as to verb conjugation. add a-insert in twolc after consonants.
-+V+Inch:%>arri 	verb_tense_inflections ; ! inchoative. Maybe +Inch+V is more intuitive?
-@U.CONJ.WA@+V+Act:@U.CONJ.WA@%>ti	verb_tense_inflections;
+! TODO: add a-insert for INCH in twolc after consonants.
+@U.CONJ.Ø@+Inch:@U.CONJ.Ø@%>arri verb_tense_inflections ;
+@U.CONJ.WA@+Act:@U.CONJ.WA@%>ti	verb_tense_inflections;
 
 LEXICON derivational_case_1
 ! leading to derivational_case_2
