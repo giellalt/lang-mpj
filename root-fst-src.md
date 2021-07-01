@@ -1,13 +1,13 @@
 #           Documenting the Wangkajunga *root.lexc* file                     
 
- This files documents the  Wangkajunga root.lexc file.
+This files documents the  Wangkajunga root.lexc file.
 
 
 
 ## Analysis symbols
- The morphological analyses of wordforms for the Wangkajunga
- language are presented in this system in terms of the following symbols.
- (It is highly suggested to follow existing standards when adding new tags).
+The morphological analyses of wordforms for the Wangkajunga
+language are presented in this system in terms of the following symbols.
+(It is highly suggested to follow existing standards when adding new tags).
 
 
 ### The parts-of-speech are:
@@ -65,14 +65,14 @@
  * **+Acs +Refl**  Acs = Accessory = locative or allative
  * **+Subj**   Subj = abs with intransitive verb, erg with transitive verb
 
- other cases are declared elsewhere - Dat, Abs, Abl.
+other cases are declared elsewhere - Dat, Abs, Abl.
 
 
 ##  Verb affixes
 ###  tense inflections 
  * **+Prs**  Present Tense
  * **+Perf +Imprt +Pst +PstNar +Fut** 
- imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imperative
+imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imperative
  * **+Imperf +PstHbt** 
 
 
@@ -384,24 +384,24 @@
 
 
 ## Morphophonology
-   ---------------
+---------------
 
 
 ## Flag diacritics
- We have manually optimised the structure of our lexicon using following
- flag diacritics to restrict morhpological combinatorics - only allow compounds
- with verbs if the verb is further derived into a noun again:
+We have manually optimised the structure of our lexicon using following
+flag diacritics to restrict morhpological combinatorics - only allow compounds
+with verbs if the verb is further derived into a noun again:
 
 | Flag | Explanation [
 [------[-------------|
  |  **@P.NeedNoun.ON@** | (Dis)allow compounds with verbs unless nominalised
  |  **@D.NeedNoun.ON@** | (Dis)allow compounds with verbs unless nominalised
  |  **@C.NeedNoun@** | (Dis)allow compounds with verbs unless nominalised
- 
- For languages that allow compounding, the following flag diacritics are needed
- to control position-based compounding restrictions for nominals. Their use is
- handled automatically if combined with +CmpN/xxx tags. If not used, they will
- do no harm.
+
+For languages that allow compounding, the following flag diacritics are needed
+to control position-based compounding restrictions for nominals. Their use is
+handled automatically if combined with +CmpN/xxx tags. If not used, they will
+do no harm.
 
 | Flag | Explanation [
 [------[-------------|
@@ -415,10 +415,10 @@
  |  **@D.CmpOnly.FALSE@** | Disallow words coming directly from root.
 
 
- Use the following flag diacritics to control downcasing of derived proper
- nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
- these flags. There exists a ready-made regex that will do the actual down-casing
- given the proper use of these flags.
+Use the following flag diacritics to control downcasing of derived proper
+nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
+these flags. There exists a ready-made regex that will do the actual down-casing
+given the proper use of these flags.
 
 | Flag | Explanation [
 [------[-------------|
@@ -428,7 +428,9 @@
 
 **LEXIXON Root**
 
-  The word forms in Wangkajunga language start from the lexeme roots of basic
-  word classes, or optionally from prefixes:
+The word forms in Wangkajunga language start from the lexeme roots of basic
+word classes, or optionally from prefixes:
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/root.lexc)</small>

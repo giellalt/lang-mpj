@@ -25,3 +25,5 @@ Each POS gets first a lexicon for the tag, then a lexicon for the words pointing
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/closed.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/closed.lexc)</small>

@@ -1,120 +1,103 @@
 
-# Start making a syntactic disambiguator
+# C O M M O N  S Á M I  D E P E N D E N C Y   G R A M M A R
 
-## Sets
+This dep file is for sma, sme, smj, sje.
 
+# DELIMITERS
 
+Sentence delimiters are the following: <.> <!> <?> <...> <¶>
 
-Sentence delimiters are the following: "<.>" "<...>" "<!>" "<?>" "<¶>"
 
+# TAGS AND SETS
 
 
+N
+V
+A
+Adv
+CC
+CS
+Inf
+Sup
+Neg
+Num
+Po
+Pr
 
+Pcle
+Prop
 
+Pron
+IV
+TV
+COMMA
+DASH
+CITATION to keep colouring we add a "
+HYPHEN
+QMARK
+PUNCT
+LEFT
+RIGHT
+CLB
+Ind
+Pot
+Impr
+ImprtII
+Cond
+ConNeg
+Caus causative eus
+VGen
+Interj
+ABBR
+ACR
+Prs
+Prt
+Cmpnd
+RCmpnd
+PrfPrc
+PrsPrc
+Actor
+Actio
+Ger
+Indef
+Nom
+Acc
+Ill
+Com
+Gen
+Ess
 
+IM For fao
 
+## POS sub-categories
 
-### Part-of-Speech
-* N = noun
-* A = adjective
-* Num = numeral
-* V = verb
-* CC = conjunction
-* CS = subjunction
-* Adv = adverb
-* Pr = preposition
-* Po = postposition
-* Pron = pronoun
-* Interj = interjection
 
 
-### Numerus
-* Sg = Singular
-* Pl = Plural
-* Sg1 = Singular 1.p.
-* Sg2 = Singular 2.p.
-* Sg3 = Singular 3.p.
-* Pl1 = Plural 1.p.
-* Pl2 = Plural 2.p.
-* Pl3 = Plural 3.p.
-### Cases
-* Nom
-* Gen
-* Acc
-* Par
-* Ine
-* Ill
-* Ela
-* Ade
-* Abe
-* All
-* Abl
-* Ess
-* Tra
-* Ins
-* Com
-* SUBJ-CASE = Nom Par
 
 
 
-### Types
-* Prop = Proper noun
-* Interr = Interrogative
-* Dem = demonstrative pron
-* Rel = Relative pron
-Relpronpl "mikkä ja "jokka"
-Relpronsg "mikä" ja "joka"
-Interrpronpl "kuka" ja "mikä"
-* Pers = Personal pron
-* Indef = Indef pron
 
-* Inf = Infinitive
-* ConNeg = Conjugated as Negative form
-* PrfPrc = Perfectum Particip
-* Imprt = Imperative
-* Act = Active
-* Neg = Negation verb
 
 
 
 
-* COMMA = comma
-* Foc/kaan = focus clitic -kaan
-* Sem/Fem = feminin propernoun
-* @CVP = Conjunction or subjunction that conjoins finite verb phrases.
-* @CNP = Local conjunction or subjunction.
 
 
 
 
-## Sets with more members
 
-* WORD = all PoS
 
-* NPMOD = these can modify a noun
-* NPMODADV = NPMOD plus adverb
 
-* NOT-NPMOD = these cannot modify a noun
 
-* NOT-NPMODADV = these cannot modify a noun, and is not adverb
 
-* QVANT-ADV = e.g. paljon, vähän
-* KUNKA = e.g. kunka missä (adverbs that start a sentence)
 
 
-* S-BOUNDARY = words that start a sentence
 
-* VFIN = finite verb
 
-* COPULAS = olla
 
-* MOD-ASP = auxilaries
 
-* AUX-OR-MAIN = verbs which can be both auxilary and mainverb
 
-* AUX = verbs which can be auxilary
 
-* SV-BOUNDARY = words that start a sentence and finite verb
 
 
 
@@ -166,9 +149,300 @@ Interrpronpl "kuka" ja "mikä"
 
 
 
-   S Y N T A C T I C   F U N C T I O N S   F O R   S Á M I
 
- Sámi language technology project 2003-2018, University of Tromsø #
+
+
+## Syntactic tags and sets
+
+### Syntactic tags in input to this file
+
+
+### Syntactic tags added in this file
+
+* @FMV : finite main verb
+- oaidná: Son oaidná ollislaš gova. - She sees the whole picture
+* infinite main verb
+* @FAUX : finite auxiliary verb
+- ferte: Son ferte oaidnit ollislaš gova. - She must see the whole picture. 
+* @FMVdic : finite main verb introducing direct speech
+* @IMVdic : infinite main verb introducing direct speech
+* @FS-IMV : infinite main verb of subclause 
+* @FS-IAUX : infinite auxiliary verb in subclause
+* @FS-N<IAUX : infinite auxiliary verb of a relative subclause
+* @FS-N<IMV : infinite main verb of a relative subclause
+* @FS-OBJ : finite verb in subclause functioning as object
+* @FS-OBJ> : finite verb in subclause functioning as object
+* @FS-<OBJ : finite verb in subclause functioning as object
+* @FS-SUBJ : finite verb in subclause functioning as subject
+* @FS-SUBJ> : finite verb in subclause functioning as subject
+* @FS-<SUBJ : finite verb in subclause functioning as subject
+* @FS-ADVL> : finite verb in subclause functioning as adverbial to the left of the main clause
+* @FS-<ADVL : finite verb in subclause functioning as adverbial to the right of the main clause
+* @FS-ACC>> : finite verb in subclause, object of speechact verb
+* @S< : a clause modifying a sentence to the right of it
+* @FS-ADVL : finite verb in subclause ...
+* @-FS-<ADVL : infinite subclause - eus
+* @-FS-ADVL> : infinite subclause - eus
+* @FS-N< : relative clause to N
+* @FS->N : relative clause to N to the left side of it - eus
+* @FS-VFIN< : finite verb in sentence, statement
+- eai: Idja ii leat šat, eai ge sii dárbbaš lámppá dahje beaivváža čuovgga, dasgo Hearrá Ipmil lea sin čuovga. - The night is not anymore, they do not need the lamp- or day- light either, because God the Lord is their light.
+* @FS-<APP : finite subclause functioning as an apposition
+* @ICL-ADVL : non-finite subclause ...
+* @ICL-AUX< : "right" argument of auxiliary (?)
+* @ICL-OBJ : infinitival clause object
+* @ICL-SUBJ : infinitival clause subject
+* @ICL-P< : infinitival clause complement of preprosition
+* @IAUX : non-finite auxiliary
+* <mv> : main verb. A temporarily tag omitted in the end of the file.
+* <aux> : auxilary verb. A temporarily tag omitted in the end of the file.
+
+
+### fao syntags
+
+* @>V
+
+### kal syntags
+
+* @INS :
+* @<INS :
+* @INS> :
+
+### eus syntags
+
+* @FS-SPRED : finite verb in subclause functioning as a subject predicate - eus, but not sure if in use
+
+### Syntactic set definitions
+
+
+
+
+
+
+
+
+
+
+
+
+# Dep grammar
+
+
+
+Correction rules
+
+
+
+* **muitalit**
+
+
+* **XX**
+
+* **XX**
+
+* **XX**
+
+
+
+* **faoSumId=Rel**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## The finite verb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Mapping rules
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**lgRemove** removes the language tags <sma>, <sme>,  etc, before proceeding to the dep file.
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/cg3/dependency.cg3](http://github.com/giellalt/lang-mpj/blob/main/../src/cg3/dependency.cg3)</small>
+S Y N T A C T I C   F U N C T I O N S   F O R   S Á M I
+
+Sámi language technology project 2003-2018, University of Tromsø #
 
 This file adds syntactic functions. It is common for all the Saami
 
@@ -245,103 +519,103 @@ LEFT RIGHT because of apertium
 ## Syntactic tags
 
 * @+FAUXV : finite auxiliary verb 
-    - ferte: Son ferte oaidnit ollislaš gova. - She must see the whole picture.
+- ferte: Son ferte oaidnit ollislaš gova. - She must see the whole picture.
 * @+FMAINV : finite main verb
-    - oaidná: Son oaidná ollislaš gova. - She sees the whole picture	
+- oaidná: Son oaidná ollislaš gova. - She sees the whole picture	
 * @-FAUXV : infinite auxiliary verb
-    - sáhte: In sáhte gáhku borrat. - I cannot eat cake.	
+- sáhte: In sáhte gáhku borrat. - I cannot eat cake.	
 * @-FMAINV : infinite main verb
-    - oaidnit: Son ferte oaidnit ollislaš gova. - She must see the whole picture.
+- oaidnit: Son ferte oaidnit ollislaš gova. - She must see the whole picture.
 * @-FSUBJ> : Subject of infinite verb outside the verbal.
-    - mu: Diet dáhpáhuvai mu dieđikeahttá. - It happened without me knowing about it.
+- mu: Diet dáhpáhuvai mu dieđikeahttá. - It happened without me knowing about it.
 * @-F<OBJ : Subject of infinite verb outside the verbal.
-    - nuppi: Ulbmil lea oažžut nuppi boagustit. - The goal is to get the other one to laugh.
+- nuppi: Ulbmil lea oažžut nuppi boagustit. - The goal is to get the other one to laugh.
 * @-FOBJ> : Object of infinite verb outside the verbal.
-    - váldovuoittuid: Sii vurde váldovuoittuid fasket. - They waited to grab the main prizes.
+- váldovuoittuid: Sii vurde váldovuoittuid fasket. - They waited to grab the main prizes.
 * @SPRED<OBJ : Object of an subsject predicative. (some adjectives are transitive)
-    - guliid: Mánát leat oažžulat guliid.
+- guliid: Mánát leat oažžulat guliid.
 * @-FADVL : Adverbial complement of infinite verb outside the verbal.
-    - várrogasat: Dihkkadeaddji rávve skohtervuddjiid várrogasat mátkkoštit. - The roadman warns snowscooter drivers to drive carefully.
+- várrogasat: Dihkkadeaddji rávve skohtervuddjiid várrogasat mátkkoštit. - The roadman warns snowscooter drivers to drive carefully.
 * @-F<PRED : Predicative complement of infinite verb outside the verbal.
-    - ággan: Jáhkken kulturmáhtu leat oktan ággan.
+- ággan: Jáhkken kulturmáhtu leat oktan ággan.
 * @>ADVL : Modifier of an adverbial to the right.
-    - vaikko: doppe leat vaikko man ollu studeanttat.
+- vaikko: doppe leat vaikko man ollu studeanttat.
 * @ADVL< : Komplement for adverbial.
-    - vahkus: Son málesta guktii vahkus.
+- vahkus: Son málesta guktii vahkus.
 * @<ADVL : Adverbial after the main verb.
-    - dás: Eanet dieđuid gávnnat dás.
+- dás: Eanet dieđuid gávnnat dás.
 * @ADVL> : Adverbial to the left of the main verb
-    - viimmat: Dál de viimmat asttan lohkat reivve.
+- viimmat: Dál de viimmat asttan lohkat reivve.
 * @ADVL>CS : Adverbial modifying subjunction.
-    - 'beare' pointing at 'danin go': Muhto dus ii leat riekti dearpat su beare danin go sáhtát.
+- 'beare' pointing at 'danin go': Muhto dus ii leat riekti dearpat su beare danin go sáhtát.
 * <hab> : Habitive, specifying an adverbial, e.g. @ADVL> <hab>
-    - Máhtes: Máhtes lea beana.
+- Máhtes: Máhtes lea beana.
 * <ext> : Extencial, specifying an subject, e.g. @<SUBJ <ext>
-    - beana: Máhtes lea beana.
+- beana: Máhtes lea beana.
 * <logo> : logoforic pronouns, e.g. @>N <logo> (for MT)
 * <cs> : 
 * @>N : Modifier of a noun to the right.
-    - geavatlaš: Ráđđehussii lea geavatlaš politihkka deaŧalaš. - For the government, practical politics is important.
+- geavatlaš: Ráđđehussii lea geavatlaš politihkka deaŧalaš. - For the government, practical politics is important.
 * @N< : Complement of noun to the left.
-    - vihtta: Mun boađán diibmu vihtta.
+- vihtta: Mun boađán diibmu vihtta.
 * @>A : Modifier of an adjective to the right.
-    - juohke: Seminára lágiduvvo juohke nuppi jagi.
+- juohke: Seminára lágiduvvo juohke nuppi jagi.
 * @P< : Complement of preposition.
-    - soađi: Dat dáhpáhuvai maŋŋel soađi.
+- soađi: Dat dáhpáhuvai maŋŋel soađi.
 * @>P : Complement of postposition.
-    - riegádeami: Seta riegádeami maŋŋel Áttán elii vel 800 jagi.
+- riegádeami: Seta riegádeami maŋŋel Áttán elii vel 800 jagi.
 * @HNOUN : Stray noun in sentence fragment.
-    - muittut: Fidnokurssa muittut.
+- muittut: Fidnokurssa muittut.
 * @INTERJ : Interjection.
-    - Hei: Hei, boađe!
+- Hei: Hei, boađe!
 * @>Num : Attribute of numeral to the right.
-    - dušše: Mun ledjen dušše guokte mánu doppe.
+- dušše: Mun ledjen dušše guokte mánu doppe.
 * @Pron< : Complement of pronoun to the left.
-    - Birehiin: Moai Birehiin leimme doppe.
+- Birehiin: Moai Birehiin leimme doppe.
 * @>Pron : Modifyer of pronoun to the right.
-    - vaikko: Olmmoš sáhttá bargat vaikko maid.
+- vaikko: Olmmoš sáhttá bargat vaikko maid.
 * @Num< : Complement of numeral to the left.
-    - girjjiin: Dat lea okta min buoremus girjjiin.
+- girjjiin: Dat lea okta min buoremus girjjiin.
 * @OBJ : Object, the verb is not in the sentence (ellipse)
 * @<OBJ : Object, the verb is to the left.
-    - gávtti: Son goarru gávtti.
+- gávtti: Son goarru gávtti.
 * @OBJ> : Object, the verb is to the right.
-    - filmma: Dán filmma leat Kárášjoga nuorat oaidnán.
+- filmma: Dán filmma leat Kárášjoga nuorat oaidnán.
 * @OPRED : Object predicative, the verb is not in the sentence (ellipse).
 * @<OPRED : Object predicative, the verb is to the left.
-    - buriid: Son ráhkada gáhkuid hui buriid.
+- buriid: Son ráhkada gáhkuid hui buriid.
 * @OPRED> : Object predicative, the verb is to the right.
-    - dohkkemeahttumin: Son oinnii dohkkemeahttumin bargat ášši nu.
+- dohkkemeahttumin: Son oinnii dohkkemeahttumin bargat ášši nu.
 * @PCLE : Particle.
-    - Amma: Amma mii eat leat máksán? - We have not paid, have we?
+- Amma: Amma mii eat leat máksán? - We have not paid, have we?
 * @COMP-CS< : Complement of subjunction.
-    - vejolaš: Dat šaddá nu buorre go vejolaš.
+- vejolaš: Dat šaddá nu buorre go vejolaš.
 * @SPRED : Subject predicative, the verb is not in the sentence (ellipse).
 * @<SPRED : Subject predicative, the verb is to the left.
-    - árgabivttas: Ovdal lei gákti árgabivttas.
+- árgabivttas: Ovdal lei gákti árgabivttas.
 * @SPRED> : Subject predicative, the verb is to the left.
-    - álbmogin: Sápmelaččaid historjá álbmogin lea duháhiid jagiid boaris.
+- álbmogin: Sápmelaččaid historjá álbmogin lea duháhiid jagiid boaris.
 * @SUBJ : Subject, the finite verb is not in the sentence (ellipse).
 * @<SUBJ : Subject, the finite verb is to the left.
-    - gákti: Ovdal lei gákti árgabivttas.
+- gákti: Ovdal lei gákti árgabivttas.
 * @SUBJ> : Subject, the finite verb is to the right.
-    - Son: Son lea mu oabbá. - Sheis my sister.
+- Son: Son lea mu oabbá. - Sheis my sister.
 * @PPRED : Predicative for predicative.
 * @APP : Apposition
 * @APP-N< : Apposition to noun to the left.
-    - oahpaheaddji: Oidnen Ánne, min oahpaheaddji.
+- oahpaheaddji: Oidnen Ánne, min oahpaheaddji.
 * @APP-Pron< : Apposition to pronoun to the left.
-    - boazodoalloáirasat: Ja moai boazodoalloáirasat áigguime vaikko guovttá joatkit barggu.
+- boazodoalloáirasat: Ja moai boazodoalloáirasat áigguime vaikko guovttá joatkit barggu.
 * @APP>Pron : Apposition to noun to the right.
 * @APP-Num< : Apposition to numeral to the left.
 * @APP-ADVL< : Apposition to adverbial to the left.
-    - bearjadaga: Mun vuolggán ihttin, bearjadaga.
+- bearjadaga: Mun vuolggán ihttin, bearjadaga.
 * @VOC : Vocative
-    - Miss Turner : Bures boahtin deike, Miss Turner! - Welcome her, Miss Turner!
+- Miss Turner : Bures boahtin deike, Miss Turner! - Welcome her, Miss Turner!
 * @CVP : Conjunction or subjunction that conjoins finite verb phrases.
-    - go : Leago guhkes áigi dassá go Máreha oidnet? - Is it a long time since you saw Máret?
+- go : Leago guhkes áigi dassá go Máreha oidnet? - Is it a long time since you saw Máret?
 * @CNP : Local conjunction or subjunction.
-    - vai : Leago nieida vai bárdni? - Is it a girl or a boy?
+- vai : Leago nieida vai bárdni? - Is it a girl or a boy?
 * @CMPND
 * @X : The function is unknown, e.g. because of that the word is unknown
 
@@ -457,7 +731,7 @@ LEFT RIGHT because of apertium
 * Sets for verbs
 
 
-    - V is all readings with a V tag in them, REAL-V should
+- V is all readings with a V tag in them, REAL-V should
 be the ones without an N tag following the V.
 The REAL-V set thus awaits a fix to the preprocess V ... N bug.
 
@@ -1193,105 +1467,124 @@ The analysis give double analysis because of optional semtags. We go for the one
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-mpj/blob/main/../src/cg3/functions.cg3)</small>
+# Start making a syntactic disambiguator
 
-# C O M M O N  S Á M I  D E P E N D E N C Y   G R A M M A R
+## Sets
 
-This dep file is for sma, sme, smj, sje.
 
-# DELIMITERS
 
-Sentence delimiters are the following: <.> <!> <?> <...> <¶>
+Sentence delimiters are the following: "<.>" "<...>" "<!>" "<?>" "<¶>"
 
 
-# TAGS AND SETS
 
 
-N
-V
-A
-Adv
-CC
-CS
-Inf
-Sup
-Neg
-Num
-Po
-Pr
 
-Pcle
-Prop
 
-Pron
-IV
-TV
-COMMA
-DASH
-CITATION to keep colouring we add a "
-HYPHEN
-QMARK
-PUNCT
-LEFT
-RIGHT
-CLB
-Ind
-Pot
-Impr
-ImprtII
-Cond
-ConNeg
-Caus causative eus
-VGen
-Interj
-ABBR
-ACR
-Prs
-Prt
-Cmpnd
-RCmpnd
-PrfPrc
-PrsPrc
-Actor
-Actio
-Ger
-Indef
-Nom
-Acc
-Ill
-Com
-Gen
-Ess
 
-IM For fao
 
-## POS sub-categories
+### Part-of-Speech
+* N = noun
+* A = adjective
+* Num = numeral
+* V = verb
+* CC = conjunction
+* CS = subjunction
+* Adv = adverb
+* Pr = preposition
+* Po = postposition
+* Pron = pronoun
+* Interj = interjection
 
 
+### Numerus
+* Sg = Singular
+* Pl = Plural
+* Sg1 = Singular 1.p.
+* Sg2 = Singular 2.p.
+* Sg3 = Singular 3.p.
+* Pl1 = Plural 1.p.
+* Pl2 = Plural 2.p.
+* Pl3 = Plural 3.p.
+### Cases
+* Nom
+* Gen
+* Acc
+* Par
+* Ine
+* Ill
+* Ela
+* Ade
+* Abe
+* All
+* Abl
+* Ess
+* Tra
+* Ins
+* Com
+* SUBJ-CASE = Nom Par
 
 
 
+### Types
+* Prop = Proper noun
+* Interr = Interrogative
+* Dem = demonstrative pron
+* Rel = Relative pron
+Relpronpl "mikkä ja "jokka"
+Relpronsg "mikä" ja "joka"
+Interrpronpl "kuka" ja "mikä"
+* Pers = Personal pron
+* Indef = Indef pron
 
+* Inf = Infinitive
+* ConNeg = Conjugated as Negative form
+* PrfPrc = Perfectum Particip
+* Imprt = Imperative
+* Act = Active
+* Neg = Negation verb
 
 
 
 
+* COMMA = comma
+* Foc/kaan = focus clitic -kaan
+* Sem/Fem = feminin propernoun
+* @CVP = Conjunction or subjunction that conjoins finite verb phrases.
+* @CNP = Local conjunction or subjunction.
 
 
 
 
+## Sets with more members
 
+* WORD = all PoS
 
+* NPMOD = these can modify a noun
+* NPMODADV = NPMOD plus adverb
 
+* NOT-NPMOD = these cannot modify a noun
 
+* NOT-NPMODADV = these cannot modify a noun, and is not adverb
 
+* QVANT-ADV = e.g. paljon, vähän
+* KUNKA = e.g. kunka missä (adverbs that start a sentence)
 
 
+* S-BOUNDARY = words that start a sentence
 
+* VFIN = finite verb
 
+* COPULAS = olla
 
+* MOD-ASP = auxilaries
 
+* AUX-OR-MAIN = verbs which can be both auxilary and mainverb
 
+* AUX = verbs which can be auxilary
 
+* SV-BOUNDARY = words that start a sentence and finite verb
 
 
 
@@ -1342,536 +1635,17 @@ IM For fao
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/cg3/disambiguator.cg3](http://github.com/giellalt/lang-mpj/blob/main/../src/cg3/disambiguator.cg3)</small>#           Documenting the Wangkajunga *root.lexc* file                     
 
-
-
-
-
-## Syntactic tags and sets
-
-### Syntactic tags in input to this file
-
-
-### Syntactic tags added in this file
-
-* @FMV : finite main verb
-    - oaidná: Son oaidná ollislaš gova. - She sees the whole picture
-* infinite main verb
-* @FAUX : finite auxiliary verb
-    - ferte: Son ferte oaidnit ollislaš gova. - She must see the whole picture. 
-* @FMVdic : finite main verb introducing direct speech
-* @IMVdic : infinite main verb introducing direct speech
-* @FS-IMV : infinite main verb of subclause 
-* @FS-IAUX : infinite auxiliary verb in subclause
-* @FS-N<IAUX : infinite auxiliary verb of a relative subclause
-* @FS-N<IMV : infinite main verb of a relative subclause
-* @FS-OBJ : finite verb in subclause functioning as object
-* @FS-OBJ> : finite verb in subclause functioning as object
-* @FS-<OBJ : finite verb in subclause functioning as object
-* @FS-SUBJ : finite verb in subclause functioning as subject
-* @FS-SUBJ> : finite verb in subclause functioning as subject
-* @FS-<SUBJ : finite verb in subclause functioning as subject
-* @FS-ADVL> : finite verb in subclause functioning as adverbial to the left of the main clause
-* @FS-<ADVL : finite verb in subclause functioning as adverbial to the right of the main clause
-* @FS-ACC>> : finite verb in subclause, object of speechact verb
-* @S< : a clause modifying a sentence to the right of it
-* @FS-ADVL : finite verb in subclause ...
-* @-FS-<ADVL : infinite subclause - eus
-* @-FS-ADVL> : infinite subclause - eus
-* @FS-N< : relative clause to N
-* @FS->N : relative clause to N to the left side of it - eus
-* @FS-VFIN< : finite verb in sentence, statement
-    - eai: Idja ii leat šat, eai ge sii dárbbaš lámppá dahje beaivváža čuovgga, dasgo Hearrá Ipmil lea sin čuovga. - The night is not anymore, they do not need the lamp- or day- light either, because God the Lord is their light.
-* @FS-<APP : finite subclause functioning as an apposition
-* @ICL-ADVL : non-finite subclause ...
-* @ICL-AUX< : "right" argument of auxiliary (?)
-* @ICL-OBJ : infinitival clause object
-* @ICL-SUBJ : infinitival clause subject
-* @ICL-P< : infinitival clause complement of preprosition
-* @IAUX : non-finite auxiliary
-* <mv> : main verb. A temporarily tag omitted in the end of the file.
-* <aux> : auxilary verb. A temporarily tag omitted in the end of the file.
-
-
-### fao syntags
-
-* @>V
-
-### kal syntags
-
-* @INS :
-* @<INS :
-* @INS> :
-
-### eus syntags
-
-* @FS-SPRED : finite verb in subclause functioning as a subject predicate - eus, but not sure if in use
-
-### Syntactic set definitions
-
-
-
-
-
-
-
-
-
-
-
-
-# Dep grammar
-
-
-
-Correction rules
-
-
-
-* **muitalit**
-
-
-* **XX**
-
-* **XX**
-
-* **XX**
-
-
-
-* **faoSumId=Rel**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## The finite verb
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Mapping rules
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**lgRemove** removes the language tags <sma>, <sme>,  etc, before proceeding to the dep file.
-
-
-
-
-
-
-Verb inflection
-The Wangkajunga language verbs inflect in persons.
-
-
-
-
-
-lexicon Verb_prefixes (above) -> lexicon Verb_stems (separate file) -> following lexicons, depending on
-relevant conjugation:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-is positioning of +V here okay? or better with separate lexicon / before prefixes?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Proper noun inflection
-The Wangkajunga language proper nouns inflect in the same cases as regular
-nouns, but with a colon (':') as separator.
-
-
-
-
-
-
-
-Adjective inflection
-The Wangkajunga language adjectives compare.
-
-
-
-Noun inflection
-The Wangkajunga language nouns inflect in cases.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun
-clitics
-
-
-
-
-
-demonstrative lexicons
-
-
-
-
-
-
-
-
-
-
-# Symbol affixes
-
-
-
-
-
-
-
-
-
-Pronoun clitics (quite long)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=================================== !
-The Wangkajunga morphophonological/twolc rules file !
-=================================== !
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* *pilyurr%>^P^A*
-* *pilyurr%>pa*
-
-
-
-
-
-
-
-
-
-
-
-Verbs
-Verbs in the Wangkajunga language are actions.
-
-
-
-
-
-
-
-
-Pronouns
-Pronouns in the Wangkajunga language are references to things.
-
-
-
-
-Numerals
-Numerals in the Wangkajunga language are numbers.
-
-
-Adjectives
-Adjectives in the Wangkajunga language describe things.
-
-
-Prefixes
-Prefixes in the Wangkajunga language are bound to beginning of other words.
-
-
-
-Nouns
-Nouns in the Wangkajunga language are things.
-
-
-
-
-
-
-
-
-# Closed parts of speech
-
-This file contains closed parts of speech. It might be split later on.
-Each POS gets first a lexicon for the tag, then a lexicon for the words pointing to the tag lexicon.
-
-## Interjections
-
-
-
-## Particles
-
-
-
-
-## Conjunctions
-
-
-
-
-
-
-
-
-
-
-
-#           Documenting the Wangkajunga *root.lexc* file                     
-
- This files documents the  Wangkajunga root.lexc file.
+This files documents the  Wangkajunga root.lexc file.
 
 
 
 ## Analysis symbols
- The morphological analyses of wordforms for the Wangkajunga
- language are presented in this system in terms of the following symbols.
- (It is highly suggested to follow existing standards when adding new tags).
+The morphological analyses of wordforms for the Wangkajunga
+language are presented in this system in terms of the following symbols.
+(It is highly suggested to follow existing standards when adding new tags).
 
 
 ### The parts-of-speech are:
@@ -1929,14 +1703,14 @@ Each POS gets first a lexicon for the tag, then a lexicon for the words pointing
  * **+Acs +Refl**  Acs = Accessory = locative or allative
  * **+Subj**   Subj = abs with intransitive verb, erg with transitive verb
 
- other cases are declared elsewhere - Dat, Abs, Abl.
+other cases are declared elsewhere - Dat, Abs, Abl.
 
 
 ##  Verb affixes
 ###  tense inflections 
  * **+Prs**  Present Tense
  * **+Perf +Imprt +Pst +PstNar +Fut** 
- imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imperative
+imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imperative
  * **+Imperf +PstHbt** 
 
 
@@ -2248,24 +2022,24 @@ Each POS gets first a lexicon for the tag, then a lexicon for the words pointing
 
 
 ## Morphophonology
-   ---------------
+---------------
 
 
 ## Flag diacritics
- We have manually optimised the structure of our lexicon using following
- flag diacritics to restrict morhpological combinatorics - only allow compounds
- with verbs if the verb is further derived into a noun again:
+We have manually optimised the structure of our lexicon using following
+flag diacritics to restrict morhpological combinatorics - only allow compounds
+with verbs if the verb is further derived into a noun again:
 
 | Flag | Explanation [
 [------[-------------|
  |  **@P.NeedNoun.ON@** | (Dis)allow compounds with verbs unless nominalised
  |  **@D.NeedNoun.ON@** | (Dis)allow compounds with verbs unless nominalised
  |  **@C.NeedNoun@** | (Dis)allow compounds with verbs unless nominalised
- 
- For languages that allow compounding, the following flag diacritics are needed
- to control position-based compounding restrictions for nominals. Their use is
- handled automatically if combined with +CmpN/xxx tags. If not used, they will
- do no harm.
+
+For languages that allow compounding, the following flag diacritics are needed
+to control position-based compounding restrictions for nominals. Their use is
+handled automatically if combined with +CmpN/xxx tags. If not used, they will
+do no harm.
 
 | Flag | Explanation [
 [------[-------------|
@@ -2279,10 +2053,10 @@ Each POS gets first a lexicon for the tag, then a lexicon for the words pointing
  |  **@D.CmpOnly.FALSE@** | Disallow words coming directly from root.
 
 
- Use the following flag diacritics to control downcasing of derived proper
- nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
- these flags. There exists a ready-made regex that will do the actual down-casing
- given the proper use of these flags.
+Use the following flag diacritics to control downcasing of derived proper
+nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
+these flags. There exists a ready-made regex that will do the actual down-casing
+given the proper use of these flags.
 
 | Flag | Explanation [
 [------[-------------|
@@ -2292,11 +2066,255 @@ Each POS gets first a lexicon for the tag, then a lexicon for the words pointing
 
 **LEXIXON Root**
 
-  The word forms in Wangkajunga language start from the lexeme roots of basic
-  word classes, or optionally from prefixes:
+The word forms in Wangkajunga language start from the lexeme roots of basic
+word classes, or optionally from prefixes:
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/root.lexc)</small>Proper noun inflection
+The Wangkajunga language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
 
 
 
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/propernouns.lexc)</small>Noun inflection
+The Wangkajunga language nouns inflect in cases.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun
+clitics
+
+
+
+
+
+demonstrative lexicons
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/nouns.lexc)</small>
+# Symbol affixes
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/symbols.lexc)</small>Adjective inflection
+The Wangkajunga language adjectives compare.
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/adjectives.lexc)</small>Verb inflection
+The Wangkajunga language verbs inflect in persons.
+
+
+
+
+
+lexicon Verb_prefixes (above) -> lexicon Verb_stems (separate file) -> following lexicons, depending on
+relevant conjugation:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+is positioning of +V here okay? or better with separate lexicon / before prefixes?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/verbs.lexc)</small>
+
+
+
+Pronoun clitics (quite long)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/clitics.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/clitics.lexc)</small>Pronouns
+Pronouns in the Wangkajunga language are references to things.
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/pronouns.lexc)</small>
+# Closed parts of speech
+
+This file contains closed parts of speech. It might be split later on.
+Each POS gets first a lexicon for the tag, then a lexicon for the words pointing to the tag lexicon.
+
+## Interjections
+
+
+
+## Particles
+
+
+
+
+## Conjunctions
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/closed.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/closed.lexc)</small>Prefixes
+Prefixes in the Wangkajunga language are bound to beginning of other words.
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/prefixes.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/prefixes.lexc)</small>Nouns
+Nouns in the Wangkajunga language are things.
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/nouns.lexc)</small>Adjectives
+Adjectives in the Wangkajunga language describe things.
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/adjectives.lexc)</small>Verbs
+Verbs in the Wangkajunga language are actions.
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/verbs.lexc)</small>Numerals
+Numerals in the Wangkajunga language are numbers.
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/numerals.lexc)</small>=================================== !
+The Wangkajunga morphophonological/twolc rules file !
+=================================== !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* *pilyurr%>^P^A*
+* *pilyurr%>pa*
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/phonology.twolc)</small>
 
 
 
@@ -2350,7 +2368,8 @@ Each POS gets first a lexicon for the tag, then a lexicon for the words pointing
 % sárggis% :%-   Root ; 
 % násti% :%*     Root ; 
 
-
+* * *
+<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-numbers-digit2text.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
 
 
 We describe here how abbreviations are in Wangkajunga are read out, e.g.
@@ -2366,8 +2385,9 @@ For example:
  * esim.:esimerkiksi # ; 
 
 
-
-      [ L A N G U A G E ]  G R A M M A R   C H E C K E R
+* * *
+<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-abbrevs2text.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+[ L A N G U A G E ]  G R A M M A R   C H E C K E R
 
 
 
@@ -2777,3 +2797,5 @@ expression **WORD - premodifiers**.
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../tools/grammarcheckers/grammarchecker.cg3](http://github.com/giellalt/lang-mpj/blob/main/../tools/grammarcheckers/grammarchecker.cg3)</small>
