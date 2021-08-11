@@ -3,7 +3,7 @@ The Wangkajunga morphology and tools
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-mpj)](https://github.com/giellalt/lang-mpj/issues)
 [![Build Status](https://github.com/giellalt/lang-mpj/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-mpj/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-mpj)](https://raw.githubusercontent.com/giellalt/lang-mpj/main/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-mpj)](https://github.com/giellalt/lang-mpj/blob/main/LICENSE)
 
 This repository contains finite state source files for the Wangkajunga language,
 for building morphological analysers, proofing tools
