@@ -1,4 +1,172 @@
 
+# Start making a syntactic disambiguator
+
+## Sets
+
+
+
+Sentence delimiters are the following: "<.>" "<...>" "<!>" "<?>" "<¶>"
+
+
+
+
+
+
+
+
+### Part-of-Speech
+* N = noun
+* A = adjective
+* Num = numeral
+* V = verb
+* CC = conjunction
+* CS = subjunction
+* Adv = adverb
+* Pr = preposition
+* Po = postposition
+* Pron = pronoun
+* Interj = interjection
+
+
+### Numerus
+* Sg = Singular
+* Pl = Plural
+* Sg1 = Singular 1.p.
+* Sg2 = Singular 2.p.
+* Sg3 = Singular 3.p.
+* Pl1 = Plural 1.p.
+* Pl2 = Plural 2.p.
+* Pl3 = Plural 3.p.
+### Cases
+* Nom
+* Gen
+* Acc
+* Par
+* Ine
+* Ill
+* Ela
+* Ade
+* Abe
+* All
+* Abl
+* Ess
+* Tra
+* Ins
+* Com
+* SUBJ-CASE = Nom Par
+
+
+
+### Types
+* Prop = Proper noun
+* Interr = Interrogative
+* Dem = demonstrative pron
+* Rel = Relative pron
+Relpronpl "mikkä ja "jokka"
+Relpronsg "mikä" ja "joka"
+Interrpronpl "kuka" ja "mikä"
+* Pers = Personal pron
+* Indef = Indef pron
+
+* Inf = Infinitive
+* ConNeg = Conjugated as Negative form
+* PrfPrc = Perfectum Particip
+* Imprt = Imperative
+* Act = Active
+* Neg = Negation verb
+
+
+
+
+* COMMA = comma
+* Foc/kaan = focus clitic -kaan
+* Sem/Fem = feminin propernoun
+* @CVP = Conjunction or subjunction that conjoins finite verb phrases.
+* @CNP = Local conjunction or subjunction.
+
+
+
+
+## Sets with more members
+
+* WORD = all PoS
+
+* NPMOD = these can modify a noun
+* NPMODADV = NPMOD plus adverb
+
+* NOT-NPMOD = these cannot modify a noun
+
+* NOT-NPMODADV = these cannot modify a noun, and is not adverb
+
+* QVANT-ADV = e.g. paljon, vähän
+* KUNKA = e.g. kunka missä (adverbs that start a sentence)
+
+
+* S-BOUNDARY = words that start a sentence
+
+* VFIN = finite verb
+
+* COPULAS = olla
+
+* MOD-ASP = auxilaries
+
+* AUX-OR-MAIN = verbs which can be both auxilary and mainverb
+
+* AUX = verbs which can be auxilary
+
+* SV-BOUNDARY = words that start a sentence and finite verb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/cg3/disambiguator.cg3](http://github.com/giellalt/lang-mpj/blob/main/../src/cg3/disambiguator.cg3)</small>
 S Y N T A C T I C   F U N C T I O N S   F O R   S Á M I
 
 Sámi language technology project 2003-2018, University of Tromsø #
@@ -1028,174 +1196,6 @@ The analysis give double analysis because of optional semtags. We go for the one
 
 * * *
 <small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-mpj/blob/main/../src/cg3/functions.cg3)</small>
-# Start making a syntactic disambiguator
-
-## Sets
-
-
-
-Sentence delimiters are the following: "<.>" "<...>" "<!>" "<?>" "<¶>"
-
-
-
-
-
-
-
-
-### Part-of-Speech
-* N = noun
-* A = adjective
-* Num = numeral
-* V = verb
-* CC = conjunction
-* CS = subjunction
-* Adv = adverb
-* Pr = preposition
-* Po = postposition
-* Pron = pronoun
-* Interj = interjection
-
-
-### Numerus
-* Sg = Singular
-* Pl = Plural
-* Sg1 = Singular 1.p.
-* Sg2 = Singular 2.p.
-* Sg3 = Singular 3.p.
-* Pl1 = Plural 1.p.
-* Pl2 = Plural 2.p.
-* Pl3 = Plural 3.p.
-### Cases
-* Nom
-* Gen
-* Acc
-* Par
-* Ine
-* Ill
-* Ela
-* Ade
-* Abe
-* All
-* Abl
-* Ess
-* Tra
-* Ins
-* Com
-* SUBJ-CASE = Nom Par
-
-
-
-### Types
-* Prop = Proper noun
-* Interr = Interrogative
-* Dem = demonstrative pron
-* Rel = Relative pron
-Relpronpl "mikkä ja "jokka"
-Relpronsg "mikä" ja "joka"
-Interrpronpl "kuka" ja "mikä"
-* Pers = Personal pron
-* Indef = Indef pron
-
-* Inf = Infinitive
-* ConNeg = Conjugated as Negative form
-* PrfPrc = Perfectum Particip
-* Imprt = Imperative
-* Act = Active
-* Neg = Negation verb
-
-
-
-
-* COMMA = comma
-* Foc/kaan = focus clitic -kaan
-* Sem/Fem = feminin propernoun
-* @CVP = Conjunction or subjunction that conjoins finite verb phrases.
-* @CNP = Local conjunction or subjunction.
-
-
-
-
-## Sets with more members
-
-* WORD = all PoS
-
-* NPMOD = these can modify a noun
-* NPMODADV = NPMOD plus adverb
-
-* NOT-NPMOD = these cannot modify a noun
-
-* NOT-NPMODADV = these cannot modify a noun, and is not adverb
-
-* QVANT-ADV = e.g. paljon, vähän
-* KUNKA = e.g. kunka missä (adverbs that start a sentence)
-
-
-* S-BOUNDARY = words that start a sentence
-
-* VFIN = finite verb
-
-* COPULAS = olla
-
-* MOD-ASP = auxilaries
-
-* AUX-OR-MAIN = verbs which can be both auxilary and mainverb
-
-* AUX = verbs which can be auxilary
-
-* SV-BOUNDARY = words that start a sentence and finite verb
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/cg3/disambiguator.cg3](http://github.com/giellalt/lang-mpj/blob/main/../src/cg3/disambiguator.cg3)</small>
 # C O M M O N  S Á M I  D E P E N D E N C Y   G R A M M A R
 
 This dep file is for sma, sme, smj, sje.
@@ -1636,7 +1636,64 @@ Correction rules
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/dependency.cg3](http://github.com/giellalt/lang-mpj/blob/main/../src/cg3/dependency.cg3)</small>#           Documenting the Wangkajunga *root.lexc* file                     
+<small>This (part of) documentation was generated from [../src/cg3/dependency.cg3](http://github.com/giellalt/lang-mpj/blob/main/../src/cg3/dependency.cg3)</small>
+
+
+
+Pronoun clitics (quite long)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/clitics.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/clitics.lexc)</small>=================================== !
+The Wangkajunga morphophonological/twolc rules file !
+=================================== !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* *pilyurr%>^P^A*
+* *pilyurr%>pa*
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/phonology.twolc)</small>#           Documenting the Wangkajunga *root.lexc* file                     
 
 This files documents the  Wangkajunga root.lexc file.
 
@@ -2079,35 +2136,9 @@ word classes, or optionally from prefixes:
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/symbols.lexc)</small>Noun inflection
-The Wangkajunga language nouns inflect in cases.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun
-clitics
-
-
-
-
-
-demonstrative lexicons
-
-
+<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/symbols.lexc)</small>Proper noun inflection
+The Wangkajunga language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
 
 
 
@@ -2116,13 +2147,7 @@ demonstrative lexicons
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/nouns.lexc)</small>Adjective inflection
-The Wangkajunga language adjectives compare.
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/adjectives.lexc)</small>Verb inflection
+<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/propernouns.lexc)</small>Verb inflection
 The Wangkajunga language verbs inflect in persons.
 
 
@@ -2174,23 +2199,14 @@ is positioning of +V here okay? or better with separate lexicon / before prefixe
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/verbs.lexc)</small>Proper noun inflection
-The Wangkajunga language proper nouns inflect in the same cases as regular
-nouns, but with a colon (':') as separator.
-
-
-
-
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/verbs.lexc)</small>Adjective inflection
+The Wangkajunga language adjectives compare.
 
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/propernouns.lexc)</small>
-
-
-
-Pronoun clitics (quite long)
-
+<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/adjectives.lexc)</small>Noun inflection
+The Wangkajunga language nouns inflect in cases.
 
 
 
@@ -2208,30 +2224,14 @@ Pronoun clitics (quite long)
 
 
 
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/clitics.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/clitics.lexc)</small>=================================== !
-The Wangkajunga morphophonological/twolc rules file !
-=================================== !
+temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun
+clitics
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-* *pilyurr%>^P^A*
-* *pilyurr%>pa*
-
-
+demonstrative lexicons
 
 
 
@@ -2242,7 +2242,7 @@ The Wangkajunga morphophonological/twolc rules file !
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/phonology.twolc)</small>
+<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/nouns.lexc)</small>
 # Closed parts of speech
 
 This file contains closed parts of speech. It might be split later on.
@@ -2270,35 +2270,7 @@ Each POS gets first a lexicon for the tag, then a lexicon for the words pointing
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/closed.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/closed.lexc)</small>Prefixes
-Prefixes in the Wangkajunga language are bound to beginning of other words.
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/prefixes.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/prefixes.lexc)</small>Nouns
-Nouns in the Wangkajunga language are things.
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/nouns.lexc)</small>Adjectives
-Adjectives in the Wangkajunga language describe things.
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/adjectives.lexc)</small>Pronouns
-Pronouns in the Wangkajunga language are references to things.
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/pronouns.lexc)</small>Verbs
+<small>This (part of) documentation was generated from [../src/fst/stems/closed.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/closed.lexc)</small>Verbs
 Verbs in the Wangkajunga language are actions.
 
 
@@ -2309,12 +2281,40 @@ Verbs in the Wangkajunga language are actions.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/verbs.lexc)</small>Numerals
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/verbs.lexc)</small>Adjectives
+Adjectives in the Wangkajunga language describe things.
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/adjectives.lexc)</small>Numerals
 Numerals in the Wangkajunga language are numbers.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/numerals.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/numerals.lexc)</small>Nouns
+Nouns in the Wangkajunga language are things.
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/nouns.lexc)</small>Pronouns
+Pronouns in the Wangkajunga language are references to things.
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/pronouns.lexc)</small>Prefixes
+Prefixes in the Wangkajunga language are bound to beginning of other words.
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/prefixes.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/prefixes.lexc)</small>
 
 
 We describe here how abbreviations are in Wangkajunga are read out, e.g.
