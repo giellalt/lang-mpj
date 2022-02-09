@@ -2,13 +2,10 @@
 
 This files documents the  Wangkajunga root.lexc file.
 
-
-
 ## Analysis symbols
 The morphological analyses of wordforms for the Wangkajunga
 language are presented in this system in terms of the following symbols.
 (It is highly suggested to follow existing standards when adding new tags).
-
 
 ### The parts-of-speech are:
 
@@ -26,11 +23,9 @@ language are presented in this system in terms of the following symbols.
 * **+Pcle** 
 * **+Num** 
 
-
 ###  Transitivity:
 * **+IV** Intransitive (i.e. with Abs)
 * **+TV** Transitive (i.e. with Erg + Abs)
-
 
 ### nominal cases
 * **+Abs** 
@@ -43,18 +38,14 @@ language are presented in this system in terms of the following symbols.
 * **+All** 
 * **+Avoid** 
 
-
-
 ### Derivational tags
 * **+Der/Foc** = derivational tags
 * **+Der/SpatAbl** 
 * **+Der/SpatAll** 
 * **+Der/TempLoc** 
 
-
 ### Other tags
 * **+Inch** NB from the reference book, inchoative is used as verbalisation
-
 
 ### pronoun clitics
 * **+Pron/Clt** 
@@ -67,14 +58,12 @@ language are presented in this system in terms of the following symbols.
 
 other cases are declared elsewhere - Dat, Abs, Abl.
 
-
 ##  Verb affixes
 ###  tense inflections 
 * **+Prs**  Present Tense
 * **+Perf +Imprt +Pst +PstNar +Fut** 
 imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imperative
 * **+Imperf +PstHbt** 
-
 
 ##  irrealis tense inflections ! TODO: work on tags. Irrealis/Admon? But two separate morphophonemes
 * **+Irr**  = Irrealis
@@ -86,38 +75,31 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **+Hyp**  = Hypothetical
 * **+Char**  = Characteristic (*payi may behave differently - nominalisation?)
 
-
 ##  affixes following from irrealis inflections
 * **+Contr**  Contradictive
 * **+Avoid**  Avoidance
 
-
 ##  serial and nominalised inflections
 * **+Ser** Serial
 * **+Nomz**  Nominaliser
-
 
 ##  verb derivation affixes
 * **+Act** -ti	nominal -> IT verb. changes position/stance meaning to action.
 * **+Caus/Make**  -ma	nominal -> T verb. (particularly for attributes)
 * **+Caus/PutTo**  -ju	nominal -> T verb.
 
-
 ##  temporal relative affix
 * **+Trel** 
-
 
 ##  verb directional affixes
 * **+Directional/towards**  ni (suffix / infix)
 * **Directional/away+**  maa (prefix)
 * **Directional/around+** parra (prefix)
 
-
 ##  verb post-inflection affixes
 * **+Grp** = group (different to GROUP as derivational nominal suffix)
 * **+Compl** = completed action
 * **+Warn** = warning
-
 
 ##  verb compounds
 * **+Compound/put** = jurra
@@ -129,10 +111,8 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **+Compound/get_up** = pakala
 * **+Compound/mouth_action** = jarra
 
-
 ##  Reduplication
 * **+Redpl Redpl+** 
-
 
 ##  Clitics
 * **^P^A +Pa** =
@@ -149,22 +129,17 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **+Clt/then**  =  yila, lta
 * **+Voc** = voc
 
-
 ##  Demonstrative affixes #TODO: add more meaning to tag names?
 * **+SentMod** 
 * **+Dem/ngula +Dem/pa** only with yangka. In book +Rel +Pa
 * **+Dem/na +Dem/janu** in book +Foc +Abl
 * **+Dem/janulu**  only with palunya
 
-
-
-
 ##  Flag diacritics for verb conjugations
 * **@U.CONJ.Ø@** 
 * **@U.CONJ.WA@** 
 * **@U.CONJ.RRA@** 
 * **@U.CONJ.LA@** 
-
 
 ##  Flag diacritics for noun cases
 ##  DCASE = derivational case
@@ -193,7 +168,6 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@U.DCASE.ONLY@** 
 * **@U.DCASE.FOC@** 
 
-
 ###  corresponding D-flags
 * **@D.DCASE.HAV@** 
 * **@D.DCASE.THING@** 
@@ -220,7 +194,6 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@D.DCASE.ONLY@** 
 * **@D.DCASE.FOC@** 
 
-
 ##  SCASE = semantic case
 * **@U.SCASE.ABL@** 
 * **@U.SCASE.GEN@** 
@@ -234,7 +207,6 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@D.SCASE.LOC@** 
 * **@D.SCASE.PERL@**  
 * **@D.SCASE.ALL@** 
-
 
 ##  Flag diacritics for clitics (to ensure the same clitic does not appear twice on a single word)
 ##  CLT = clitic
@@ -251,7 +223,6 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@U.CLT.LTA@** 
 * **@U.CLT.YILA@** 
 
-
 ###  corresponding D-flags
 * **@D.CLT.FOC@** 
 * **@D.CLT.KIRLI@** 
@@ -266,7 +237,6 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@D.CLT.LTA@** 
 * **@D.CLT.YILA@** 
 
-
 ##  Flag diacritics for pronoun clitics (to ensure the same case is not used twice within a cluster).
 ##  CLCASE = pronoun clitic case TODO: consider changing name to PCCASE
 * **@U.CLCASE.S@** 
@@ -276,7 +246,6 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@U.CLCASE.ABL@** 
 * **@U.CLCASE.REFL@** 
 
-
 ###  corresponding D-flags
 * **@D.CLCASE.S@** 
 * **@D.CLCASE.ABS@** 
@@ -285,39 +254,20 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@D.CLCASE.ABL@** 
 * **@D.CLCASE.REFL@** 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ##  integrate the things to come:
-
 
 ###  Here are the tags from the template. These and the ones above should be merged.
 
-
-
-
 ##  The parts of speech are further split up into:
 * **+Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Indef +Temp +Spat** 
-
 
 ##  The Usage extents are marked using following tags:
 * **+Err/Orth** 
 * **+Use/-Spell** 
 
-
 ##  The nominals are inflected in the following Case and Number
 * **+Sg +Du +Pl** 
 * **+Ess +Nom +Gen +Acc +Ill +Loc +Com +Com/Sh** 
-
 
 ##  The possession is marked as such:
 * **+PxSg1 +PxSg2 +PxSg3 +PxDu1 +PxDu2 +PxDu3 +PxPl1 +PxPl2 +PxPl3** 
@@ -327,14 +277,11 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **+Attr +Card** 
 * **+Ord** 
 
-
 ##  Verb moods are:
 * **+Ind +Prs +Prt +Cond +Imprt** 
 
-
 ##  Other verb forms are
 * **+Inf +Ger +ConNeg +Neg +PrsPrc +PrfPrc +Sup +VGen +VAbess** 
-
 
 ###  Abbreviated words are classified with:
 * **+ABBR +ACR** 
@@ -348,10 +295,8 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 ##  Non-dictionary words can be recognised with:
 * **+Guess** 
 
-
 ##  Question and Focus particles:
 * **+Qst +Foc** 
-
 
 ##  Semantics are classified with
 * **+Sem/Spat** 
@@ -376,16 +321,11 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **+Sem/Veh** 
 * **+Sem/Clth** 
 
-
-
-
 ##  Derivations are classified under the morphophonetic form of the suffix, the
 ##  source and target part-of-speech.
 
-
 ## Morphophonology
 ---------------
-
 
 ## Flag diacritics
 We have manually optimised the structure of our lexicon using following
@@ -414,7 +354,6 @@ do no harm.
 |  **@P.CmpOnly.TRUE@** | Sets a flag to indicate that the word has passed R
 |  **@D.CmpOnly.FALSE@** | Disallow words coming directly from root.
 
-
 Use the following flag diacritics to control downcasing of derived proper
 nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 these flags. There exists a ready-made regex that will do the actual down-casing
@@ -425,12 +364,14 @@ given the proper use of these flags.
 |  **@U.Cap.Obl@** | Allowing downcasing of derived names: deatnulasj.
 |  **@U.Cap.Opt@** | Allowing downcasing of derived names: deatnulasj.
 
-
 **LEXIXON Root**
 
 The word forms in Wangkajunga language start from the lexeme roots of basic
 word classes, or optionally from prefixes:
 
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/root.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-mpj/blob/main/src/fst/root.lexc)</small>
+
+---
+

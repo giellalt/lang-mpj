@@ -1,18 +1,13 @@
+# Wangkajunga description 
+
+All documents in one file
+
 
 # Start making a syntactic disambiguator
 
 ## Sets
 
-
-
 Sentence delimiters are the following: "<.>" "<...>" "<!>" "<?>" "<¶>"
-
-
-
-
-
-
-
 
 ### Part-of-Speech
 * N = noun
@@ -26,7 +21,6 @@ Sentence delimiters are the following: "<.>" "<...>" "<!>" "<?>" "<¶>"
 * Po = postposition
 * Pron = pronoun
 * Interj = interjection
-
 
 ### Numerus
 * Sg = Singular
@@ -55,8 +49,6 @@ Sentence delimiters are the following: "<.>" "<...>" "<!>" "<?>" "<¶>"
 * Com
 * SUBJ-CASE = Nom Par
 
-
-
 ### Types
 * Prop = Proper noun
 * Interr = Interrogative
@@ -75,17 +67,11 @@ Interrpronpl "kuka" ja "mikä"
 * Act = Active
 * Neg = Negation verb
 
-
-
-
 * COMMA = comma
 * Foc/kaan = focus clitic -kaan
 * Sem/Fem = feminin propernoun
 * @CVP = Conjunction or subjunction that conjoins finite verb phrases.
 * @CNP = Local conjunction or subjunction.
-
-
-
 
 ## Sets with more members
 
@@ -101,7 +87,6 @@ Interrpronpl "kuka" ja "mikä"
 * QVANT-ADV = e.g. paljon, vähän
 * KUNKA = e.g. kunka missä (adverbs that start a sentence)
 
-
 * S-BOUNDARY = words that start a sentence
 
 * VFIN = finite verb
@@ -116,132 +101,26 @@ Interrpronpl "kuka" ja "mikä"
 
 * SV-BOUNDARY = words that start a sentence and finite verb
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/disambiguator.cg3](http://github.com/giellalt/lang-mpj/blob/main/../src/cg3/disambiguator.cg3)</small>
+
+<small>This (part of) documentation was generated from [src/cg3/disambiguator.cg3](https://github.com/giellalt/lang-mpj/blob/main/src/cg3/disambiguator.cg3)</small>
+
+---
+
+
 S Y N T A C T I C   F U N C T I O N S   F O R   S Á M I
 
 Sámi language technology project 2003-2018, University of Tromsø #
 
 This file adds syntactic functions. It is common for all the Saami
 
-
-
-
-
-
-
-
-
-
-
-
-
 LEFT RIGHT because of apertium
-
-
 
 * Sets for POS sub-categories
 
-
-
-
-
 * Sets for Semantic tags
 
-
-
-
-
-
-
-
-
-
-
-
-
 * Sets for Morphosyntactic properties
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Syntactic tags
 
@@ -346,139 +225,17 @@ LEFT RIGHT because of apertium
 * @CMPND
 * @X : The function is unknown, e.g. because of that the word is unknown
 
-
-
-
-
-
-
-
-
-
-
 ## Tag sets
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * Sets for verbs
-
 
 - V is all readings with a V tag in them, REAL-V should
 be the ones without an N tag following the V.
 The REAL-V set thus awaits a fix to the preprocess V ... N bug.
 
-
-
 * The set COPULAS is for predicative constructions
 
-
-
-
-
-
-
 * NP sets defined according to their morphosyntactic features
-
-
-
-
-
-
 
 * The PRE-NP-HEAD family of sets
 
@@ -486,98 +243,30 @@ These sets model noun phrases (NPs). The idea is to first define whatever can
 occur in front of the head of the NP, and thereafter negate that with the
 expression **WORD - premodifiers**.
 
-
-
-
-
-
-
-
-
-
-
-
 The set **NOT-NPMOD** is used to find barriers between NPs.
 Typical usage: ... (*1 N BARRIER NPT-NPMOD) ...
 meaning: Scan to the first noun, ignoring anything that can be
 part of the noun phrase of that noun (i.e., "scan to the next NP head")
 
-
-
-
-
-
 * Miscellaneous sets
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * Border sets and their complements
 
-
-
-
-
-
-
-
-
-
-
 ADLVCASE
-
-
-
 
 * Syntactic sets
 
-
-
-
-
 These were the set types.
-
-
-
-
 
 ## Numeral outside the sentence
 
-
-
-
 ## HABITIVE MAPPING
-
-
-
-
-
 
 * **hab1** hab aux leat
 
 * __hab_numo1__ hab copula comma comma N+Nom
 
 * __hab_numo2__ copula nu mo/go hab
-
 
 * **leahab** copula nu mo/go hab
 
@@ -591,12 +280,7 @@ These were the set types.
 
 * **hab3** (<hab> @ADVL>) for hab-actor and hab-case; if leat to the right, and Nom to the right of leat. Lots of restrictions.
 
-
-
-
-
 * __hab_main__ (<hab> @ADVL>) for hab-actor and hab-case; if leat to the right, and Nom to the right of leat. Lots of restrictions.
-
 
 * **habInf** hab lea inf
 
@@ -605,8 +289,6 @@ These were the set types.
 * **habAdvl** Ii han ovttasge du sogas leat dat namma.
 
 * **hab4** hab cc hab leat
-
-
 
 * **hab6** lea go hab -- leago hab
 
@@ -622,7 +304,6 @@ These were the set types.
 * **habDain** (<hab> @ADVL>) for (Pron Dem Pl Loc) if leat followed by Nom to the right
 * **habDain2** 
 
-
 * **habRel** # before relative clause
 
 * **habEllipse** Buot gánddain lea dreassa, nieiddain fas gákti.
@@ -631,39 +312,11 @@ These were the set types.
 
 * **habGenQst** (<hab> @<ADVL) hab for Gen; in a question sentence. Gen is located sentence initially and SUBJ is found to the right. To the right of SUBJ is copulas
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * **n<titel1** (@N<) for ("jr") or ("sr"); if first one to the left is Prop
-
-
 
 * **n<titel2** (@N<) for INITIAL; if first one to the left is a noun, or if to the left of you is a single letter which is part of a noun conjunction *bustávas e ja f gáibiduvvo*
 
-
 * **n<:com** (@N<) for (Sg Com); if first one to the left is Coll
-
-
-
-
-
-
-
-
-
 
 * **>nAttr** (@>N) for Attr; if there is a noun to your right
 
@@ -671,43 +324,21 @@ These were the set types.
 
 * **n>Indef** (Pron Indef Com); if eará is to the right
 
-
 * **>nNum** (@>N) for numerals if; there is a noun to your right. You are not allowed to be (Sg Nom), (Sg Acc) or (Sem/Date)
-
-
-
 
 * **noun>n** (@>N) for Gen; if there is a noun to your right. Restrictions: Not if you are: a time related word. Not if you are OKTA with Pl Loc to your right. Not if CC is to your right followed by another Gen and then Po. Not if you are HUMAN and to your right is Actio Nom folloed by a noun.
 
-
-
-
-
-
-
-
-
-
 * **>nTime** (@>N) for Gen TIME-N; if timenoun to your right. Restrictions: Not if you are a OKTA Nom with Pl Loc to your right. Not if CC followed by Gen, followed by Po to your right. Not if COMMA to your right
-
-
-
 
 * **>ntittel** (@>N) for (Sg Nom TIME-N) or (Nom Der/NomAg); if to your right is Sem/Mal, Sem/Fem, Sem/Sur
 
 * **>nplc** (@>N) for (Sg Nom Prop Sem/Plc), if to your right is Sem/Plc
 
-
 * **>nALU** (@>N) for Sg Acc numerals; when a measure-noun to the right
-
-
 
 * **>NTime** (@>N) for Gen; if you are TIME-N with BOC to your left, and PREGEN to your right
 
-
-
 * **n<:Refl** (@N<) for (Refl Nom); if to the left is (N Nom), or if first one to the left is a finite mainverb with a (N Nom) to the left
-
 
 * **>pron1** (@>Pron) for GRADE-ADV, DUSSE, BUOT if; first one to the right is Pron
 
@@ -725,77 +356,17 @@ These were the set types.
 
 * **adv>advl** (@>ADVL) 
 
-
-
-
-
-
 * **BOSvoc** (@VOC) for HUMAN Nom; if sentence initial. To the right is comma. No nom-cased HUMAN followed by comma or CC is allowed to the right. There should not be a relative clause to the right, because then you are likely to be SUBJ
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * **voc** (@VOC) for Nom HUMAN; if comma to the left and an second person verb or pronoun to the left. To the right is the end of the sentence
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * **Particle<subj** (@PCLE)
-
 
 * **spred<obj** (@SPRED<OBJ) for Acc; the object of an SPRPED. Not to be mistaken with OPRED. If SPRED is to the left, and copulas is to the left of it. Nom or Hab are found sentence initially.
 
-
-
 * **Hab<subj** (<ext> @<SUBJ) for Nom; if copulas, goallut or jápmit is FMAINV and habitive or human Loc is found to the left. OR: if Ill or @Pron< followed by HAB are found to the left.
 
-
-
 * **Hab<subj** (<ext> @<SUBJ) with relative clause in between
-
 
 * **Hab>Advlcase<subj** (<ext> @<SUBJ) for Nom; it allows adverbials with Ill/Loc/Com/Ess to be found inbetween HAB and <ext>.
 
@@ -805,19 +376,15 @@ These were the set types.
 
 * **<extSubj** (<ext> @<SUBJ) for sma Nom; if some kind of adverb to the left, N Loc, time related word or Po to the left of it. 
 
-
 * **<extSubjA** (<ext> @<SUBJ) for A - TEST WITHOUT THIS ONE
 
 * **<extSubj** (<ext> @<SUBJ) for Nom; if leat to the left and sentenceboundary
-
-
 
 * **<extSubj** (<ext> @<SUBJ) for Nom, but not for Pers. To the left boahtit or heaŋgát as MAINV, and futher to the left is some kind of place related word, or time related word
 
 * **loc<extSubj** (<ext> @<SUBJ) for Nom
 
 * **<spred** (@<SPRED) for Nom; if Nom to the left, copulas to the left of Nom, and a time related word to the left of it.
-
 
 * **<extQst1** (<ext> @<SUBJ) for Nom; in an existential sentence. To your left is hab, some kind of place or time-word or Po. This is a Qst-sentence so the qst-pcle is attached to leat or following leat
 
@@ -827,17 +394,9 @@ These were the set types.
 
 * **extQst3>** (<ext> @SUBJ>) for Nom; if habitive first one to the left, followed by copulas.
 
-
 * **<extsubjcoor** (<ext> @<SUBJ) for Nom. Coordination
 
 * Sem/Year
-
-
-
-
-
-
-
 
 * **<spredQst** (@<SPRED) for Nom; in a typically question sentence; You are not allowed to be Pers or human. The special part is that Nom is not allowed to your right
 
@@ -875,38 +434,20 @@ These were the set types.
 
 * **spredšaddat>** (@SPRED>)
 
-
 * **r492>** (@SPRED>) for Interr Gen; consisting only of negations. You are not allowed to be MII. You are not allowed to have an adjective or noun to yor right. You are not allowed to have a verb to your right; the exception beeing an aux.
 
-
-
 * **AdjSpredSg>** (@SPRED>) for A Sg Nom; if copulas to the right, but not if A or @<SPRED are found to the right of copulas
-
-
-
-
 
 * **Spred>SubjInf** (@SPRED>) for Nom; if copulas to the right, and the subject of copulas is an Inf to the right
 
 * **spredCoord** (@<SPRED) coordination for Nom; only if there already is a SPRED to the left of CNP. Not if there is some kind of comparison involved.
 
-
-
-
-
-
-
-
-
 * **subj>Sgnr1** (@SUBJ>) for Nom Sg, including Indef Nom if; VFIN + Sg3 or Pl3 to the right (VFIN not allowed to the left)
-
-
 
 * **subj>Du** (@SUBJ>) for dual nominatives, including Coll Nom. VFIN + Du3 to the right.
 * **subj>Pl** (@SUBJ>) for plural nominatives, including Coll and Sem/Group. VFIN + Pl3 to the right.
 
 * **subj>Pl** (@SUBJ>) for plural nominatives
-
 
 * **subj>Sg** (@SUBJ>) for Nom Sg; if VFIN + Sg3 to the right.
 
@@ -918,119 +459,27 @@ These were the set types.
 
 * **copPl3<subj** (@<SUBJ) for Nom Pl; you don't to be a noun, only Nom Pl. To the left is copulas and first one to the right is @<SPRED
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * **-fsubj>** (@-FSUBJ>) for HUMAN Gen; in a NP-clause. To your right is Actio Nom followed by a noun
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * **f<advl** (@-F<ADVL) for infinite adverbials
 
-
-
-
-
 * **f<advl** (@-F<ADVL) for infinite adverbials
-
-
-
-
-
-
-
-
 
 * **s-boundary=advl>** (@ADVL>) for ADVL that resemble s-boundaries. Mainverb to the right.
 
-
-
-
-
 * **diibmuadvl>** (@ADVL>) for (diibmu Nom) if first one to the right is Num
 
-
 * **-fsubj** (@-FSUBJ>) for HUMAN Acc after DADJAT verbs
-
-
 
 * **-fobj>** (@-FOBJ>) for Acc if front of abessive, gerundium, actio locative, perfectum participle or infinitive. First one to the right not allowed to be Acc though
 
 * **-fobj>** (@-FOBJ>) for Acc if human with ADVL-case to the left and transitive infinitive OBJ to the right. First one to the right not allowed to be Acc though
 
-
-
-
-
-
-
-
-
-
-
-
 * **advl>mainV** (@ADVL>) if; finite mainverb not found to the left, but the finite mainverb is found to the right.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * **V<advl** (@<ADVL) if; finite mainverb found to the left. Not if a comma is found immediately to the left and a finite mainverb is located somewhere to the right of this comma.
 
-
-
-
-
 * **advl>v** (@ADVL>) if; you are ADVL, time-noun or Sem/Route and there is a finite verb to the right in the clause, or if to your right is: de followed by a finite verb. OR: if you are a time-nound and to your right is: go or sentenceboundary followed by a finite verb
-
-
 
 * **<advlPoPr** (@<ADVL) for Po or Pr; if mainverb to the left.
 * **advlPoPr>** (@<ADVL) for Po or Pr; if mainverb to the right.
@@ -1041,39 +490,25 @@ These were the set types.
 
 * **<advlEOS** (@<ADVL) for Po or Pr or Loc; if you are found at the very end of a sentence. A mainverb is needed to the left though.
 
-
 * **<advlGen** (@<ADVL) for (N Gen) if mainverb to the left and no noun to the right
-
 
 * **<opredgohcodit** (@<OPRED) for Ess
 
-
 * **advlEss>** (@<ADVL) for weather and time Ess, if FMAINV to the left.
 
-
-
-
 * **comma<advlEOS** (@<ADVL) for Adv if; mainverb is to the left. Comma to the left and mainverb to the right in the same clause is not allowed
-
 
 * **advl>inbetween** (@ADVL>) for Adv; if inbetween two sentenceboundaries where no mainverb is present.
 
 * **comma<advlEOS** (@<ADVL) for Adv if; comma found to the left and the finite mainverb to the left of comma. To the right is the end of the sentence.
 
-
-
 * **BOSadvl>** (@ADVL>) if; you are N Loc or N Ill and found sentence initially and there is a main verb somewhere to the right. No barrier for the mainverb; based on the thought that first one to your right is probably a sentenceboundary.
 
 * **cleanupILL<advl** (@<ADVL) for N Ill if; there are no boundarysymbols to your left, if you arent already @N< OR @APP-N<, and no mainverb is to yor left.
 
-
-
 * **cleanupPo** (@ADVL) for Po: This rule tags all Po:s as ADVL if they haven't gotten a tag somewhere along the way.
 
 * **cleanupPr** (@ADVL) for Po: This rule tags all Pr:s as ADVL if they haven't gotten a tag somewhere along the way.
-
-
-
 
 * **-fsubj>asAcc** (@-FSUBJ>) for HUMAN Acc; if there is a verb @-F<OBJ to your left
 
@@ -1087,20 +522,11 @@ These were the set types.
 
 * **f<subj** (@-F<SUBJ) for Nom if; (V @-F<OBJ) to the left.
 
-
-
-
-
-
-
 * **<opredAAcc** (@<OPRED) for A Acc; if an other accusative to the left, and a transtive verb to the left of it. OR: if a transitive verb to the left, and an accusative to the left of it.
 
 * **TV<obj** (@<OBJ) for Acc; if there is a transitive mainverb to the left in the clause. Not for Rel. Not if you are a numeral followed by a measure-noun
 
-
-
 ### sma object
-
 
 * **<advlMeasr** (@<ADVL) for (Num Acc); if finite IV-mainverb to the left, measure-noun to the right
 
@@ -1110,18 +536,11 @@ These were the set types.
 
 * **advlMeasr>** (@ADVL>) for Num Acc;
 
-
 * **Obj>** (@OBJ>) for Acc; if there is a finite mainverb to the right in the clause. A really simple rule with no other restrictions..
 
 * **s-boun<obj** (@<OBJ) for Acc; if sentenceboundary to your left and a transitive mainverb to the left futher to the left
 
 * **<objIV** (@<OBJ) for Acc; if there is an intransitive mainverb in the clause. Not for Rel or Num. Not if you are a numeral followed by a measure-noun
-
-
-
-
-
-
 
 * **<advlEss** (@<ADVL) for ESS-ADVL if; FMAINV to the left
 
@@ -1135,67 +554,34 @@ These were the set types.
 
 * **onlyV<opred2** (@<OPRED) for (N Ess) if;
 
-
-
-
-
-
-
-
-
-
-
 ## SUBJ MAPPING - leftovers
 
 * **subj>ifV** (@SUBJ>) for NP-HEAD-NOM, DUPRON or (Num Nom) if; a finite mainverb is found to the right. This is a cleanup rule for subjects
 
 * **hnoun>ifV** (@SUBJ>) for NP-HEAD-NOM, DUPRON if. The counterpart of subj>ifV. You are HNOUN if there is a finite verb to your right, but NOT if there is a finite verb after a relative clause
 
-
 ## OBJ MAPPING - leftovers
 
 ## <logo> MAPPING for MT - experimental
 
-
 ## HNOUN MAPPING
-
-
-
-
-
-
-
-
 
 * **@<ADVLcoor** (@<ADVL) for ADVLCASEAdv if @CNP to the left and ADVL to the left of it
 
-
-
-
 ###  **missingX** adds @X to all missings
 
-
-
-
-
 ###  **therestX** adds @X to all what is left, often errouneus disambiguated forms
-
-
-
-
-
 
 ## For Apertium:
 The analysis give double analysis because of optional semtags. We go for the one with semtag.
 
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-mpj/blob/main/../src/cg3/functions.cg3)</small>
+
+<small>This (part of) documentation was generated from [src/cg3/functions.cg3](https://github.com/giellalt/lang-mpj/blob/main/src/cg3/functions.cg3)</small>
+
+---
+
+
 # C O M M O N  S Á M I  D E P E N D E N C Y   G R A M M A R
 
 This dep file is for sma, sme, smj, sje.
@@ -1204,9 +590,7 @@ This dep file is for sma, sme, smj, sje.
 
 Sentence delimiters are the following: <.> <!> <?> <...> <¶>
 
-
 # TAGS AND SETS
-
 
 N
 V
@@ -1268,91 +652,9 @@ IM For fao
 
 ## POS sub-categories
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Syntactic tags and sets
 
 ### Syntactic tags in input to this file
-
 
 ### Syntactic tags added in this file
 
@@ -1394,7 +696,6 @@ IM For fao
 * <mv> : main verb. A temporarily tag omitted in the end of the file.
 * <aux> : auxilary verb. A temporarily tag omitted in the end of the file.
 
-
 ### fao syntags
 
 * @>V
@@ -1411,274 +712,55 @@ IM For fao
 
 ### Syntactic set definitions
 
-
-
-
-
-
-
-
-
-
-
-
 # Dep grammar
-
-
 
 Correction rules
 
-
-
 * **muitalit**
 
-
 * **XX**
 
 * **XX**
 
 * **XX**
-
-
 
 * **faoSumId=Rel**
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## The finite verb
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # Mapping rules
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 **lgRemove** removes the language tags <sma>, <sme>,  etc, before proceeding to the dep file.
 
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/dependency.cg3](http://github.com/giellalt/lang-mpj/blob/main/../src/cg3/dependency.cg3)</small>=================================== !
+
+<small>This (part of) documentation was generated from [src/cg3/dependency.cg3](https://github.com/giellalt/lang-mpj/blob/main/src/cg3/dependency.cg3)</small>
+
+---
+
+=================================== !
 The Wangkajunga morphophonological/twolc rules file !
 =================================== !
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * *pilyurr%>^P^A*
 * *pilyurr%>pa*
 
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/phonology.twolc)</small>Nouns
+
+<small>This (part of) documentation was generated from [src/fst/phonology.twolc](https://github.com/giellalt/lang-mpj/blob/main/src/fst/phonology.twolc)</small>
+
+---
+
+Nouns
 Nouns in the Wangkajunga language are things.
 
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/nouns.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/nouns.lexc](https://github.com/giellalt/lang-mpj/blob/main/src/fst/stems/nouns.lexc)</small>
+
+---
+
+
 # Closed parts of speech
 
 This file contains closed parts of speech. It might be split later on.
@@ -1686,210 +768,135 @@ Each POS gets first a lexicon for the tag, then a lexicon for the words pointing
 
 ## Interjections
 
-
-
 ## Particles
-
-
-
 
 ## Conjunctions
 
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/closed.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/closed.lexc)</small>Pronouns
+
+<small>This (part of) documentation was generated from [src/fst/stems/closed.lexc](https://github.com/giellalt/lang-mpj/blob/main/src/fst/stems/closed.lexc)</small>
+
+---
+
+Pronouns
 Pronouns in the Wangkajunga language are references to things.
 
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/pronouns.lexc)</small>Numerals
+
+<small>This (part of) documentation was generated from [src/fst/stems/pronouns.lexc](https://github.com/giellalt/lang-mpj/blob/main/src/fst/stems/pronouns.lexc)</small>
+
+---
+
+Numerals
 Numerals in the Wangkajunga language are numbers.
 
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/numerals.lexc)</small>Adjectives
+
+<small>This (part of) documentation was generated from [src/fst/stems/numerals.lexc](https://github.com/giellalt/lang-mpj/blob/main/src/fst/stems/numerals.lexc)</small>
+
+---
+
+Adjectives
 Adjectives in the Wangkajunga language describe things.
 
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/adjectives.lexc)</small>Prefixes
+
+<small>This (part of) documentation was generated from [src/fst/stems/adjectives.lexc](https://github.com/giellalt/lang-mpj/blob/main/src/fst/stems/adjectives.lexc)</small>
+
+---
+
+Prefixes
 Prefixes in the Wangkajunga language are bound to beginning of other words.
 
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/prefixes.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/prefixes.lexc)</small>Verbs
+
+<small>This (part of) documentation was generated from [src/fst/stems/prefixes.lexc](https://github.com/giellalt/lang-mpj/blob/main/src/fst/stems/prefixes.lexc)</small>
+
+---
+
+Verbs
 Verbs in the Wangkajunga language are actions.
 
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/stems/verbs.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/verbs.lexc](https://github.com/giellalt/lang-mpj/blob/main/src/fst/stems/verbs.lexc)</small>
+
+---
 
 
 
 Pronoun clitics (quite long)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/clitics.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/clitics.lexc)</small>Noun inflection
+
+<small>This (part of) documentation was generated from [src/fst/clitics.lexc](https://github.com/giellalt/lang-mpj/blob/main/src/fst/clitics.lexc)</small>
+
+---
+
+Noun inflection
 The Wangkajunga language nouns inflect in cases.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 temporal and spatial nouns - have a limited set of specific case endings, and do not have pronoun
 clitics
 
-
-
-
-
 demonstrative lexicons
 
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/nouns.lexc)</small>Proper noun inflection
+
+<small>This (part of) documentation was generated from [src/fst/affixes/nouns.lexc](https://github.com/giellalt/lang-mpj/blob/main/src/fst/affixes/nouns.lexc)</small>
+
+---
+
+Proper noun inflection
 The Wangkajunga language proper nouns inflect in the same cases as regular
 nouns, but with a colon (':') as separator.
 
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/propernouns.lexc)</small>Adjective inflection
+
+<small>This (part of) documentation was generated from [src/fst/affixes/propernouns.lexc](https://github.com/giellalt/lang-mpj/blob/main/src/fst/affixes/propernouns.lexc)</small>
+
+---
+
+Adjective inflection
 The Wangkajunga language adjectives compare.
 
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/adjectives.lexc)</small>Verb inflection
+
+<small>This (part of) documentation was generated from [src/fst/affixes/adjectives.lexc](https://github.com/giellalt/lang-mpj/blob/main/src/fst/affixes/adjectives.lexc)</small>
+
+---
+
+Verb inflection
 The Wangkajunga language verbs inflect in persons.
-
-
-
-
 
 lexicon Verb_prefixes (above) -> lexicon Verb_stems (separate file) -> following lexicons, depending on
 relevant conjugation:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 is positioning of +V here okay? or better with separate lexicon / before prefixes?
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/verbs.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/verbs.lexc](https://github.com/giellalt/lang-mpj/blob/main/src/fst/affixes/verbs.lexc)</small>
+
+---
+
+
 # Symbol affixes
 
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/affixes/symbols.lexc)</small>#           Documenting the Wangkajunga *root.lexc* file                     
+
+<small>This (part of) documentation was generated from [src/fst/affixes/symbols.lexc](https://github.com/giellalt/lang-mpj/blob/main/src/fst/affixes/symbols.lexc)</small>
+
+---
+
+#           Documenting the Wangkajunga *root.lexc* file                     
 
 This files documents the  Wangkajunga root.lexc file.
-
-
 
 ## Analysis symbols
 The morphological analyses of wordforms for the Wangkajunga
 language are presented in this system in terms of the following symbols.
 (It is highly suggested to follow existing standards when adding new tags).
-
 
 ### The parts-of-speech are:
 
@@ -1907,11 +914,9 @@ language are presented in this system in terms of the following symbols.
 * **+Pcle** 
 * **+Num** 
 
-
 ###  Transitivity:
 * **+IV** Intransitive (i.e. with Abs)
 * **+TV** Transitive (i.e. with Erg + Abs)
-
 
 ### nominal cases
 * **+Abs** 
@@ -1924,18 +929,14 @@ language are presented in this system in terms of the following symbols.
 * **+All** 
 * **+Avoid** 
 
-
-
 ### Derivational tags
 * **+Der/Foc** = derivational tags
 * **+Der/SpatAbl** 
 * **+Der/SpatAll** 
 * **+Der/TempLoc** 
 
-
 ### Other tags
 * **+Inch** NB from the reference book, inchoative is used as verbalisation
-
 
 ### pronoun clitics
 * **+Pron/Clt** 
@@ -1948,14 +949,12 @@ language are presented in this system in terms of the following symbols.
 
 other cases are declared elsewhere - Dat, Abs, Abl.
 
-
 ##  Verb affixes
 ###  tense inflections 
 * **+Prs**  Present Tense
 * **+Perf +Imprt +Pst +PstNar +Fut** 
 imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imperative
 * **+Imperf +PstHbt** 
-
 
 ##  irrealis tense inflections ! TODO: work on tags. Irrealis/Admon? But two separate morphophonemes
 * **+Irr**  = Irrealis
@@ -1967,38 +966,31 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **+Hyp**  = Hypothetical
 * **+Char**  = Characteristic (*payi may behave differently - nominalisation?)
 
-
 ##  affixes following from irrealis inflections
 * **+Contr**  Contradictive
 * **+Avoid**  Avoidance
 
-
 ##  serial and nominalised inflections
 * **+Ser** Serial
 * **+Nomz**  Nominaliser
-
 
 ##  verb derivation affixes
 * **+Act** -ti	nominal -> IT verb. changes position/stance meaning to action.
 * **+Caus/Make**  -ma	nominal -> T verb. (particularly for attributes)
 * **+Caus/PutTo**  -ju	nominal -> T verb.
 
-
 ##  temporal relative affix
 * **+Trel** 
-
 
 ##  verb directional affixes
 * **+Directional/towards**  ni (suffix / infix)
 * **Directional/away+**  maa (prefix)
 * **Directional/around+** parra (prefix)
 
-
 ##  verb post-inflection affixes
 * **+Grp** = group (different to GROUP as derivational nominal suffix)
 * **+Compl** = completed action
 * **+Warn** = warning
-
 
 ##  verb compounds
 * **+Compound/put** = jurra
@@ -2010,10 +1002,8 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **+Compound/get_up** = pakala
 * **+Compound/mouth_action** = jarra
 
-
 ##  Reduplication
 * **+Redpl Redpl+** 
-
 
 ##  Clitics
 * **^P^A +Pa** =
@@ -2030,22 +1020,17 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **+Clt/then**  =  yila, lta
 * **+Voc** = voc
 
-
 ##  Demonstrative affixes #TODO: add more meaning to tag names?
 * **+SentMod** 
 * **+Dem/ngula +Dem/pa** only with yangka. In book +Rel +Pa
 * **+Dem/na +Dem/janu** in book +Foc +Abl
 * **+Dem/janulu**  only with palunya
 
-
-
-
 ##  Flag diacritics for verb conjugations
 * **@U.CONJ.Ø@** 
 * **@U.CONJ.WA@** 
 * **@U.CONJ.RRA@** 
 * **@U.CONJ.LA@** 
-
 
 ##  Flag diacritics for noun cases
 ##  DCASE = derivational case
@@ -2074,7 +1059,6 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@U.DCASE.ONLY@** 
 * **@U.DCASE.FOC@** 
 
-
 ###  corresponding D-flags
 * **@D.DCASE.HAV@** 
 * **@D.DCASE.THING@** 
@@ -2101,7 +1085,6 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@D.DCASE.ONLY@** 
 * **@D.DCASE.FOC@** 
 
-
 ##  SCASE = semantic case
 * **@U.SCASE.ABL@** 
 * **@U.SCASE.GEN@** 
@@ -2115,7 +1098,6 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@D.SCASE.LOC@** 
 * **@D.SCASE.PERL@**  
 * **@D.SCASE.ALL@** 
-
 
 ##  Flag diacritics for clitics (to ensure the same clitic does not appear twice on a single word)
 ##  CLT = clitic
@@ -2132,7 +1114,6 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@U.CLT.LTA@** 
 * **@U.CLT.YILA@** 
 
-
 ###  corresponding D-flags
 * **@D.CLT.FOC@** 
 * **@D.CLT.KIRLI@** 
@@ -2147,7 +1128,6 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@D.CLT.LTA@** 
 * **@D.CLT.YILA@** 
 
-
 ##  Flag diacritics for pronoun clitics (to ensure the same case is not used twice within a cluster).
 ##  CLCASE = pronoun clitic case TODO: consider changing name to PCCASE
 * **@U.CLCASE.S@** 
@@ -2157,7 +1137,6 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@U.CLCASE.ABL@** 
 * **@U.CLCASE.REFL@** 
 
-
 ###  corresponding D-flags
 * **@D.CLCASE.S@** 
 * **@D.CLCASE.ABS@** 
@@ -2166,39 +1145,20 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@D.CLCASE.ABL@** 
 * **@D.CLCASE.REFL@** 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ##  integrate the things to come:
-
 
 ###  Here are the tags from the template. These and the ones above should be merged.
 
-
-
-
 ##  The parts of speech are further split up into:
 * **+Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Indef +Temp +Spat** 
-
 
 ##  The Usage extents are marked using following tags:
 * **+Err/Orth** 
 * **+Use/-Spell** 
 
-
 ##  The nominals are inflected in the following Case and Number
 * **+Sg +Du +Pl** 
 * **+Ess +Nom +Gen +Acc +Ill +Loc +Com +Com/Sh** 
-
 
 ##  The possession is marked as such:
 * **+PxSg1 +PxSg2 +PxSg3 +PxDu1 +PxDu2 +PxDu3 +PxPl1 +PxPl2 +PxPl3** 
@@ -2208,14 +1168,11 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **+Attr +Card** 
 * **+Ord** 
 
-
 ##  Verb moods are:
 * **+Ind +Prs +Prt +Cond +Imprt** 
 
-
 ##  Other verb forms are
 * **+Inf +Ger +ConNeg +Neg +PrsPrc +PrfPrc +Sup +VGen +VAbess** 
-
 
 ###  Abbreviated words are classified with:
 * **+ABBR +ACR** 
@@ -2229,10 +1186,8 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 ##  Non-dictionary words can be recognised with:
 * **+Guess** 
 
-
 ##  Question and Focus particles:
 * **+Qst +Foc** 
-
 
 ##  Semantics are classified with
 * **+Sem/Spat** 
@@ -2257,16 +1212,11 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **+Sem/Veh** 
 * **+Sem/Clth** 
 
-
-
-
 ##  Derivations are classified under the morphophonetic form of the suffix, the
 ##  source and target part-of-speech.
 
-
 ## Morphophonology
 ---------------
-
 
 ## Flag diacritics
 We have manually optimised the structure of our lexicon using following
@@ -2295,7 +1245,6 @@ do no harm.
 |  **@P.CmpOnly.TRUE@** | Sets a flag to indicate that the word has passed R
 |  **@D.CmpOnly.FALSE@** | Disallow words coming directly from root.
 
-
 Use the following flag diacritics to control downcasing of derived proper
 nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 these flags. There exists a ready-made regex that will do the actual down-casing
@@ -2306,77 +1255,16 @@ given the proper use of these flags.
 |  **@U.Cap.Obl@** | Allowing downcasing of derived names: deatnulasj.
 |  **@U.Cap.Opt@** | Allowing downcasing of derived names: deatnulasj.
 
-
 **LEXIXON Root**
 
 The word forms in Wangkajunga language start from the lexeme roots of basic
 word classes, or optionally from prefixes:
 
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/fst/root.lexc)</small>
 
+<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-mpj/blob/main/src/fst/root.lexc)</small>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 
 
@@ -2538,52 +1426,12 @@ raised							_r
 lowered							_o 
 advanced tongue root				_A 
 retracted tongue root			_q
+
 * * *
-<small>This (part of) documentation was generated from [../src/phonetics/txt2ipa.xfscript](http://github.com/giellalt/lang-mpj/blob/main/../src/phonetics/txt2ipa.xfscript)</small>
 
+<small>This (part of) documentation was generated from [src/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-mpj/blob/main/src/phonetics/txt2ipa.xfscript)</small>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 
 
@@ -2594,7 +1442,11 @@ retracted tongue root			_q
 % násti% :%*     Root ; 
 
 * * *
-<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-numbers-digit2text.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-mpj/blob/main/src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
+
+---
+
 
 
 We describe here how abbreviations are in Wangkajunga are read out, e.g.
@@ -2609,41 +1461,28 @@ For example:
 * esim.:esimerkki # ; 
 * esim.:esimerkiksi # ; 
 
-
 * * *
-<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-abbrevs2text.lexc](http://github.com/giellalt/lang-mpj/blob/main/../src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-abbrevs2text.lexc](https://github.com/giellalt/lang-mpj/blob/main/src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+
+---
+
+
 [ L A N G U A G E ]  G R A M M A R   C H E C K E R
-
-
-
-
-
-
-
-
 
 # DELIMITERS
 
-
 # TAGS AND SETS
 
-
-
 ## Tags
-
 
 This section lists all the tags inherited from the fst, and used as tags
 in the syntactic analysis. The next section, **Sets**, contains sets defined
 on the basis of the tags listed here, those set names are not visible in the output.
 
-
-
-
 ### Beginning and end of sentence
 BOS
 EOS
-
-
 
 ### Parts of speech tags
 
@@ -2673,8 +1512,6 @@ PUNCT
 COMMA
 ¶
 
-
-
 ### Tags for POS sub-categories
 
 Pers
@@ -2690,7 +1527,6 @@ Prop
 Allegro
 Arab
 Romertall
-
 
 ### Tags for morphosyntactic properties
 
@@ -2753,11 +1589,7 @@ Sup
 Actio
 VAbess
 
-
-
 Err/Orth
-
-
 
 ### Semantic tags
 
@@ -2790,14 +1622,10 @@ HUMAN
 HAB-ACTOR
 HAB-ACTOR-NOT-HUMAN
 
-
 PROP-ATTR
 PROP-SUR
 
-
-
 TIME-N-SET
-
 
 ###  Syntactic tags
 
@@ -2869,22 +1697,15 @@ OBJ>-OTHERS
 SYN-V
 @X
 
-
-
-
-
 ## Sets containing sets of lists and tags
 
 This part of the file lists a large number of sets based partly upon the tags defined above, and
 partly upon lexemes drawn from the lexicon.
 See the sourcefile itself to inspect the sets, what follows here is an overview of the set types.
 
-
-
 ### Sets for Single-word sets
 
 INITIAL
-
 
 ### Sets for word or not
 
@@ -2892,7 +1713,6 @@ WORD
 REAL-WORD
 REAL-WORD-NOT-ABBR
 NOT-COMMA
-
 
 ### Case sets
 
@@ -2907,7 +1727,6 @@ NOT-ACC
 
 ### Verb sets
 
-
 NOT-V
 
 ### Sets for finiteness and mood
@@ -2917,7 +1736,6 @@ REAL-NEG
 MOOD-V
 
 NOT-PRFPRC
-
 
 ### Sets for person
 
@@ -2931,49 +1749,15 @@ PL1-V
 PL2-V
 PL3-V
 
-
-
-
-
 ### Pronoun sets
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### Adjectival sets and their complements
 
-
-
-
 ### Adverbial sets and their complements
-
-
-
 
 ### Sets of elements with common syntactic behaviour
 
-
 ### NP sets defined according to their morphosyntactic features
-
-
-
-
-
-
-
 
 ### The PRE-NP-HEAD family of sets
 
@@ -2981,86 +1765,34 @@ These sets model noun phrases (NPs). The idea is to first define whatever can
 occur in front of the head of the NP, and thereafter negate that with the
 expression **WORD - premodifiers**.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Border sets and their complements
-
-
-
-
-
-
-
-
-
-
 
 ### Grammarchecker sets
 
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../tools/grammarcheckers/grammarchecker.cg3](http://github.com/giellalt/lang-mpj/blob/main/../tools/grammarcheckers/grammarchecker.cg3)</small>Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
+
+<small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-mpj/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small>
+
+---
+
+# Grammar checker tokenisation for mpj
+
+Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:
+```
 $ make
 $ echo "ja, ja" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
-
-Issues:
-- [X] Ambiguous input
-- Seems to work fine
-- [X] Ambiguous multiword expessions with ambiguous tokenisation
-- Seems to work – represented within lexc now; hfst-tokenise also
-supports forms on the analyses now
-- [X] Ambiguous multiword expessions need reorganising after CG
-- The module cg-mwesplit takes wordforms from readings and turns them into
-new cohorts
-- [X] Unknown words
-- The set-difference method only works for words without
-flag diacritics (even though we should be working only on the form-side?)
-and leads to binary blow-up: With only lower unknowns, we get 45M;
-lower+upper gives 67M, while no unknowns gives 27M
-- Fixed instead by treating empty analyses as unknown-tokens in
-hfst-tokenise, and outputting unmatched strings with a prefix
-- [ ] Treat input that's within superblanks as unmatched
-- probably requires a change in hfst-tokenise itself
-- [X] Try >1 space for ambiguous MWE's? – represented within lexc now
-- [ ] Try set-difference-unknowns method with regular hfst commands?
+```
 
 More usage examples:
+```
 $ echo "Juos gorreválggain lea (dárbbašlaš) deavdit gáibádusa boasttu olmmoš, man mielde lahtuid." | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
 $ echo "(gáfe) 'ja' ja 3. ja? ц jaja ukjend \"ukjend\"" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
 $ echo "márffibiillagáffe" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+```
 
 Pmatch documentation:
-https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch
-
-
-
-
-
+<https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch>
 
 Characters which have analyses in the lexicon, but can appear without spaces
 before/after, that is, with no context conditions, and adjacent to words:
@@ -3075,9 +1807,6 @@ the List contains some unicode white space characters
 * Narrow No-Break Space U+202F
 * Medium Mathematical Space U+205F
 * Word joiner U+2060
-
-
-
 
 Apart from what's in our morphology, there are
 1) unknown word-like forms, and
@@ -3091,14 +1820,11 @@ so far:
 
 TODO: Could use something like this, but built-in's don't include šžđčŋ:
 
-
 Simply give an empty reading when something is unknown:
 hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
 remove empty analyses from other readings. Empty readings are also
 legal in CG, they get a default baseform equal to the wordform, but
 no tag to check, so it's safer to let hfst-tokenise handle them.
-
-
 
 Finally we mark as a token any sequence making up a:
 * known word in context
@@ -3107,7 +1833,12 @@ Finally we mark as a token any sequence making up a:
 * URL in context
 
 * * *
-<small>This (part of) documentation was generated from [../tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript](http://github.com/giellalt/lang-mpj/blob/main/../tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript)</small># Tokeniser for mpj
+
+<small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript](https://github.com/giellalt/lang-mpj/blob/main/tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript)</small>
+
+---
+
+# Tokeniser for mpj
 
 Usage:
 ```
@@ -3119,12 +1850,7 @@ $ echo "márffibiillagáffe" | hfst-tokenise --giella-cg tokeniser-disamb-gt-des
 ```
 
 Pmatch documentation:
-https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch
-
-
-
-
-
+<https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch>
 
 Characters which have analyses in the lexicon, but can appear without spaces
 before/after, that is, with no context conditions, and adjacent to words:
@@ -3139,9 +1865,6 @@ the List contains some unicode white space characters
 * Narrow No-Break Space U+202F
 * Medium Mathematical Space U+205F
 * Word joiner U+2060
-
-
-
 
 Apart from what's in our morphology, there are
 1. unknown word-like forms, and
@@ -3159,16 +1882,12 @@ ASCII digits
 so far:
 * U+F0B7 for "x in box"
 
-
-
 ## Unknown handling
 Unknowns are tagged ?? and treated specially with `hfst-tokenise`
 hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
 remove empty analyses from other readings. Empty readings are also
 legal in CG, they get a default baseform equal to the wordform, but
 no tag to check, so it's safer to let hfst-tokenise handle them.
-
-
 
 Finally we mark as a token any sequence making up a:
 * known word in context
@@ -3177,4 +1896,8 @@ Finally we mark as a token any sequence making up a:
 * URL in context
 
 * * *
-<small>This (part of) documentation was generated from [../tools/tokenisers/tokeniser-disamb-gt-desc.pmscript](http://github.com/giellalt/lang-mpj/blob/main/../tools/tokenisers/tokeniser-disamb-gt-desc.pmscript)</small>
+
+<small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-disamb-gt-desc.pmscript](https://github.com/giellalt/lang-mpj/blob/main/tools/tokenisers/tokeniser-disamb-gt-desc.pmscript)</small>
+
+---
+

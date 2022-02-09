@@ -3,16 +3,7 @@
 
 ## Sets
 
-
-
 Sentence delimiters are the following: "<.>" "<...>" "<!>" "<?>" "<¶>"
-
-
-
-
-
-
-
 
 ### Part-of-Speech
 * N = noun
@@ -26,7 +17,6 @@ Sentence delimiters are the following: "<.>" "<...>" "<!>" "<?>" "<¶>"
 * Po = postposition
 * Pron = pronoun
 * Interj = interjection
-
 
 ### Numerus
 * Sg = Singular
@@ -55,8 +45,6 @@ Sentence delimiters are the following: "<.>" "<...>" "<!>" "<?>" "<¶>"
 * Com
 * SUBJ-CASE = Nom Par
 
-
-
 ### Types
 * Prop = Proper noun
 * Interr = Interrogative
@@ -75,17 +63,11 @@ Interrpronpl "kuka" ja "mikä"
 * Act = Active
 * Neg = Negation verb
 
-
-
-
 * COMMA = comma
 * Foc/kaan = focus clitic -kaan
 * Sem/Fem = feminin propernoun
 * @CVP = Conjunction or subjunction that conjoins finite verb phrases.
 * @CNP = Local conjunction or subjunction.
-
-
-
 
 ## Sets with more members
 
@@ -101,7 +83,6 @@ Interrpronpl "kuka" ja "mikä"
 * QVANT-ADV = e.g. paljon, vähän
 * KUNKA = e.g. kunka missä (adverbs that start a sentence)
 
-
 * S-BOUNDARY = words that start a sentence
 
 * VFIN = finite verb
@@ -116,54 +97,9 @@ Interrpronpl "kuka" ja "mikä"
 
 * SV-BOUNDARY = words that start a sentence and finite verb
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/disambiguator.cg3](http://github.com/giellalt/lang-mpj/blob/main/../src/cg3/disambiguator.cg3)</small>
+
+<small>This (part of) documentation was generated from [src/cg3/disambiguator.cg3](https://github.com/giellalt/lang-mpj/blob/main/src/cg3/disambiguator.cg3)</small>
+
+---
+
