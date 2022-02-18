@@ -66,8 +66,6 @@ Interrpronpl "kuka" ja "mikä"
 * COMMA = comma
 * Foc/kaan = focus clitic -kaan
 * Sem/Fem = feminin propernoun
-* @CVP = Conjunction or subjunction that conjoins finite verb phrases.
-* @CNP = Local conjunction or subjunction.
 
 ## Sets with more members
 
@@ -89,17 +87,9 @@ Interrpronpl "kuka" ja "mikä"
 
 * COPULAS = olla
 
-* MOD-ASP = auxilaries
-
-* AUX-OR-MAIN = verbs which can be both auxilary and mainverb
-
 * AUX = verbs which can be auxilary
 
 * SV-BOUNDARY = words that start a sentence and finite verb
 
 * * *
-
 <small>This (part of) documentation was generated from [src/cg3/disambiguator.cg3](https://github.com/giellalt/lang-mpj/blob/main/src/cg3/disambiguator.cg3)</small>
-
----
-
