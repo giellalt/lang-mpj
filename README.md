@@ -4,6 +4,8 @@ The Wangkajunga morphology and tools
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-mpj)](https://github.com/giellalt/lang-mpj/issues)
 [![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-mpj/main/badge.svg)](https://github.com/giellalt/lang-mpj/actions)
 [![License](https://img.shields.io/github/license/giellalt/lang-mpj)](https://github.com/giellalt/lang-mpj/blob/main/LICENSE)
+[![Desktop speller download](https://img.shields.io/badge/download%40latest-desktop--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-mpj?platform=desktop&channel=nightly)
+[![Mobile speller download](https://img.shields.io/badge/download%40latest-mobile--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-mpj?platform=mbile&channel=nightly)
 
 This repository contains finite state source files for the Wangkajunga language,
 for building morphological analysers, proofing tools
