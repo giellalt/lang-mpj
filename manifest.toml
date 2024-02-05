@@ -1,5 +1,5 @@
-name = "Wangkajunga"
-version = "0.1.0"
+spellername = "Wangkajunga"
+spellerversion = "0.1.0"
 
 # Name of the speller package in various languages.
 # The default is English + autonym:
