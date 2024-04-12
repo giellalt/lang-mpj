@@ -92,4 +92,5 @@ Interrpronpl "kuka" ja "mikä"
 * SV-BOUNDARY = words that start a sentence and finite verb
 
 * * *
+
 <small>This (part of) documentation was generated from [src/cg3/disambiguator.cg3](https://github.com/giellalt/lang-mpj/blob/main/src/cg3/disambiguator.cg3)</small>
