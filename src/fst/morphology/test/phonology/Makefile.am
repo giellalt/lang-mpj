@@ -5,10 +5,6 @@
 # Uncomment and list here (space separated) all test scripts that should be run:
 TESTS=
 
-if CAN_XFST
-TESTS+=pair-test-positive.sh 
-endif # CAN_XFST
-
 if CAN_HFST
 TESTS+=pair-test-hfst.sh
 endif # CAN_HFST
