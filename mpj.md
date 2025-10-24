@@ -4,18 +4,18 @@ All doc-comment documentation in one large file.
 
 ---
 
-# src-cg3-dependency.cg3.md 
+## src-cg3-dependency.cg3.md 
 
 
-# C O M M O N  S Á M I  D E P E N D E N C Y   G R A M M A R
+## C O M M O N  S Á M I  D E P E N D E N C Y   G R A M M A R
 
 This dep file is for sma, sme, smj, sje.
 
-# DELIMITERS
+## DELIMITERS
 
 Sentence delimiters are the following: <.> <!> <?> <...> <¶>
 
-# TAGS AND SETS
+## TAGS AND SETS
 
 N
 V
@@ -75,13 +75,13 @@ Ess
 
 IM For fao
 
-## POS sub-categories
+### POS sub-categories
 
-## Syntactic tags and sets
+### Syntactic tags and sets
 
-### Syntactic tags in input to this file
+#### Syntactic tags in input to this file
 
-### Syntactic tags added in this file
+#### Syntactic tags added in this file
 
 * @FMV : finite main verb
 - oaidná: Son oaidná ollislaš gova. - She sees the whole picture
@@ -120,23 +120,23 @@ IM For fao
 * <mv> : main verb. A temporarily tag omitted in the end of the file.
 * <aux> : auxilary verb. A temporarily tag omitted in the end of the file.
 
-### fao syntags
+#### fao syntags
 
 * @>V
 
-### kal syntags
+#### kal syntags
 
 * @INS :
 * @<INS :
 * @INS> :
 
-### eus syntags
+#### eus syntags
 
 * @FS-SPRED : finite verb in subclause functioning as a subject predicate - eus, but not sure if in use
 
-### Syntactic set definitions
+#### Syntactic set definitions
 
-# Dep grammar
+## Dep grammar
 
 Correction rules
 
@@ -150,9 +150,9 @@ Correction rules
 
 * **faoSumId=Rel**
 
-## The finite verb
+### The finite verb
 
-# Mapping rules
+## Mapping rules
 
 **lgRemove** removes the language tags <sma>, <sme>,  etc, before proceeding to the dep file.
 
@@ -162,16 +162,16 @@ Correction rules
 
 ---
 
-# src-cg3-disambiguator.cg3.md 
+## src-cg3-disambiguator.cg3.md 
 
 
-# Start making a syntactic disambiguator
+## Start making a syntactic disambiguator
 
-## Sets
+### Sets
 
 Sentence delimiters are the following: "<.>" "<...>" "<!>" "<?>" "<¶>"
 
-### Part-of-Speech
+#### Part-of-Speech
 * N = noun
 * A = adjective
 * Num = numeral
@@ -184,7 +184,7 @@ Sentence delimiters are the following: "<.>" "<...>" "<!>" "<?>" "<¶>"
 * Pron = pronoun
 * Interj = interjection
 
-### Numerus
+#### Numerus
 * Sg = Singular
 * Pl = Plural
 * Sg1 = Singular 1.p.
@@ -193,7 +193,7 @@ Sentence delimiters are the following: "<.>" "<...>" "<!>" "<?>" "<¶>"
 * Pl1 = Plural 1.p.
 * Pl2 = Plural 2.p.
 * Pl3 = Plural 3.p.
-### Cases
+#### Cases
 * Nom
 * Gen
 * Acc
@@ -211,7 +211,7 @@ Sentence delimiters are the following: "<.>" "<...>" "<!>" "<?>" "<¶>"
 * Com
 * SUBJ-CASE = Nom Par
 
-### Types
+#### Types
 * Prop = Proper noun
 * Interr = Interrogative
 * Dem = demonstrative pron
@@ -233,7 +233,7 @@ Interrpronpl "kuka" ja "mikä"
 * Foc/kaan = focus clitic -kaan
 * Sem/Fem = feminin propernoun
 
-## Sets with more members
+### Sets with more members
 
 * WORD = all PoS
 
@@ -263,7 +263,7 @@ Interrpronpl "kuka" ja "mikä"
 
 ---
 
-# src-cg3-functions.cg3.md 
+## src-cg3-functions.cg3.md 
 
 
 S Y N T A C T I C   F U N C T I O N S   F O R   S Á M I
@@ -280,7 +280,7 @@ LEFT RIGHT because of apertium
 
 * Sets for Morphosyntactic properties
 
-## Syntactic tags
+### Syntactic tags
 
 * @+FAUXV : finite auxiliary verb 
 - ferte: Son ferte oaidnit ollislaš gova. - She must see the whole picture.
@@ -383,7 +383,7 @@ LEFT RIGHT because of apertium
 * @CMPND
 * @X : The function is unknown, e.g. because of that the word is unknown
 
-## Tag sets
+### Tag sets
 
 * Sets for verbs
 
@@ -416,9 +416,9 @@ ADLVCASE
 
 These were the set types.
 
-## Numeral outside the sentence
+### Numeral outside the sentence
 
-## HABITIVE MAPPING
+### HABITIVE MAPPING
 
 * **hab1** hab aux leat
 
@@ -684,7 +684,7 @@ These were the set types.
 
 * **TV<obj** (@<OBJ) for Acc; if there is a transitive mainverb to the left in the clause. Not for Rel. Not if you are a numeral followed by a measure-noun
 
-### sma object
+#### sma object
 
 * **<advlMeasr** (@<ADVL) for (Num Acc); if finite IV-mainverb to the left, measure-noun to the right
 
@@ -712,25 +712,25 @@ These were the set types.
 
 * **onlyV<opred2** (@<OPRED) for (N Ess) if;
 
-## SUBJ MAPPING - leftovers
+### SUBJ MAPPING - leftovers
 
 * **subj>ifV** (@SUBJ>) for NP-HEAD-NOM, DUPRON or (Num Nom) if; a finite mainverb is found to the right. This is a cleanup rule for subjects
 
 * **hnoun>ifV** (@SUBJ>) for NP-HEAD-NOM, DUPRON if. The counterpart of subj>ifV. You are HNOUN if there is a finite verb to your right, but NOT if there is a finite verb after a relative clause
 
-## OBJ MAPPING - leftovers
+### OBJ MAPPING - leftovers
 
-## <logo> MAPPING for MT - experimental
+### <logo> MAPPING for MT - experimental
 
-## HNOUN MAPPING
+### HNOUN MAPPING
 
 * **@<ADVLcoor** (@<ADVL) for ADVLCASEAdv if @CNP to the left and ADVL to the left of it
 
-###  **missingX** adds @X to all missings
+####  **missingX** adds @X to all missings
 
-###  **therestX** adds @X to all what is left, often errouneus disambiguated forms
+####  **therestX** adds @X to all what is left, often errouneus disambiguated forms
 
-## For Apertium:
+### For Apertium:
 The analysis give double analysis because of optional semtags. We go for the one with semtag.
 
 * * *
@@ -739,7 +739,7 @@ The analysis give double analysis because of optional semtags. We go for the one
 
 ---
 
-# src-fst-morphology-affixes-adjectives.lexc.md 
+## src-fst-morphology-affixes-adjectives.lexc.md 
 
 Adjective inflection
 The Wangkajunga language adjectives compare.
@@ -750,7 +750,7 @@ The Wangkajunga language adjectives compare.
 
 ---
 
-# src-fst-morphology-affixes-nouns.lexc.md 
+## src-fst-morphology-affixes-nouns.lexc.md 
 
 Noun inflection
 The Wangkajunga language nouns inflect in cases.
@@ -766,7 +766,7 @@ demonstrative lexicons
 
 ---
 
-# src-fst-morphology-affixes-prefixes.lexc.md 
+## src-fst-morphology-affixes-prefixes.lexc.md 
 
 Prefixes
 Prefixes in the Wangkajunga language are bound to beginning of other words.
@@ -777,7 +777,7 @@ Prefixes in the Wangkajunga language are bound to beginning of other words.
 
 ---
 
-# src-fst-morphology-affixes-propernouns.lexc.md 
+## src-fst-morphology-affixes-propernouns.lexc.md 
 
 Proper noun inflection
 The Wangkajunga language proper nouns inflect in the same cases as regular
@@ -789,10 +789,10 @@ nouns, but with a colon (':') as separator.
 
 ---
 
-# src-fst-morphology-affixes-symbols.lexc.md 
+## src-fst-morphology-affixes-symbols.lexc.md 
 
 
-# Symbol affixes
+## Symbol affixes
 
 * * *
 
@@ -800,7 +800,7 @@ nouns, but with a colon (':') as separator.
 
 ---
 
-# src-fst-morphology-affixes-verbs.lexc.md 
+## src-fst-morphology-affixes-verbs.lexc.md 
 
 Verb inflection
 The Wangkajunga language verbs inflect in persons.
@@ -816,7 +816,7 @@ is positioning of +V here okay? or better with separate lexicon / before prefixe
 
 ---
 
-# src-fst-morphology-clitics.lexc.md 
+## src-fst-morphology-clitics.lexc.md 
 
 
 
@@ -828,7 +828,7 @@ Pronoun clitics (quite long)
 
 ---
 
-# src-fst-morphology-phonology.twolc.md 
+## src-fst-morphology-phonology.twolc.md 
 
 =================================== !
 The Wangkajunga morphophonological/twolc rules file !
@@ -843,18 +843,18 @@ The Wangkajunga morphophonological/twolc rules file !
 
 ---
 
-# src-fst-morphology-root.lexc.md 
+## src-fst-morphology-root.lexc.md 
 
-#           Documenting the Wangkajunga *root.lexc* file                     
+##           Documenting the Wangkajunga *root.lexc* file                     
 
 This files documents the  Wangkajunga root.lexc file.
 
-## Analysis symbols
+### Analysis symbols
 The morphological analyses of wordforms for the Wangkajunga
 language are presented in this system in terms of the following symbols.
 (It is highly suggested to follow existing standards when adding new tags).
 
-### The parts-of-speech are:
+#### The parts-of-speech are:
 
 * **+N** 
 * **+A** 
@@ -870,11 +870,11 @@ language are presented in this system in terms of the following symbols.
 * **+Pcle** 
 * **+Num** 
 
-###  Transitivity:
+####  Transitivity:
 * **+IV** Intransitive (i.e. with Abs)
 * **+TV** Transitive (i.e. with Erg + Abs)
 
-### nominal cases
+#### nominal cases
 * **+Abs** 
 * **+Erg** 
 * **+Dat** 
@@ -885,16 +885,16 @@ language are presented in this system in terms of the following symbols.
 * **+All** 
 * **+Avoid** 
 
-### Derivational tags
+#### Derivational tags
 * **+Der/Foc** = derivational tags
 * **+Der/SpatAbl** 
 * **+Der/SpatAll** 
 * **+Der/TempLoc** 
 
-### Other tags
+#### Other tags
 * **+Inch** NB from the reference book, inchoative is used as verbalisation
 
-### pronoun clitics
+#### pronoun clitics
 * **+Pron/Clt** 
 * **+1Sg +2Sg +3Sg** 
 * **+1Du +2Du +3Du** 
@@ -905,14 +905,14 @@ language are presented in this system in terms of the following symbols.
 
 other cases are declared elsewhere - Dat, Abs, Abl.
 
-##  Verb affixes
-###  tense inflections 
+###  Verb affixes
+####  tense inflections 
 * **+Prs**  Present Tense
 * **+Perf +Imprt +Pst +PstNar +Fut** 
 imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imperative
 * **+Imperf +PstHbt** 
 
-##  irrealis tense inflections ! TODO: work on tags. Irrealis/Admon? But two separate morphophonemes
+###  irrealis tense inflections ! TODO: work on tags. Irrealis/Admon? But two separate morphophonemes
 * **+Irr**  = Irrealis
 * **+Admon**  = Admonitive
 * **+Int**  = Intentive
@@ -922,33 +922,33 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **+Hyp**  = Hypothetical
 * **+Char**  = Characteristic (*payi may behave differently - nominalisation?)
 
-##  affixes following from irrealis inflections
+###  affixes following from irrealis inflections
 * **+Contr**  Contradictive
 * **+Avoid**  Avoidance
 
-##  serial and nominalised inflections
+###  serial and nominalised inflections
 * **+Ser** Serial
 * **+Nomz**  Nominaliser
 
-##  verb derivation affixes
+###  verb derivation affixes
 * **+Act** -ti	nominal -> IT verb. changes position/stance meaning to action.
 * **+Caus/Make**  -ma	nominal -> T verb. (particularly for attributes)
 * **+Caus/PutTo**  -ju	nominal -> T verb.
 
-##  temporal relative affix
+###  temporal relative affix
 * **+Trel** 
 
-##  verb directional affixes
+###  verb directional affixes
 * **+Directional/towards**  ni (suffix / infix)
 * **Directional/away+**  maa (prefix)
 * **Directional/around+** parra (prefix)
 
-##  verb post-inflection affixes
+###  verb post-inflection affixes
 * **+Grp** = group (different to GROUP as derivational nominal suffix)
 * **+Compl** = completed action
 * **+Warn** = warning
 
-##  verb compounds
+###  verb compounds
 * **+Compound/put** = jurra
 * **+Compound/hit** = puwa
 * **+Compound/have** = kanyila
@@ -958,10 +958,10 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **+Compound/get_up** = pakala
 * **+Compound/mouth_action** = jarra
 
-##  Reduplication
+###  Reduplication
 * **+Redpl Redpl+** 
 
-##  Clitics
+###  Clitics
 * **^P^A +Pa** =
 * **+Clt/Foc** =
 * **+Clt/Prob** = kirli
@@ -976,20 +976,20 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **+Clt/then**  =  yila, lta
 * **+Voc** = voc
 
-##  Demonstrative affixes #TODO: add more meaning to tag names?
+###  Demonstrative affixes #TODO: add more meaning to tag names?
 * **+SentMod** 
 * **+Dem/ngula +Dem/pa** only with yangka. In book +Rel +Pa
 * **+Dem/na +Dem/janu** in book +Foc +Abl
 * **+Dem/janulu**  only with palunya
 
-##  Flag diacritics for verb conjugations
+###  Flag diacritics for verb conjugations
 * **@U.CONJ.Ø@** 
 * **@U.CONJ.WA@** 
 * **@U.CONJ.RRA@** 
 * **@U.CONJ.LA@** 
 
-##  Flag diacritics for noun cases
-##  DCASE = derivational case
+###  Flag diacritics for noun cases
+###  DCASE = derivational case
 * **@U.DCASE.HAV@** 
 * **@U.DCASE.THING@** 
 * **@U.DCASE.PRIV@** 
@@ -1015,7 +1015,7 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@U.DCASE.ONLY@** 
 * **@U.DCASE.FOC@** 
 
-###  corresponding D-flags
+####  corresponding D-flags
 * **@D.DCASE.HAV@** 
 * **@D.DCASE.THING@** 
 * **@D.DCASE.PRIV@** 
@@ -1041,22 +1041,22 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@D.DCASE.ONLY@** 
 * **@D.DCASE.FOC@** 
 
-##  SCASE = semantic case
+###  SCASE = semantic case
 * **@U.SCASE.ABL@** 
 * **@U.SCASE.GEN@** 
 * **@U.SCASE.LOC@** 
 * **@U.SCASE.PERL@** 
 * **@U.SCASE.ALL@** 
 
-###  corresponding D-flags
+####  corresponding D-flags
 * **@D.SCASE.ABL@** 
 * **@D.SCASE.GEN@** 
 * **@D.SCASE.LOC@** 
 * **@D.SCASE.PERL@**  
 * **@D.SCASE.ALL@** 
 
-##  Flag diacritics for clitics (to ensure the same clitic does not appear twice on a single word)
-##  CLT = clitic
+###  Flag diacritics for clitics (to ensure the same clitic does not appear twice on a single word)
+###  CLT = clitic
 * **@U.CLT.FOC@** 
 * **@U.CLT.KIRLI@** 
 * **@U.CLT.LKA@** 
@@ -1070,7 +1070,7 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@U.CLT.LTA@** 
 * **@U.CLT.YILA@** 
 
-###  corresponding D-flags
+####  corresponding D-flags
 * **@D.CLT.FOC@** 
 * **@D.CLT.KIRLI@** 
 * **@D.CLT.LKA@** 
@@ -1084,8 +1084,8 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@D.CLT.LTA@** 
 * **@D.CLT.YILA@** 
 
-##  Flag diacritics for pronoun clitics (to ensure the same case is not used twice within a cluster).
-##  CLCASE = pronoun clitic case TODO: consider changing name to PCCASE
+###  Flag diacritics for pronoun clitics (to ensure the same case is not used twice within a cluster).
+###  CLCASE = pronoun clitic case TODO: consider changing name to PCCASE
 * **@U.CLCASE.S@** 
 * **@U.CLCASE.ABS@** 
 * **@U.CLCASE.DAT@** 
@@ -1093,7 +1093,7 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@U.CLCASE.ABL@** 
 * **@U.CLCASE.REFL@** 
 
-###  corresponding D-flags
+####  corresponding D-flags
 * **@D.CLCASE.S@** 
 * **@D.CLCASE.ABS@** 
 * **@D.CLCASE.DAT@** 
@@ -1101,51 +1101,51 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **@D.CLCASE.ABL@** 
 * **@D.CLCASE.REFL@** 
 
-##  integrate the things to come:
+###  integrate the things to come:
 
-###  Here are the tags from the template. These and the ones above should be merged.
+####  Here are the tags from the template. These and the ones above should be merged.
 
-##  The parts of speech are further split up into:
+###  The parts of speech are further split up into:
 * **+Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Indef +Temp +Spat** 
 
-##  The Usage extents are marked using following tags:
+###  The Usage extents are marked using following tags:
 * **+Err/Orth** 
 * **+Use/-Spell** 
 
-##  The nominals are inflected in the following Case and Number
+###  The nominals are inflected in the following Case and Number
 * **+Sg +Du +Pl** 
 * **+Ess +Nom +Gen +Acc +Ill +Loc +Com +Com/Sh** 
 
-##  The possession is marked as such:
+###  The possession is marked as such:
 * **+PxSg1 +PxSg2 +PxSg3 +PxDu1 +PxDu2 +PxDu3 +PxPl1 +PxPl2 +PxPl3** 
-##  The comparative forms are:
+###  The comparative forms are:
 * **+Comp +Superl** 
-##  Numerals are classified under:
+###  Numerals are classified under:
 * **+Attr +Card** 
 * **+Ord** 
 
-##  Verb moods are:
+###  Verb moods are:
 * **+Ind +Prs +Prt +Cond +Imprt** 
 
-##  Other verb forms are
+###  Other verb forms are
 * **+Inf +Ger +ConNeg +Neg +PrsPrc +PrfPrc +Sup +VGen +VAbess** 
 
-###  Abbreviated words are classified with:
+####  Abbreviated words are classified with:
 * **+ABBR +ACR** 
 * **+Symbol** = independent symbols in the text stream, like £, €, ©
-##  Special symbols are classified with:
+###  Special symbols are classified with:
 * **+CLB +PUNCT +LEFT +RIGHT +MIDDLE** 
-##  The verbs are syntactically split according to transitivity:
+###  The verbs are syntactically split according to transitivity:
 * **+TV +IV** 
-##  Special multiword units are analysed with:
+###  Special multiword units are analysed with:
 * **+Multi** 
-##  Non-dictionary words can be recognised with:
+###  Non-dictionary words can be recognised with:
 * **+Guess** 
 
-##  Question and Focus particles:
+###  Question and Focus particles:
 * **+Qst +Foc** 
 
-##  Semantics are classified with
+###  Semantics are classified with
 * **+Sem/Spat** 
 * **+Sem/Temp** 
 * **+Sem/Mal** 
@@ -1168,13 +1168,13 @@ imperfect tense inflections for Imperfective: Past, Past Habitual, Future, Imper
 * **+Sem/Veh** 
 * **+Sem/Clth** 
 
-##  Derivations are classified under the morphophonetic form of the suffix, the
-##  source and target part-of-speech.
+###  Derivations are classified under the morphophonetic form of the suffix, the
+###  source and target part-of-speech.
 
-## Morphophonology
+### Morphophonology
 ---------------
 
-## Flag diacritics
+### Flag diacritics
 We have manually optimised the structure of our lexicon using following
 flag diacritics to restrict morhpological combinatorics - only allow compounds
 with verbs if the verb is further derived into a noun again:
@@ -1222,7 +1222,7 @@ word classes, or optionally from prefixes:
 
 ---
 
-# src-fst-morphology-stems-adjectives.lexc.md 
+## src-fst-morphology-stems-adjectives.lexc.md 
 
 Adjectives
 Adjectives in the Wangkajunga language describe things.
@@ -1233,19 +1233,19 @@ Adjectives in the Wangkajunga language describe things.
 
 ---
 
-# src-fst-morphology-stems-closed.lexc.md 
+## src-fst-morphology-stems-closed.lexc.md 
 
 
-# Closed parts of speech
+## Closed parts of speech
 
 This file contains closed parts of speech. It might be split later on.
 Each POS gets first a lexicon for the tag, then a lexicon for the words pointing to the tag lexicon.
 
-## Interjections
+### Interjections
 
-## Particles
+### Particles
 
-## Conjunctions
+### Conjunctions
 
 * * *
 
@@ -1253,7 +1253,7 @@ Each POS gets first a lexicon for the tag, then a lexicon for the words pointing
 
 ---
 
-# src-fst-morphology-stems-nouns.lexc.md 
+## src-fst-morphology-stems-nouns.lexc.md 
 
 Nouns
 Nouns in the Wangkajunga language are things.
@@ -1264,7 +1264,7 @@ Nouns in the Wangkajunga language are things.
 
 ---
 
-# src-fst-morphology-stems-numerals.lexc.md 
+## src-fst-morphology-stems-numerals.lexc.md 
 
 Numerals
 Numerals in the Wangkajunga language are numbers.
@@ -1275,7 +1275,7 @@ Numerals in the Wangkajunga language are numbers.
 
 ---
 
-# src-fst-morphology-stems-pronouns.lexc.md 
+## src-fst-morphology-stems-pronouns.lexc.md 
 
 Pronouns
 Pronouns in the Wangkajunga language are references to things.
@@ -1286,7 +1286,7 @@ Pronouns in the Wangkajunga language are references to things.
 
 ---
 
-# src-fst-morphology-stems-verbs.lexc.md 
+## src-fst-morphology-stems-verbs.lexc.md 
 
 Verbs
 Verbs in the Wangkajunga language are actions.
@@ -1297,7 +1297,7 @@ Verbs in the Wangkajunga language are actions.
 
 ---
 
-# src-fst-phonetics-txt2ipa.xfscript.md 
+## src-fst-phonetics-txt2ipa.xfscript.md 
 
 
 
@@ -1466,7 +1466,7 @@ retracted tongue root			_q
 
 ---
 
-# src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
+## src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
 
 
 
@@ -1488,7 +1488,7 @@ For example:
 
 ---
 
-# src-fst-transcriptions-transcriptor-numbers-digit2text.lexc.md 
+## src-fst-transcriptions-transcriptor-numbers-digit2text.lexc.md 
 
 
 
@@ -1504,26 +1504,26 @@ For example:
 
 ---
 
-# tools-grammarcheckers-grammarchecker.cg3.md 
+## tools-grammarcheckers-grammarchecker.cg3.md 
 
 
 [ L A N G U A G E ]  G R A M M A R   C H E C K E R
 
-# DELIMITERS
+## DELIMITERS
 
-# TAGS AND SETS
+## TAGS AND SETS
 
-## Tags
+### Tags
 
 This section lists all the tags inherited from the fst, and used as tags
 in the syntactic analysis. The next section, **Sets**, contains sets defined
 on the basis of the tags listed here, those set names are not visible in the output.
 
-### Beginning and end of sentence
+#### Beginning and end of sentence
 BOS
 EOS
 
-### Parts of speech tags
+#### Parts of speech tags
 
 N
 A
@@ -1550,7 +1550,7 @@ PUNCT
 COMMA
 ¶
 
-### Tags for POS sub-categories
+#### Tags for POS sub-categories
 
 Pers
 Dem
@@ -1566,7 +1566,7 @@ Allegro
 Arab
 Romertall
 
-### Tags for morphosyntactic properties
+#### Tags for morphosyntactic properties
 
 Nom
 Acc
@@ -1629,7 +1629,7 @@ VAbess
 
 Err/Orth
 
-### Semantic tags
+#### Semantic tags
 
 Sem/Act
 Sem/Ani
@@ -1662,7 +1662,7 @@ PROP-SUR
 
 TIME-N-SET
 
-###  Syntactic tags
+####  Syntactic tags
 
 @+FAUXV
 @+FMAINV
@@ -1732,22 +1732,22 @@ OBJ>-OTHERS
 SYN-V
 @X
 
-## Sets containing sets of lists and tags
+### Sets containing sets of lists and tags
 
 This part of the file lists a large number of sets based partly upon the tags defined above, and
 partly upon lexemes drawn from the lexicon.
 See the sourcefile itself to inspect the sets, what follows here is an overview of the set types.
 
-### Sets for Single-word sets
+#### Sets for Single-word sets
 
 INITIAL
 
-### Sets for word or not
+#### Sets for word or not
 
 WORD
 NOT-COMMA
 
-### Case sets
+#### Case sets
 
 ADLVCASE
 
@@ -1758,11 +1758,11 @@ NOT-NOM
 NOT-GEN
 NOT-ACC
 
-### Verb sets
+#### Verb sets
 
 NOT-V
 
-### Sets for finiteness and mood
+#### Sets for finiteness and mood
 
 REAL-NEG
 
@@ -1770,7 +1770,7 @@ MOOD-V
 
 NOT-PRFPRC
 
-### Sets for person
+#### Sets for person
 
 SG1-V
 SG2-V
@@ -1782,25 +1782,25 @@ PL1-V
 PL2-V
 PL3-V
 
-### Pronoun sets
+#### Pronoun sets
 
-### Adjectival sets and their complements
+#### Adjectival sets and their complements
 
-### Adverbial sets and their complements
+#### Adverbial sets and their complements
 
-### Sets of elements with common syntactic behaviour
+#### Sets of elements with common syntactic behaviour
 
-### NP sets defined according to their morphosyntactic features
+#### NP sets defined according to their morphosyntactic features
 
-### The PRE-NP-HEAD family of sets
+#### The PRE-NP-HEAD family of sets
 
 These sets model noun phrases (NPs). The idea is to first define whatever can
 occur in front of the head of the NP, and thereafter negate that with the
 expression **WORD - premodifiers**.
 
-### Border sets and their complements
+#### Border sets and their complements
 
-### Grammarchecker sets
+#### Grammarchecker sets
 
 * * *
 
@@ -1808,9 +1808,9 @@ expression **WORD - premodifiers**.
 
 ---
 
-# tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
 
-# Tokeniser for mpj
+## Tokeniser for mpj
 
 Usage:
 ```
@@ -1854,7 +1854,7 @@ ASCII digits
 so far:
 * U+F0B7 for "x in box"
 
-## Unknown handling
+### Unknown handling
 Unknowns are tagged ?? and treated specially with `hfst-tokenise`
 hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
 remove empty analyses from other readings. Empty readings are also
@@ -1873,9 +1873,9 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
-# tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
 
-# Grammar checker tokenisation for mpj
+## Grammar checker tokenisation for mpj
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:
@@ -1938,9 +1938,9 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
-# tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
 
-# TTS tokenisation for smj
+## TTS tokenisation for smj
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:
